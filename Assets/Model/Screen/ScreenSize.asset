@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f9cfd985270194fbc0257c989d828e, type: 3}
+  m_Name: ScreenSize
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    Width: 0
+    Height: 0
+  _changed: {fileID: 11400000, guid: ef49633a81ac5c446af18f6a8c4cd1b9, type: 2}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 1
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue:
+    Width: 0
+    Height: 0
+  _initialValue:
+    Width: 0
+    Height: 0
+  _preChangeTransformers: []

@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityAtoms;
+using UnityAtoms.BaseAtoms;
+
+public abstract class BaseManager : ScriptableObject
+{
+    private static List<string> RegisteredManagers = new List<string>();
+
+    private readonly List<Action> _UnregisterActions = new List<Action>();
+
+    protected void RegisterTo<T>(AtomEvent<T> atomEvent, Action<T> handler)
+    {
+        atomEvent.Register(handler);
+        _UnregisterActions.Add(() => atomEvent.Unregister(handler));
+    }
+
+    protected void RegisterTo(VoidEvent atomEvent, Action handler)
+    {
+        atomEvent.Register(handler);
+        _UnregisterActions.Add(() => atomEvent.Unregister(handler));
+    }
+
+    void OnEnable()
+    {
+        var name = this.GetType().FullName;
+        if (RegisteredManagers.IndexOf(name) < 0)
+        {
+            hideFlags = HideFlags.DontUnloadUnusedAsset;
+            RegisteredManagers.Add(name);
+            OnEnableManager();
+        }
+    }
+
+    protected virtual void OnEnableManager() { }
+
+    void OnDisable()
+    {
+        foreach (var unregisterAction in _UnregisterActions)
+        {
+            unregisterAction();
+        }
+    }
+}

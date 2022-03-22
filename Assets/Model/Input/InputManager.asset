@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a64b5529be84fc4bac9b68878af8571, type: 3}
+  m_Name: InputManager
+  m_EditorClassIdentifier: 
+  InputActionAsset: {fileID: -944628639613478452, guid: 831103a6c725b4a45926271d21085288,
+    type: 3}
+  ActionMapVariable: {fileID: 11400000, guid: f45d6ecf70f374a40a0194203b166419, type: 2}
+  ActionMapVariableChanged: {fileID: 11400000, guid: 51556628b6206ef45b1f8ee70a840f2f,
+    type: 2}
+  NextEntry: {fileID: 11400000, guid: e56e7ddfa01b1974e8dd5a3e782e550b, type: 2}
+  PreviousEntry: {fileID: 11400000, guid: 4885d9b18a8523043ae18bd02602d94f, type: 2}
+  Directions: {fileID: 11400000, guid: 3386595843eaa9e43b9c4e4b40264cc5, type: 2}
+  DirectionsCanceled: {fileID: 11400000, guid: db9037dcc9f20724abdadf8aa83f3291, type: 2}
