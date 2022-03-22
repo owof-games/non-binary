@@ -15,3 +15,5 @@ steps:
     buildTarget: 'WebGL'
     outputPath: '$(Build.BinariesDirectory)'
     outputFileName: 'non-binary'
+    unityEditorsPathMode: 'specify'
+    customUnityEditorsPath: '/opt/unity'
