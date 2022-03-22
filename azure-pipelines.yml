@@ -7,17 +7,11 @@
 pool:
   vmImage: ubuntu-latest
 
+container: unityci/editor:ubuntu-2021.2.16f1-webgl-1.0.0
+
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
 - task: UnityBuildTask@3
   inputs:
-    buildTarget: 'Web'
+    buildTarget: 'WebGL'
     outputPath: '$(Build.BinariesDirectory)'
     outputFileName: 'non-binary'
