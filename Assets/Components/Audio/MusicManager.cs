@@ -39,9 +39,9 @@ public class MusicManager : BehaviourManager
 
     public float FadeOutDuration = 1f;
 
-    private float? SwitchedAudioAt = null;
+    private float? _SwitchedAudioAt = null;
 
-    private AudioClip NextAudioClip;
+    private AudioClip _NextAudioClip;
 
     private void InitializeFadeout()
     {
@@ -51,43 +51,43 @@ public class MusicManager : BehaviourManager
 
     public void UpdateBackgroundMusic(string name)
     {
-        NextAudioClip = null;
+        _NextAudioClip = null;
         foreach (var audioEntry in Entries)
         {
             if (audioEntry.Name == name)
             {
-                NextAudioClip = audioEntry.AudioClip;
+                _NextAudioClip = audioEntry.AudioClip;
             }
         }
-        if (_AudioSource.clip == null && NextAudioClip != null)
+        if (_AudioSource.clip == null && _NextAudioClip != null)
         {
             // no audio: immediately switch
-            _AudioSource.clip = NextAudioClip;
+            _AudioSource.clip = _NextAudioClip;
             _AudioSource.Play();
         }
         else
         {
             // book the audio switch later
-            SwitchedAudioAt = Time.time;
+            _SwitchedAudioAt = Time.time;
         }
     }
 
     private void UpdateForFadeout()
     {
         // is a fadeout in progress?
-        if (SwitchedAudioAt.HasValue)
+        if (_SwitchedAudioAt.HasValue)
         {
             // compute fadeout volume
-            var startTime = SwitchedAudioAt.Value;
+            var startTime = _SwitchedAudioAt.Value;
             var t = (Time.time - startTime) / FadeOutDuration;
             _AudioSource.volume = Mathf.Lerp(1, 0, t);
             // have we reached the end of the fadeout?
             if (t >= 1)
             {
                 // mark the fadeout as completed and go to the next audio clip
-                SwitchedAudioAt = null;
-                _AudioSource.clip = NextAudioClip;
-                if (NextAudioClip)
+                _SwitchedAudioAt = null;
+                _AudioSource.clip = _NextAudioClip;
+                if (_NextAudioClip)
                 {
                     _AudioSource.volume = 1f;
                     _AudioSource.Play();

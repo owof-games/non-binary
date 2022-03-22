@@ -1,0 +1,19 @@
+root=true
+
+[*.cs]
+# disable c# 9 shorthand new() syntax (2020 uses c# 8)
+dotnet_diagnostic.IDE0090.severity = none
+# disable c# 9 pattern matching "is not" syntax (2020 uses c# 8)
+dotnet_diagnostic.IDE0083.severity = none
+dotnet_diagnostic.IDE0019.severity = none
+
+# private fields with underscore
+dotnet_naming_symbols.private_fields.applicable_kinds           = field, class, struct, interface, enum, property, event, delegate
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.prefix_underscore.capitalization = pascal_case
+dotnet_naming_style.prefix_underscore.required_prefix = _
+
+dotnet_naming_rule.private_members_with_underscore.symbols  = private_fields
+dotnet_naming_rule.private_members_with_underscore.style    = prefix_underscore
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
