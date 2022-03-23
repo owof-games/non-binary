@@ -1,0 +1,19 @@
+# Starter pipeline
+
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+  vmImage: ubuntu-latest
+
+container: unityci/editor:ubuntu-2021.2.16f1-webgl-1.0.0
+
+steps:
+- task: UnityBuildTask@3
+  inputs:
+    buildTarget: 'WebGL'
+    outputPath: '$(Build.BinariesDirectory)'
+    outputFileName: 'non-binary'
+    unityEditorsPathMode: 'specify'
+    customUnityEditorsPath: '/opt/unity'
