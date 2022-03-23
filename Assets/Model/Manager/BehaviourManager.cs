@@ -12,18 +12,18 @@ public class BehaviourManager : MonoBehaviour
 
     protected virtual void ManagerAwake() { }
 
-    private static HashSet<Type> ExistingInstances = new HashSet<Type>();
+    private static readonly HashSet<Type> _ExistingInstances = new HashSet<Type>();
 
     void DestroyIfExists()
     {
         var myType = GetType();
-        if (ExistingInstances.Contains(myType))
+        if (_ExistingInstances.Contains(myType))
         {
             Destroy(gameObject);
         }
         else
         {
-            ExistingInstances.Add(myType);
+            _ExistingInstances.Add(myType);
         }
     }
 }

@@ -37,3 +37,8 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
+  - Path: managers.charactermovement
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
