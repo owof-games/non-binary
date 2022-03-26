@@ -38,6 +38,16 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.charactermovement
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: genderedtext
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: maintext
     IsVerboseEnabled: 1
     IsInfoEnabled: 1
     IsWarningEnabled: 0

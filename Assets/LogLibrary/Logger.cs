@@ -24,7 +24,6 @@ namespace RG.LogLibrary
                 // convert to HSV
                 Color.RGBToHSV(color, out float h, out float s, out float v);
                 // force a certain brightness
-                var oldV = v;
                 v = 0.75f;
                 // save the color
                 color = Color.HSVToRGB(h, s, v);
