@@ -5,7 +5,7 @@ namespace RG.LogLibrary
 {
     public static class LoggerStatic
     {
-        private static ConditionalWeakTable<MonoBehaviour, Logger> _Loggers = new ConditionalWeakTable<MonoBehaviour, Logger>();
+        private static readonly ConditionalWeakTable<MonoBehaviour, Logger> _Loggers = new ConditionalWeakTable<MonoBehaviour, Logger>();
 
         public static Logger GetLogger(this MonoBehaviour monoBehaviour)
         {

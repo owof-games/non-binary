@@ -12,7 +12,7 @@ public class StreetVisualizationParameters : MonoBehaviour
     public float WidthFactor = 0.2f;
 
     public float Speed = 1f;
-    private float deltaV = 0;
+    private float _DeltaV = 0;
 
     public SizeVariable ScreenSize;
 
@@ -58,11 +58,11 @@ public class StreetVisualizationParameters : MonoBehaviour
         var repeats = _TextureWidth * Screen.height / (WidthFactor * _TextureHeight * Screen.width);
         _Material.SetFloat("_NumVerticalRepeats", repeats);
         // animate V position
-        deltaV += Time.deltaTime * Speed;
-        while (deltaV > 1)
+        _DeltaV += Time.deltaTime * Speed;
+        while (_DeltaV > 1)
         {
-            deltaV -= 1;
+            _DeltaV -= 1;
         }
-        _Material.SetFloat("_DeltaV", deltaV);
+        _Material.SetFloat("_DeltaV", _DeltaV);
     }
 }

@@ -6,7 +6,7 @@ using UnityAtoms.BaseAtoms;
 
 public abstract class BaseManager : ScriptableObject
 {
-    private static List<string> RegisteredManagers = new List<string>();
+    private static readonly List<string> _RegisteredManagers = new List<string>();
 
     private readonly List<Action> _UnregisterActions = new List<Action>();
 
@@ -25,10 +25,10 @@ public abstract class BaseManager : ScriptableObject
     void OnEnable()
     {
         var name = this.GetType().FullName;
-        if (RegisteredManagers.IndexOf(name) < 0)
+        if (_RegisteredManagers.IndexOf(name) < 0)
         {
             hideFlags = HideFlags.DontUnloadUnusedAsset;
-            RegisteredManagers.Add(name);
+            _RegisteredManagers.Add(name);
             OnEnableManager();
         }
     }

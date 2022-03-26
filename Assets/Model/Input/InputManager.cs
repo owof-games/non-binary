@@ -8,7 +8,7 @@ public class InputManager : BaseManager
 {
     public InputActionAsset InputActionAsset;
 
-    private InputActionMap CurrentlyEnabledInputActionMap = null;
+    private InputActionMap _CurrentlyEnabledInputActionMap = null;
 
     public StringVariable ActionMapVariable;
 
@@ -37,9 +37,9 @@ public class InputManager : BaseManager
 
     private void EnableCurrentActionMap(string actionMapName)
     {
-        CurrentlyEnabledInputActionMap?.Disable();
-        CurrentlyEnabledInputActionMap = GetInputActionMap(actionMapName, false);
-        CurrentlyEnabledInputActionMap?.Enable();
+        _CurrentlyEnabledInputActionMap?.Disable();
+        _CurrentlyEnabledInputActionMap = GetInputActionMap(actionMapName, false);
+        _CurrentlyEnabledInputActionMap?.Enable();
     }
 
     private InputActionMap GetInputActionMap(string actionMapName, bool throwIfNotFound = true)

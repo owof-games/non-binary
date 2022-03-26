@@ -1,6 +1,7 @@
 {
   "RoslynExtensionsOptions": {
     "EnableAnalyzersSupport": true,
+    "documentAnalysisTimeoutMs": 600000,
     "LocationPaths": ["./NuGet/microsoft.unity.analyzers.1.12.0/analyzers/dotnet/cs"]
   }
 }

@@ -19,7 +19,8 @@ public struct Size : IEquatable<Size>
 
     public override bool Equals(object obj)
     {
-        return obj is Size ? Equals((Size)obj) : base.Equals(obj);
+        // return obj is Size ? Equals((Size)obj) : base.Equals(obj);
+        return obj is Size size ? Equals(size) : base.Equals(obj);
     }
 
     private const float _DesiredProportions = 16f / 9f;

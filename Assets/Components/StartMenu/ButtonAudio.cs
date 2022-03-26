@@ -17,14 +17,14 @@ public class ButtonAudio : MonoBehaviour, ISelectHandler
         _AudioSource.Play();
     }
 
-    private static bool FirstSelection = true;
+    private static bool _FirstSelection = true;
 
     public void OnSelect(BaseEventData eventData)
     {
         this.Info("Select button");
-        if (FirstSelection)
+        if (_FirstSelection)
         {
-            FirstSelection = false;
+            _FirstSelection = false;
         }
         else
         {

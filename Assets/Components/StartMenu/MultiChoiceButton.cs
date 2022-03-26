@@ -18,15 +18,15 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public GameObject LeftArrow;
 
-    private RawImage LeftArrowRawImage;
+    private RawImage _LeftArrowRawImage;
 
     public GameObject RightArrow;
 
-    private RawImage RightArrowRawImage;
+    private RawImage _RightArrowRawImage;
 
     public Choice[] Choices;
 
-    private int CurrentChoice = 0;
+    private int _CurrentChoice = 0;
 
     private ButtonTranslatedText _ButtonTranslatedText;
 
@@ -43,8 +43,8 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
         _ButtonTranslatedText = GetComponent<ButtonTranslatedText>();
         _ButtonColor = GetComponent<ButtonColor>();
         _ButtonAudio = GetComponent<ButtonAudio>();
-        LeftArrowRawImage = LeftArrow.GetComponent<RawImage>();
-        RightArrowRawImage = RightArrow.GetComponent<RawImage>();
+        _LeftArrowRawImage = LeftArrow.GetComponent<RawImage>();
+        _RightArrowRawImage = RightArrow.GetComponent<RawImage>();
         UpdateUI();
         if (EventSystem.current.currentSelectedGameObject == this.gameObject)
         {
@@ -59,16 +59,16 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
     private void UpdateUI()
     {
         // choose whether to show the arrows or not
-        LeftArrow.SetActive(CurrentChoice > 0);
-        RightArrow.SetActive(CurrentChoice < Choices.Length - 1);
+        LeftArrow.SetActive(_CurrentChoice > 0);
+        RightArrow.SetActive(_CurrentChoice < Choices.Length - 1);
 
         // set the new text and update
-        _ButtonTranslatedText.ItalianText = Choices[CurrentChoice].ItalianText;
-        _ButtonTranslatedText.EnglishText = Choices[CurrentChoice].EnglishText;
+        _ButtonTranslatedText.ItalianText = Choices[_CurrentChoice].ItalianText;
+        _ButtonTranslatedText.EnglishText = Choices[_CurrentChoice].EnglishText;
         _ButtonTranslatedText.OnTextUpdated();
 
         // raise the change event
-        ChoiceChanged.Invoke(CurrentChoice);
+        ChoiceChanged.Invoke(_CurrentChoice);
     }
 
     // to be used as event listener
@@ -78,7 +78,7 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
         {
             return;
         }
-        CurrentChoice = Math.Min(Choices.Length - 1, CurrentChoice + 1);
+        _CurrentChoice = Math.Min(Choices.Length - 1, _CurrentChoice + 1);
         _ButtonAudio.PlayBeep();
         UpdateUI();
     }
@@ -90,29 +90,29 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
         {
             return;
         }
-        CurrentChoice = Math.Max(0, CurrentChoice - 1);
+        _CurrentChoice = Math.Max(0, _CurrentChoice - 1);
         _ButtonAudio.PlayBeep();
         UpdateUI();
     }
 
-    private Color CurrentBaseColor;
+    private Color _CurrentBaseColor;
 
     public void OnSelect(BaseEventData eventData)
     {
-        CurrentBaseColor = ArrowSelectedColor.Value;
+        _CurrentBaseColor = ArrowSelectedColor.Value;
     }
 
     public void OnDeselect(BaseEventData eventData)
     {
-        CurrentBaseColor = ArrowUnselectedColor.Value;
+        _CurrentBaseColor = ArrowUnselectedColor.Value;
     }
 
     private void SetArrowsColor()
     {
-        var color = CurrentBaseColor;
+        var color = _CurrentBaseColor;
         color.a = _ButtonColor.Alpha;
-        LeftArrowRawImage.color = color;
-        RightArrowRawImage.color = color;
+        _LeftArrowRawImage.color = color;
+        _RightArrowRawImage.color = color;
     }
 
     private void Update()

@@ -22,9 +22,9 @@ namespace RG.LogLibrary
                 var b = hash % 256;
                 var color = new Color(((float)r) / 256f, ((float)g) / 256f, ((float)b) / 256f);
                 // convert to HSV
-                Color.RGBToHSV(color, out float h, out float s, out float v);
+                Color.RGBToHSV(color, out float h, out float s, out _);
                 // force a certain brightness
-                v = 0.75f;
+                float v = 0.75f;
                 // save the color
                 color = Color.HSVToRGB(h, s, v);
                 _Color = ColorUtility.ToHtmlStringRGB(color);
