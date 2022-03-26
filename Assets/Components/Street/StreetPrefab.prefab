@@ -192,6 +192,8 @@ GameObject:
   - component: {fileID: 7242715382363144496}
   - component: {fileID: 9127031602728337166}
   - component: {fileID: 9127031602728337153}
+  - component: {fileID: 8716066254402671623}
+  - component: {fileID: 6926886553794733872}
   m_Layer: 0
   m_Name: StreetPrefab
   m_TagString: Untagged
@@ -250,7 +252,6 @@ MonoBehaviour:
   _LeftBoundingBox: {fileID: 3400492613864950489}
   _RightBoundingBox: {fileID: 6581211728542241095}
   _StreetVisualizationParameters: {fileID: 9127031603100060259}
-  _BottomTextSpacePercentage: 0.2
 --- !u!114 &9127031602728337153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +287,82 @@ MonoBehaviour:
   _eventReference:
     _usage: 0
     _event: {fileID: 11400000, guid: ef49633a81ac5c446af18f6a8c4cd1b9, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &8716066254402671623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127031602728337152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41cf904d84eb4825bcbaec1aaabf06c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9127031602728337166}
+        m_TargetAssemblyTypeName: BoundingBox, Assembly-CSharp
+        m_MethodName: OnMainTextSizeChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 64c11ef118df77b4aa088b3c430a793a, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &6926886553794733872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127031602728337152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a13c337fc59432a95a17e5465b0c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9127031602728337166}
+        m_TargetAssemblyTypeName: BoundingBox, Assembly-CSharp
+        m_MethodName: OnSpacingBottomChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 66670b39c28ded3449469f6fa81840c2, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

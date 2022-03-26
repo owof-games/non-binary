@@ -18,29 +18,52 @@ public class BoundingBox : MonoBehaviour
     [SerializeField]
     private StreetVisualizationParameters _StreetVisualizationParameters;
 
-    [SerializeField]
-    private float _BottomTextSpacePercentage = 0.2f;
+    private float _MainTextHeight;
+
+    private float _SpacingBottom;
+
+    private Size _ScreenSize;
+
+    public void OnMainTextSizeChanged(Vector2 mainTextSize)
+    {
+        _MainTextHeight = mainTextSize.y;
+        UpdateRect();
+    }
+
+    public void OnSpacingBottomChanged(float spacingBottom)
+    {
+        _SpacingBottom = spacingBottom;
+        UpdateRect();
+    }
 
     public void OnScreenSizeChanged(Size newSize)
     {
-        this.Verbose("Bounding box received new size: {0}x{1} (proportional size: {2}x{3})",
-            newSize.Width, newSize.Height, newSize.ProportionalWidth, newSize.ProportionalHeight);
-        if (newSize.Width == 0 || newSize.Height == 0)
+        _ScreenSize = newSize;
+        UpdateRect();
+    }
+
+    private void UpdateRect()
+    {
+        this.Verbose("Computing bounding box with size {0}x{1} (proportional size: {2}x{3}), spacing bottom {4} and main text height {5}",
+            _ScreenSize.Width, _ScreenSize.Height, _ScreenSize.ProportionalWidth, _ScreenSize.ProportionalHeight,
+            _SpacingBottom, _MainTextHeight);
+        if (_ScreenSize.Width == 0 || _ScreenSize.Height == 0)
         {
             // skip initial 0x0 value
             return;
         }
         // compute the bottom left and top right corner of the rectangle (in world position) where we can move
         var z = transform.position.z;
-        var dx = (newSize.Width - newSize.ProportionalWidth) / 2;
-        var dy = (newSize.Height - newSize.ProportionalHeight) / 2;
-        var dx2 = newSize.ProportionalWidth * (1 - _StreetVisualizationParameters.WidthFactor) / 2;
-        var dy2 = newSize.ProportionalHeight * _BottomTextSpacePercentage;
+        var dx = (_ScreenSize.Width - _ScreenSize.ProportionalWidth) / 2;
+        var dy = (_ScreenSize.Height - _ScreenSize.ProportionalHeight) / 2;
+        var dx2 = _ScreenSize.ProportionalWidth * (1 - _StreetVisualizationParameters.WidthFactor) / 2;
+        var bottomTextSpacePercentage = _SpacingBottom + _MainTextHeight;
+        var dy2 = _ScreenSize.ProportionalHeight * bottomTextSpacePercentage;
         var blWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(
             dx + dx2, dy + dy2, z
         ));
         var trWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(
-            newSize.Width - dx - dx2, newSize.Height - dy, z
+            _ScreenSize.Width - dx - dx2, _ScreenSize.Height - dy, z
         ));
         var width = trWorldPosition.x - blWorldPosition.x;
         var height = trWorldPosition.y - blWorldPosition.y;
