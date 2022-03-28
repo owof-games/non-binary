@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &134774834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2873319802483945193, guid: 2d4ea0af41ed0aa4cb596866dfffd7a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2873319804337739566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &301448473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7895180207109814078, guid: c277a689ece137b47b92a4404ee37d0b,
@@ -344,6 +350,8 @@ PlayableDirector:
     value: {fileID: 1874643812}
   - key: {fileID: -2695947459843342386, guid: 6ffeb3ab3393d4c48bdf0e5a6fcb8000, type: 2}
     value: {fileID: 1246313154}
+  - key: {fileID: -480926836065917381, guid: 6ffeb3ab3393d4c48bdf0e5a6fcb8000, type: 2}
+    value: {fileID: 2122578381}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1168073467
@@ -957,7 +965,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100.75
+  m_fontSize: 99.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1081,6 +1089,26 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 2873319804337739566}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2122578381
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134774834}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &60310915262760220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1528,6 +1556,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873319802483945191, guid: 2d4ea0af41ed0aa4cb596866dfffd7a4,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873319802483945191, guid: 2d4ea0af41ed0aa4cb596866dfffd7a4,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873319802483945191, guid: 2d4ea0af41ed0aa4cb596866dfffd7a4,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2873319802483945193, guid: 2d4ea0af41ed0aa4cb596866dfffd7a4,
         type: 3}

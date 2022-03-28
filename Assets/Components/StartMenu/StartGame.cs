@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.Playables;
 using UnityAtoms.BaseAtoms;
@@ -24,6 +25,7 @@ public class StartGame : MonoBehaviour
     public void NextScene()
     {
         // TEMPORARY: disable audio
-        BackgroundMusicName.Value = "";
+        // BackgroundMusicName.Value = "";
+        SceneManager.LoadScene("MainScene");
     }
 }

@@ -35,18 +35,30 @@ public class InputManager : BaseManager
         var movementActionMap = GetInputActionMap("MovementActionMap");
         GetInputAction(movementActionMap, "Directions").performed += Directions.Raise;
         GetInputAction(movementActionMap, "Directions").canceled += DirectionsCanceled.Raise;
-        GetInputAction(movementActionMap, "NextLine").canceled += NextLine.Raise; // canceled = onkeyup
+        GetInputAction(movementActionMap, "NextLine").canceled += OnNextLineRaised; //NextLine.Raise; // canceled = onkeyup
 
         RegisterTo(ActionMapVariableChanged, EnableCurrentActionMap);
         EnableCurrentActionMap(ActionMapVariable.Value);
+    }
+
+    private void OnNextLineRaised(InputAction.CallbackContext item)
+    {
+        // there's some weird bug where disabling MenuActionMap raises the MovementActionMap's NextLine canceled event (?!)
+        if (ActionMapVariable.Value == "MovementActionMap")
+        {
+            NextLine.Raise(item);
+        }
     }
 
     private void EnableCurrentActionMap(string actionMapName)
     {
         BaseLogger.Info(this, $"setting action map to {actionMapName}");
         _CurrentlyEnabledInputActionMap?.Disable();
-        _CurrentlyEnabledInputActionMap = GetInputActionMap(actionMapName, false);
-        _CurrentlyEnabledInputActionMap?.Enable();
+        if (actionMapName != "")
+        {
+            _CurrentlyEnabledInputActionMap = GetInputActionMap(actionMapName, false);
+            _CurrentlyEnabledInputActionMap?.Enable();
+        }
     }
 
     private InputActionMap GetInputActionMap(string actionMapName, bool throwIfNotFound = true)
