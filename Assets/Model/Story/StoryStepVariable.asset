@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e135c551840a648928c86f8da4665e, type: 3}
+  m_Name: StoryStepVariable
+  m_EditorClassIdentifier: 
+  _developerDescription: Description of the current story step.
+  _id: 
+  _value:
+    _Kind: 3
+    _Text: "Ci sono cos\xEC tante cose da capire, ma \xE8 una sensazione bellissima
+      poter essere tutto ci\xF2 che vuoi."
+    _Marker: 
+    _Choices:
+    - Index: 0
+      Text: Indichi fuori
+    _ShowStreet: 0
+    _ShowPeople: 0
+    _IsTitle: 0
+    _Completion: -1
+    _AlmostThere: 0
+  _changed: {fileID: 11400000, guid: bc8566f5352d8ea468bbdd141a470d70, type: 2}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 1
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue:
+    _Kind: 0
+    _Text: 
+    _Marker: 
+    _Choices: []
+    _ShowStreet: 0
+    _ShowPeople: 0
+    _IsTitle: 0
+    _Completion: 0
+    _AlmostThere: 0
+  _initialValue:
+    _Kind: 0
+    _Text: 
+    _Marker: 
+    _Choices: []
+    _ShowStreet: 0
+    _ShowPeople: 0
+    _IsTitle: 0
+    _Completion: 0
+    _AlmostThere: 0
+  _preChangeTransformers: []

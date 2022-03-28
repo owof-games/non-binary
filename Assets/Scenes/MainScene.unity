@@ -1100,6 +1100,96 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1443520661}
     m_Modifications:
+    - target: {fileID: 687550667934081983, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.32000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 687550667934081983, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 687550667934081983, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201071824228862196, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201071824228862196, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201071824228862196, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201071824228862196, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_fontSizeMax
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246969231403660197, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246969231403660197, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246969231403660197, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246969231403660197, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635787263227248496, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346121890952884074, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819340226655455967, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819340226655455967, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819340226655455967, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848153325061003942, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848153325061003942, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_fontSizeMax
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 7848153325898615000, guid: 218faf4cf46cd9a47961f573000165eb,
         type: 3}
       propertyPath: m_Name
@@ -1209,6 +1299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070210131971741200, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 218faf4cf46cd9a47961f573000165eb, type: 3}

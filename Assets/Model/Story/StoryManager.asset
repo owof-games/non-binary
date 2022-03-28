@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06535d43386f6354bbd1d2a7d191fa1c, type: 3}
+  m_Name: StoryManager
+  m_EditorClassIdentifier: 
+  InkJSONAsset: {fileID: 4900000, guid: c30a291c22911684d866e6508cdde9eb, type: 3}
+  StoryStepVariable: {fileID: 11400000, guid: 075d5b3f2d0e854429e2eee2f00324c1, type: 2}
+  NextLine: {fileID: 11400000, guid: 25093a9ea2e7f534da2357bccb19928b, type: 2}
+  StartKnotEvent: {fileID: 11400000, guid: 5faa5f029fb535242930bf0ce6b08762, type: 2}
+  MakeChoiceEvent: {fileID: 11400000, guid: 14a507f39e52e034185dbb9822c9a673, type: 2}
+  BaseLogger:
+    Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
+    Path: managers.story

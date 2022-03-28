@@ -5,7 +5,7 @@ using RG.LogLibrary;
 
 public class CharacterMovementManager : BehaviourManager
 {
-    public StringVariable ActionMapVariable;
+    // public StringVariable ActionMapVariable;
 
     public Vector2Variable VelocityVariable;
 
@@ -13,10 +13,10 @@ public class CharacterMovementManager : BehaviourManager
 
     private float _CurrentWidth = 0;
 
-    protected override void ManagerAwake()
-    {
-        ActionMapVariable.Value = "MovementActionMap";
-    }
+    // protected override void ManagerAwake()
+    // {
+    //     ActionMapVariable.Value = "MovementActionMap";
+    // }
 
     public void OnDirectionsChanged(InputAction.CallbackContext callbackContext)
     {

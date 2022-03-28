@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2734876829329093402}
   - component: {fileID: 5656003268599100682}
   m_Layer: 5
-  m_Name: SiteTextPrefab
+  m_Name: SideTextPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
