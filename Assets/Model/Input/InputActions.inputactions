@@ -86,12 +86,12 @@
                 },
                 {
                     "name": "NextLine",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "265394b1-7f52-4ac8-87b4-e58b8cfa0b34",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [

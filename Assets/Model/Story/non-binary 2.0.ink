@@ -11,7 +11,7 @@ VAR gender_femmina = 0
         - gender_femmina:
         -> intro_afab
         - else: 
-        -> intro_amab
+        -> intro_afab
         }
     
     === bullet_hell_buono ===

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
@@ -35,24 +36,68 @@ public class InputManager : BaseManager
         var movementActionMap = GetInputActionMap("MovementActionMap");
         GetInputAction(movementActionMap, "Directions").performed += Directions.Raise;
         GetInputAction(movementActionMap, "Directions").canceled += DirectionsCanceled.Raise;
+        GetInputAction(movementActionMap, "NextLine").performed += OnNextLinePerformed;
         GetInputAction(movementActionMap, "NextLine").canceled += OnNextLineRaised; //NextLine.Raise; // canceled = onkeyup
 
+        // TODO: find a better way to initialize variables please
+        var sceneName = SceneManager.GetActiveScene().name;
+        ActionMapVariable.Value = sceneName == "StartMenuScene" ? "MenuActionMap" :
+            sceneName == "MainScene" ? "MovementActionMap" :
+            ActionMapVariable.Value;
         RegisterTo(ActionMapVariableChanged, EnableCurrentActionMap);
         EnableCurrentActionMap(ActionMapVariable.Value);
+    }
+
+    private bool _IgnoreNextNextLinePerformed = false; // hack
+    private bool _NextLinePerformedReceived = false;
+
+    private void OnNextLinePerformed(InputAction.CallbackContext _)
+    {
+        if (ActionMapVariable.Value == "MovementActionMap" && !_IgnoreNextNextLinePerformed)
+        {
+            BaseLogger.Info(this, "received NextLine (performed); remember it.");
+            _NextLinePerformedReceived = true;
+        }
+        else if (_IgnoreNextNextLinePerformed)
+        {
+            BaseLogger.Info(this, "received NextLine (performed) but we must ignore the next \"nextline\" performed");
+            _IgnoreNextNextLinePerformed = false;
+        }
+        else
+        {
+            BaseLogger.Info(this, "received NextLine (performed) but we are not in the right action map!!!");
+        }
     }
 
     private void OnNextLineRaised(InputAction.CallbackContext item)
     {
         // there's some weird bug where disabling MenuActionMap raises the MovementActionMap's NextLine canceled event (?!)
-        if (ActionMapVariable.Value == "MovementActionMap")
+        if (ActionMapVariable.Value == "MovementActionMap" && _NextLinePerformedReceived)
         {
+            BaseLogger.Info(this, "received NextLine event, we are in the right action map and we previously received a perform.");
+            _NextLinePerformedReceived = false;
             NextLine.Raise(item);
+        }
+        else if (!_NextLinePerformedReceived)
+        {
+            BaseLogger.Info(this, "received NextLine event but we did not received a performed!!!");
+        }
+        else
+        {
+            BaseLogger.Info(this, "received NextLine event but we are not in the right action map!!!");
         }
     }
 
     private void EnableCurrentActionMap(string actionMapName)
     {
-        BaseLogger.Info(this, $"setting action map to {actionMapName}");
+        BaseLogger.Info(this, $"setting action map from {_CurrentlyEnabledInputActionMap?.name} to {actionMapName}");
+        if (_CurrentlyEnabledInputActionMap?.name == "ChoiceActionMap" &&
+            actionMapName == "MovementActionMap")
+        {
+            // hack
+            BaseLogger.Info(this, "will ignore next NextLine.performed");
+            _IgnoreNextNextLinePerformed = true;
+        }
         _CurrentlyEnabledInputActionMap?.Disable();
         if (actionMapName != "")
         {
