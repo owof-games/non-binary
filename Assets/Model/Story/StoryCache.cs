@@ -21,6 +21,7 @@ public class StoryCache
         {
             Debug.Log("StoryManager: no cached story, creating one");
             _LastUsedInkJSONAsset = inkJSONAsset;
+            Debug.Log("StortManager: text is:\n" + inkJSONAsset.text);
             _CachedStory = new Story(inkJSONAsset.text);
             NewStoryObjectCreated?.Invoke();
         }

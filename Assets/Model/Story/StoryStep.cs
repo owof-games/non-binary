@@ -55,6 +55,24 @@ public struct StoryStep : IEquatable<StoryStep>
     {
         public int Index;
         public string Text;
+        // override object.Equals
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            var c = (Choice)obj;
+            return Index == c.Index && Text == c.Text;
+        }
+
+        // override object.GetHashCode
+        public override int GetHashCode()
+        {
+            // TODO: write your implementation of GetHashCode() here
+            return Index.GetHashCode() ^ Text.GetHashCode();
+        }
     }
 
     [SerializeField]
@@ -72,6 +90,22 @@ public struct StoryStep : IEquatable<StoryStep>
         }
     }
 
+    private bool EqualChoices(Choice[] otherChoices)
+    {
+        if (_Choices.Length != otherChoices.Length)
+        {
+            return false;
+        }
+        for (var i = 0; i < _Choices.Length; i++)
+        {
+            if (!_Choices[i].Equals(otherChoices[i]))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     [SerializeField]
     private bool _ShowStreet;
 
@@ -84,16 +118,19 @@ public struct StoryStep : IEquatable<StoryStep>
 
     [SerializeField]
     private bool _IsTitle;
+
     public bool IsTitle { get => _IsTitle; }
 
     [SerializeField]
     private int _Completion;
+
     public int Completion { get => _Completion; }
 
     private static readonly Regex _CompletionRegex = new Regex(@"completion_([0-9]+)");
 
     [SerializeField]
     private bool _AlmostThere;
+
     public bool AlmostThere { get => _AlmostThere; }
 
     private static readonly Regex _BulletHellRegex = new Regex(@"bullet_hell_(.*)");
@@ -181,13 +218,27 @@ public struct StoryStep : IEquatable<StoryStep>
         }
     }
 
+    // override object.Equals
+    public override bool Equals(object obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
+        {
+            return false;
+        }
+
+        return this.Equals((StoryStep)obj);
+    }
+
     public bool Equals(StoryStep other)
     {
-        return _Kind == other._Kind && (
+        var rv = _Kind == other._Kind && (
             _Kind == StoryStepKind.End ||
             (_Kind == StoryStepKind.Marker && _Marker == other._Marker) ||
-            (_Kind == StoryStepKind.Text && _Text == other._Text)
+            (_Kind == StoryStepKind.Text && _Text == other._Text) ||
+            (_Kind == StoryStepKind.Choice && EqualChoices(other._Choices))
         );
+        Debug.Log(string.Format("StoryStep: is {0} equal to {1} ? {2}", this, other, rv));
+        return rv;
     }
 
     public override string ToString()

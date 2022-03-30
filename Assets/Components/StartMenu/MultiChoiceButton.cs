@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityAtoms.BaseAtoms;
+using RG.LogLibrary;
 
 public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
 {
@@ -74,11 +75,15 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
     // to be used as event listener
     public void NextChoice()
     {
+        this.Info("received NextChoice");
         if (EventSystem.current.currentSelectedGameObject != this.gameObject)
         {
+            this.Info("not the current selected object");
             return;
         }
+        this.Info("_CurrentChoice was: {0}", _CurrentChoice);
         _CurrentChoice = Math.Min(Choices.Length - 1, _CurrentChoice + 1);
+        this.Info("_CurrentChoice is now: {0}", _CurrentChoice);
         _ButtonAudio.PlayBeep();
         UpdateUI();
     }
@@ -86,11 +91,15 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
     // to be used as event listener
     public void PreviousChoice()
     {
+        this.Info("received PreviousChoice");
         if (EventSystem.current.currentSelectedGameObject != this.gameObject)
         {
+            this.Info("not the current selected object");
             return;
         }
+        this.Info("_CurrentChoice was: {0}", _CurrentChoice);
         _CurrentChoice = Math.Max(0, _CurrentChoice - 1);
+        this.Info("_CurrentChoice is now: {0}", _CurrentChoice);
         _ButtonAudio.PlayBeep();
         UpdateUI();
     }

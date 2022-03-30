@@ -39,11 +39,6 @@ public class InputManager : BaseManager
         GetInputAction(movementActionMap, "NextLine").performed += OnNextLinePerformed;
         GetInputAction(movementActionMap, "NextLine").canceled += OnNextLineRaised; //NextLine.Raise; // canceled = onkeyup
 
-        // TODO: find a better way to initialize variables please
-        var sceneName = SceneManager.GetActiveScene().name;
-        ActionMapVariable.Value = sceneName == "StartMenuScene" ? "MenuActionMap" :
-            sceneName == "MainScene" ? "MovementActionMap" :
-            ActionMapVariable.Value;
         RegisterTo(ActionMapVariableChanged, EnableCurrentActionMap);
         EnableCurrentActionMap(ActionMapVariable.Value);
     }

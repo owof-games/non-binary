@@ -41,6 +41,20 @@ public class UnityMainThreadDispatcher : MonoBehaviour
         }
     }
 
+    private static List<IEnumerator> _EnqueuedEnumerators = new List<IEnumerator>();
+
+    public static void EventuallyEnqueue(IEnumerator action)
+    {
+        if (Exists())
+        {
+            Instance().Enqueue(action);
+        }
+        else
+        {
+            _EnqueuedEnumerators.Add(action);
+        }
+    }
+
     /// <summary>
     /// Locks the queue and adds the IEnumerator to the queue
     /// </summary>
@@ -122,6 +136,11 @@ public class UnityMainThreadDispatcher : MonoBehaviour
         {
             _Instance = this;
             DontDestroyOnLoad(this.gameObject);
+            foreach (var action in _EnqueuedEnumerators)
+            {
+                Enqueue(action);
+            }
+            _EnqueuedEnumerators = null;
         }
     }
 

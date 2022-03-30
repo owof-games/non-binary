@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 7848153325061003942}
   - component: {fileID: 2472482040313154497}
   - component: {fileID: 429281569643371639}
+  - component: {fileID: 1198806016959481506}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -711,6 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextMeshPro: {fileID: 7848153325061003942}
+  _StoryStepVariable: {fileID: 11400000, guid: 075d5b3f2d0e854429e2eee2f00324c1, type: 2}
 --- !u!114 &429281569643371639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +751,20 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!114 &1198806016959481506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848153325061003936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4085e6f7d593384d9774cb34bc4dc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
+  Path: maintext.inner
 --- !u!1 &7848153325898615000
 GameObject:
   m_ObjectHideFlags: 0

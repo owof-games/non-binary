@@ -48,13 +48,13 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: maintext
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.story
     IsVerboseEnabled: 1
-    IsInfoEnabled: 0
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: choicetext
@@ -68,6 +68,11 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.input
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: buttons.multichoice
     IsVerboseEnabled: 1
     IsInfoEnabled: 1
     IsWarningEnabled: 0

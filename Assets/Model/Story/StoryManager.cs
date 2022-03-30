@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityAtoms;
@@ -37,6 +38,14 @@ public class StoryManager : BaseManager
         RegisterTo(MakeChoiceEvent, OnMakeChoice);
 
         // start reading the first line - maybe this should be run by some kind of global initializator through events?
+        UnityMainThreadDispatcher.EventuallyEnqueue(Initialize());
+    }
+
+    private IEnumerator Initialize()
+    {
+        BaseLogger.Info(this, "initializing in a little while...");
+        yield return new WaitForSeconds(0.1f);
+        BaseLogger.Info(this, "ok, initializing.");
         OnNextLine();
     }
 
@@ -57,16 +66,18 @@ public class StoryManager : BaseManager
         BaseLogger.Info(this, "OnNextLine");
         if (_Story.canContinue)
         {
+            BaseLogger.Info(this, "OnNextLine: canContinue");
             _Story.Continue();
             ParseStoryStep();
         }
         else if (_Story.currentChoices.Count > 0)
         {
+            BaseLogger.Info(this, "OnNextLine: but we are on a choice");
             throw new Exception("Cannot read next line on a choice!");
         }
         else
         {
-            // end!
+            BaseLogger.Info(this, "OnNextLine: no more content");
             StoryStepVariable.Value = new StoryStep();
         }
     }
@@ -94,9 +105,11 @@ public class StoryManager : BaseManager
                 _Story.currentText.Trim(),
                 _Story.currentTags
             );
+            BaseLogger.Verbose(this, "ParseStoryStep: text node, setting to {0}", StoryStepVariable.Value);
             if (StoryStepVariable.Value.Kind == StoryStepKind.Marker)
             {
                 // immediately go on after sending the notifications
+                BaseLogger.Verbose(this, "ParseStoryStep: advancing because it is a marker");
                 OnNextLine();
             }
         }
@@ -112,6 +125,7 @@ public class StoryManager : BaseManager
                  }).ToArray(),
                 _Story.currentTags
             );
+            BaseLogger.Verbose(this, "ParseStoryStep: choice node, setting to {0}", StoryStepVariable.Value);
         }
     }
 }

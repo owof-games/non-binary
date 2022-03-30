@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 6358490653451305844}
   - component: {fileID: 6358490653451305845}
   - component: {fileID: 6358490653451305842}
+  - component: {fileID: 2647266317210975374}
   - component: {fileID: 1126053393634234715}
   - component: {fileID: 9014227149741439154}
   - component: {fileID: 3805055516809059023}
   - component: {fileID: 2650154211537967986}
-  - component: {fileID: 2647266317210975374}
   m_Layer: 5
   m_Name: PrefabButton
   m_TagString: Untagged
@@ -140,6 +140,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2647266317210975374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6358490653451305840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4085e6f7d593384d9774cb34bc4dc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
+  Path: buttons.standard
 --- !u!114 &1126053393634234715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,20 +305,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2647266317210975374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6358490653451305840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4085e6f7d593384d9774cb34bc4dc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
-  Path: buttons.standard
 --- !u!1 &6358490653816185323
 GameObject:
   m_ObjectHideFlags: 0

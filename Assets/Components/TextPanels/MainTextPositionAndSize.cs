@@ -50,11 +50,11 @@ public class MainTextPositionAndSize : MonoBehaviour
             _MainTextSize, _SpacingBottom, spacingSide);
         _RectTransform.anchorMin = new Vector2(
             spacingSide,
-            _SpacingBottom
+            _SpacingBottom / (_SpacingBottom + _MainTextSize.y)
         );
         _RectTransform.anchorMax = new Vector2(
             1 - spacingSide,
-            _SpacingBottom + _MainTextSize.y
+            1
         );
         _BorderImage.enabled = _MainTextBorder;
     }
