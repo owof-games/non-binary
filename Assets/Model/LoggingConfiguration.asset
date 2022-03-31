@@ -73,6 +73,11 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: buttons.multichoice
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet
     IsVerboseEnabled: 1
     IsInfoEnabled: 1
     IsWarningEnabled: 0
