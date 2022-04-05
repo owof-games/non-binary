@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
+  m_Name: BulletSourcePetal
+  m_EditorClassIdentifier: 
+  _Positions:
+  - {x: 7.9, y: 0.1}
+  - {x: 7.9, y: 2.5}
+  - {x: 7.8, y: 4.5}
+  - {x: 7.5, y: 6.5}
+  - {x: 7, y: 7.5}
+  - {x: 6, y: 8.4}
+  - {x: 5, y: 8.5}
+  - {x: 4, y: 7.5}
+  - {x: 3.7, y: 6}
+  - {x: 4.4, y: 4.5}
+  - {x: 5.5, y: 3}
+  - {x: 6.5, y: 1.5}
+  _AutomaticTranslation: {x: 0.6, y: 0}
+  _AutomaticScaling: {x: 0.00025, y: 0.000444}
+  _VelocitySteps:
+  - Duration: 0
+    Type: 1
+    Magnitude: 0.5
+    UniformDirection: {x: 0, y: 0}
+    RadialCenter: {x: 8, y: 0}
+    PlanarX: 0
+  _RotationCenter: {x: 0, y: 0}
+  _AbsoluteRotationSpeed: 0
+  _MaxRotationAngle: 0
+  _IsPink: 0

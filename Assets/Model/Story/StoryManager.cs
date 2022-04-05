@@ -106,12 +106,12 @@ public class StoryManager : BaseManager
                 _Story.currentTags
             );
             BaseLogger.Verbose(this, "ParseStoryStep: text node, setting to {0}", StoryStepVariable.Value);
-            if (StoryStepVariable.Value.Kind == StoryStepKind.Marker)
-            {
-                // immediately go on after sending the notifications
-                BaseLogger.Verbose(this, "ParseStoryStep: advancing because it is a marker");
-                OnNextLine();
-            }
+            // if (StoryStepVariable.Value.Kind == StoryStepKind.Marker)
+            // {
+            //     // immediately go on after sending the notifications
+            //     BaseLogger.Verbose(this, "ParseStoryStep: advancing because it is a marker");
+            //     OnNextLine();
+            // }
         }
         else
         {

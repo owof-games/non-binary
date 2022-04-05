@@ -5,6 +5,8 @@ public class Velocity : MonoBehaviour
 {
     private Rigidbody _Rigidbody;
 
+    private DestroyOnCollision _DestroyOnCollision;
+
     [SerializeField]
     private Vector2 _InitialVelocity;
 
@@ -21,17 +23,18 @@ public class Velocity : MonoBehaviour
     private VelocityStep[] _VelocitySteps;
 
     [SerializeField]
-    private float _RotationRadius = 0;
+    private Vector2 _RotationCenter;
 
     [SerializeField]
     private float _AngularSpeed = 0;
 
     [SerializeField]
-    private float _InitialAngle = 0;
+    private Vector2 _InitialPosition;
 
     private void Awake()
     {
         _Rigidbody = GetComponent<Rigidbody>();
+        _DestroyOnCollision = GetComponent<DestroyOnCollision>();
     }
 
     private float _StartingTime = -1;
@@ -47,6 +50,10 @@ public class Velocity : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_DestroyOnCollision.Dying)
+        {
+            return;
+        }
         var relativeTime = Time.time - _StartingTime;
         if (_VelocitySteps != null &&
             _CurrentStep < _VelocitySteps.Length - 1 &&
@@ -62,10 +69,36 @@ public class Velocity : MonoBehaviour
     private void UpdateVelocity()
     {
         var v = _CurrentVelocity;
-        v.x += -_RotationRadius * _AngularSpeed * Mathf.Sin(_AngularSpeed * Time.time + _InitialAngle);
-        v.y += _RotationRadius * _AngularSpeed * Mathf.Cos(_AngularSpeed * Time.time + _InitialAngle);
+        var startVector = _InitialPosition - _RotationCenter;
+        var rotationRadius = startVector.magnitude;
+        var initialAngle = Mathf.Atan2(startVector.y, startVector.x);
+        v.x += -rotationRadius * _AngularSpeed * Mathf.Sin(_AngularSpeed * Time.time + initialAngle);
+        v.y += rotationRadius * _AngularSpeed * Mathf.Cos(_AngularSpeed * Time.time + initialAngle);
         _Rigidbody.velocity = new Vector3(
             v.x, v.y, 0
-        ); ;
+        );
+    }
+
+    [System.Serializable]
+    public class Description
+    {
+        public Vector2 InitialVelocity;
+
+        public VelocityStep[] VelocitySteps;
+
+        public Vector2 RotationCenter;
+
+        public float AngularSpeed;
+
+        public Vector2 InitialPosition;
+    }
+
+    public void Setup(Description description)
+    {
+        _InitialVelocity = description.InitialVelocity;
+        _VelocitySteps = description.VelocitySteps;
+        _RotationCenter = description.RotationCenter;
+        _AngularSpeed = description.AngularSpeed;
+        _InitialPosition = description.InitialPosition;
     }
 }

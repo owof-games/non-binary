@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2191811226805912320}
   - component: {fileID: 2191811226805912323}
+  - component: {fileID: 523952748114448823}
   - component: {fileID: 2191811226805912322}
   - component: {fileID: 2191811226805912325}
+  - component: {fileID: 8079704168081035568}
   m_Layer: 0
   m_Name: BackgroundMusicSource
   m_TagString: Untagged
@@ -130,6 +132,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &523952748114448823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191811226805912324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4085e6f7d593384d9774cb34bc4dc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
+  Path: audio
 --- !u!114 &2191811226805912322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,9 +161,23 @@ MonoBehaviour:
   Entries:
   - Name: Intro
     AudioClip: {fileID: 8300000, guid: 43378251456cff242851ddb27d1ef5ad, type: 3}
+  - Name: bullet_hell_amab_uno
+    AudioClip: {fileID: 8300000, guid: 63b0553fa24961641ab9b6e381c1e5a6, type: 3}
+  SFXEntries:
+  - Name: hit
+    AudioClips:
+    - {fileID: 8300000, guid: 112e4e776ce3416468440fb7434f1487, type: 3}
+    - {fileID: 8300000, guid: d4b79657c4ab3ea47bfdd85d06bf825f, type: 3}
+  TopVolume:
+    _usage: 0
+    _value: 1
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
   BackgroundMusicName: {fileID: 11400000, guid: 7552d61c773f6094490b4cf03e56bbb4,
     type: 2}
   FadeOutDuration: 1
+  NumSFXAudioSources: 3
 --- !u!114 &2191811226805912325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +213,44 @@ MonoBehaviour:
   _eventReference:
     _usage: 0
     _event: {fileID: 11400000, guid: 6c92dff205fd61041ac7dca6810d448b, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &8079704168081035568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191811226805912324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775f7409782fa4b619d9153405dd1c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2191811226805912322}
+        m_TargetAssemblyTypeName: MusicManager, Assembly-CSharp
+        m_MethodName: OnSFX
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 14dbeb418fda0ef489c576f43e19433f, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

@@ -15,20 +15,18 @@ MonoBehaviour:
   _developerDescription: Description of the current story step.
   _id: 
   _value:
-    _Kind: 3
-    _Text: "Ci sono cos\xEC tante cose da capire, ma \xE8 una sensazione bellissima
-      poter essere tutto ci\xF2 che vuoi."
+    _Kind: 0
+    _Text: 
     _Marker: 
-    _Choices:
-    - Index: 0
-      Text: Indichi fuori
+    _Choices: []
     _ShowStreet: 0
     _ShowPeople: 0
     _IsTitle: 0
-    _Completion: -1
+    _Completion: 0
     _AlmostThere: 0
   _changed: {fileID: 11400000, guid: bc8566f5352d8ea468bbdd141a470d70, type: 2}
-  _changedWithHistory: {fileID: 0}
+  _changedWithHistory: {fileID: 11400000, guid: 6c747b786bb05dc4aa59d02804987b18,
+    type: 2}
   _triggerChangedOnOnEnable: 1
   _triggerChangedWithHistoryOnOnEnable: 0
   _oldValue:

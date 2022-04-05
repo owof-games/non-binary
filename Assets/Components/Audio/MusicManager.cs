@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
-
+using RG.LogLibrary;
 
 public class MusicManager : BehaviourManager
 {
@@ -29,9 +29,20 @@ public class MusicManager : BehaviourManager
 
     public AudioEntry[] Entries;
 
+    [System.Serializable]
+    public struct AudioGroupEntry
+    {
+        public string Name;
+        public AudioClip[] AudioClips;
+    }
+
+    public AudioGroupEntry[] SFXEntries;
+
     #endregion
 
     #region fadeout / fadein management
+
+    public FloatReference TopVolume;
 
     public StringVariable BackgroundMusicName;
 
@@ -43,10 +54,46 @@ public class MusicManager : BehaviourManager
 
     private AudioClip _NextAudioClip;
 
+    private AudioSource[] _SFXAudioSources;
+
+    public int NumSFXAudioSources = 3;
+
     private void InitializeFadeout()
     {
         _AudioSource = GetComponent<AudioSource>();
+        _SFXAudioSources = new AudioSource[NumSFXAudioSources];
+        for (var i = 0; i < NumSFXAudioSources; i++)
+        {
+            _SFXAudioSources[i] = gameObject.AddComponent<AudioSource>();
+            _SFXAudioSources[i].playOnAwake = false;
+        }
         UpdateBackgroundMusic(BackgroundMusicName.Value);
+    }
+
+    public void OnSFX(string sfxName)
+    {
+        // look for the correct clip
+        foreach (var audioEntry in SFXEntries)
+        {
+            if (audioEntry.Name == sfxName)
+            {
+                var clip = audioEntry.AudioClips[Random.Range(0, audioEntry.AudioClips.Length)];
+                // play on a free sfx audio source
+                for (var i = 0; i < NumSFXAudioSources; i++)
+                {
+                    var audioSource = _SFXAudioSources[i];
+                    if (!audioSource.isPlaying)
+                    {
+                        audioSource.clip = clip;
+                        audioSource.Play();
+                        return;
+                    }
+                }
+                this.Warning("Skipped sfx '{0}' because there are no audio sources available", sfxName);
+                return;
+            }
+        }
+        this.Error("Could not find sfx named '{0}'", sfxName);
     }
 
     public void UpdateBackgroundMusic(string name)
@@ -63,6 +110,7 @@ public class MusicManager : BehaviourManager
         {
             // no audio: immediately switch
             _AudioSource.clip = _NextAudioClip;
+            _AudioSource.volume = TopVolume;
             _AudioSource.Play();
         }
         else
@@ -89,7 +137,7 @@ public class MusicManager : BehaviourManager
                 _AudioSource.clip = _NextAudioClip;
                 if (_NextAudioClip)
                 {
-                    _AudioSource.volume = 1f;
+                    _AudioSource.volume = TopVolume;
                     _AudioSource.Play();
                 }
             }

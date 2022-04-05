@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8991834512197149871}
   - component: {fileID: 1152957545748866485}
   - component: {fileID: 24314210891708826}
+  - component: {fileID: 6059175845180190667}
   m_Layer: 6
   m_Name: PinkBullet
   m_TagString: Untagged
@@ -145,3 +146,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _InitialVelocity: {x: 0, y: 0}
   _VelocitySteps: []
+  _RotationCenter: {x: 0, y: 0}
+  _AngularSpeed: 0
+  _InitialPosition: {x: 0, y: 0}
+--- !u!114 &6059175845180190667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836422024658083569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42091789b5f4ef0458e6fee591ab4a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dying: 0
+  DeathDuration:
+    _usage: 1
+    _value: 0.5
+    _constant: {fileID: 11400000, guid: e7eb306117bd2d34dacb00fc6eeb4556, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  Hit: {fileID: 11400000, guid: f2c3587e201ac694e8795d1d65c05f37, type: 2}
