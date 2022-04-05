@@ -87,3 +87,8 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
+  - Path: people
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
