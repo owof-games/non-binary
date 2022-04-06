@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityAtoms;
+using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
 
 public class StoryTextHandler : MonoBehaviour
@@ -10,6 +11,12 @@ public class StoryTextHandler : MonoBehaviour
     [SerializeField]
     private StoryStepVariable _StoryStepVariable;
 
+    [SerializeField]
+    private ColorReference _FColor;
+
+    [SerializeField]
+    private ColorReference _MColor;
+
     public void OnStoryStepChanged(StoryStep storyStep)
     {
         this.Info("Received a storystep: {0}", storyStep);
@@ -17,7 +24,7 @@ public class StoryTextHandler : MonoBehaviour
         if (storyStep.Kind == StoryStepKind.Text)
         {
             TextMeshPro.enabled = true;
-            TextMeshPro.text = storyStep.Text;
+            TextMeshPro.text = TextHelpers.TransformGenderTags(storyStep.Text, _MColor.Value, _FColor.Value);
         }
         else
         {

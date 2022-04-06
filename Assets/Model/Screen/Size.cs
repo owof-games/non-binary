@@ -62,4 +62,9 @@ public struct Size : IEquatable<Size>
 
         }
     }
+
+    public override string ToString()
+    {
+        return $"Size[Width = {Width}, Height = {Height}, ProportionalWidth = {ProportionalWidth}, ProportionalHeight = {ProportionalHeight}]";
+    }
 }

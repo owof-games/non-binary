@@ -521,6 +521,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6521dac482232e0468b19ece67272a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _FColor:
+    _usage: 1
+    _value: {r: 0, g: 0, b: 0, a: 0}
+    _constant: {fileID: 11400000, guid: 5036f0d0960492d4d9c7baacb8ace41f, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  _MColor:
+    _usage: 1
+    _value: {r: 0, g: 0, b: 0, a: 0}
+    _constant: {fileID: 11400000, guid: 57b5957dfb4121440887eb812e4dcb1b, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &9113326955481889904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,6 +739,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextMeshPro: {fileID: 7848153325061003942}
   _StoryStepVariable: {fileID: 11400000, guid: 075d5b3f2d0e854429e2eee2f00324c1, type: 2}
+  _FColor:
+    _usage: 1
+    _value: {r: 0, g: 0, b: 0, a: 0}
+    _constant: {fileID: 11400000, guid: 5036f0d0960492d4d9c7baacb8ace41f, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  _MColor:
+    _usage: 1
+    _value: {r: 0, g: 0, b: 0, a: 0}
+    _constant: {fileID: 11400000, guid: 57b5957dfb4121440887eb812e4dcb1b, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &429281569643371639
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -35,6 +35,36 @@ public struct StoryStep : IEquatable<StoryStep>
         }
     }
 
+    private static readonly Regex _MTag = new Regex(@"\<m\>(?<text>[^<]*)\</m\>");
+    private static readonly Regex _FTag = new Regex(@"\<f\>(?<text>[^<]*)\</f\>");
+
+    public int NumMTags { get { return CountTags(_MTag); } }
+
+    public int NumFTags { get { return CountTags(_FTag); } }
+
+    public List<string> MWords { get { return GetTaggedWords(_MTag); } }
+
+    public List<string> FWords { get { return GetTaggedWords(_FTag); } }
+
+    private List<string> GetTaggedWords(Regex tag)
+    {
+        var words = new List<string>();
+        var matches = tag.Matches(Text);
+        for (var m = 0; m < matches.Count; m++)
+        {
+            var match = matches[m];
+            var word = match.Groups["text"].Value;
+            Debug.Log("Adding word " + word);
+            words.Add(word);
+        }
+        return words;
+    }
+
+    private int CountTags(Regex tag)
+    {
+        return tag.Matches(Text).Count;
+    }
+
     [SerializeField]
     private string _Marker;
 

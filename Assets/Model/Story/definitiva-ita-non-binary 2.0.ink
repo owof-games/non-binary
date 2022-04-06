@@ -5,6 +5,7 @@ VAR gender = 0
 //FUNZIONI//
     -> random
     === random ===
+    Parola <f>genderata</f> e <m>genderata</m>.
     ~ gender = RANDOM (0,1)
     
        {
@@ -690,7 +691,7 @@ VAR gender = 0
         Ti porta al seno.
         “Sai una cosa? Sarai la più brava della scuola, così mi renderai orgogliosa. E ti prenderò un sacco di <f>vestiti a fiori</f>, perché da piccola li volevo anche io, a tutte piacciono i <f>vestiti a fiori</f>.”
         Ti cambia posizione.
-        “E poi diventerai una <f>dottoressa</f>, sì, hai le mani da <f>dottoressa</f>. Magari </f>ostetrica<f>, così farai felice tante altre <f>mamme</f>. Anche se io sarò la tua, sempre.”
+        “E poi diventerai una <f>dottoressa</f>, sì, hai le mani da <f>dottoressa</f>. Magari <f>ostetrica</f>, così farai felice tante altre <f>mamme</f>. Anche se io sarò la tua, sempre.”
         Sospira.
             + Senti il sonno che ti afferra[].
             -

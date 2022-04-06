@@ -92,3 +92,13 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
+  - Path: managers.fulllayout
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet.words
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
