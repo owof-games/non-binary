@@ -17,15 +17,19 @@ public class PeopleManager : BaseManager
         RegisterTo(StoryStepChanged, OnStoryStepChanged);
     }
 
-    private void OnStoryStepChanged(StoryStep obj)
+    private void OnStoryStepChanged(StoryStep storyStep)
     {
-        if (obj.ShowPeople)
+        if (storyStep.ShowPeople)
         {
             PeopleVisible.Value = true;
         }
-        if (obj.Completion != -1)
+        if (storyStep.Completion != -1)
         {
-            PeoplePercentage.Value = obj.Completion / 100f;
+            PeoplePercentage.Value = storyStep.Completion / 100f;
+        }
+        if (storyStep.AlmostThere)
+        {
+            PeoplePercentage.Value = 1;
         }
     }
 }
