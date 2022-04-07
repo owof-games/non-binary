@@ -94,7 +94,6 @@ public class BulletSourceCompound : BulletSource
         {
             // compute total duration
             var lifetime = Enumerable.Sum(from velocityStep in _VelocitySteps select velocityStep.Duration);
-            Debug.Log("Using lifetime " + lifetime.ToString() + " and first vs is duration is" + _VelocitySteps[0].Duration.ToString());
             // create a description for each particle position
             var descriptions = new Description[_Positions.Length];
             for (var positionIndex = 0; positionIndex < _Positions.Length; positionIndex++)

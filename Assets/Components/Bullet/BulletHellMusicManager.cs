@@ -1,29 +1,34 @@
 using UnityEngine;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
-using System;
 
 [CreateAssetMenu(fileName = "BulletHellMusicManager", menuName = "non-binary/Create Bullet Hell Music Manager", order = 0)]
 public class BulletHellMusicManager : BaseManager
 {
     public StringVariable BackgroundMusicName;
 
-    public StoryStepEvent StoryStepChanged;
+    public StoryStepPairEvent StoryStepPairChanged;
 
     protected override void OnEnableManager()
     {
-        RegisterTo(StoryStepChanged, OnStoryStepChanged);
+        RegisterTo(StoryStepPairChanged, OnStoryStepPairChanged);
     }
 
-    private void OnStoryStepChanged(StoryStep obj)
+    private void OnStoryStepPairChanged(StoryStepPair storyStepPair)
     {
-        if (obj.AlmostThere)
+        var from = storyStepPair.Item2;
+        var to = storyStepPair.Item1;
+        if (to.AlmostThere)
         {
             BackgroundMusicName.Value = "";
         }
-        else if (obj.IsBulletHell)
+        else if (to.IsBulletHell)
         {
-            BackgroundMusicName.Value = "bullet_hell_" + obj.BulletHellName;
+            BackgroundMusicName.Value = "bullet_hell_" + storyStepPair.Item1.BulletHellName;
+        }
+        else if (from.IsBulletHell && !to.IsBulletHell)
+        {
+            BackgroundMusicName.Value = "street";
         }
     }
 }

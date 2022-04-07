@@ -68,6 +68,7 @@ MonoBehaviour:
     type: 3}
   _BlueBullet: {fileID: 4671307461993127751, guid: 9dfb80f2fa0c9c042bc2b3cb672b5717,
     type: 3}
+  _NextLineEvent: {fileID: 11400000, guid: 25093a9ea2e7f534da2357bccb19928b, type: 2}
 --- !u!114 &4233694072440126925
 MonoBehaviour:
   m_ObjectHideFlags: 0

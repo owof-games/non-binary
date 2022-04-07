@@ -159,8 +159,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Entries:
-  - Name: Intro
+  - Name: intro
     AudioClip: {fileID: 8300000, guid: 43378251456cff242851ddb27d1ef5ad, type: 3}
+  - Name: street
+    AudioClip: {fileID: 8300000, guid: 3a3e28748a3370d419f1258192322d01, type: 3}
   - Name: bullet_hell_amab_uno
     AudioClip: {fileID: 8300000, guid: 63b0553fa24961641ab9b6e381c1e5a6, type: 3}
   SFXEntries:

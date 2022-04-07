@@ -44,8 +44,6 @@ public class MusicManager : BehaviourManager
 
     public FloatReference TopVolume;
 
-    public StringVariable BackgroundMusicName;
-
     private AudioSource _AudioSource;
 
     public float FadeOutDuration = 1f;
@@ -58,6 +56,8 @@ public class MusicManager : BehaviourManager
 
     public int NumSFXAudioSources = 3;
 
+    private string _BackgroundMusicName;
+
     private void InitializeFadeout()
     {
         _AudioSource = GetComponent<AudioSource>();
@@ -67,7 +67,7 @@ public class MusicManager : BehaviourManager
             _SFXAudioSources[i] = gameObject.AddComponent<AudioSource>();
             _SFXAudioSources[i].playOnAwake = false;
         }
-        UpdateBackgroundMusic(BackgroundMusicName.Value);
+        UpdateBackgroundMusic(_BackgroundMusicName);
     }
 
     public void OnSFX(string sfxName)
@@ -98,6 +98,11 @@ public class MusicManager : BehaviourManager
 
     public void UpdateBackgroundMusic(string name)
     {
+        _BackgroundMusicName = name;
+        if (_AudioSource == null)
+        {
+            return;
+        }
         _NextAudioClip = null;
         foreach (var audioEntry in Entries)
         {

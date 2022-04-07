@@ -54,7 +54,7 @@ public struct StoryStep : IEquatable<StoryStep>
         {
             var match = matches[m];
             var word = match.Groups["text"].Value;
-            Debug.Log("Adding word " + word);
+            // Debug.Log("Adding word " + word);
             words.Add(word);
         }
         return words;
@@ -267,7 +267,7 @@ public struct StoryStep : IEquatable<StoryStep>
             (_Kind == StoryStepKind.Text && _Text == other._Text) ||
             (_Kind == StoryStepKind.Choice && EqualChoices(other._Choices))
         );
-        Debug.Log(string.Format("StoryStep: is {0} equal to {1} ? {2}", this, other, rv));
+        // Debug.Log(string.Format("StoryStep: is {0} equal to {1} ? {2}", this, other, rv));
         return rv;
     }
 

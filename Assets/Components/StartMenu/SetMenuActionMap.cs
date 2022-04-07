@@ -10,7 +10,7 @@ public class SetMenuActionMap : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log($"Setting action map to {_InitialValue}");
+        // Debug.Log($"Setting action map to {_InitialValue}");
         ActionMapVariable.Value = _InitialValue;
     }
 }

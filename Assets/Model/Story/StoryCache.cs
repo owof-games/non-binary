@@ -14,14 +14,11 @@ public class StoryCache
     {
         if (_CachedStory != null && _LastUsedInkJSONAsset != inkJSONAsset)
         {
-            Debug.Log("StoryManager: ink asset change, resetting story");
             _CachedStory = null;
         }
         if (_CachedStory == null && inkJSONAsset != null)
         {
-            Debug.Log("StoryManager: no cached story, creating one");
             _LastUsedInkJSONAsset = inkJSONAsset;
-            Debug.Log("StortManager: text is:\n" + inkJSONAsset.text);
             _CachedStory = new Story(inkJSONAsset.text);
             NewStoryObjectCreated?.Invoke();
         }

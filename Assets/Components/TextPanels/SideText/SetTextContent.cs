@@ -22,7 +22,7 @@ public class SetTextContent : MonoBehaviour
         if (newStoryStep.Kind == StoryStepKind.Text)
         {
             var words = _IsM ? newStoryStep.MWords : newStoryStep.FWords;
-            Debug.Log(string.Format("Found {0} words in this step", words.Count));
+            // Debug.Log(string.Format("Found {0} words in this step", words.Count));
             if (words.Count > 0)
             {
                 _CurrentText += " " + string.Join(" ", words.Select(w => w.ToLower()));

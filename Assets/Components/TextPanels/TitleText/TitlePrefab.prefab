@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7332821495226130665}
   - component: {fileID: 7215874553508037906}
   - component: {fileID: 5009067847634965958}
+  - component: {fileID: 1429943409468154887}
   m_Layer: 5
   m_Name: TitlePrefab
   m_TagString: Untagged
@@ -55,7 +56,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9061489060259447792}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -68,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 020b0a8cdf11ccb44b1a60db5bf7d788, type: 2}
   m_sharedMaterial: {fileID: -8407779410194022033, guid: 020b0a8cdf11ccb44b1a60db5bf7d788,
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.7
+  m_fontSize: 40
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -150,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d374a67d2358ea7419284d23d672d201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextMeshPro: {fileID: 7332821495226130665}
 --- !u!114 &5009067847634965958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,3 +190,19 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!114 &1429943409468154887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061489060259447792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fd212e9f15a534ca82ce4b901bb6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Alpha: 1
+  _Material: {fileID: -8407779410194022033, guid: 020b0a8cdf11ccb44b1a60db5bf7d788,
+    type: 2}
+  _ColorPropertyName: _FaceColor

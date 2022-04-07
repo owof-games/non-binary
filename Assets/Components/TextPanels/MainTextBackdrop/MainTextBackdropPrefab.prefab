@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 293329599439268842}
   - component: {fileID: 3541005740429597893}
   - component: {fileID: 3244722493553659803}
-  - component: {fileID: 2092834795171161279}
+  - component: {fileID: 8499877776489017883}
   m_Layer: 5
   m_Name: MainTextBackdropPrefab
   m_TagString: Untagged
@@ -74,7 +74,7 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &2092834795171161279
+--- !u!114 &8499877776489017883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,7 +83,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4025869007985684387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54fa4da2a31044c4598648dc123496e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 83fd212e9f15a534ca82ce4b901bb6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _Alpha: 1
+  _Material: {fileID: 2100000, guid: 2b858bafbb125124081415922258a973, type: 2}
+  _ColorPropertyName: _BaseColor

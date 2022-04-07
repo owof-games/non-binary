@@ -78,8 +78,8 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: bullet.blue
-    IsVerboseEnabled: 1
-    IsInfoEnabled: 1
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: maintext.container
@@ -98,6 +98,11 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: bullet.words
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: animations
     IsVerboseEnabled: 1
     IsInfoEnabled: 1
     IsWarningEnabled: 0

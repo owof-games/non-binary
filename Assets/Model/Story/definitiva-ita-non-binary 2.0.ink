@@ -5,12 +5,11 @@ VAR gender = 0
 //FUNZIONI//
     -> random
     === random ===
-    Parola <f>genderata</f> e <m>genderata</m>.
     ~ gender = RANDOM (0,1)
     
        {
         - gender:
-        -> intro_afab
+        -> intro_amab
         - else: 
         -> intro_amab
         }

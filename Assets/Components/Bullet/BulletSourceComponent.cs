@@ -1,4 +1,6 @@
+using System.Linq;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
 
 public class BulletSourceComponent : MonoBehaviour
@@ -21,7 +23,12 @@ public class BulletSourceComponent : MonoBehaviour
 
     private BulletSource.Description[] _Descriptions;
 
+    private float? _TotalDuration;
+
     private float? _StartingTime;
+
+    [SerializeField]
+    private VoidEvent _NextLineEvent;
 
     public void StartBulletHell()
     {
@@ -43,6 +50,11 @@ public class BulletSourceComponent : MonoBehaviour
                         return value1.DeltaTime.CompareTo(value2.DeltaTime);
                     });
                     _StartingTime = Time.time;
+                    _TotalDuration = Enumerable.Max(
+                        from description
+                        in _Descriptions
+                        select description.DeltaTime + description.LifeDuration)
+                        + 1;
                     return;
                 }
             }
@@ -59,8 +71,15 @@ public class BulletSourceComponent : MonoBehaviour
 
     private void Update()
     {
-        if (!_StartingTime.HasValue)
+        if (!_StartingTime.HasValue || !_TotalDuration.HasValue)
         {
+            return;
+        }
+        if (_StartingTime.HasValue && _TotalDuration.HasValue && Time.time > _StartingTime.Value + _TotalDuration.Value)
+        {
+            _StartingTime = null;
+            _TotalDuration = null;
+            _NextLineEvent.Raise();
             return;
         }
         var relativeTime = Time.time - _StartingTime;
