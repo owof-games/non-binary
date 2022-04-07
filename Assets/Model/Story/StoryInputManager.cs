@@ -26,15 +26,25 @@ public class StoryInputManager : BaseManager
         RegisterTo(StoryStepChanged, OnStoryStepChanged);
     }
 
+    private bool _InBulletHell = false;
+
     private void OnInputNextLine(InputAction.CallbackContext obj)
     {
         BaseLogger.Info(this, "received InputNextLine");
-        StoryNextLine.Raise();
+        if (_InBulletHell)
+        {
+            BaseLogger.Info(this, "ignoring it because we are in a bullet hell!");
+        }
+        else
+        {
+            StoryNextLine.Raise();
+        }
     }
 
     private void OnStoryStepChanged(StoryStep storyStep)
     {
         BaseLogger.Info(this, "received new story step: {0}", storyStep);
+        _InBulletHell = storyStep.IsBulletHell;
         if (storyStep.Kind == StoryStepKind.Choice)
         {
             BaseLogger.Info(this, "setting action map variable to ChoiceActionMap");
