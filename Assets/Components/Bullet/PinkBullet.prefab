@@ -149,6 +149,12 @@ MonoBehaviour:
   _RotationCenter: {x: 0, y: 0}
   _AngularSpeed: 0
   _InitialPosition: {x: 0, y: 0}
+  _DyingAnimationDuration:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: a8e2d885f91555f43a067d73db63906c, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &6059175845180190667
 MonoBehaviour:
   m_ObjectHideFlags: 0

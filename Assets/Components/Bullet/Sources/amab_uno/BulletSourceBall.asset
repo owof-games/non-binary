@@ -25,10 +25,10 @@ MonoBehaviour:
   - {x: -1, y: 0}
   - {x: -0.866, y: 0.5}
   - {x: -0.5, y: 0.866}
-  _AutomaticScaling: {x: 0.0375, y: 0.0665}
   _AutomaticTranslation: {x: 0.4, y: 1}
+  _AutomaticScaling: {x: 0.0375, y: 0.0665}
   _VelocitySteps:
-  - Duration: 2
+  - Duration: 10
     Type: 0
     Magnitude: 0.005
     UniformDirection: {x: 0.2, y: -1}

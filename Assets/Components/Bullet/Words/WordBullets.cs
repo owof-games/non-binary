@@ -28,6 +28,9 @@ public class WordBullets : MonoBehaviour
     [SerializeField]
     private float _ExtraRotationF;
 
+    [SerializeField]
+    private FloatReference _WordBulletLifeDuration;
+
     public void OnStoryStepChanged(StoryStep newStoryStep)
     {
         if (newStoryStep.Kind == StoryStepKind.Text)
@@ -60,7 +63,8 @@ public class WordBullets : MonoBehaviour
         velocityComponent.Setup(new Velocity.Description()
         {
             InitialVelocity = _WordBulletSpeed.Value * direction.normalized,
-            InitialPosition = startPosition
+            InitialPosition = startPosition,
+            LifeDuration = _WordBulletLifeDuration.Value
         });
         // emit a sound to attract attention
         _PlaySFX.Raise("hit");

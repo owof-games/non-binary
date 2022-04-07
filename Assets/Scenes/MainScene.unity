@@ -432,155 +432,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 286ac557dac96434290b7ffcd594755b, type: 3}
---- !u!1 &482027456
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 482027460}
-  - component: {fileID: 482027459}
-  - component: {fileID: 482027458}
-  - component: {fileID: 482027457}
-  - component: {fileID: 482027461}
-  m_Layer: 0
-  m_Name: WordBulletSource
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &482027457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482027456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b938433d03155f841ae599e55142988b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 482027459}
-        m_TargetAssemblyTypeName: WordBullets, Assembly-CSharp
-        m_MethodName: OnStoryStepChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _conditions: []
-  _operator: 0
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: bc8566f5352d8ea468bbdd141a470d70, type: 2}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
---- !u!114 &482027458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482027456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04861192f0a552543887faef1ee02165, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 482027459}
-        m_TargetAssemblyTypeName: WordBullets, Assembly-CSharp
-        m_MethodName: set_FullLayout
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _conditions: []
-  _operator: 0
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 707c063fa3cb7384cbebbf9499e319b6, type: 2}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
---- !u!114 &482027459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482027456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e17a27887c1fcc4fa02cda992dae6c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _PinkBullet: {fileID: 2836422024658083569, guid: 9ee4a6d355abc1f458425bdcea1f2014,
-    type: 3}
-  _BlueBullet: {fileID: 4671307461993127751, guid: 9dfb80f2fa0c9c042bc2b3cb672b5717,
-    type: 3}
-  _MainCharacter: {fileID: 488158073}
-  _WordBulletSpeed:
-    _usage: 0
-    _value: 1
-    _constant: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
-  _PlaySFX: {fileID: 11400000, guid: 14dbeb418fda0ef489c576f43e19433f, type: 2}
---- !u!4 &482027460
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482027456}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6004, y: -0.8658395, z: -2.3489208}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &482027461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482027456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4085e6f7d593384d9774cb34bc4dc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
-  Path: bullet.words
 --- !u!1 &488158073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1106681832431300494, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
@@ -857,6 +708,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb52aa428934224498437e05f813c43f, type: 3}
+--- !u!1001 &1218863643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8658395
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3489208
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155234, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155237, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: _MainCharacter
+      value: 
+      objectReference: {fileID: 488158073}
+    - target: {fileID: 3567129970580155237, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: _WordBulletLifeDuration._value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155238, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
+      propertyPath: m_Name
+      value: WordBulletSource
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3efddc29086ef6046b6e528396f98906, type: 3}
 --- !u!224 &1375330447 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7848153325898615007, guid: 218faf4cf46cd9a47961f573000165eb,
@@ -2097,6 +2027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842880985925702881, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848153325061003942, guid: 218faf4cf46cd9a47961f573000165eb,
         type: 3}

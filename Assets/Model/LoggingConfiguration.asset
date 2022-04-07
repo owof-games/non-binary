@@ -77,9 +77,9 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
-  - Path: bullet
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
+  - Path: bullet.blue
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: maintext.container

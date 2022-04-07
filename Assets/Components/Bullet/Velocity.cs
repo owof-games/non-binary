@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
 
 public class Velocity : MonoBehaviour
@@ -39,18 +40,32 @@ public class Velocity : MonoBehaviour
 
     private float _StartingTime = -1;
 
+    private Material _Material;
+
     private void Start()
     {
         _CurrentVelocity = _InitialVelocity;
         _StartingTime = Time.time;
+        var mr = GetComponent<MeshRenderer>();
+        _Material = mr.material;
+        _Material = Instantiate(_Material);
+        mr.material = _Material;
+        SetMaterialAlpha(1);
         UpdateVelocity();
     }
 
     private int _CurrentStep = -1;
 
+    [SerializeField]
+    private FloatReference _DyingAnimationDuration;
+
     private void FixedUpdate()
     {
         if (_DestroyOnCollision.Dying)
+        {
+            return;
+        }
+        if (_DyingTime > 0)
         {
             return;
         }
@@ -64,6 +79,12 @@ public class Velocity : MonoBehaviour
             _CurrentStep++;
         }
         UpdateVelocity();
+    }
+
+    private void Update()
+    {
+        CheckLifetime();
+        HandleDying();
     }
 
     private void UpdateVelocity()
@@ -91,6 +112,8 @@ public class Velocity : MonoBehaviour
         public float AngularSpeed;
 
         public Vector2 InitialPosition;
+
+        public float LifeDuration;
     }
 
     public void Setup(Description description)
@@ -100,5 +123,66 @@ public class Velocity : MonoBehaviour
         _RotationCenter = description.RotationCenter;
         _AngularSpeed = description.AngularSpeed;
         _InitialPosition = description.InitialPosition;
+        _LifeDuration = description.LifeDuration;
     }
+
+    #region dying
+
+    private float _DyingTime = -1;
+
+    private float _LifeDuration = -1;
+
+    private void HandleDying()
+    {
+        if (_DyingTime > 0)
+        {
+            var t = (Time.time - _DyingTime) / _DyingAnimationDuration;
+            if (t >= 1)
+            {
+                this.Info("destroying!");
+                Destroy(gameObject);
+            }
+            else
+            {
+                var alpha = Mathf.Lerp(1, 0, t);
+                SetMaterialAlpha(alpha);
+            }
+        }
+    }
+
+    private void SetMaterialAlpha(float alpha)
+    {
+        var c = _Material.GetColor("_BaseColor");
+        c.a = alpha;
+        _Material.SetColor("_BaseColor", c);
+    }
+
+    private void CheckLifetime()
+    {
+        if (_DyingTime > 0)
+        {
+            return;
+        }
+        if (Time.frameCount % 240 == 0)
+        {
+            this.Info("_LifeDuration = {0}", _LifeDuration);
+        }
+        if (_LifeDuration < 0)
+        {
+            return;
+        }
+        var startDeathAnimationTime = _StartingTime + _LifeDuration - _DyingAnimationDuration;
+        if (Time.frameCount % 240 == 0)
+        {
+            this.Info("time is {0} and _StartingTime = {1} + _LifeDuration = {2} - _DyingAnimationDuration = {3} => {4}",
+            Time.time, _StartingTime, _LifeDuration, _DyingAnimationDuration.Value, startDeathAnimationTime);
+        }
+        if (Time.time >= startDeathAnimationTime)
+        {
+            this.Info("starting to die!");
+            _DyingTime = Time.time;
+        }
+    }
+
+    #endregion
 }

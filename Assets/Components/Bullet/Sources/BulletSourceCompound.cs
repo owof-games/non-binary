@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "BulletSourceCompound", menuName = "non-binary/BulletSource/Create Compound", order = 0)]
@@ -91,6 +92,9 @@ public class BulletSourceCompound : BulletSource
     {
         get
         {
+            // compute total duration
+            var lifetime = Enumerable.Sum(from velocityStep in _VelocitySteps select velocityStep.Duration);
+            Debug.Log("Using lifetime " + lifetime.ToString() + " and first vs is duration is" + _VelocitySteps[0].Duration.ToString());
             // create a description for each particle position
             var descriptions = new Description[_Positions.Length];
             for (var positionIndex = 0; positionIndex < _Positions.Length; positionIndex++)
@@ -118,7 +122,8 @@ public class BulletSourceCompound : BulletSource
                     RotationCenter = _RotationCenter,
                     AngularSpeed = _AbsoluteRotationSpeed,
                     InitialPosition = position,
-                    VelocitySteps = MyVelocitySteps
+                    VelocitySteps = MyVelocitySteps,
+                    LifeDuration = lifetime
                 };
             }
             return descriptions;
