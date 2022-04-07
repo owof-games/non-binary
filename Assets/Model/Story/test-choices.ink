@@ -1,12 +1,20 @@
 -> inizio
 
 === inizio ===
-Linea di dialogo normale.
+Età adulta,  autunno, casa vostra #title
+
+Appare la gente. #people
+
+Prima riga. #completion_33
+
+Linea di dialogo normale. #completion_66
 
 Alla prossima linea comincia il bullet hell. #almost_there
 
 $bullet_hell_amab_uno$
 
-E basta.
+Adolescenza, inverno, da nonna #title
+
+Frase dopo il bullet hell uno.
 
 ->DONE

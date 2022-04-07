@@ -21,7 +21,7 @@ public class StoryTextHandler : MonoBehaviour
     {
         this.Info("Received a storystep: {0}", storyStep);
         this.Info("Actual storyStep: {0}", _StoryStepVariable.Value);
-        if (storyStep.Kind == StoryStepKind.Text)
+        if (storyStep.Kind == StoryStepKind.Text && !storyStep.IsTitle)
         {
             TextMeshPro.enabled = true;
             TextMeshPro.text = TextHelpers.TransformGenderTags(storyStep.Text, _MColor.Value, _FColor.Value);
