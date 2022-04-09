@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
+using System;
 
 [CreateAssetMenu(fileName = "InputManager", menuName = "non-binary/Create Input Manager", order = 1)]
 public class InputManager : BaseManager
@@ -30,17 +31,27 @@ public class InputManager : BaseManager
     protected override void OnEnableManager()
     {
         var menuActionMap = GetInputActionMap("MenuActionMap");
-        GetInputAction(menuActionMap, "PreviousEntry").performed += PreviousEntry.Raise;
-        GetInputAction(menuActionMap, "NextEntry").performed += NextEntry.Raise;
+        GetInputAction(menuActionMap, "PreviousEntry").performed += LoggedRaise(PreviousEntry, "PreviousEntry");
+        GetInputAction(menuActionMap, "NextEntry").performed += LoggedRaise(NextEntry, "NextEntry");
 
         var movementActionMap = GetInputActionMap("MovementActionMap");
-        GetInputAction(movementActionMap, "Directions").performed += Directions.Raise;
-        GetInputAction(movementActionMap, "Directions").canceled += DirectionsCanceled.Raise;
+        GetInputAction(movementActionMap, "Directions").performed += LoggedRaise(Directions, "Directions");
+        GetInputAction(movementActionMap, "Directions").canceled += LoggedRaise(DirectionsCanceled, "DirectionsCanceled");
         GetInputAction(movementActionMap, "NextLine").performed += OnNextLinePerformed;
         GetInputAction(movementActionMap, "NextLine").canceled += OnNextLineRaised; //NextLine.Raise; // canceled = onkeyup
 
         RegisterTo(ActionMapVariableChanged, EnableCurrentActionMap);
         EnableCurrentActionMap(ActionMapVariable.Value);
+    }
+
+    private Action<InputAction.CallbackContext> LoggedRaise(InputAction_CallbackContextEvent previousEntry, string name)
+    {
+        return (InputAction.CallbackContext ctx) =>
+        {
+            BaseLogger.Verbose(this, "raising input event with name '{0}'", name);
+            previousEntry.Raise(ctx);
+            BaseLogger.Verbose(this, "done");
+        };
     }
 
     private bool _IgnoreNextNextLinePerformed = false; // hack
