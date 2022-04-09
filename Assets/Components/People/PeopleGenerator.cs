@@ -113,6 +113,18 @@ public class PeopleGenerator : MonoBehaviour
         else
         {
             person = Instantiate(_Person, position, Quaternion.identity, transform);
+            if (!person.TryGetComponent<Renderer>(out var renderer))
+            {
+                renderer = person.GetComponentInChildren<Renderer>();
+            }
+            if (renderer == null)
+            {
+                this.Warning("Could not find a renderer in person game object");
+            }
+            else
+            {
+                renderer.material = _Material;
+            }
         }
         _CurrentlyGoing.Enqueue(person);
         // set velocity in the right direction
@@ -156,6 +168,7 @@ public class PeopleGenerator : MonoBehaviour
 
     private void Awake()
     {
+        _Material = Instantiate(_Material);
         SetMaterialAlpha(0);
     }
 

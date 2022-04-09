@@ -3,7 +3,7 @@
 === inizio ===
 Età adulta,  autunno, casa vostra #title
 
-Appare la gente. #people
+Appare <m>la</m> <f>gente</f>. #people
 
 Prima riga. #completion_33
 

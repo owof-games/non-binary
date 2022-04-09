@@ -54,6 +54,10 @@ public class FullLayout : IEquatable<FullLayout>
 
     public FullLayout(Size size, Rect percentageLeftSideText, Rect percentageRightSideText, Rect percentageStreet, Rect percentageMainText)
     {
+        if (!Camera.main)
+        {
+            return;
+        }
         LeftSideText = CreateMultiUnityOfMeasureRects(size, percentageLeftSideText);
         RightSideText = CreateMultiUnityOfMeasureRects(size, percentageRightSideText);
         Street = CreateMultiUnityOfMeasureRects(size, percentageStreet);
