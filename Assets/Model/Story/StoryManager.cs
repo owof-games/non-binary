@@ -23,6 +23,8 @@ public class StoryManager : BaseManager
 
     public IntEvent MakeChoiceEvent;
 
+    public VoidEvent StartStory;
+
     public BaseLogger BaseLogger;
 
     protected override void OnEnableManager()
@@ -36,18 +38,19 @@ public class StoryManager : BaseManager
         RegisterTo(NextLine, OnNextLine);
         RegisterTo(StartKnotEvent, OnStartKnot);
         RegisterTo(MakeChoiceEvent, OnMakeChoice);
+        RegisterTo(StartStory, OnNextLine);
 
         // start reading the first line - maybe this should be run by some kind of global initializator through events?
-        UnityMainThreadDispatcher.EventuallyEnqueue(Initialize());
+        // UnityMainThreadDispatcher.EventuallyEnqueue(Initialize());
     }
 
-    private IEnumerator Initialize()
-    {
-        BaseLogger.Info(this, "initializing in a little while...");
-        yield return new WaitForSeconds(0.1f);
-        BaseLogger.Info(this, "ok, initializing.");
-        OnNextLine();
-    }
+    // private IEnumerator Initialize()
+    // {
+    //     BaseLogger.Info(this, "initializing in a little while...");
+    //     yield return new WaitForSeconds(0.1f);
+    //     BaseLogger.Info(this, "ok, initializing.");
+    //     OnNextLine();
+    // }
 
     private void NewStoryObjectCreated()
     {

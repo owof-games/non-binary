@@ -11,6 +11,8 @@ public class StreetVisualizationParameters : MonoBehaviour
 
     public float WidthFactor = 0.2f;
 
+    public float FadeLevel = 0f;
+
     public float Speed = 1f;
     private float _DeltaV = 0;
 
@@ -57,6 +59,8 @@ public class StreetVisualizationParameters : MonoBehaviour
         // number of vertical repeats
         var repeats = _TextureWidth * Screen.height / (WidthFactor * _TextureHeight * Screen.width);
         _Material.SetFloat("_NumVerticalRepeats", repeats);
+        // fare level
+        _Material.SetFloat("_FadeLevel", FadeLevel);
         // animate V position
         _DeltaV += Time.deltaTime * Speed;
         while (_DeltaV > 1)
