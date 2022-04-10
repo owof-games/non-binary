@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 2472482040313154497}
   - component: {fileID: 429281569643371639}
   - component: {fileID: 4891666557770139488}
+  - component: {fileID: 8855083000387790608}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -752,6 +753,12 @@ MonoBehaviour:
     _constant: {fileID: 11400000, guid: 57b5957dfb4121440887eb812e4dcb1b, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+  _GenderedWordsAnimationDuration:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: e22001f1b7b6b2446a332c76937eede3, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &429281569643371639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,9 +810,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Alpha: 1
-  _Material: {fileID: -5314071300202764218, guid: 087751f7ebad50342a873ab25c83d82f,
-    type: 2}
   _ColorPropertyName: _FaceColor
+--- !u!95 &8855083000387790608
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848153325061003936}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7848153325898615000
 GameObject:
   m_ObjectHideFlags: 0

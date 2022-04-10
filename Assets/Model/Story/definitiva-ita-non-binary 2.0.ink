@@ -6,10 +6,11 @@ VAR gender = 0
     -> random
     === random ===
     ~ gender = RANDOM (0,1)
+    ~ gender = 0
     
        {
         - gender:
-        -> intro_amab
+        -> intro_afab
         - else: 
         -> intro_amab
         }

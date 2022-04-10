@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: amab_uno
   m_EditorClassIdentifier: 
   _BulletSourceBlocks:
-  - BulletSource: {fileID: 11400000, guid: 7bfcfee4b0aa783418f71e52c6d712da, type: 2}
+  - BulletSource: {fileID: 11400000, guid: b871b434dd77efc47a3f88c1e3a0344d, type: 2}
     DeltaTime: 1
+  - BulletSource: {fileID: 11400000, guid: ecc2924490fe24b4080883fdc441ceda, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: 7bfcfee4b0aa783418f71e52c6d712da, type: 2}
+    DeltaTime: 5
   - BulletSource: {fileID: 11400000, guid: c0ca0a57c88f9d24ba393c498fc19b7b, type: 2}
-    DeltaTime: 4
+    DeltaTime: 7.5

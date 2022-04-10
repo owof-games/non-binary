@@ -1,6 +1,8 @@
 using System.Linq;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using RG.LogLibrary;
 
 public class SetTextContent : MonoBehaviour
 {
@@ -17,18 +19,27 @@ public class SetTextContent : MonoBehaviour
         UpdateFromCurrentText();
     }
 
+    private string _LastWords;
+
     public void OnStoryStepChanged(StoryStep newStoryStep)
     {
         if (newStoryStep.Kind == StoryStepKind.Text)
         {
             var words = _IsM ? newStoryStep.MWords : newStoryStep.FWords;
-            // Debug.Log(string.Format("Found {0} words in this step", words.Count));
             if (words.Count > 0)
             {
-                _CurrentText += " " + string.Join(" ", words.Select(w => w.ToLower()));
-                UpdateFromCurrentText();
+                _LastWords = string.Join(" ", words.Select(w => w.ToLower()));
+                this.Info("next gendered words to add: {0}", _LastWords);
+                return;
             }
         }
+        _LastWords = "";
+    }
+
+    public void OnLaunchWordBullets()
+    {
+        _CurrentText = _CurrentText == "" ? _LastWords : _LastWords + " " + _CurrentText;
+        UpdateFromCurrentText();
     }
 
     private void UpdateFromCurrentText()

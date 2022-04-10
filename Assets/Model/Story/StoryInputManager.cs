@@ -20,6 +20,10 @@ public class StoryInputManager : BaseManager
 
     public StringVariable ActionMapVariable;
 
+    public VoidEvent LaunchWordBullets;
+
+    private bool _MustLaunchWordBullets;
+
     protected override void OnEnableManager()
     {
         RegisterTo(InputNextLine, OnInputNextLine);
@@ -34,6 +38,11 @@ public class StoryInputManager : BaseManager
         if (_InBulletHell)
         {
             BaseLogger.Info(this, "ignoring it because we are in a bullet hell!");
+        }
+        else if (_MustLaunchWordBullets)
+        {
+            _MustLaunchWordBullets = false;
+            LaunchWordBullets.Raise();
         }
         else
         {
@@ -56,6 +65,9 @@ public class StoryInputManager : BaseManager
             BaseLogger.Info(this, "setting action map variable to ChoiceActionMap");
             // SetActionMap("MovementActionMap");
             ActionMapVariable.Value = "MovementActionMap";
+            if(storyStep.NumMTags > 0 || storyStep.NumFTags > 0) {
+                _MustLaunchWordBullets = true;
+            }
         }
     }
 

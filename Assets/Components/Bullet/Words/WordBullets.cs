@@ -31,20 +31,28 @@ public class WordBullets : MonoBehaviour
     [SerializeField]
     private FloatReference _WordBulletLifeDuration;
 
+    private int _LastNumMTags;
+
+    private int _LastNumFTags;
+
     public void OnStoryStepChanged(StoryStep newStoryStep)
     {
         if (newStoryStep.Kind == StoryStepKind.Text)
         {
-            var mBullets = newStoryStep.NumMTags;
-            var fBullets = newStoryStep.NumFTags;
-            for (var i = 0; i < mBullets; i++)
-            {
-                LaunchBullet(_BlueBullet, FullLayout.Street.World.xMin, FullLayout.LeftSideText.World.yMin, FullLayout.LeftSideText.World.yMax, _ExtraRotationM);
-            }
-            for (var i = 0; i < fBullets; i++)
-            {
-                LaunchBullet(_PinkBullet, FullLayout.Street.World.xMax, FullLayout.RightSideText.World.yMin, FullLayout.RightSideText.World.yMax, _ExtraRotationF);
-            }
+            _LastNumMTags = newStoryStep.NumMTags;
+            _LastNumFTags = newStoryStep.NumFTags;
+        }
+    }
+
+    public void OnLaunchWordBullets()
+    {
+        for (var i = 0; i < _LastNumMTags; i++)
+        {
+            LaunchBullet(_BlueBullet, FullLayout.Street.World.xMin, FullLayout.LeftSideText.World.yMin, FullLayout.LeftSideText.World.yMax, _ExtraRotationM);
+        }
+        for (var i = 0; i < _LastNumFTags; i++)
+        {
+            LaunchBullet(_PinkBullet, FullLayout.Street.World.xMax, FullLayout.RightSideText.World.yMin, FullLayout.RightSideText.World.yMax, _ExtraRotationF);
         }
     }
 

@@ -19,3 +19,4 @@ MonoBehaviour:
   StoryNextLine: {fileID: 11400000, guid: 25093a9ea2e7f534da2357bccb19928b, type: 2}
   StoryStepChanged: {fileID: 11400000, guid: bc8566f5352d8ea468bbdd141a470d70, type: 2}
   ActionMapVariable: {fileID: 11400000, guid: f45d6ecf70f374a40a0194203b166419, type: 2}
+  LaunchWordBullets: {fileID: 11400000, guid: ae149dfe30c35f840ac12bb3000e67d9, type: 2}
