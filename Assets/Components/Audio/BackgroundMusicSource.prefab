@@ -165,6 +165,16 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: 3a3e28748a3370d419f1258192322d01, type: 3}
   - Name: bullet_hell_amab_uno
     AudioClip: {fileID: 8300000, guid: 63b0553fa24961641ab9b6e381c1e5a6, type: 3}
+  - Name: bullet_hell_afab_uno
+    AudioClip: {fileID: 8300000, guid: 63b0553fa24961641ab9b6e381c1e5a6, type: 3}
+  - Name: bullet_hell_amab_due
+    AudioClip: {fileID: 8300000, guid: 189b7a5f3cdd17f4ea62c9324a4b0fc3, type: 3}
+  - Name: bullet_hell_afab_due
+    AudioClip: {fileID: 8300000, guid: 189b7a5f3cdd17f4ea62c9324a4b0fc3, type: 3}
+  - Name: bullet_hell_amab_tre
+    AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
+  - Name: bullet_hell_afab_tre
+    AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
   SFXEntries:
   - Name: hit
     AudioClips:
@@ -176,8 +186,6 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
-  BackgroundMusicName: {fileID: 11400000, guid: 7552d61c773f6094490b4cf03e56bbb4,
-    type: 2}
   FadeOutDuration: 1
   NumSFXAudioSources: 3
 --- !u!114 &2191811226805912325

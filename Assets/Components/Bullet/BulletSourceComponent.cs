@@ -30,6 +30,9 @@ public class BulletSourceComponent : MonoBehaviour
     [SerializeField]
     private VoidEvent _NextLineEvent;
 
+    [SerializeField]
+    private IntConstant _DesignScreenWidth;
+
     public void StartBulletHell()
     {
         _StartingTime = Time.time;
@@ -83,6 +86,7 @@ public class BulletSourceComponent : MonoBehaviour
             return;
         }
         var relativeTime = Time.time - _StartingTime;
+        var ratio = ((float)ScreenSize.ProportionalWidth) / _DesignScreenWidth.Value;
         while (_CurrentIndex < _Descriptions.Length - 1 &&
             relativeTime >= _Descriptions[_CurrentIndex + 1].DeltaTime)
         {
@@ -105,15 +109,15 @@ public class BulletSourceComponent : MonoBehaviour
             for (int velocityStepIndex = 0; velocityStepIndex < description.VelocitySteps.Length; velocityStepIndex++)
             {
                 var velocityStep = description.VelocitySteps[velocityStepIndex];
-                var newVelocity = new Vector2(xScale * velocityStep.NewVelocity.x, yScale * velocityStep.NewVelocity.y);
+                var newVelocity = new Vector2(xScale * velocityStep.NewVelocity.x, yScale * velocityStep.NewVelocity.y) / ratio;
                 this.Verbose("Transforming {0} into {1}", velocityStep.NewVelocity, newVelocity);
                 velocityStep.NewVelocity = newVelocity;
                 description.VelocitySteps[velocityStepIndex] = velocityStep;
             }
             // instantiate
             var go = Instantiate(description.IsPink ? _PinkBullet : _BlueBullet,
-            new Vector3(description.InitialPosition.x, description.InitialPosition.y, transform.position.z),
-            Quaternion.identity, transform);
+                new Vector3(description.InitialPosition.x, description.InitialPosition.y, transform.position.z),
+                Quaternion.identity, transform);
             // setup
             var velocityComponent = go.GetComponent<Velocity>();
             velocityComponent.Setup(description);
