@@ -38,10 +38,20 @@ public class StoryManager : BaseManager
         RegisterTo(NextLine, OnNextLine);
         RegisterTo(StartKnotEvent, OnStartKnot);
         RegisterTo(MakeChoiceEvent, OnMakeChoice);
-        RegisterTo(StartStory, OnNextLine);
+        RegisterTo(StartStory, OnStartStory);
+        _StoryStarted = false;
 
         // start reading the first line - maybe this should be run by some kind of global initializator through events?
         // UnityMainThreadDispatcher.EventuallyEnqueue(Initialize());
+    }
+
+    private bool _StoryStarted = false;
+
+    private void OnStartStory(UnityAtoms.Void obj)
+    {
+        BaseLogger.Info(this, "received a StartStory event");
+        _StoryStarted = true;
+        OnNextLine();
     }
 
     // private IEnumerator Initialize()
@@ -66,8 +76,12 @@ public class StoryManager : BaseManager
 
     private void OnNextLine()
     {
-        BaseLogger.Info(this, "OnNextLine");
-        if (_Story.canContinue)
+        BaseLogger.Info(this, "OnNextLine with _StoryStarted={0}", _StoryStarted);
+        if (!_StoryStarted)
+        {
+            BaseLogger.Info(this, "Asked for a new line, but story must still start");
+        }
+        else if (_Story.canContinue)
         {
             BaseLogger.Info(this, "OnNextLine: canContinue");
             _Story.Continue();

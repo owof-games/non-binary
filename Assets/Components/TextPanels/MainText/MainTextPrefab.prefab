@@ -369,6 +369,8 @@ GameObject:
   - component: {fileID: 8045985430378441555}
   - component: {fileID: 4030724360211421361}
   - component: {fileID: 9113326955481889904}
+  - component: {fileID: 8901377899136031718}
+  - component: {fileID: 2395985986104651921}
   m_Layer: 5
   m_Name: ChoiceText
   m_TagString: Untagged
@@ -571,6 +573,57 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!114 &8901377899136031718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743175121665517735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb15a994cef35f40b040feaf0a00492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DesignScreenWidth: {fileID: 11400000, guid: 90133f4a045734c4caf9a1508159c2ff, type: 2}
+--- !u!114 &2395985986104651921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743175121665517735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ea13680c22d9842b1eb2e0ac3cef0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8901377899136031718}
+        m_TargetAssemblyTypeName: ProportionalFontSize, Assembly-CSharp
+        m_MethodName: OnScreenSizeChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: ef49633a81ac5c446af18f6a8c4cd1b9, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &7848153325061003936
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +640,8 @@ GameObject:
   - component: {fileID: 429281569643371639}
   - component: {fileID: 4891666557770139488}
   - component: {fileID: 8855083000387790608}
+  - component: {fileID: 7189054438618693135}
+  - component: {fileID: 1715355609171564589}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -831,6 +886,57 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7189054438618693135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848153325061003936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb15a994cef35f40b040feaf0a00492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DesignScreenWidth: {fileID: 11400000, guid: 90133f4a045734c4caf9a1508159c2ff, type: 2}
+--- !u!114 &1715355609171564589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848153325061003936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ea13680c22d9842b1eb2e0ac3cef0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7189054438618693135}
+        m_TargetAssemblyTypeName: ProportionalFontSize, Assembly-CSharp
+        m_MethodName: OnScreenSizeChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: ef49633a81ac5c446af18f6a8c4cd1b9, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &7848153325898615000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1485,7 @@ PrefabInstance:
     - target: {fileID: 8253770603163301396, guid: 596416ad667a89a4e811330246e97dde,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.8
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8253770603163301396, guid: 596416ad667a89a4e811330246e97dde,
         type: 3}
@@ -1389,7 +1495,7 @@ PrefabInstance:
     - target: {fileID: 8253770603163301396, guid: 596416ad667a89a4e811330246e97dde,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8253770603163301396, guid: 596416ad667a89a4e811330246e97dde,
         type: 3}
