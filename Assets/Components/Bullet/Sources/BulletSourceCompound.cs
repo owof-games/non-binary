@@ -14,6 +14,9 @@ public class BulletSourceCompound : BulletSource
     private Vector2 _AutomaticScaling = new Vector2(1, 1);
 
     [SerializeField]
+    private Quaternion _AutomaticRotation = Quaternion.identity;
+
+    [SerializeField]
     public enum VelocityStepType
     {
         Uniform,
@@ -53,7 +56,7 @@ public class BulletSourceCompound : BulletSource
     {
         if (!_TRSMatrix.HasValue)
         {
-            _TRSMatrix = Matrix4x4.TRS(_AutomaticTranslation, Quaternion.identity, _AutomaticScaling);
+            _TRSMatrix = Matrix4x4.TRS(_AutomaticTranslation, _AutomaticRotation, _AutomaticScaling);
         }
     }
     private Vector2 GetPosition(int positionIndex)

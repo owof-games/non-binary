@@ -21,12 +21,14 @@ public class BulletSourceMultiple : BulletSource
         {
             var descriptions = new List<Description>();
 
+            var t = 0f;
             foreach (var bulletSourceBlock in _BulletSourceBlocks)
             {
+                t += bulletSourceBlock.DeltaTime;
                 var blockDescriptions = bulletSourceBlock.BulletSource.Descriptions;
                 foreach (var description in blockDescriptions)
                 {
-                    description.DeltaTime += bulletSourceBlock.DeltaTime;
+                    description.DeltaTime += t;
                 }
                 descriptions.AddRange(blockDescriptions);
             }

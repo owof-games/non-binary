@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
-  m_Name: BulletSourceBall
+  m_Name: BallFromTL
   m_EditorClassIdentifier: 
   _Positions:
   - {x: 0, y: 1}
@@ -30,7 +30,7 @@ MonoBehaviour:
   _VelocitySteps:
   - Duration: 10
     Type: 0
-    Magnitude: 0.006
+    Magnitude: 0.004
     UniformDirection: {x: 0.2, y: -1}
     RadialCenter: {x: 0, y: 0}
     PlanarX: 0

@@ -13,11 +13,39 @@ MonoBehaviour:
   m_Name: amab_uno
   m_EditorClassIdentifier: 
   _BulletSourceBlocks:
+  - BulletSource: {fileID: 11400000, guid: bd66f96bccf023641a23dfaf0c42793e, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: e18ab077cc05e5b47bb3db9f7f67c35b, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: cf76022bbece083428305272406af602, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: d946cd3232809ed488a1a413ef7c073b, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: e4358c3a7c2dece4983561244958bf48, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: adcd365bd80842844bee475081cfd65e, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: 6783698c5b80c544092a4f8e251a22fa, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: 8a817b45ae5dcd2419799fc05c4d817e, type: 2}
+    DeltaTime: 2.5
   - BulletSource: {fileID: 11400000, guid: b871b434dd77efc47a3f88c1e3a0344d, type: 2}
-    DeltaTime: 1
+    DeltaTime: 2.5
   - BulletSource: {fileID: 11400000, guid: ecc2924490fe24b4080883fdc441ceda, type: 2}
-    DeltaTime: 3
+    DeltaTime: 2
   - BulletSource: {fileID: 11400000, guid: 7bfcfee4b0aa783418f71e52c6d712da, type: 2}
-    DeltaTime: 5
+    DeltaTime: 2.5
   - BulletSource: {fileID: 11400000, guid: c0ca0a57c88f9d24ba393c498fc19b7b, type: 2}
-    DeltaTime: 7.5
+    DeltaTime: 3.8
+  - BulletSource: {fileID: 11400000, guid: c287e29896ef34040850ee88f065581e, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: a9c302c8aa5172e42b00fd97e797051c, type: 2}
+    DeltaTime: 3.8
+  - BulletSource: {fileID: 11400000, guid: 7bfcfee4b0aa783418f71e52c6d712da, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: c287e29896ef34040850ee88f065581e, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: c0ca0a57c88f9d24ba393c498fc19b7b, type: 2}
+    DeltaTime: 3.8
+  - BulletSource: {fileID: 11400000, guid: a9c302c8aa5172e42b00fd97e797051c, type: 2}
+    DeltaTime: 0
