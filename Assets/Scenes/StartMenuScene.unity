@@ -985,7 +985,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 99.55
+  m_fontSize: 92.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1347,6 +1347,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LocalizationInfoVariable: {fileID: 11400000, guid: 4eb77c8055a360f4585bc386ca4915cf,
     type: 2}
+  StoryManager: {fileID: 11400000, guid: 8844d402104d0714481e665d6e107e66, type: 2}
+  ItalianInkJSONAsset: {fileID: 4900000, guid: dd8e8fd22574f6c448fb77b3bde56bf7, type: 3}
+  EnglishInkJSONAsset: {fileID: 4900000, guid: 6137b5de8a912cf4c84c438afd942b56, type: 3}
 --- !u!95 &60310915262760239
 Animator:
   serializedVersion: 4

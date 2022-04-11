@@ -15,6 +15,8 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
         public StringConstant EnglishText;
     }
 
+    public StringEvent ChoiceEvent;
+
     public UnityEvent<int> ChoiceChanged;
 
     public GameObject LeftArrow;
