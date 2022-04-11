@@ -28,7 +28,7 @@ public class SetTextContent : MonoBehaviour
             var words = _IsM ? newStoryStep.MWords : newStoryStep.FWords;
             if (words.Count > 0)
             {
-                _LastWords = string.Join(" ", words.Select(w => w.ToLower()));
+                _LastWords = string.Join(" ", words.Select(w => "<nobr>" + w.ToLower() + "</nobr>"));
                 this.Info("next gendered words to add: {0}", _LastWords);
                 return;
             }

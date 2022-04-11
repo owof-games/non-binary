@@ -8,6 +8,10 @@ Che razza di bambino sei? #almost_there
 
 $bullet_hell_amab_uno$
 
+E adesso un altro bullet hell
+
+$bullet_hell_amab_due$
+
 Età adulta, autunno, casa vostra #title
 
 Adolescenza, inverno, da nonna #title

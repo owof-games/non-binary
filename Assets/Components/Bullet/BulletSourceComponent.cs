@@ -58,6 +58,9 @@ public class BulletSourceComponent : MonoBehaviour
                         in _Descriptions
                         select description.DeltaTime + description.LifeDuration)
                         + 1;
+                    _CurrentIndex = -1;
+                    this.Info("setup bullet hell {0} at time {1} with total duration {2}",
+                        bulletSourceEntry.Name, _StartingTime, _TotalDuration);
                     return;
                 }
             }

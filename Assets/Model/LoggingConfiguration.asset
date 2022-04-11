@@ -28,8 +28,8 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: maincharacter
-    IsVerboseEnabled: 1
-    IsInfoEnabled: 1
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.screen
@@ -68,8 +68,8 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.input
-    IsVerboseEnabled: 1
-    IsInfoEnabled: 1
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: buttons.multichoice
@@ -105,5 +105,10 @@ MonoBehaviour:
   - Path: animations
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet.source
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0
