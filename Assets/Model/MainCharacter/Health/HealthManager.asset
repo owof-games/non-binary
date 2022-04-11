@@ -22,3 +22,5 @@ MonoBehaviour:
   _HealthChanged: {fileID: 11400000, guid: 7120a10fc7fdf2e4f8a14bf35e6c2589, type: 2}
   _HealthPercentage: {fileID: 11400000, guid: c3f677b6183bc4344a403dc0b3db509f, type: 2}
   _ActionMapVariable: {fileID: 11400000, guid: f45d6ecf70f374a40a0194203b166419, type: 2}
+  _BackgroundMusicName: {fileID: 11400000, guid: 7552d61c773f6094490b4cf03e56bbb4,
+    type: 2}
