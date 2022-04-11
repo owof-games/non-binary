@@ -102,8 +102,8 @@ public class BulletSourceComponent : MonoBehaviour
             _CurrentIndex++;
             var description = _Descriptions[_CurrentIndex];
             // transform percentage coordinates in world space coordinates
-            var initialPosition = getWorldPosition(transformationMatrix, description.InitialPosition);
-            var rotationCenter = getWorldPosition(transformationMatrix, description.RotationCenter);
+            var initialPosition = GetWorldPosition(transformationMatrix, description.InitialPosition);
+            var rotationCenter = GetWorldPosition(transformationMatrix, description.RotationCenter);
             description.InitialPosition = new Vector2(initialPosition.x, initialPosition.y);
             description.RotationCenter = new Vector2(rotationCenter.x, rotationCenter.y);
             for (int velocityStepIndex = 0; velocityStepIndex < description.VelocitySteps.Length; velocityStepIndex++)
@@ -124,7 +124,7 @@ public class BulletSourceComponent : MonoBehaviour
         }
     }
 
-    private Vector3 getWorldPosition(Matrix4x4 transformationMatrix, Vector2 percentagePosition)
+    private Vector3 GetWorldPosition(Matrix4x4 transformationMatrix, Vector2 percentagePosition)
     {
         var actualScreenPosition = transformationMatrix.MultiplyPoint3x4(new Vector3(percentagePosition.x, percentagePosition.y, 0));
         var worldPosition = Camera.main.ScreenToWorldPoint(
@@ -139,5 +139,11 @@ public class BulletSourceComponent : MonoBehaviour
             actualScreenPosition,
             percentagePosition);
         return worldPosition;
+    }
+
+    public void StopBulletHell()
+    {
+        _StartingTime = null;
+        _TotalDuration = null;
     }
 }

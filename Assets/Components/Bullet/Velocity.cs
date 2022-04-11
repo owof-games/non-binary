@@ -128,6 +128,18 @@ public class Velocity : MonoBehaviour
 
     #region dying
 
+    private float _AlphaMultiplier = 1;
+
+    public void OnAlphaMultiplierChanged(float alphaMultiplier)
+    {
+        _AlphaMultiplier = alphaMultiplier;
+        if (_DyingTime < 0)
+        {
+            SetMaterialAlpha(1);
+        }
+        // if dying, the dying animation will handle it
+    }
+
     private float _DyingTime = -1;
 
     private float _LifeDuration = -1;
@@ -152,6 +164,7 @@ public class Velocity : MonoBehaviour
 
     private void SetMaterialAlpha(float alpha)
     {
+        alpha *= _AlphaMultiplier;
         var c = _Material.GetColor("_BaseColor");
         c.a = alpha;
         _Material.SetColor("_BaseColor", c);

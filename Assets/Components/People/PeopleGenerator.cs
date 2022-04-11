@@ -68,7 +68,7 @@ public class PeopleGenerator : MonoBehaviour
             _GeneratePerson();
         }
         CheckRecycle();
-        UpdateAlpha();
+        // UpdateAlpha();
     }
 
     private void _GeneratePerson()
@@ -154,57 +154,52 @@ public class PeopleGenerator : MonoBehaviour
 
     #region alpha
 
-    private float _StartAlpha = 0f;
+    // private float _StartAlpha = 0f;
 
-    private float _DestinationAlpha = 0f;
+    // private float _DestinationAlpha = 0f;
 
-    private float _StartFadeTime = 0f;
+    // private float _StartFadeTime = 0f;
 
-    [SerializeField]
-    private AnimationCurve _FadeAnimationCurve;
+    // [SerializeField]
+    // private AnimationCurve _FadeAnimationCurve;
 
     [SerializeField]
     private Material _Material;
 
+    public Material Material { get => _Material; }
+
     private void Awake()
     {
         _Material = Instantiate(_Material);
-        SetMaterialAlpha(0);
+        // SetMaterialAlpha(0);
     }
 
-    public void OnPeopleVisibleChanged(bool peopleVisible)
-    {
-        _DestinationAlpha = peopleVisible ? 1f : 0f;
-        if (_StartAlpha != _DestinationAlpha)
-        {
-            _StartFadeTime = Time.time;
-            this.Info("Setting start time at {0}, start alpha = {1}, destination alpha = {2}",
-                _StartFadeTime, _StartAlpha, _DestinationAlpha);
-        }
-    }
+    // public void OnPeopleVisibleChanged(bool peopleVisible)
+    // {
+    //     _DestinationAlpha = peopleVisible ? 1f : 0f;
+    //     if (_StartAlpha != _DestinationAlpha)
+    //     {
+    //         _StartFadeTime = Time.time;
+    //         this.Info("Setting start time at {0}, start alpha = {1}, destination alpha = {2}",
+    //             _StartFadeTime, _StartAlpha, _DestinationAlpha);
+    //     }
+    // }
 
-    private void UpdateAlpha()
-    {
-        if (_StartAlpha != _DestinationAlpha)
-        {
-            var delta = Time.time - _StartFadeTime;
-            var value = _FadeAnimationCurve.Evaluate(delta);
-            var alpha = Mathf.Lerp(_StartAlpha, _DestinationAlpha, value);
-            SetMaterialAlpha(alpha);
-            if (_FadeAnimationCurve.keys[_FadeAnimationCurve.length - 1].time < delta)
-            {
-                this.Info("Got to final alpha.");
-                _StartAlpha = _DestinationAlpha;
-            }
-        }
-    }
-
-    private void SetMaterialAlpha(float alpha)
-    {
-        var color = _Material.GetColor("_BaseColor");
-        color.a = alpha;
-        _Material.SetColor("_BaseColor", color);
-    }
+    // private void UpdateAlpha()
+    // {
+    //     if (_StartAlpha != _DestinationAlpha)
+    //     {
+    //         var delta = Time.time - _StartFadeTime;
+    //         var value = _FadeAnimationCurve.Evaluate(delta);
+    //         var alpha = Mathf.Lerp(_StartAlpha, _DestinationAlpha, value);
+    //         SetMaterialAlpha(alpha);
+    //         if (_FadeAnimationCurve.keys[_FadeAnimationCurve.length - 1].time < delta)
+    //         {
+    //             this.Info("Got to final alpha.");
+    //             _StartAlpha = _DestinationAlpha;
+    //         }
+    //     }
+    // }
 
     #endregion
 }

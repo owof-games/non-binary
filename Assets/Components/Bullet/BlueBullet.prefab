@@ -15,10 +15,11 @@ GameObject:
   - component: {fileID: 2431309360660126485}
   - component: {fileID: 789543184509356833}
   - component: {fileID: 4176721228510960113}
+  - component: {fileID: 5417772431711058099}
   - component: {fileID: 2572529575628690019}
   m_Layer: 6
   m_Name: BlueBullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +153,45 @@ MonoBehaviour:
     _usage: 1
     _value: 0
     _constant: {fileID: 11400000, guid: a8e2d885f91555f43a067d73db63906c, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &5417772431711058099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671307461993127751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a13c337fc59432a95a17e5465b0c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 'Update alpha of the bullet if there''s a global animation
+    going (e.g.: main character defeated)'
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4176721228510960113}
+        m_TargetAssemblyTypeName: Velocity, Assembly-CSharp
+        m_MethodName: OnAlphaMultiplierChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 7b0bef3e0fb21584b95faf3471d186d5, type: 2}
+    _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
 --- !u!114 &2572529575628690019

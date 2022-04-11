@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3238879642320582574}
   - component: {fileID: 3238879642320582575}
   - component: {fileID: 3238879642320582564}
+  - component: {fileID: 7053292277005537609}
   m_Layer: 0
   m_Name: PeoplePrefab
   m_TagString: Untagged
@@ -92,30 +93,6 @@ MonoBehaviour:
     _constant: {fileID: 11400000, guid: 8097eb14182321b489f2af417b32518c, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
-  _FadeAnimationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -2.3283064e-10
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 136
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 6.0082397
-      value: 0.9999121
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 136
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _Material: {fileID: 0}
 --- !u!114 &3238879642320582571
 MonoBehaviour:
@@ -345,3 +322,16 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!114 &7053292277005537609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238879642320582572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3ab43c052ced0498a4f1927be0e21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Alpha: 0

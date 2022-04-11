@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1992264554127879564}
   - component: {fileID: 7120691237879238580}
   - component: {fileID: 8321506038382373369}
+  - component: {fileID: 1408180769700615237}
   m_Layer: 7
   m_Name: MainCharacterPrefab
   m_TagString: Untagged
@@ -207,6 +208,36 @@ MonoBehaviour:
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   _HitParticleSystem: {fileID: 8932396755290884985}
+  _AlphaCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2.8041105
+      outSlope: 2.8041105
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.019709527
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _AlphaAnimationDuration:
+    _usage: 0
+    _value: 0.5
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &8321506038382373369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +278,44 @@ MonoBehaviour:
     _list: {fileID: 0}
     _collectionInstancer: {fileID: 0}
     _listInstancer: {fileID: 0}
+--- !u!114 &1408180769700615237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106681832431300494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a13c337fc59432a95a17e5465b0c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7120691237879238580}
+        m_TargetAssemblyTypeName: PlayerHit, Assembly-CSharp
+        m_MethodName: OnHealthPercentageChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 7d1498b8de8ee174fa947206c62e58b8, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &4330311165871425060
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5709502a46f538349a98da5a177f1c59, type: 3}
+  m_Name: HealthManager
+  m_EditorClassIdentifier: 
+  _StartStory: {fileID: 11400000, guid: ef67ee16f3bbed0429af471db928cf1d, type: 2}
+  _Hit: {fileID: 11400000, guid: f2c3587e201ac694e8795d1d65c05f37, type: 2}
+  _ZeroHealthReached: {fileID: 11400000, guid: b65c52d3335547b42a100ae571313e01, type: 2}
+  _HealthStandard: {fileID: 11400000, guid: 0da5b91154d03a84d80fb5afefbe3959, type: 2}
+  _HealthStory: {fileID: 11400000, guid: 9195bde8463e02a489dc2a2d66227fc0, type: 2}
+  _StartHealth: {fileID: 11400000, guid: ae3294e15db620c4e921075ea2e6b217, type: 2}
+  _Health: {fileID: 11400000, guid: 26cc56e929433ab4dace9b4a59a8fa5d, type: 2}
+  _HealthChanged: {fileID: 11400000, guid: 7120a10fc7fdf2e4f8a14bf35e6c2589, type: 2}
+  _HealthPercentage: {fileID: 11400000, guid: c3f677b6183bc4344a403dc0b3db509f, type: 2}
+  _ActionMapVariable: {fileID: 11400000, guid: f45d6ecf70f374a40a0194203b166419, type: 2}
