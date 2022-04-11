@@ -68,8 +68,8 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.input
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: buttons.multichoice
@@ -108,6 +108,11 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: bullet.source
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: audio
     IsVerboseEnabled: 1
     IsInfoEnabled: 1
     IsWarningEnabled: 0

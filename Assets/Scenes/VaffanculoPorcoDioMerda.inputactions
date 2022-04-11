@@ -1,0 +1,57 @@
+{
+    "name": "VaffanculoPorcoDioMerda",
+    "maps": [
+        {
+            "name": "FottitiActionMap",
+            "id": "d7b6148f-cc87-4a76-a0c6-05f1b7f7699d",
+            "actions": [
+                {
+                    "name": "DioMerdaClick",
+                    "type": "Button",
+                    "id": "6cac28da-7e0c-4642-ada3-7e72e97532d2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5f58d105-7983-4074-9710-41b71c1e81a1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse",
+                    "action": "DioMerdaClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a9773a95-b6be-4017-a58d-9b33551d8b88",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse",
+                    "action": "DioMerdaClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Mouse",
+            "bindingGroup": "Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

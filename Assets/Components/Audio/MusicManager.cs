@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
@@ -9,6 +10,24 @@ public class MusicManager : BehaviourManager
     protected override void ManagerAwake()
     {
         InitializeFadeout();
+        StartCoroutine(DebugAudioClips());
+    }
+
+    private IEnumerator DebugAudioClips()
+    {
+        for (; ; )
+        {
+            var i = 0;
+            foreach (var audioSource in GetComponents<AudioSource>())
+            {
+                this.Verbose("{0}: clip {1}, {2}",
+                    i++,
+                    audioSource.clip ? audioSource.clip.name : "",
+                    audioSource.isPlaying ? "playing" : "stopped"
+                );
+            }
+            yield return new WaitForSeconds(2);
+        }
     }
 
     private void Update()
@@ -85,19 +104,21 @@ public class MusicManager : BehaviourManager
                     if (!audioSource.isPlaying)
                     {
                         audioSource.clip = clip;
+                        this.Info("playing SFX {0}", clip.name);
                         audioSource.Play();
                         return;
                     }
                 }
-                this.Warning("Skipped sfx '{0}' because there are no audio sources available", sfxName);
+                this.Warning("skipped sfx '{0}' because there are no audio sources available", sfxName);
                 return;
             }
         }
-        this.Error("Could not find sfx named '{0}'", sfxName);
+        this.Error("could not find sfx named '{0}'", sfxName);
     }
 
     public void UpdateBackgroundMusic(string name)
     {
+        this.Verbose("UpdateBackgroundMusic({0})", name);
         _BackgroundMusicName = name;
         if (_AudioSource == null)
         {
@@ -116,6 +137,7 @@ public class MusicManager : BehaviourManager
             // no audio: immediately switch
             _AudioSource.clip = _NextAudioClip;
             _AudioSource.volume = TopVolume;
+            this.Info("playing music (no audio => immediately switch) {0}", _NextAudioClip.name);
             _AudioSource.Play();
         }
         else
@@ -139,6 +161,7 @@ public class MusicManager : BehaviourManager
             {
                 // mark the fadeout as completed and go to the next audio clip
                 _SwitchedAudioAt = null;
+                this.Info("setting music (finished fadeout) {0}", _NextAudioClip.name);
                 _AudioSource.clip = _NextAudioClip;
                 if (_NextAudioClip)
                 {

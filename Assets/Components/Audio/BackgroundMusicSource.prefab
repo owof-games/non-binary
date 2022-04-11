@@ -179,7 +179,7 @@ MonoBehaviour:
   - Name: hit
     AudioClips:
     - {fileID: 8300000, guid: 112e4e776ce3416468440fb7434f1487, type: 3}
-    - {fileID: 8300000, guid: d4b79657c4ab3ea47bfdd85d06bf825f, type: 3}
+    - {fileID: 8300000, guid: e4c0db53a6aeade43af4b28f79011563, type: 3}
   TopVolume:
     _usage: 0
     _value: 1
