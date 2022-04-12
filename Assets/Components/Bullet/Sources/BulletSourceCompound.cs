@@ -1,9 +1,13 @@
 using System.Linq;
 using UnityEngine;
+using RG.LogLibrary;
 
 [CreateAssetMenu(fileName = "BulletSourceCompound", menuName = "non-binary/BulletSource/Create Compound", order = 0)]
 public class BulletSourceCompound : BulletSource
 {
+    [SerializeField]
+    private BaseLogger _BaseLogger;
+
     [SerializeField]
     private Vector2[] _Positions;
 
@@ -15,6 +19,18 @@ public class BulletSourceCompound : BulletSource
 
     [SerializeField]
     private Quaternion _AutomaticRotation = Quaternion.identity;
+
+    [SerializeField]
+    private BulletSourceCompound _TakePositionsFrom = null;
+
+    [SerializeField]
+    private Vector2 _LocalTranslation = new Vector2(0, 0);
+
+    [SerializeField]
+    private Vector2 _LocalScaling = new Vector2(1, 1);
+
+    [SerializeField]
+    private Quaternion _LocalRotation = Quaternion.identity;
 
     [SerializeField]
     public enum VelocityStepType
@@ -52,30 +68,62 @@ public class BulletSourceCompound : BulletSource
 
     private Matrix4x4? _TRSMatrix = null;
 
-    private void InitializeTRSMatrix()
+    private Matrix4x4 GetTRSMatrix()
     {
-        if (!_TRSMatrix.HasValue)
+        if (_TakePositionsFrom != null)
         {
-            _TRSMatrix = Matrix4x4.TRS(_AutomaticTranslation, _AutomaticRotation, _AutomaticScaling);
+            return _TakePositionsFrom.GetTRSMatrix();
+        }
+        else
+        {
+            if (!_TRSMatrix.HasValue)
+            {
+                _TRSMatrix = Matrix4x4.TRS(_AutomaticTranslation, _AutomaticRotation, _AutomaticScaling);
+            }
+            return _TRSMatrix.Value;
         }
     }
+
+    private Matrix4x4? _LocalTRSMatrix = null;
+
+    private Matrix4x4 GetLocalTRSMatrix()
+    {
+        if (!_LocalTRSMatrix.HasValue)
+        {
+            _LocalTRSMatrix = Matrix4x4.TRS(_LocalTranslation, _LocalRotation, _LocalScaling);
+        }
+        return _LocalTRSMatrix.Value;
+    }
+
     private Vector2 GetPosition(int positionIndex)
     {
-        InitializeTRSMatrix();
-        return _TRSMatrix.Value.MultiplyPoint3x4(_Positions[positionIndex]);
+        Vector2 pos = _TakePositionsFrom != null ?
+             _TakePositionsFrom.GetPosition(positionIndex) :
+            GetTRSMatrix().MultiplyPoint3x4(_Positions[positionIndex]);
+        return GetLocalTRSMatrix().MultiplyPoint3x4(pos);
+    }
+
+    private Vector2 GetRotationCenter()
+    {
+        return (GetLocalTRSMatrix() * (_TakePositionsFrom != null ?
+             _TakePositionsFrom.GetTRSMatrix() :
+            GetTRSMatrix())).MultiplyPoint3x4(_RotationCenter);
+    }
+
+    private int _NumPositions
+    {
+        get => _TakePositionsFrom != null ? _TakePositionsFrom._NumPositions : _Positions.Length;
     }
 
     private Vector2 GetRadialCenter(VelocityStep velocityStep)
     {
-        InitializeTRSMatrix();
-        return _TRSMatrix.Value.MultiplyPoint3x4(velocityStep.RadialCenter);
+        return (GetLocalTRSMatrix() * GetTRSMatrix()).MultiplyPoint3x4(velocityStep.RadialCenter);
     }
 
     private float GetPlanarX(VelocityStep velocityStep)
     {
-        InitializeTRSMatrix();
         var v = new Vector2(velocityStep.PlanarX, 0);
-        var v2 = _TRSMatrix.Value.MultiplyPoint3x4(v);
+        var v2 = GetTRSMatrix().MultiplyPoint3x4(v);
         return v2.x;
     }
     private Vector2 GetVelocity(int positionIndex, int velocityStepIndex)
@@ -98,10 +146,11 @@ public class BulletSourceCompound : BulletSource
             // compute total duration
             var lifetime = Enumerable.Sum(from velocityStep in _VelocitySteps select velocityStep.Duration);
             // create a description for each particle position
-            var descriptions = new Description[_Positions.Length];
-            for (var positionIndex = 0; positionIndex < _Positions.Length; positionIndex++)
+            var descriptions = new Description[_NumPositions];
+            for (var positionIndex = 0; positionIndex < _NumPositions; positionIndex++)
             {
                 var position = GetPosition(positionIndex);
+                var rotationCenter = GetRotationCenter();
                 // create a velocity description for each step
                 var MyVelocitySteps = new Velocity.VelocityStep[_VelocitySteps.Length];
                 var velocityStepIndex = 0;
@@ -121,12 +170,20 @@ public class BulletSourceCompound : BulletSource
                     IsPink = _IsPink,
                     DeltaTime = 0,
                     InitialVelocity = GetVelocity(positionIndex, 0),
-                    RotationCenter = _RotationCenter,
+                    RotationCenter = rotationCenter,
                     AngularSpeed = _AbsoluteRotationSpeed,
                     InitialPosition = position,
                     VelocitySteps = MyVelocitySteps,
                     LifeDuration = lifetime
                 };
+            }
+            if (_AbsoluteRotationSpeed != 0 && _BaseLogger != null && _BaseLogger.Configuration != null)
+            {
+                _BaseLogger.Verbose(this, "some info about rotation:");
+                for (var i = 0; i < descriptions.Length; i++)
+                {
+                    _BaseLogger.Verbose(this, "position = {0}, rotation center = {1}", descriptions[i].InitialPosition, descriptions[i].RotationCenter);
+                }
             }
             return descriptions;
         }

@@ -452,7 +452,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _BulletSources.Array.data[2].BulletSource
       value: 
-      objectReference: {fileID: 11400000, guid: 09650562b6d5aa146b8e49294078ef61,
+      objectReference: {fileID: 11400000, guid: 45bcc549f3e88d142bffb1a0aa1ff787,
         type: 2}
     - target: {fileID: 4233694072440126920, guid: 286ac557dac96434290b7ffcd594755b,
         type: 3}

@@ -17,6 +17,11 @@ MonoBehaviour:
   RootWarningEnabled: 1
   RootErrorEnabled: 1
   Overrides:
+  - Path: managers.input
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
   - Path: main16to9
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
@@ -67,11 +72,6 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
-  - Path: managers.input
-    IsVerboseEnabled: 1
-    IsInfoEnabled: 1
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
   - Path: buttons.multichoice
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
@@ -113,6 +113,11 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: audio
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet.contour
     IsVerboseEnabled: 1
     IsInfoEnabled: 1
     IsWarningEnabled: 0
