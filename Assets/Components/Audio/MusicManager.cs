@@ -161,7 +161,7 @@ public class MusicManager : BehaviourManager
             {
                 // mark the fadeout as completed and go to the next audio clip
                 _SwitchedAudioAt = null;
-                this.Info("setting music (finished fadeout) {0}", _NextAudioClip.name);
+                this.Info("setting music (finished fadeout) {0}", _NextAudioClip ? _NextAudioClip.name : "");
                 _AudioSource.clip = _NextAudioClip;
                 if (_NextAudioClip)
                 {

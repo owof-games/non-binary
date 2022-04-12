@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
-  m_Name: FromB-short
+  m_Name: FromB-semishort
   m_EditorClassIdentifier: 
   _Positions:
   - {x: 0.41, y: 0}
   - {x: 0.5, y: 0}
   - {x: 0.59, y: 0}
+  - {x: 0.55, y: 0}
   _AutomaticTranslation: {x: 0, y: 0}
   _AutomaticScaling: {x: 1, y: 1}
   _AutomaticRotation: {x: 0, y: 0, z: 0, w: 1}

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbcb378ce78de7e42af4d301da2b69f7, type: 3}
+  m_Name: amab_due
+  m_EditorClassIdentifier: 
+  _BulletSourceBlocks:
+  - BulletSource: {fileID: 11400000, guid: cf76022bbece083428305272406af602, type: 2}
+    DeltaTime: 1
+  - BulletSource: {fileID: 11400000, guid: 8a817b45ae5dcd2419799fc05c4d817e, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: d946cd3232809ed488a1a413ef7c073b, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: 6783698c5b80c544092a4f8e251a22fa, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: f47eadeaa1af7364eb4c252212e2ff8d, type: 2}
+    DeltaTime: 3.5
+  - BulletSource: {fileID: 11400000, guid: f00342bdad6f92a468697018a6737679, type: 2}
+    DeltaTime: 6
+  - BulletSource: {fileID: 11400000, guid: 33cab1e9cc39f8248a2cfc8b17a11cfc, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: b32aaeec43b26b8489d2006ef3046774, type: 2}
+    DeltaTime: 3.5
+  - BulletSource: {fileID: 11400000, guid: e18ab077cc05e5b47bb3db9f7f67c35b, type: 2}
+    DeltaTime: 6
+  - BulletSource: {fileID: 11400000, guid: adcd365bd80842844bee475081cfd65e, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: c4562a8dae72a924f94e8c05e632750b, type: 2}
+    DeltaTime: 3.5
