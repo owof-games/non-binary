@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: tre
   m_EditorClassIdentifier: 
   _BulletSourceBlocks:
-  - BulletSource: {fileID: 11400000, guid: d2767ab8abaf3a6449475d12bc2e53f4, type: 2}
-    DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: e19d36166275d3643ae828f10089878f, type: 2}
-    DeltaTime: 8
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: fdee93019492ac049b6564434dd4e580, type: 2}
     DeltaTime: 8
   - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}
@@ -43,3 +41,7 @@ MonoBehaviour:
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: e819d72905ab9f44e9cd714494b0929a, type: 2}
     DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: d2767ab8abaf3a6449475d12bc2e53f4, type: 2}
+    DeltaTime: 8
+  - BulletSource: {fileID: 11400000, guid: 1f9d9f7608597ae4895b56399bd2205f, type: 2}
+    DeltaTime: 5

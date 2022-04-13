@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BulletSourceBlocks:
   - BulletSource: {fileID: 11400000, guid: bd66f96bccf023641a23dfaf0c42793e, type: 2}
-    DeltaTime: 2.5
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: e18ab077cc05e5b47bb3db9f7f67c35b, type: 2}
     DeltaTime: 2.5
   - BulletSource: {fileID: 11400000, guid: cf76022bbece083428305272406af602, type: 2}

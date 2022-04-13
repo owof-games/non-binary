@@ -11,7 +11,31 @@ public class Velocity : MonoBehaviour
     [SerializeField]
     private Vector2 _InitialVelocity;
 
-    private Vector2 _CurrentVelocity;
+    #region prediction parameters
+
+    private Vector2 _V;
+
+    private Vector2 _C;
+
+    private float _R;
+
+    private float _O;
+
+    private float _A0;
+
+    private float _T0;
+
+    private void SetupPredictionParameters(Vector2 v, Vector2 c, float r, float o, float a0, float t0)
+    {
+        _V = v;
+        _C = c;
+        _R = r;
+        _O = o;
+        _A0 = a0;
+        _T0 = t0;
+    }
+
+    #endregion
 
     [System.Serializable]
     public struct VelocityStep
@@ -44,7 +68,16 @@ public class Velocity : MonoBehaviour
 
     private void Start()
     {
-        _CurrentVelocity = _InitialVelocity;
+        var relativeInitialPosition = _InitialPosition - _RotationCenter;
+        SetupPredictionParameters(
+            _InitialVelocity,
+            _RotationCenter,
+            relativeInitialPosition.magnitude,
+            _AngularSpeed,
+            Mathf.Atan2(relativeInitialPosition.y, relativeInitialPosition.x),
+            Time.time
+        );
+
         _StartingTime = Time.time;
         var mr = GetComponent<MeshRenderer>();
         _Material = mr.material;
@@ -74,9 +107,16 @@ public class Velocity : MonoBehaviour
             _CurrentStep < _VelocitySteps.Length - 1 &&
             relativeTime >= _VelocitySteps[_CurrentStep + 1].Time)
         {
-            this.Info("got to step {0} because relative time is {1}", _CurrentStep + 1, relativeTime);
-            _CurrentVelocity = _VelocitySteps[_CurrentStep + 1].NewVelocity;
+            this.Info("got to step {0} because relative time is {1} and the step time is {2}", _CurrentStep + 1, relativeTime, _VelocitySteps[_CurrentStep + 1].Time);
             _CurrentStep++;
+            SetupPredictionParameters(
+                _VelocitySteps[_CurrentStep].NewVelocity,
+                _C + (Time.time - _T0) * _V,
+                _R,
+                _O,
+                _A0,
+                Time.time
+            );
         }
         UpdateVelocity();
     }
@@ -89,15 +129,22 @@ public class Velocity : MonoBehaviour
 
     private void UpdateVelocity()
     {
-        var v = _CurrentVelocity;
-        var startVector = _InitialPosition - _RotationCenter;
-        var rotationRadius = startVector.magnitude;
-        var initialAngle = Mathf.Atan2(startVector.y, startVector.x);
-        v.x += -rotationRadius * _AngularSpeed * Mathf.Sin(_AngularSpeed * Time.time + initialAngle);
-        v.y += rotationRadius * _AngularSpeed * Mathf.Cos(_AngularSpeed * Time.time + initialAngle);
-        _Rigidbody.velocity = new Vector3(
-            v.x, v.y, 0
-        );
+        // get the current position
+        Vector2 currentPosition = transform.position;
+        // predict the new position at time + dt
+        var dt = Time.fixedDeltaTime;
+        var t = Time.time - _T0 + dt;
+        Vector2 predictedPosition = PredictPositionAt(t);
+        // compute the velocity necessary to get there
+        var v = (predictedPosition - currentPosition) / dt;
+        _Rigidbody.velocity = v;
+    }
+
+    private Vector2 PredictPositionAt(float t)
+    {
+        var a = _O * t + _A0;
+        var predictedPosition = _C + _R * new Vector2(Mathf.Cos(a), Mathf.Sin(a)) + t * _V;
+        return predictedPosition;
     }
 
     [System.Serializable]
@@ -176,20 +223,20 @@ public class Velocity : MonoBehaviour
         {
             return;
         }
-        if (Time.frameCount % 240 == 0)
-        {
-            this.Info("_LifeDuration = {0}", _LifeDuration);
-        }
+        // if (Time.frameCount % 240 == 0)
+        // {
+        //     this.Info("_LifeDuration = {0}", _LifeDuration);
+        // }
         if (_LifeDuration < 0)
         {
             return;
         }
         var startDeathAnimationTime = _StartingTime + _LifeDuration - _DyingAnimationDuration;
-        if (Time.frameCount % 240 == 0)
-        {
-            this.Info("time is {0} and _StartingTime = {1} + _LifeDuration = {2} - _DyingAnimationDuration = {3} => {4}",
-            Time.time, _StartingTime, _LifeDuration, _DyingAnimationDuration.Value, startDeathAnimationTime);
-        }
+        // if (Time.frameCount % 240 == 0)
+        // {
+        //     this.Info("time is {0} and _StartingTime = {1} + _LifeDuration = {2} - _DyingAnimationDuration = {3} => {4}",
+        //     Time.time, _StartingTime, _LifeDuration, _DyingAnimationDuration.Value, startDeathAnimationTime);
+        // }
         if (Time.time >= startDeathAnimationTime)
         {
             this.Info("starting to die!");
