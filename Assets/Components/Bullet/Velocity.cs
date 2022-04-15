@@ -66,6 +66,9 @@ public class Velocity : MonoBehaviour
     private float _AngularSpeed = 0;
 
     [SerializeField]
+    private float _MaxRotationAngle = 0;
+
+    [SerializeField]
     private Vector2 _InitialPosition;
 
     private void Awake()
@@ -150,13 +153,35 @@ public class Velocity : MonoBehaviour
         // compute the velocity necessary to get there
         var v = (predictedPosition - currentPosition) / dt;
         _Rigidbody.velocity = v;
+        // reverse angular direction if needed
+        if (_MaxRotationAngle > 0)
+        {
+            var a = PredictAngleAt(t);
+            // this.Verbose("checking current angle {0} vs a0 {1} and max rotation angle")
+            if (Mathf.Abs(a - _A0) >= Mathf.Deg2Rad * _MaxRotationAngle)
+            {
+                SetupPredictionParameters(
+                    _VelocitySteps[_CurrentStep].NewVelocity,
+                    _C + (Time.time - _T0) * _V,
+                    _R,
+                    -_O,
+                    a,
+                    Time.time
+                );
+            }
+        }
     }
 
     private Vector2 PredictPositionAt(float t)
     {
-        var a = _O * t + _A0;
+        var a = PredictAngleAt(t);
         var predictedPosition = _C + _R * new Vector2(Mathf.Cos(a), Mathf.Sin(a)) + t * _V;
         return predictedPosition;
+    }
+
+    private float PredictAngleAt(float t)
+    {
+        return _O * t + _A0;
     }
 
     [System.Serializable]
@@ -170,6 +195,8 @@ public class Velocity : MonoBehaviour
 
         public float AngularSpeed;
 
+        public float MaxRotationAngle;
+
         public Vector2 InitialPosition;
 
         public float LifeDuration;
@@ -181,6 +208,7 @@ public class Velocity : MonoBehaviour
         _VelocitySteps = description.VelocitySteps;
         _RotationCenter = description.RotationCenter;
         _AngularSpeed = description.AngularSpeed;
+        _MaxRotationAngle = description.MaxRotationAngle;
         _InitialPosition = description.InitialPosition;
         _LifeDuration = description.LifeDuration;
     }

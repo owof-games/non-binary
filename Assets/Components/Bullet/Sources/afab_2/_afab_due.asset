@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbcb378ce78de7e42af4d301da2b69f7, type: 3}
+  m_Name: _afab_due
+  m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
+  _HellMode: 0
+  _HellInitialDelay: 8
+  _HellDelayFactor: 0.99
+  _HellMinimumForStage: 6
+  _HellMinimumDelayBetweenDescriptionsInStage: 0.5
+  _HellMinumumDelayBetweenStages: 1
+  _BulletSourceBlocks:
+  - BulletSource: {fileID: 11400000, guid: 711cacf49581d5f4f85cdeb7e47c11c5, type: 2}
+    DeltaTime: 1
+  - BulletSource: {fileID: 11400000, guid: 377835cd914b89144b6fb6f121d9c0d5, type: 2}
+    DeltaTime: 7
+  - BulletSource: {fileID: 11400000, guid: 852e5339625c2fa4e91d16b343797fd6, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: 6409edebed9d9574cbdbc8b5999ab446, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: 1a2e4ffe1ee17cf47b1643aafe38e65c, type: 2}
+    DeltaTime: 7
+  - BulletSource: {fileID: 11400000, guid: c4d6cb12a1fb1fd4f95da56dd5d7af4d, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: b0616804ea2034941bed27641201c2e4, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: b1d9785587d06484394c758fbcd6f280, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: c4d6cb12a1fb1fd4f95da56dd5d7af4d, type: 2}
+    DeltaTime: 7
+  - BulletSource: {fileID: 11400000, guid: 852e5339625c2fa4e91d16b343797fd6, type: 2}
+    DeltaTime: 1
+  - BulletSource: {fileID: 11400000, guid: 1a2e4ffe1ee17cf47b1643aafe38e65c, type: 2}
+    DeltaTime: 1
+  - BulletSource: {fileID: 11400000, guid: 377835cd914b89144b6fb6f121d9c0d5, type: 2}
+    DeltaTime: 1
+  - BulletSource: {fileID: 11400000, guid: b08d65f2dc29c374f819286d3693bb03, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: df8240ce80644ef4b8f4af0416f09df4, type: 2}
+    DeltaTime: 0

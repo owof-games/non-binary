@@ -173,6 +173,7 @@ public class BulletSourceCompound : BulletSource
                     InitialVelocity = GetVelocity(positionIndex, 0),
                     RotationCenter = rotationCenter,
                     AngularSpeed = _AbsoluteRotationSpeed,
+                    MaxRotationAngle = _MaxRotationAngle,
                     InitialPosition = position,
                     VelocitySteps = MyVelocitySteps,
                     LifeDuration = lifetime
