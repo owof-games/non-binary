@@ -13,6 +13,18 @@ public class Velocity : MonoBehaviour
 
     #region prediction parameters
 
+    /*
+    the movement parameters are:
+    t0: the absolute time at the beginning of the movement
+    c: the rotation center at time t0
+    r: the distance from the rotation center at time t0
+    a0: the angle from the rotation center at time t0
+    o: the angular speed
+    v: the linear velocity coponent
+    the formula to compute the position of a bullet at time t (relative to t0) is thus:
+    x = c + r * [cos, sin](o*t + a0) + t * v
+    */
+
     private Vector2 _V;
 
     private Vector2 _C;

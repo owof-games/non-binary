@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using RG.LogLibrary;
@@ -139,7 +140,7 @@ public class BulletSourceCompound : BulletSource
         };
     }
 
-    public override Description[] Descriptions
+    public override IEnumerable<Description> Descriptions
     {
         get
         {

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
@@ -21,10 +22,6 @@ public class BulletSourceComponent : MonoBehaviour
     [SerializeField]
     private GameObject _BlueBullet;
 
-    private BulletSource.Description[] _Descriptions;
-
-    private float? _TotalDuration;
-
     private float? _StartingTime;
 
     [SerializeField]
@@ -47,20 +44,17 @@ public class BulletSourceComponent : MonoBehaviour
             {
                 if (bulletSourceEntry.Name == bulletHellName)
                 {
-                    _Descriptions = bulletSourceEntry.BulletSource.Descriptions;
-                    System.Array.Sort(_Descriptions, (value1, value2) =>
-                    {
-                        return value1.DeltaTime.CompareTo(value2.DeltaTime);
-                    });
+                    _CurrentBulletDescriptionEnumerable = bulletSourceEntry.BulletSource.Descriptions.GetEnumerator();
+                    RefillDescriptions();
                     _StartingTime = Time.time;
-                    _TotalDuration = Enumerable.Max(
-                        from description
-                        in _Descriptions
-                        select description.DeltaTime + description.LifeDuration)
-                        + 1;
-                    _CurrentIndex = -1;
-                    this.Info("setup bullet hell {0} at time {1} with total duration {2}",
-                        bulletSourceEntry.Name, _StartingTime, _TotalDuration);
+                    // _TotalDuration = Enumerable.Max(
+                    //     from description
+                    //     in _Descriptions
+                    //     select description.DeltaTime + description.LifeDuration)
+                    //     + 1;
+                    // _CurrentIndex = -1;
+                    this.Info("setup bullet hell {0} at time {1}",
+                        bulletSourceEntry.Name, _StartingTime);
                     return;
                 }
             }
@@ -68,30 +62,65 @@ public class BulletSourceComponent : MonoBehaviour
         }
     }
 
-    private int _CurrentIndex = -1;
+    private List<BulletSource.Description> _Descriptions = null;
+
+    private const int _MaxDescriptionQueueLength = 50;
+
+    private IEnumerator<BulletSource.Description> _CurrentBulletDescriptionEnumerable = null;
+
+    private bool _CurrentBulletDescriptionEnumerableFinished = false;
+
+    private void RefillDescriptions()
+    {
+        if (_Descriptions == null)
+        {
+            _Descriptions = new List<BulletSource.Description>();
+        }
+        this.Info("refill: starting with {0} elements in queue", _Descriptions.Count);
+        var hasMore = true;
+        while (_Descriptions.Count < _MaxDescriptionQueueLength &&
+            (hasMore = _CurrentBulletDescriptionEnumerable.MoveNext()))
+        {
+            _Descriptions.Add(_CurrentBulletDescriptionEnumerable.Current);
+        }
+        _CurrentBulletDescriptionEnumerableFinished = !hasMore;
+        this.Info("refill finished with {0} elements in queue and enumable finished? {1}",
+            _Descriptions.Count, _CurrentBulletDescriptionEnumerableFinished);
+        _Descriptions.Sort((value1, value2) =>
+        {
+            return value1.DeltaTime.CompareTo(value2.DeltaTime);
+        });
+    }
 
     public Size ScreenSize
     {
         private get; set;
     }
 
+    float _DeathOfLastBullet = 0;
+
     private void Update()
     {
-        if (!_StartingTime.HasValue || !_TotalDuration.HasValue)
+        if (!_StartingTime.HasValue ||
+            _Descriptions == null ||
+            _CurrentBulletDescriptionEnumerable == null)
         {
             return;
         }
-        if (_StartingTime.HasValue && _TotalDuration.HasValue && Time.time > _StartingTime.Value + _TotalDuration.Value)
+        if (_StartingTime.HasValue &&
+            _CurrentBulletDescriptionEnumerableFinished &&
+            _Descriptions.Count == 0 &&
+            Time.time > _DeathOfLastBullet)
         {
-            _StartingTime = null;
-            _TotalDuration = null;
+            this.Info("Bullet hell finished!");
+            StopBulletHell();
             _NextLineEvent.Raise();
             return;
         }
         var relativeTime = Time.time - _StartingTime;
         var ratio = ((float)ScreenSize.ProportionalWidth) / _DesignScreenWidth.Value;
-        while (_CurrentIndex < _Descriptions.Length - 1 &&
-            relativeTime >= _Descriptions[_CurrentIndex + 1].DeltaTime)
+        while (_Descriptions.Count > 0 &&
+            relativeTime >= _Descriptions[0].DeltaTime)
         {
             var xScale = ScreenSize.ProportionalWidth;
             var yScale = ScreenSize.ProportionalHeight;
@@ -102,8 +131,10 @@ public class BulletSourceComponent : MonoBehaviour
                 Quaternion.identity,
                 new Vector3(xScale, yScale, 1)
             );
-            _CurrentIndex++;
-            var description = _Descriptions[_CurrentIndex];
+            var description = _Descriptions[0];
+            _DeathOfLastBullet = Mathf.Max(_DeathOfLastBullet, Time.time + description.LifeDuration);
+            _Descriptions.RemoveAt(0);
+            RefillDescriptions();
             // transform percentage coordinates in world space coordinates
             var initialPosition = GetWorldPosition(transformationMatrix, description.InitialPosition);
             var rotationCenter = GetWorldPosition(transformationMatrix, description.RotationCenter);
@@ -147,6 +178,8 @@ public class BulletSourceComponent : MonoBehaviour
     public void StopBulletHell()
     {
         _StartingTime = null;
-        _TotalDuration = null;
+        _Descriptions = null;
+        _CurrentBulletDescriptionEnumerable = null;
+        _DeathOfLastBullet = 0;
     }
 }

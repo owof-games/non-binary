@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class BulletSource : ScriptableObject
@@ -10,5 +11,5 @@ public abstract class BulletSource : ScriptableObject
         public bool IsPink;
     }
 
-    public abstract Description[] Descriptions { get; }
+    public abstract IEnumerable<Description> Descriptions { get; }
 }

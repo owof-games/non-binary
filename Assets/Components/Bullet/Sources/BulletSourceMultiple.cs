@@ -1,4 +1,3 @@
-using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +14,7 @@ public class BulletSourceMultiple : BulletSource
     [SerializeField]
     private BulletSourceBlock[] _BulletSourceBlocks;
 
-    public override Description[] Descriptions
+    public override IEnumerable<Description> Descriptions
     {
         get
         {

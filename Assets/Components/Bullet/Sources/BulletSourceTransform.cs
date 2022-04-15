@@ -16,7 +16,7 @@ public class BulletSourceTransform : BulletSource
 
     public List<Operation> Operations = new List<Operation>();
 
-    public override Description[] Descriptions
+    public override IEnumerable<Description> Descriptions
     {
         get
         {

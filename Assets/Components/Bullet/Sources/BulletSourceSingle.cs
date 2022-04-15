@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +6,7 @@ public class BulletSourceSingle : BulletSource
 {
     public Description SingleBulletDescription;
 
-    public override Description[] Descriptions
+    public override IEnumerable<Description> Descriptions
     {
         get
         {
