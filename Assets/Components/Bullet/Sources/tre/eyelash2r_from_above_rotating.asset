@@ -10,42 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
-  m_Name: iris_from_above_zigzag
+  m_Name: eyelash2r_from_above_rotating
   m_EditorClassIdentifier: 
-  _BaseLogger:
-    Configuration: {fileID: 0}
-    Path: 
   _Positions: []
   _AutomaticTranslation: {x: 0, y: 0}
   _AutomaticScaling: {x: 1, y: 1}
   _AutomaticRotation: {x: 0, y: 0, z: 0, w: 1}
-  _TakePositionsFrom: {fileID: 11400000, guid: fa8d8b75b1f74c548a849e452af3acf3, type: 2}
-  _LocalTranslation: {x: -0.1, y: 0.7}
+  _TakePositionsFrom: {fileID: 11400000, guid: ef88f918ee990a440ab4d97feda1c655, type: 2}
+  _LocalTranslation: {x: 0, y: 0.69}
   _LocalScaling: {x: 1, y: 1}
   _LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   _VelocitySteps:
-  - Duration: 2.6
+  - Duration: 4.5
     Type: 0
     Magnitude: 0.0025
-    UniformDirection: {x: 1, y: -1.7777778}
+    UniformDirection: {x: 0, y: -1}
     RadialCenter: {x: 0, y: 0}
     PlanarX: 0
-  - Duration: 2.6
+  - Duration: 1.5
     Type: 0
-    Magnitude: 0.0025
-    UniformDirection: {x: -1, y: -1.777778}
+    Magnitude: 0
+    UniformDirection: {x: 0, y: -1}
     RadialCenter: {x: 0, y: 0}
     PlanarX: 0
-  - Duration: 2.6
-    Type: 0
-    Magnitude: 0.0025
-    UniformDirection: {x: 1, y: -1.77778}
-    RadialCenter: {x: 0, y: 0}
-    PlanarX: 0
-  - Duration: 2.6
-    Type: 0
-    Magnitude: 0.0025
-    UniformDirection: {x: -1, y: -1.777778}
+  - Duration: 3
+    Type: 1
+    Magnitude: 0.01
+    UniformDirection: {x: 0, y: 0}
     RadialCenter: {x: 0, y: 0}
     PlanarX: 0
   _RotationCenter: {x: 0, y: 0}

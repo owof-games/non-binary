@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
   m_Name: eyelash3r_from_below_wait_and_expand
   m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
   _Positions:
   - {x: 0, y: 6}
   - {x: 0, y: 8}
