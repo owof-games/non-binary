@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5709502a46f538349a98da5a177f1c59, type: 3}
   m_Name: HealthManager
   m_EditorClassIdentifier: 
+  _Invincible: 0
   _StartStory: {fileID: 11400000, guid: ef67ee16f3bbed0429af471db928cf1d, type: 2}
   _Hit: {fileID: 11400000, guid: f2c3587e201ac694e8795d1d65c05f37, type: 2}
   _ZeroHealthReached: {fileID: 11400000, guid: b65c52d3335547b42a100ae571313e01, type: 2}

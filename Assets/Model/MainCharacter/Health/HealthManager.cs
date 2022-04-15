@@ -6,6 +6,9 @@ using System;
 public class HealthManager : BaseManager
 {
     [SerializeField]
+    private bool _Invincible = false;
+
+    [SerializeField]
     private VoidEvent _StartStory;
 
     [SerializeField]
@@ -54,7 +57,10 @@ public class HealthManager : BaseManager
 
     private void OnHit()
     {
-        _Health.Value--;
+        if (!_Invincible)
+        {
+            _Health.Value--;
+        }
     }
 
     private void OnHealthChanged(int obj)

@@ -79,7 +79,7 @@ MonoBehaviour:
     IsErrorEnabled: 0
   - Path: bullet.blue
     IsVerboseEnabled: 0
-    IsInfoEnabled: 1
+    IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: maintext.container
@@ -120,5 +120,10 @@ MonoBehaviour:
   - Path: bullet.contour
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet.hell
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0

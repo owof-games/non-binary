@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcb378ce78de7e42af4d301da2b69f7, type: 3}
   m_Name: _tre
   m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
+  _HellMode: 1
+  _HellInitialDelay: 5
+  _HellDelayFactor: 0.95
+  _HellMinimumForStage: 12
+  _HellMinimumDelayBetweenDescriptionsInStage: 0.5
+  _HellMinumumDelayBetweenStages: 0.7
   _BulletSourceBlocks:
-  - BulletSource: {fileID: 11400000, guid: 8e6970b3456201e43989f27895c3b516, type: 2}
-    DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: e19d36166275d3643ae828f10089878f, type: 2}
-    DeltaTime: 800
+    DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: fdee93019492ac049b6564434dd4e580, type: 2}
     DeltaTime: 8
   - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}
@@ -24,7 +31,7 @@ MonoBehaviour:
   - BulletSource: {fileID: 11400000, guid: e846676222fb8bb4dbbdbb0495fdc5d1, type: 2}
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: 43fd7225153e2164c979549e55c80b95, type: 2}
-    DeltaTime: 1.5
+    DeltaTime: 2
   - BulletSource: {fileID: 11400000, guid: dbea0ebed2fe9aa4f9c106417e36ebb7, type: 2}
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: 076ecbaf774a0f64a9bb99a249c77723, type: 2}
@@ -51,3 +58,13 @@ MonoBehaviour:
     DeltaTime: 4
   - BulletSource: {fileID: 11400000, guid: 2cff108436458fc468b894152e6de8f4, type: 2}
     DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: 6642b0dbe003f1448a9f15ff223b2800, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: f400aa14874da5642a8ef24dff1b0362, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: 8e6970b3456201e43989f27895c3b516, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: 22ce19a234d9902439f59ffca42f7fe0, type: 2}
+    DeltaTime: 5
+  - BulletSource: {fileID: 11400000, guid: ab1b84ca9fbb8e842b4734813cb7e140, type: 2}
+    DeltaTime: 0

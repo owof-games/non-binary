@@ -24,7 +24,7 @@ MonoBehaviour:
   _LocalScaling: {x: 1, y: 1}
   _LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   _VelocitySteps:
-  - Duration: 8
+  - Duration: 10
     Type: 0
     Magnitude: 0.0025
     UniformDirection: {x: 0, y: -1}

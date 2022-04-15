@@ -10,7 +10,7 @@ public class BulletSourceSingle : BulletSource
     {
         get
         {
-            return new Description[] { SingleBulletDescription };
+            return new Description[] { SingleBulletDescription.Clone() };
         }
     }
 }

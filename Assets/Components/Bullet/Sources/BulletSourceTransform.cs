@@ -33,8 +33,9 @@ public class BulletSourceTransform : BulletSource
                 fullTransform = trs * fullTransform;
             }
             var descriptions = BulletSource.Descriptions;
-            foreach (var description in descriptions)
+            foreach (var d in descriptions)
             {
+                var description = d.Clone();
                 description.InitialPosition = fullTransform.MultiplyPoint3x4(description.InitialPosition);
                 for (var i = 0; i < description.VelocitySteps.Length; i++)
                 {
