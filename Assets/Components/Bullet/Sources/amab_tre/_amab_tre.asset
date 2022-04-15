@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbcb378ce78de7e42af4d301da2b69f7, type: 3}
-  m_Name: _tre
+  m_Name: _amab_tre
   m_EditorClassIdentifier: 
   _BaseLogger:
     Configuration: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
   _HellMinumumDelayBetweenStages: 0.7
   _BulletSourceBlocks:
   - BulletSource: {fileID: 11400000, guid: e19d36166275d3643ae828f10089878f, type: 2}
-    DeltaTime: 0
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: fdee93019492ac049b6564434dd4e580, type: 2}
     DeltaTime: 8
   - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
+  m_Name: SmallLightningFromTop
+  m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
+  _Positions: []
+  _AutomaticTranslation: {x: 0, y: 0}
+  _AutomaticScaling: {x: 1, y: 1}
+  _AutomaticRotation: {x: 0, y: 0, z: 0, w: 1}
+  _TakePositionsFrom: {fileID: 11400000, guid: 1dc2eff79c47b494894a4a9acef56366, type: 2}
+  _LocalTranslation: {x: 0, y: 0.7}
+  _LocalScaling: {x: 1, y: 1}
+  _LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  _VelocitySteps:
+  - Duration: 8
+    Type: 0
+    Magnitude: 0.0045
+    UniformDirection: {x: 0, y: -1}
+    RadialCenter: {x: 0, y: 0}
+    PlanarX: 0
+  _RotationCenter: {x: 0, y: 0}
+  _AbsoluteRotationSpeed: 0
+  _MaxRotationAngle: 0
+  _IsPink: 1
