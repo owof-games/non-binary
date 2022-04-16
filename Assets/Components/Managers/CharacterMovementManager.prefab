@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ActionMapVariable: {fileID: 11400000, guid: f45d6ecf70f374a40a0194203b166419, type: 2}
   VelocityVariable: {fileID: 11400000, guid: 36a1e3dd671b48a46bc722bdc1ef3363, type: 2}
-  Speed: 1.5
+  Speed: 1.2
 --- !u!114 &6609705331975336679
 MonoBehaviour:
   m_ObjectHideFlags: 0
