@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8916764287838234841}
-  - component: {fileID: 8916764287838234842}
   - component: {fileID: 6623811095801252490}
+  - component: {fileID: 8916764287838234842}
   m_Layer: 0
   m_Name: ScreenProportionsManagerPrefab
   m_TagString: Untagged
@@ -33,19 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8916764287838234842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8916764287838234843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceacdbe907057b347997c69c2e59c5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScreenSize: {fileID: 11400000, guid: ef1944e9be9f006448e456a80fa6464a, type: 2}
 --- !u!114 &6623811095801252490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,3 +47,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
   Path: managers.screen
+--- !u!114 &8916764287838234842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916764287838234843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceacdbe907057b347997c69c2e59c5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScreenSize: {fileID: 11400000, guid: ef1944e9be9f006448e456a80fa6464a, type: 2}
