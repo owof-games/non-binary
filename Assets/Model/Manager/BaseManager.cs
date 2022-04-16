@@ -24,7 +24,7 @@ public abstract class BaseManager : ScriptableObject
 
     void OnEnable()
     {
-        var name = this.GetType().FullName;
+        var name = GetType().FullName;
         if (_RegisteredManagers.IndexOf(name) < 0)
         {
             hideFlags = HideFlags.DontUnloadUnusedAsset;

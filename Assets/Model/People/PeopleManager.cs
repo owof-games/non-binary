@@ -10,15 +10,16 @@ public class PeopleManager : BaseManager
 
     public BoolVariable PeopleVisible;
 
-    public StoryStepEvent StoryStepChanged;
+    public StoryStepPairEvent StoryStepChanged;
 
     protected override void OnEnableManager()
     {
         RegisterTo(StoryStepChanged, OnStoryStepChanged);
     }
 
-    private void OnStoryStepChanged(StoryStep storyStep)
+    private void OnStoryStepChanged(StoryStepPair storyStepPair)
     {
+        var storyStep = storyStepPair.Item1;
         if (storyStep.ShowPeople)
         {
             PeopleVisible.Value = true;
@@ -30,6 +31,10 @@ public class PeopleManager : BaseManager
         if (storyStep.AlmostThere)
         {
             PeoplePercentage.Value = 1;
+        }
+        if (storyStepPair.Item2.IsBulletHell && !storyStepPair.Item1.IsBulletHell)
+        {
+            PeoplePercentage.Value = 0;
         }
     }
 }
