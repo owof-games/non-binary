@@ -403,7 +403,7 @@ PrefabInstance:
     - target: {fileID: 4233694072440126920, guid: 286ac557dac96434290b7ffcd594755b,
         type: 3}
       propertyPath: _BulletSources.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4233694072440126920, guid: 286ac557dac96434290b7ffcd594755b,
         type: 3}
@@ -434,6 +434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _BulletSources.Array.data[5].Name
       value: afab_tre
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233694072440126920, guid: 286ac557dac96434290b7ffcd594755b,
+        type: 3}
+      propertyPath: _BulletSources.Array.data[6].Name
+      value: finale
       objectReference: {fileID: 0}
     - target: {fileID: 4233694072440126920, guid: 286ac557dac96434290b7ffcd594755b,
         type: 3}
@@ -470,6 +475,12 @@ PrefabInstance:
       propertyPath: _BulletSources.Array.data[5].BulletSource
       value: 
       objectReference: {fileID: 11400000, guid: 40fbb23de4cda67449a7120bc1bf0201,
+        type: 2}
+    - target: {fileID: 4233694072440126920, guid: 286ac557dac96434290b7ffcd594755b,
+        type: 3}
+      propertyPath: _BulletSources.Array.data[6].BulletSource
+      value: 
+      objectReference: {fileID: 11400000, guid: 97374ca28d9fff748a5e507c0d578254,
         type: 2}
     - target: {fileID: 4233694072440126921, guid: 286ac557dac96434290b7ffcd594755b,
         type: 3}

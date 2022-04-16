@@ -8,6 +8,10 @@ public class BulletSourceGenderBender : BulletSource
     [SerializeField]
     private BulletSource _BulletSource;
 
+    public BulletSource BulletSource { get => _BulletSource; set { _BulletSource = value; } }
+
+    public bool IsBlue;
+
     public override IEnumerable<Description> Descriptions
     {
         get
@@ -15,7 +19,7 @@ public class BulletSourceGenderBender : BulletSource
             foreach (var description in _BulletSource.Descriptions)
             {
                 var d = description.Clone();
-                d.IsPink = !d.IsPink;
+                d.IsPink = !IsBlue;
                 yield return d;
             }
         }

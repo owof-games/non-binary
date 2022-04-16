@@ -18,6 +18,7 @@ MonoBehaviour:
   StartKnotEvent: {fileID: 11400000, guid: 5faa5f029fb535242930bf0ce6b08762, type: 2}
   MakeChoiceEvent: {fileID: 11400000, guid: 14a507f39e52e034185dbb9822c9a673, type: 2}
   StartStory: {fileID: 11400000, guid: ef67ee16f3bbed0429af471db928cf1d, type: 2}
+  IsAMAB: {fileID: 11400000, guid: 13734897409d326408d367bb7811d22f, type: 2}
   BaseLogger:
     Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
     Path: managers.story

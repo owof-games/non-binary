@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b49a1be4f1d1b4f95ef35f5f48e6f1, type: 3}
+  m_Name: finale
+  m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
+  _HellModeDescription:
+    Active: 1
+    JumpDirectlyToHellMode: 1
+    InitialDelay: 5
+    DelayFactor: 0.95
+    MinimumForStage: 12
+    MinimumDelayBetweenDescriptionsInStage: 0.5
+    MinumumDelayBetweenStages: 0.7
+  _AFABBulletHells:
+  - {fileID: 11400000, guid: 35e750ca1cb77fd41aea4af6e9c231df, type: 2}
+  - {fileID: 11400000, guid: 16d53e39fe4cca241881483086f24f72, type: 2}
+  - {fileID: 11400000, guid: 40fbb23de4cda67449a7120bc1bf0201, type: 2}
+  _AMABBulletHells:
+  - {fileID: 11400000, guid: 09650562b6d5aa146b8e49294078ef61, type: 2}
+  - {fileID: 11400000, guid: e3fa6075684e4d54894b82999853e977, type: 2}
+  - {fileID: 11400000, guid: 45bcc549f3e88d142bffb1a0aa1ff787, type: 2}
+  _IsAMAB: {fileID: 11400000, guid: 13734897409d326408d367bb7811d22f, type: 2}

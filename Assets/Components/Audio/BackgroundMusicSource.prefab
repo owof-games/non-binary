@@ -175,6 +175,8 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
   - Name: bullet_hell_afab_tre
     AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
+  - Name: bullet_hell_finale
+    AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
   SFXEntries:
   - Name: hit
     AudioClips:

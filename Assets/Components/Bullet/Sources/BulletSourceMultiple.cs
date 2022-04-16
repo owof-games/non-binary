@@ -9,6 +9,8 @@ public class BulletSourceMultiple : BulletSource
     [SerializeField]
     BaseLogger _BaseLogger;
 
+    public BaseLogger BaseLogger { set { _BaseLogger = value; } }
+
     [System.Serializable]
     public struct BulletSourceBlock
     {
@@ -16,26 +18,33 @@ public class BulletSourceMultiple : BulletSource
         public float DeltaTime;
     }
 
-    [SerializeField]
-    private bool _HellMode;
+    [System.Serializable]
+    public struct HellModeDescription
+    {
+        public bool Active;
+
+        public bool JumpDirectlyToHellMode;
+
+        public float InitialDelay;
+
+        public float DelayFactor;
+
+        public float MinimumForStage;
+
+        public float MinimumDelayBetweenDescriptionsInStage;
+
+        public float MinumumDelayBetweenStages;
+    }
 
     [SerializeField]
-    private float _HellInitialDelay = 8;
+    private HellModeDescription _HellModeDescription;
 
-    [SerializeField]
-    private float _HellDelayFactor = 0.99f;
-
-    [SerializeField]
-    private float _HellMinimumForStage = 6;
-
-    [SerializeField]
-    private float _HellMinimumDelayBetweenDescriptionsInStage = 0.5f;
-
-    [SerializeField]
-    private float _HellMinumumDelayBetweenStages = 1f;
+    public HellModeDescription HellModeDescriptionValue { set { _HellModeDescription = value; } }
 
     [SerializeField]
     private BulletSourceBlock[] _BulletSourceBlocks;
+
+    public BulletSourceBlock[] BulletSourceBlocks { get { return _BulletSourceBlocks; } set { _BulletSourceBlocks = value; } }
 
     public override IEnumerable<Description> Descriptions
     {
@@ -43,29 +52,33 @@ public class BulletSourceMultiple : BulletSource
         {
             // always produce all the descriptions once, in order
             var t = 0f;
-            foreach (var bulletSourceBlock in _BulletSourceBlocks)
+
+            if (!_HellModeDescription.JumpDirectlyToHellMode)
             {
-                t += bulletSourceBlock.DeltaTime;
-                var blockDescriptions = bulletSourceBlock.BulletSource.Descriptions;
-                if (_BaseLogger.Configuration != null)
+                foreach (var bulletSourceBlock in _BulletSourceBlocks)
                 {
-                    _BaseLogger.Info(this, "generating block description with t = {0}", t);
-                }
-                var i = 0;
-                foreach (var description in blockDescriptions)
-                {
-                    var d = description.Clone();
-                    d.DeltaTime += t;
-                    if (i++ == 0 && _BaseLogger.Configuration != null)
+                    t += bulletSourceBlock.DeltaTime;
+                    var blockDescriptions = bulletSourceBlock.BulletSource.Descriptions;
+                    if (_BaseLogger.Configuration != null)
                     {
-                        _BaseLogger.Verbose(this, "e.g.: first generated has deltatime = {0}", d.DeltaTime);
+                        _BaseLogger.Info(this, "generating block description with t = {0}", t);
                     }
-                    yield return d;
+                    var i = 0;
+                    foreach (var description in blockDescriptions)
+                    {
+                        var d = description.Clone();
+                        d.DeltaTime += t;
+                        if (i++ == 0 && _BaseLogger.Configuration != null)
+                        {
+                            _BaseLogger.Verbose(this, "e.g.: first generated has deltatime = {0}", d.DeltaTime);
+                        }
+                        yield return d;
+                    }
                 }
             }
 
             // if hell mode is activated, then proceed generating random ones, always more frequently
-            if (_HellMode)
+            if (_HellModeDescription.Active)
             {
                 if (_BaseLogger.Configuration != null)
                 {
@@ -77,7 +90,7 @@ public class BulletSourceMultiple : BulletSource
                     select bulletSourceBlock.BulletSource.Descriptions
                     ).ToArray();
 
-                var delta = _HellInitialDelay;
+                var delta = _HellModeDescription.InitialDelay;
                 for (; ; )
                 {
                     t += delta;
@@ -103,9 +116,9 @@ public class BulletSourceMultiple : BulletSource
                             }
                             yield return d;
                         }
-                        microDeltaT += _HellMinimumDelayBetweenDescriptionsInStage;
-                    } while (count < _HellMinimumForStage);
-                    delta = Mathf.Max(delta * _HellDelayFactor, _HellMinumumDelayBetweenStages);
+                        microDeltaT += _HellModeDescription.MinimumDelayBetweenDescriptionsInStage;
+                    } while (count < _HellModeDescription.MinimumForStage);
+                    delta = Mathf.Max(delta * _HellModeDescription.DelayFactor, _HellModeDescription.MinumumDelayBetweenStages);
                 }
             }
         }

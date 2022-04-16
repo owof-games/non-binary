@@ -25,6 +25,8 @@ public class StoryManager : BaseManager
 
     public VoidEvent StartStory;
 
+    public BoolVariable IsAMAB;
+
     public BaseLogger BaseLogger;
 
     protected override void OnEnableManager()
@@ -66,6 +68,13 @@ public class StoryManager : BaseManager
     {
         // TODO
         // _Story.variablesState["gender_femmina"] = _LastGenderValue;
+        _Story.ObserveVariable("gender", GenderChanged);
+    }
+
+    private void GenderChanged(string variableName, object newValue)
+    {
+        var gender = (int)newValue;
+        IsAMAB.Value = gender == 2;
     }
 
     private void OnStartKnot(string knot)

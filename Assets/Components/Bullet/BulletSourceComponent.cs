@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
@@ -15,6 +14,8 @@ public class BulletSourceComponent : MonoBehaviour
 
     [SerializeField]
     private BulletSourceEntry[] _BulletSources;
+
+    private List<BulletSource> _PlayedBulletSources = new List<BulletSource>();
 
     [SerializeField]
     private GameObject _PinkBullet;
@@ -40,6 +41,11 @@ public class BulletSourceComponent : MonoBehaviour
 
     public void OnStoryStepChanged(StoryStep newStoryStep)
     {
+        if (newStoryStep.ShowStreet)
+        {
+            // we're at the beginning: reset the list
+            _PlayedBulletSources.Clear();
+        }
         if (newStoryStep.IsBulletHell)
         {
             string bulletHellName = newStoryStep.BulletHellName;
@@ -50,12 +56,7 @@ public class BulletSourceComponent : MonoBehaviour
                     _CurrentBulletDescriptionEnumerable = bulletSourceEntry.BulletSource.Descriptions.GetEnumerator();
                     RefillDescriptions();
                     _StartingTime = Time.time;
-                    // _TotalDuration = Enumerable.Max(
-                    //     from description
-                    //     in _Descriptions
-                    //     select description.DeltaTime + description.LifeDuration)
-                    //     + 1;
-                    // _CurrentIndex = -1;
+                    _PlayedBulletSources.Add(bulletSourceEntry.BulletSource);
                     this.Info("setup bullet hell {0} at time {1}",
                         bulletSourceEntry.Name, _StartingTime);
                     return;

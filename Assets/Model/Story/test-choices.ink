@@ -1,6 +1,15 @@
 -> inizio
 
 === inizio ===
+
+//Gender: se 1 = AFAB, se 2 = AMAB
+
+VAR gender = 1
+
+Bullet hell finale.
+
+$bullet_hell_finale$
+
 Che razza di bambino sei? #almost_there #people
 
 $bullet_hell_afab_due$
