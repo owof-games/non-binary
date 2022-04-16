@@ -82,6 +82,7 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+  _WordBulletDamage: {fileID: 11400000, guid: 7dd8e5436a35e174c960d7fc4cf6d3cd, type: 2}
 --- !u!114 &3567129970580155236
 MonoBehaviour:
   m_ObjectHideFlags: 0

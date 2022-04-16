@@ -31,6 +31,9 @@ public class WordBullets : MonoBehaviour
     [SerializeField]
     private FloatReference _WordBulletLifeDuration;
 
+    [SerializeField]
+    private IntConstant _WordBulletDamage;
+
     private int _LastNumMTags;
 
     private int _LastNumFTags;
@@ -74,6 +77,8 @@ public class WordBullets : MonoBehaviour
             InitialPosition = startPosition,
             LifeDuration = _WordBulletLifeDuration.Value
         });
+        var destroyOnCollision = go.GetComponent<DestroyOnCollision>();
+        destroyOnCollision.Damage = _WordBulletDamage.Value;
         // emit a sound to attract attention
         _PlaySFX.Raise("hit");
     }

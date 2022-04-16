@@ -16,7 +16,7 @@ public class KeepProportions : MonoBehaviour
 
     public void OnScreenSizeChanged(Size screenSize)
     {
-        if (screenSize.Width != 0 && screenSize.Height != 0)
+        if (screenSize.Width != 0 && screenSize.Height != 0 && _RectTransform != null)
         {
             this.Info("screen size changed to {0}x{1}; proportional size is now {2}x{3}",
                 screenSize.Width, screenSize.Height, screenSize.ProportionalWidth, screenSize.ProportionalHeight);

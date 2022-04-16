@@ -249,8 +249,19 @@ public class Velocity : MonoBehaviour
         }
     }
 
+    private float _BaseAlpha = 1;
+
+    private float _LastAlphaUsed = 1;
+
+    public void SetBaseAlpha(float baseAlpha) {
+        _BaseAlpha = baseAlpha;
+        SetMaterialAlpha(_LastAlphaUsed);
+    }
+
     private void SetMaterialAlpha(float alpha)
     {
+        _LastAlphaUsed = alpha;
+        alpha *= _BaseAlpha;
         alpha *= _AlphaMultiplier;
         var c = _Material.GetColor("_BaseColor");
         c.a = alpha;

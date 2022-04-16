@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3866969206502836491}
   - component: {fileID: 1992264554127879564}
   - component: {fileID: 7120691237879238580}
-  - component: {fileID: 8321506038382373369}
+  - component: {fileID: 8847549759528002816}
   - component: {fileID: 1408180769700615237}
   m_Layer: 7
   m_Name: MainCharacterPrefab
@@ -238,7 +238,7 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
---- !u!114 &8321506038382373369
+--- !u!114 &8847549759528002816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,10 +247,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1106681832431300494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Script: {fileID: 11500000, guid: 050ff37b5550f4b7e9bdf8b985aff484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _developerDescription: Reduce
+  _developerDescription: 
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -274,10 +274,8 @@ MonoBehaviour:
     _usage: 0
     _event: {fileID: 11400000, guid: f2c3587e201ac694e8795d1d65c05f37, type: 2}
     _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &1408180769700615237
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,11 +15,11 @@ MonoBehaviour:
   _developerDescription: Starting health of the character (according to the selected
     mode)
   _id: 
-  _value: 5
+  _value: 15
   _changed: {fileID: 11400000, guid: b4298d91505becf44addef71074bd4ae, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 0
-  _initialValue: 0
+  _oldValue: 15
+  _initialValue: 15
   _preChangeTransformers: []

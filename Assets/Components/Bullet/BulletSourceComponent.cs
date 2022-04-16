@@ -30,6 +30,9 @@ public class BulletSourceComponent : MonoBehaviour
     [SerializeField]
     private IntConstant _DesignScreenWidth;
 
+    [SerializeField]
+    private IntConstant _StandardBulletDamage;
+
     public void StartBulletHell()
     {
         _StartingTime = Time.time;
@@ -155,6 +158,8 @@ public class BulletSourceComponent : MonoBehaviour
             // setup
             var velocityComponent = go.GetComponent<Velocity>();
             velocityComponent.Setup(description);
+            var destroyOnCollision = go.GetComponent<DestroyOnCollision>();
+            destroyOnCollision.Damage = _StandardBulletDamage.Value;
         }
     }
 

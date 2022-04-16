@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
@@ -18,7 +16,17 @@ public class DestroyOnCollision : MonoBehaviour
 
     public FloatReference DeathDuration;
 
-    public VoidEvent Hit;
+    public IntReference MaxDamage;
+
+    public int Damage;
+
+    public IntEvent Hit;
+
+    private void Start()
+    {
+        var velocity = GetComponent<Velocity>();
+        velocity.SetBaseAlpha((float)Damage / (float)MaxDamage.Value);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -39,7 +47,7 @@ public class DestroyOnCollision : MonoBehaviour
             _Target = other.gameObject.transform;
             _StartingRelativePosition = transform.position - other.gameObject.transform.position;
             _InitialScale = transform.localScale.x;
-            Hit.Raise();
+            Hit.Raise(Damage);
         }
     }
 

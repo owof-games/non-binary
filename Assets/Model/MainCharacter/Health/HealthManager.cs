@@ -1,6 +1,7 @@
-using UnityEngine;
-using UnityAtoms.BaseAtoms;
 using System;
+using UnityEngine;
+using UnityAtoms;
+using UnityAtoms.BaseAtoms;
 
 [CreateAssetMenu(fileName = "HealthManager", menuName = "non-binary/Create Health Manager", order = 0)]
 public class HealthManager : BaseManager
@@ -12,22 +13,22 @@ public class HealthManager : BaseManager
     private VoidEvent _StartStory;
 
     [SerializeField]
-    private VoidEvent _Hit;
+    private StoryStepReference _StoryStep;
+
+    [SerializeField]
+    private IntEvent _Hit;
 
     [SerializeField]
     private VoidEvent _ZeroHealthReached;
-
-    [SerializeField]
-    private IntConstant _HealthStandard;
-
-    [SerializeField]
-    private IntConstant _HealthStory;
 
     [SerializeField]
     private IntVariable _StartHealth;
 
     [SerializeField]
     private IntVariable _Health;
+
+    [SerializeField]
+    private IntReference _MinHealthOutsideBulletHells;
 
     [SerializeField]
     private IntEvent _HealthChanged;
@@ -50,16 +51,16 @@ public class HealthManager : BaseManager
 
     private void OnStartStory()
     {
-        _StartHealth.Value = _HealthStandard.Value;
         _Health.Value = _StartHealth.Value;
         UpdateHealthPercentage();
     }
 
-    private void OnHit()
+    private void OnHit(int damage)
     {
         if (!_Invincible)
         {
-            _Health.Value--;
+            var min = _StoryStep.Value.IsBulletHell ? 0 : _MinHealthOutsideBulletHells;
+            _Health.Value = Math.Max(min, _Health.Value - damage);
         }
     }
 

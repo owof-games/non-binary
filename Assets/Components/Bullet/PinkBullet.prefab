@@ -149,6 +149,7 @@ MonoBehaviour:
   _VelocitySteps: []
   _RotationCenter: {x: 0, y: 0}
   _AngularSpeed: 0
+  _MaxRotationAngle: 0
   _InitialPosition: {x: 0, y: 0}
   _DyingAnimationDuration:
     _usage: 1
@@ -214,4 +215,11 @@ MonoBehaviour:
     _constant: {fileID: 11400000, guid: e7eb306117bd2d34dacb00fc6eeb4556, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+  MaxDamage:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: dc14f04b55a13e746bb75226bda93d2a, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  Damage: 0
   Hit: {fileID: 11400000, guid: f2c3587e201ac694e8795d1d65c05f37, type: 2}

@@ -4,7 +4,7 @@ using UnityAtoms.BaseAtoms;
 [CreateAssetMenu(fileName = "HitAudioManager", menuName = "non-binary/Create Hit Audio Manager", order = 0)]
 public class HitAudioManager : BaseManager
 {
-    public VoidEvent HitEvent;
+    public IntEvent HitEvent;
     public StringEvent PlaySFX;
 
     public string SFXHitName;
@@ -14,7 +14,7 @@ public class HitAudioManager : BaseManager
         RegisterTo(HitEvent, OnHitEvent);
     }
 
-    private void OnHitEvent()
+    private void OnHitEvent(int _)
     {
         PlaySFX.Raise(SFXHitName);
     }
