@@ -253,7 +253,8 @@ public class Velocity : MonoBehaviour
 
     private float _LastAlphaUsed = 1;
 
-    public void SetBaseAlpha(float baseAlpha) {
+    public void SetBaseAlpha(float baseAlpha)
+    {
         _BaseAlpha = baseAlpha;
         SetMaterialAlpha(_LastAlphaUsed);
     }
@@ -261,6 +262,10 @@ public class Velocity : MonoBehaviour
     private void SetMaterialAlpha(float alpha)
     {
         _LastAlphaUsed = alpha;
+        if (_Material == null)
+        {
+            return;
+        }
         alpha *= _BaseAlpha;
         alpha *= _AlphaMultiplier;
         var c = _Material.GetColor("_BaseColor");

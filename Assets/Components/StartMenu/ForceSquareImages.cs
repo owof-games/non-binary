@@ -63,9 +63,7 @@ public class ForceSquareImages : MonoBehaviour
         var bottomPadding = _LastParentHeight * _BottomPadding / 100;
         var height = _LastParentHeight - topPadding - bottomPadding;
         var sidePaddingAndWidth = sidePadding + height / _Ratio;
-        Debug.Log(name + "correcting height to " + height.ToString());
         _RectTransform.offsetMin = new Vector2(_IsRightSide ? -sidePaddingAndWidth : sidePadding, bottomPadding);
         _RectTransform.offsetMax = new Vector2(_IsRightSide ? -sidePadding : sidePaddingAndWidth, -topPadding);
-        Debug.Log(name + string.Format("computed offsetMin={0}, offsetMax={1}", _RectTransform.offsetMin, _RectTransform.offsetMax));
     }
 }

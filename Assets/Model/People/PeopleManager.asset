@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PeoplePercentage: {fileID: 11400000, guid: c00f2db55a03e6c4a8057af45e8421b3, type: 2}
   PeopleVisible: {fileID: 11400000, guid: 38e2af7c3178ce144b23643ba9177136, type: 2}
-  StoryStepChanged: {fileID: 11400000, guid: bc8566f5352d8ea468bbdd141a470d70, type: 2}
+  StoryStepChanged: {fileID: 11400000, guid: 6c747b786bb05dc4aa59d02804987b18, type: 2}
