@@ -14,6 +14,9 @@ public class PlayerHit : MonoBehaviour
     [SerializeField]
     private ParticleSystem _HitParticleSystem;
 
+    [SerializeField]
+    private BoolReference _Invincible;
+
     private void Awake()
     {
         _Material = GetComponentInChildren<Renderer>().material;
@@ -21,8 +24,11 @@ public class PlayerHit : MonoBehaviour
 
     public void OnHit()
     {
-        BeingHit = true;
-        StartCoroutine(ResetBeginHit());
+        if (!_Invincible.Value)
+        {
+            BeingHit = true;
+            StartCoroutine(ResetBeginHit());
+        }
         _HitParticleSystem.Play();
     }
 

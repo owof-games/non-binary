@@ -12,28 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5709502a46f538349a98da5a177f1c59, type: 3}
   m_Name: HealthManager
   m_EditorClassIdentifier: 
-  _Invincible:
-    _usage: 2
-    _value: 0
-    _constant: {fileID: 0}
-    _variable: {fileID: 11400000, guid: 33899408917d9ec42b4441137b0d3667, type: 2}
-    _variableInstancer: {fileID: 0}
+  _Invincible: {fileID: 11400000, guid: 33899408917d9ec42b4441137b0d3667, type: 2}
   _StartStory: {fileID: 11400000, guid: ef67ee16f3bbed0429af471db928cf1d, type: 2}
-  _StoryStep:
-    _usage: 2
-    _value:
-      _Kind: 0
-      _Text: 
-      _Marker: 
-      _Choices: []
-      _ShowStreet: 0
-      _ShowPeople: 0
-      _IsTitle: 0
-      _Completion: 0
-      _AlmostThere: 0
-    _constant: {fileID: 0}
-    _variable: {fileID: 11400000, guid: 075d5b3f2d0e854429e2eee2f00324c1, type: 2}
-    _variableInstancer: {fileID: 0}
+  _StoryStepChanged: {fileID: 11400000, guid: bc8566f5352d8ea468bbdd141a470d70, type: 2}
   _Hit: {fileID: 11400000, guid: f2c3587e201ac694e8795d1d65c05f37, type: 2}
   _ZeroHealthReached: {fileID: 11400000, guid: b65c52d3335547b42a100ae571313e01, type: 2}
   _StartHealth: {fileID: 11400000, guid: ae3294e15db620c4e921075ea2e6b217, type: 2}

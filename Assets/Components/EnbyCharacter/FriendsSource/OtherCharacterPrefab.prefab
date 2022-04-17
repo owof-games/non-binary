@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1281663149780221224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 259749257296507096, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300491, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300494, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Name
+      value: OtherCharacterPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300494, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822138410862811683, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734680487631442234, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: _IsMainCharacter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330311165871425060, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446840093524107483, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446840093524107483, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: RotationVector.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446840093524107483, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: RotationVector.y
+      value: -87
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446840093524107483, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: RotationVector.z
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120691237879238580, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2cd3ca3e812ccb4e87c4593d34a310f, type: 3}

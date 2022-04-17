@@ -37,7 +37,12 @@ public class DestroyOnCollision : MonoBehaviour
     {
         if (!Dying)
         {
-            var playerHit = other.gameObject.GetComponent<PlayerHit>();
+            var hitPlayer = true;
+            if (!other.gameObject.TryGetComponent<PlayerHit>(out var playerHit))
+            {
+                hitPlayer = false;
+                playerHit = other.gameObject.transform.parent.GetComponent<PlayerHit>();
+            }
             if (playerHit != null && playerHit.BeingHit)
             {
                 return;
@@ -45,7 +50,7 @@ public class DestroyOnCollision : MonoBehaviour
             Dying = true;
             _StartedDyingAt = Time.time;
             _InitialScale = transform.localScale.x;
-            if (playerHit != null)
+            if (hitPlayer)
             {
                 _Target = other.gameObject.transform;
             }
@@ -54,6 +59,7 @@ public class DestroyOnCollision : MonoBehaviour
                 _AlternativeTargetPosition = transform.position - (other.gameObject.transform.position - transform.position);
             }
             _StartingRelativePosition = transform.position - GetTargetPosition();
+            playerHit.OnHit();
             Hit.Raise(Damage);
         }
     }

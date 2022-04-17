@@ -7,13 +7,13 @@ using UnityAtoms.BaseAtoms;
 public class HealthManager : BaseManager
 {
     [SerializeField]
-    private BoolReference _Invincible;
+    private BoolVariable _Invincible;
 
     [SerializeField]
     private VoidEvent _StartStory;
 
     [SerializeField]
-    private StoryStepReference _StoryStep;
+    private StoryStepEvent _StoryStepChanged;
 
     [SerializeField]
     private IntEvent _Hit;
@@ -45,8 +45,17 @@ public class HealthManager : BaseManager
     protected override void OnEnableManager()
     {
         RegisterTo(_StartStory, OnStartStory);
+        RegisterTo(_StoryStepChanged, OnStoryStepChanged);
         RegisterTo(_Hit, OnHit);
         RegisterTo(_HealthChanged, OnHealthChanged);
+    }
+
+    private StoryStep _StoryStep;
+
+    private void OnStoryStepChanged(StoryStep obj)
+    {
+        _StoryStep = obj;
+        _Invincible.Value = _StoryStep.IsBulletHell && _StoryStep.BulletHellName == "finale";
     }
 
     private void OnStartStory()
@@ -59,7 +68,7 @@ public class HealthManager : BaseManager
     {
         if (!_Invincible)
         {
-            var min = _StoryStep.Value.IsBulletHell ? 0 : _MinHealthOutsideBulletHells;
+            var min = _StoryStep.IsBulletHell ? 0 : _MinHealthOutsideBulletHells;
             _Health.Value = Math.Max(min, _Health.Value - damage);
         }
     }

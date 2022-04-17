@@ -20,6 +20,8 @@ GameObject:
   - component: {fileID: 8847549759528002816}
   - component: {fileID: 1408180769700615237}
   - component: {fileID: 3734680487631442234}
+  - component: {fileID: 2822138410862811683}
+  - component: {fileID: 6446840093524107483}
   m_Layer: 7
   m_Name: MainCharacterPrefab
   m_TagString: Untagged
@@ -211,6 +213,12 @@ MonoBehaviour:
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   _HitParticleSystem: {fileID: 8932396755290884985}
+  _Invincible:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 33899408917d9ec42b4441137b0d3667, type: 2}
+    _variableInstancer: {fileID: 0}
   _AlphaCurve:
     serializedVersion: 2
     m_Curve:
@@ -248,7 +256,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106681832431300494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050ff37b5550f4b7e9bdf8b985aff484, type: 3}
   m_Name: 
@@ -334,8 +342,40 @@ MonoBehaviour:
   FadeInDuration: 1
   Friend: {fileID: 5875389177209148222}
   Shield: {fileID: 4483574247025048510}
-  Enabled: 0
   InvincibleVariable: {fileID: 11400000, guid: 33899408917d9ec42b4441137b0d3667, type: 2}
+  _IsMainCharacter: 1
+--- !u!114 &2822138410862811683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106681832431300494}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d47a931468f24491c44d8a533cb01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mesh: {fileID: 1772778756616474893}
+  Shape: 0
+  Height: 0
+  Hue1: 0
+  Hue2: 0
+  InnerRadius: 0
+  Torque: 0
+--- !u!114 &6446840093524107483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106681832431300494}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b958fb0ec0bf6459f993de289dde8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationVector: {x: 0, y: 0, z: 0}
 --- !u!1 &4330311165871425060
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,6 +5411,12 @@ PrefabInstance:
 --- !u!4 &635289290223659618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c7da4dfd7743c264daa76072f1a3a08f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1106681831532088713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1772778756616474893 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: c7da4dfd7743c264daa76072f1a3a08f,
     type: 3}
   m_PrefabInstance: {fileID: 1106681831532088713}
   m_PrefabAsset: {fileID: 0}

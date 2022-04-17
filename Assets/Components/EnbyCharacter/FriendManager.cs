@@ -13,13 +13,14 @@ public class FriendManager : MonoBehaviour
 
     public GameObject Shield;
 
-    public bool Enabled;
-
     public BoolVariable InvincibleVariable;
 
     private AlphaManagement _FriendAlphaManagement;
 
     private AlphaManagement _ShieldAlphaManagement;
+
+    [SerializeField]
+    private bool _IsMainCharacter;
 
     private void Start()
     {
@@ -33,13 +34,14 @@ public class FriendManager : MonoBehaviour
 
     private void Update()
     {
-        Friend.SetActive(Enabled);
-        Shield.SetActive(Enabled);
+        var shielded = _IsMainCharacter && InvincibleVariable.Value;
 
-        if (_LastEnabled != Enabled)
+        Friend.SetActive(shielded);
+        Shield.SetActive(shielded);
+
+        if (_LastEnabled != shielded)
         {
-            _LastEnabled = Enabled;
-            InvincibleVariable.Value = Enabled;
+            _LastEnabled = shielded;
             _StartFadeInTime = Time.time;
         }
 
@@ -47,7 +49,7 @@ public class FriendManager : MonoBehaviour
         _FriendAlphaManagement.SetAlphaMultiplier("Friend", t);
         _ShieldAlphaManagement.SetAlphaMultiplier("Shield", t);
 
-        if (Enabled)
+        if (shielded)
         {
             var angle = -AngularSpeed * Time.time;
             var x = Mathf.Cos(angle);
