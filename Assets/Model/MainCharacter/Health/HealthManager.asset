@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5709502a46f538349a98da5a177f1c59, type: 3}
   m_Name: HealthManager
   m_EditorClassIdentifier: 
-  _Invincible: 0
+  _Invincible:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 33899408917d9ec42b4441137b0d3667, type: 2}
+    _variableInstancer: {fileID: 0}
   _StartStory: {fileID: 11400000, guid: ef67ee16f3bbed0429af471db928cf1d, type: 2}
   _StoryStep:
     _usage: 2

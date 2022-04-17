@@ -62,7 +62,7 @@ public class BulletSourceComponent : MonoBehaviour
                     return;
                 }
             }
-            this.Error("Could not find bullet source with name ", newStoryStep.BulletHellName);
+            this.Error("Could not find bullet source with name {0}", newStoryStep.BulletHellName);
         }
     }
 

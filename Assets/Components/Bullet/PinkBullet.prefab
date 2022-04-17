@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 848523051925929561}
   - component: {fileID: 8991834512197149871}
   - component: {fileID: 1152957545748866485}
+  - component: {fileID: 1941288070191280921}
+  - component: {fileID: 72179338428993624}
   - component: {fileID: 24314210891708826}
   - component: {fileID: 7138552970078100294}
   - component: {fileID: 6059175845180190667}
@@ -133,6 +135,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
   Path: bullet.pink
+--- !u!114 &1941288070191280921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836422024658083569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0ef36aa3916414d83951246e1edd93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &72179338428993624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836422024658083569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9989b817edf6c8a49bcc7978978efd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaMultiplierName: GlobalAlphaMultiplier
 --- !u!114 &24314210891708826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,9 +207,9 @@ MonoBehaviour:
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 24314210891708826}
-        m_TargetAssemblyTypeName: Velocity, Assembly-CSharp
-        m_MethodName: OnAlphaMultiplierChanged
+      - m_Target: {fileID: 72179338428993624}
+        m_TargetAssemblyTypeName: SetAlphaAction, Assembly-CSharp
+        m_MethodName: SetAlphaMultiplierValue
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

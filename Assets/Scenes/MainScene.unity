@@ -2651,6 +2651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1106681832431300493, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106681832431300493, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
       propertyPath: _developerDescription
       value: Updates the player size according to the screen proportions.
       objectReference: {fileID: 0}
@@ -2664,16 +2669,111 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1408180769700615237, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992264554127879564, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1992264554127879564, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
         type: 3}
       propertyPath: _eventReference._event
       value: 
       objectReference: {fileID: 11400000, guid: d405b0b6613344f438aa717e65c08526,
         type: 2}
+    - target: {fileID: 3378165274545987986, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734680487631442234, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734680487631442234, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: Distance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734680487631442234, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734680487631442234, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: AngularSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734680487631442234, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: FadeInDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539864372499024260, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 85.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539864372499024260, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 85.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539864372499024260, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 85.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539864372499024260, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539864372499024260, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120691237879238580, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737875355374713967, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8321506038382373369, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
         type: 3}
       propertyPath: _developerDescription
       value: Make the player temporarily invulnerable and play the hit animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8509281539189975115, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8509281539189975115, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8509281539189975115, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847549759528002816, guid: d2cd3ca3e812ccb4e87c4593d34a310f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2cd3ca3e812ccb4e87c4593d34a310f, type: 3}

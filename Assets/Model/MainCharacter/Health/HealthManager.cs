@@ -7,7 +7,7 @@ using UnityAtoms.BaseAtoms;
 public class HealthManager : BaseManager
 {
     [SerializeField]
-    private bool _Invincible = false;
+    private BoolReference _Invincible;
 
     [SerializeField]
     private VoidEvent _StartStory;

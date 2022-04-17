@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
 using RG.LogLibrary;
+using System;
 
 public class DestroyOnCollision : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class DestroyOnCollision : MonoBehaviour
     private float _StartedDyingAt;
 
     private Transform _Target;
+
+    private Vector3 _AlternativeTargetPosition;
 
     private Vector2 _StartingRelativePosition;
 
@@ -24,8 +27,10 @@ public class DestroyOnCollision : MonoBehaviour
 
     private void Start()
     {
-        var velocity = GetComponent<Velocity>();
-        velocity.SetBaseAlpha((float)Damage / (float)MaxDamage.Value);
+        GetComponent<AlphaManagement>().SetAlphaMultiplier(
+            "DamageAmountAlpha",
+            (float)Damage / MaxDamage.Value
+        );
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,21 +38,35 @@ public class DestroyOnCollision : MonoBehaviour
         if (!Dying)
         {
             var playerHit = other.gameObject.GetComponent<PlayerHit>();
-            if (!playerHit)
-            {
-                this.Warning("Somehow triggered against a non-player object");
-                return;
-            }
-            if (playerHit.BeingHit)
+            if (playerHit != null && playerHit.BeingHit)
             {
                 return;
             }
             Dying = true;
             _StartedDyingAt = Time.time;
-            _Target = other.gameObject.transform;
-            _StartingRelativePosition = transform.position - other.gameObject.transform.position;
             _InitialScale = transform.localScale.x;
+            if (playerHit != null)
+            {
+                _Target = other.gameObject.transform;
+            }
+            else
+            {
+                _AlternativeTargetPosition = transform.position - (other.gameObject.transform.position - transform.position);
+            }
+            _StartingRelativePosition = transform.position - GetTargetPosition();
             Hit.Raise(Damage);
+        }
+    }
+
+    private Vector3 GetTargetPosition()
+    {
+        if (_Target != null)
+        {
+            return _Target.transform.position;
+        }
+        else
+        {
+            return _AlternativeTargetPosition;
         }
     }
 
@@ -61,7 +80,7 @@ public class DestroyOnCollision : MonoBehaviour
                 Vector3.zero,
                 delta
             );
-            transform.position = _Target.position + relativePosition;
+            transform.position = GetTargetPosition() + relativePosition;
             var newScale = Mathf.Lerp(_InitialScale, 0, delta);
             transform.localScale = new Vector3(newScale, newScale, newScale);
         }

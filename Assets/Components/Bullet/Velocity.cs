@@ -79,12 +79,15 @@ public class Velocity : MonoBehaviour
 
     private float _StartingTime = -1;
 
-    private Material _Material;
+    private AlphaManagement _AlphaManagement;
 
     private void Start()
     {
+        _AlphaManagement = GetComponent<AlphaManagement>();
         var relativeInitialPosition = _InitialPosition - _RotationCenter;
-        _CurrentRotation = _DestinationRotation = FromVector(_VelocitySteps.Length > 0 ? _VelocitySteps[0].NewVelocity : _InitialVelocity);
+        _CurrentRotation = _DestinationRotation = FromVector(
+            _VelocitySteps != null && _VelocitySteps.Length > 0 ? _VelocitySteps[0].NewVelocity : _InitialVelocity
+        );
         _DestinationRotationSetAtTime = Time.time;
         SetupPredictionParameters(
             _InitialVelocity,
@@ -96,11 +99,6 @@ public class Velocity : MonoBehaviour
         );
 
         _StartingTime = Time.time;
-        var mr = GetComponent<MeshRenderer>();
-        _Material = mr.material;
-        _Material = Instantiate(_Material);
-        mr.material = _Material;
-        SetMaterialAlpha(1);
         UpdateVelocity();
     }
 
@@ -225,18 +223,6 @@ public class Velocity : MonoBehaviour
 
     #region dying
 
-    private float _AlphaMultiplier = 1;
-
-    public void OnAlphaMultiplierChanged(float alphaMultiplier)
-    {
-        _AlphaMultiplier = alphaMultiplier;
-        if (_DyingTime < 0)
-        {
-            SetMaterialAlpha(1);
-        }
-        // if dying, the dying animation will handle it
-    }
-
     private float _DyingTime = -1;
 
     private float _LifeDuration = -1;
@@ -254,33 +240,9 @@ public class Velocity : MonoBehaviour
             else
             {
                 var alpha = Mathf.Lerp(1, 0, t);
-                SetMaterialAlpha(alpha);
+                _AlphaManagement.SetAlphaMultiplier("Dying", alpha);
             }
         }
-    }
-
-    private float _BaseAlpha = 1;
-
-    private float _LastAlphaUsed = 1;
-
-    public void SetBaseAlpha(float baseAlpha)
-    {
-        _BaseAlpha = baseAlpha;
-        SetMaterialAlpha(_LastAlphaUsed);
-    }
-
-    private void SetMaterialAlpha(float alpha)
-    {
-        _LastAlphaUsed = alpha;
-        if (_Material == null)
-        {
-            return;
-        }
-        alpha *= _BaseAlpha;
-        alpha *= _AlphaMultiplier;
-        var c = _Material.GetColor("_BaseColor");
-        c.a = alpha;
-        _Material.SetColor("_BaseColor", c);
     }
 
     private void CheckLifetime()
@@ -289,20 +251,11 @@ public class Velocity : MonoBehaviour
         {
             return;
         }
-        // if (Time.frameCount % 240 == 0)
-        // {
-        //     this.Info("_LifeDuration = {0}", _LifeDuration);
-        // }
         if (_LifeDuration < 0)
         {
             return;
         }
         var startDeathAnimationTime = _StartingTime + _LifeDuration - _DyingAnimationDuration;
-        // if (Time.frameCount % 240 == 0)
-        // {
-        //     this.Info("time is {0} and _StartingTime = {1} + _LifeDuration = {2} - _DyingAnimationDuration = {3} => {4}",
-        //     Time.time, _StartingTime, _LifeDuration, _DyingAnimationDuration.Value, startDeathAnimationTime);
-        // }
         if (Time.time >= startDeathAnimationTime)
         {
             this.Info("starting to die!");
