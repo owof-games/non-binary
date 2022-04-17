@@ -84,6 +84,8 @@ public class Velocity : MonoBehaviour
     private void Start()
     {
         var relativeInitialPosition = _InitialPosition - _RotationCenter;
+        _CurrentRotation = _DestinationRotation = FromVector(_VelocitySteps.Length > 0 ? _VelocitySteps[0].NewVelocity : _InitialVelocity);
+        _DestinationRotationSetAtTime = Time.time;
         SetupPredictionParameters(
             _InitialVelocity,
             _RotationCenter,
@@ -124,8 +126,15 @@ public class Velocity : MonoBehaviour
         {
             this.Info("got to step {0} because relative time is {1} and the step time is {2}", _CurrentStep + 1, relativeTime, _VelocitySteps[_CurrentStep + 1].Time);
             _CurrentStep++;
+            var v = _VelocitySteps[_CurrentStep].NewVelocity;
+            if (v.magnitude != 0)
+            {
+                _CurrentRotation = transform.rotation;
+                _DestinationRotation = FromVector(v);
+                _DestinationRotationSetAtTime = Time.time;
+            }
             SetupPredictionParameters(
-                _VelocitySteps[_CurrentStep].NewVelocity,
+                v,
                 _C + (Time.time - _T0) * _V,
                 _R,
                 _O,
@@ -140,6 +149,7 @@ public class Velocity : MonoBehaviour
     {
         CheckLifetime();
         HandleDying();
+        UpdateAngle();
     }
 
     private void UpdateVelocity()
@@ -298,6 +308,29 @@ public class Velocity : MonoBehaviour
             this.Info("starting to die!");
             _DyingTime = Time.time;
         }
+    }
+
+    Quaternion _CurrentRotation;
+
+    Quaternion _DestinationRotation;
+
+    float _DestinationRotationSetAtTime;
+
+    [SerializeField]
+    private FloatReference _RotationChangeSpeed;
+
+    private void UpdateAngle()
+    {
+        transform.rotation = Quaternion.Lerp(
+            _CurrentRotation,
+            _DestinationRotation,
+            (Time.time - _DestinationRotationSetAtTime) / _RotationChangeSpeed
+        );
+    }
+
+    private Quaternion FromVector(Vector2 v)
+    {
+        return Quaternion.AngleAxis(Mathf.Rad2Deg * Mathf.Atan2(v.y, v.x), Vector3.forward);
     }
 
     #endregion

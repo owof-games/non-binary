@@ -156,6 +156,12 @@ MonoBehaviour:
     _constant: {fileID: 11400000, guid: a8e2d885f91555f43a067d73db63906c, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+  _RotationChangeSpeed:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: 90894e2f808bb244f9b60c424382cb5c, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &5417772431711058099
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ VAR gender = 1
 
 Bullet hell finale.
 
-$bullet_hell_finale$
+$bullet_hell_amab_tre$
 
 Che razza di bambino sei? #almost_there #people
 
