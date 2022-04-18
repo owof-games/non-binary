@@ -52,6 +52,7 @@ public class FriendsSource : MonoBehaviour
             sp.Hue2 = Random.Range(0f, 1f);
             sp.InnerRadius = Random.Range(0f, 1f);
             sp.Torque = Random.Range(0f, 1f);
+            go.transform.localScale = Random.Range(0.9f, 1.1f) * go.transform.localScale;
             // wait a bit
             yield return new WaitForSeconds(TimeBetweenFriends);
         }
