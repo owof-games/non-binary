@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NextLineEvent
   m_EditorClassIdentifier: 
   _developerDescription: Event to raise when the next line of the text is requested.
-  _replayBufferSize: 1
+  _replayBufferSize: 0

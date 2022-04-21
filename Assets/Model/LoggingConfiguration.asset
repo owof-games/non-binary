@@ -128,6 +128,11 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: bullet.scissors
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: hints
     IsVerboseEnabled: 1
     IsInfoEnabled: 1
     IsWarningEnabled: 0

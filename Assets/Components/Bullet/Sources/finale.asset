@@ -18,11 +18,11 @@ MonoBehaviour:
   _HellModeDescription:
     Active: 1
     JumpDirectlyToHellMode: 1
-    InitialDelay: 5
-    DelayFactor: 0.95
-    MinimumForStage: 12
-    MinimumDelayBetweenDescriptionsInStage: 0.5
-    MinumumDelayBetweenStages: 0.7
+    InitialDelay: 4
+    DelayFactor: 0.9
+    MinimumForStage: 15
+    MinimumDelayBetweenDescriptionsInStage: 0.3
+    MinumumDelayBetweenStages: 0.5
   _AFABBulletHells:
   - {fileID: 11400000, guid: 35e750ca1cb77fd41aea4af6e9c231df, type: 2}
   - {fileID: 11400000, guid: 16d53e39fe4cca241881483086f24f72, type: 2}

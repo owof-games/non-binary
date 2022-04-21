@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityAtoms;
 using RG.LogLibrary;
@@ -22,6 +23,27 @@ public class ScreenProportionsManager : BehaviourManager
                 Height = Screen.height
             };
         }
+    }
 
+    public void OnStartGame()
+    {
+        // give a little "shake" to the screen: this is a dirty fix to a bug on game restart that calculates the coordinates wrong
+        StartCoroutine(ShakeScreen());
+    }
+
+    public IEnumerator ShakeScreen()
+    {
+        yield return new WaitForSeconds(0.1f);
+        ScreenSize.Value = new Size()
+        {
+            Width = Screen.width + 1,
+            Height = Screen.height
+        };
+        yield return new WaitForSeconds(0.1f);
+        ScreenSize.Value = new Size()
+        {
+            Width = Screen.width,
+            Height = Screen.height
+        };
     }
 }

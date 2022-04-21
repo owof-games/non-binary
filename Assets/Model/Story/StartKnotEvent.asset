@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: Event to raise in order to move to a specific knot in the
     text, with the name of the knot.
-  _replayBufferSize: 1
+  _replayBufferSize: 0
   _inspectorRaiseValue: 

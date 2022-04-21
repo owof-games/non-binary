@@ -189,6 +189,18 @@ public struct StoryStep : IEquatable<StoryStep>
         }
     }
 
+    public bool IsCharacterCreation
+    {
+        get
+        {
+            if (_Kind != StoryStepKind.Marker)
+            {
+                return false;
+            }
+            return _Marker == "character_creation";
+        }
+    }
+
     public StoryStep(string text, List<string> tags)
     {
         if (text.Length >= 2 && text[0] == '$' && text[^1] == '$')

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: Event to raise when a choice is made, with the 0-based index
     of the choice.
-  _replayBufferSize: 1
+  _replayBufferSize: 0
   _inspectorRaiseValue: 0

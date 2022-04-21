@@ -12,28 +12,32 @@ public struct Size : IEquatable<Size>
         return Width == other.Width && Height == other.Height;
     }
 
-    public override int GetHashCode()
-    {
-        return Width.GetHashCode() ^ Height.GetHashCode();
-    }
-
     public override bool Equals(object obj)
     {
-        // return obj is Size ? Equals((Size)obj) : base.Equals(obj);
-        return obj is Size size ? Equals(size) : base.Equals(obj);
+        if (obj == null || GetType() != obj.GetType())
+        {
+            return false;
+        }
+
+        return Equals((Size)obj);
     }
 
-    private const float _DesiredProportions = 16f / 9f;
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(Width.GetHashCode(), Height.GetHashCode());
+    }
+
+    public const float Ratio = 16f / 9f;
 
     public int ProportionalWidth
     {
         get
         {
-            var currentProportions = ((float)Width) / ((float)Height);
-            if (currentProportions > _DesiredProportions)
+            var currentProportions = (float)Width / Height;
+            if (currentProportions > Ratio)
             {
                 // current screen is "larger" than what we want: height occupies the whole screen, width is computed
-                return (int)(Height * _DesiredProportions);
+                return (int)(Height * Ratio);
             }
             else
             {
@@ -48,8 +52,8 @@ public struct Size : IEquatable<Size>
     {
         get
         {
-            var currentProportions = ((float)Width) / ((float)Height);
-            if (currentProportions > _DesiredProportions)
+            var currentProportions = (float)Width / Height;
+            if (currentProportions > Ratio)
             {
                 // current screen is "larger" than what we want: height occupies the whole screen, width is computed
                 return Height;
@@ -57,7 +61,7 @@ public struct Size : IEquatable<Size>
             else
             {
                 // current screen is "higher" than what we want: width occupies the whole screen, height is computed
-                return (int)(Width / _DesiredProportions);
+                return (int)(Width / Ratio);
             }
 
         }

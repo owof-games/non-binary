@@ -21,6 +21,8 @@ public class StoryManager : BaseManager
 
     public StringEvent StartKnotEvent;
 
+    public StringEvent GoToKnotEvent;
+
     public IntEvent MakeChoiceEvent;
 
     public VoidEvent StartStory;
@@ -34,11 +36,15 @@ public class StoryManager : BaseManager
         // create a story manager that is sensitive to the ink json asset
         _CachedStoryManager = new StoryCache();
         _CachedStoryManager.NewStoryObjectCreated += NewStoryObjectCreated;
+        Debug.Log("story: get");
+        _CachedStoryManager.GetStory(InkJSONAsset); // force creation
+        Debug.Log("story: got");
 
         // register to events
         // RegisterTo(IsFemaleChanged, OnIsFemaleChanged);
         RegisterTo(NextLine, OnNextLine);
         RegisterTo(StartKnotEvent, OnStartKnot);
+        RegisterTo(GoToKnotEvent, OnGoToKnot);
         RegisterTo(MakeChoiceEvent, OnMakeChoice);
         RegisterTo(StartStory, OnStartStory);
         _StoryStarted = false;
@@ -53,22 +59,25 @@ public class StoryManager : BaseManager
     {
         BaseLogger.Info(this, "received a StartStory event");
         _StoryStarted = true;
-        OnNextLine();
+        // OnNextLine();
     }
-
-    // private IEnumerator Initialize()
-    // {
-    //     BaseLogger.Info(this, "initializing in a little while...");
-    //     yield return new WaitForSeconds(0.1f);
-    //     BaseLogger.Info(this, "ok, initializing.");
-    //     OnNextLine();
-    // }
 
     private void NewStoryObjectCreated()
     {
         // TODO
         // _Story.variablesState["gender_femmina"] = _LastGenderValue;
+        Debug.Log("story: new story object created");
         _Story.ObserveVariable("gender", GenderChanged);
+        // OnNextLine(true);
+        UnityMainThreadDispatcher.EventuallyEnqueue(Initialize());
+    }
+
+    private IEnumerator Initialize()
+    {
+        BaseLogger.Info(this, "initializing in a little while...");
+        yield return new WaitForSeconds(0.1f);
+        BaseLogger.Info(this, "ok, initializing.");
+        OnNextLine(true);
     }
 
     private void GenderChanged(string variableName, object newValue)
@@ -83,10 +92,20 @@ public class StoryManager : BaseManager
         OnNextLine();
     }
 
+    private void OnGoToKnot(string knot)
+    {
+        _Story.ChoosePathString(knot);
+    }
+
     private void OnNextLine()
     {
+        OnNextLine(false);
+    }
+
+    private void OnNextLine(bool force)
+    {
         BaseLogger.Info(this, "OnNextLine with _StoryStarted={0}", _StoryStarted);
-        if (!_StoryStarted)
+        if (!_StoryStarted && !force)
         {
             BaseLogger.Info(this, "Asked for a new line, but story must still start");
         }

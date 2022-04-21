@@ -12,9 +12,20 @@ public class Bullets : MonoBehaviour
     [SerializeField]
     private float _Alpha;
 
+    private float _LastValue;
+
+    private void Start()
+    {
+        _LastValue = _AlphaMultiplier.Value;
+    }
+
     private void Update()
     {
-        _AlphaMultiplier.Value = _Alpha;
+        if (_Alpha != _LastValue)
+        {
+            _LastValue = _Alpha;
+            _AlphaMultiplier.Value = _Alpha;
+        }
     }
 
     public void ResetBullets()

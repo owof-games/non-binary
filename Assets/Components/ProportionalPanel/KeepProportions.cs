@@ -6,26 +6,38 @@ public class KeepProportions : MonoBehaviour
 {
     private RectTransform _RectTransform;
 
-    public SizeReference InitialScreenSize;
+    private FullLayout _FullLayout;
 
     private void Start()
     {
         _RectTransform = GetComponent<RectTransform>();
-        OnScreenSizeChanged(InitialScreenSize.Value);
+        UpdateSize();
     }
 
-    public void OnScreenSizeChanged(Size screenSize)
+    public void OnFullLayoutChanged(FullLayout fullLayout)
     {
-        if (screenSize.Width != 0 && screenSize.Height != 0 && _RectTransform != null)
+        _FullLayout = fullLayout;
+        UpdateSize();
+    }
+
+    private void UpdateSize()
+    {
+        // check if the full rect is ready
+        var screenCoords = _FullLayout.Scene.Screen;
+        if (screenCoords.width == 0 || screenCoords.height == 0 || _RectTransform == null)
         {
-            this.Info("screen size changed to {0}x{1}; proportional size is now {2}x{3}",
-                screenSize.Width, screenSize.Height, screenSize.ProportionalWidth, screenSize.ProportionalHeight);
-            _RectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, screenSize.ProportionalWidth);
-            _RectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, screenSize.ProportionalHeight);
+            this.Verbose("skipping size update because we are not ready yet");
+            return;
         }
-        else
-        {
-            this.Verbose("skipping initial 0x0 size value");
-        }
+        // reposition anchor
+        var screenPercentage = _FullLayout.Screen.Percentage;
+        var x = (0.5f - screenPercentage.xMin) / screenPercentage.width;
+        var y = (0.5f - screenPercentage.yMin) / screenPercentage.height;
+        var v = new Vector2(x, y);
+        _RectTransform.anchorMin = v;
+        _RectTransform.anchorMax = v;
+        // resize rect
+        _RectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, screenCoords.width);
+        _RectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, screenCoords.height);
     }
 }

@@ -9,11 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6609705331975336680}
-  - component: {fileID: 6609705331975336681}
   - component: {fileID: 6609705331975336679}
+  - component: {fileID: 6609705331975336681}
   - component: {fileID: 6609705331975336678}
   - component: {fileID: 6609705331975336677}
-  - component: {fileID: 4165124897695129421}
   m_Layer: 0
   m_Name: CharacterMovementManager
   m_TagString: Untagged
@@ -36,6 +35,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6609705331975336679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609705331975336682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4085e6f7d593384d9774cb34bc4dc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
+  Path: managers.charactermovement
 --- !u!114 &6609705331975336681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,20 +64,126 @@ MonoBehaviour:
   ActionMapVariable: {fileID: 11400000, guid: f45d6ecf70f374a40a0194203b166419, type: 2}
   VelocityVariable: {fileID: 11400000, guid: 36a1e3dd671b48a46bc722bdc1ef3363, type: 2}
   Speed: 1.2
---- !u!114 &6609705331975336679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6609705331975336682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4085e6f7d593384d9774cb34bc4dc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
-  Path: managers.charactermovement
+  FullLayout:
+    _usage: 2
+    _value:
+      LeftSideText:
+        Percentage:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        Screen:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        World:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+      RightSideText:
+        Percentage:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        Screen:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        World:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+      Street:
+        Percentage:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        Screen:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        World:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+      MainText:
+        Percentage:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        Screen:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        World:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+      Scene:
+        Percentage:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        Screen:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        World:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+      Screen:
+        Percentage:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        Screen:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        World:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: d367c19c7ec40944ca93f3ecf834760e, type: 2}
+    _variableInstancer: {fileID: 0}
 --- !u!114 &6609705331975336678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,44 +257,6 @@ MonoBehaviour:
   _eventReference:
     _usage: 0
     _event: {fileID: 11400000, guid: db9037dcc9f20724abdadf8aa83f3291, type: 2}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
---- !u!114 &4165124897695129421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6609705331975336682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ea13680c22d9842b1eb2e0ac3cef0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6609705331975336681}
-        m_TargetAssemblyTypeName: CharacterMovementManager, Assembly-CSharp
-        m_MethodName: OnScreenSizeChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _conditions: []
-  _operator: 0
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: ef49633a81ac5c446af18f6a8c4cd1b9, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

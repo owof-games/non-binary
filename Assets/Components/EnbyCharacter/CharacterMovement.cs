@@ -17,6 +17,9 @@ public class CharacterMovement : MonoBehaviour
 
     public void UpdateVelocity(Vector2 velocity)
     {
-        _Rigidbody.velocity = velocity;
+        if (_Rigidbody != null)
+        {
+            _Rigidbody.velocity = velocity;
+        }
     }
 }

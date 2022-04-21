@@ -14,15 +14,12 @@ GameObject:
   - component: {fileID: 2147954715852135622}
   - component: {fileID: 2147954715852135623}
   - component: {fileID: 8812296205287476222}
-  - component: {fileID: 8602766877117934752}
-  - component: {fileID: 3582783611570867881}
-  - component: {fileID: 2734876829329093402}
   - component: {fileID: 5656003268599100682}
   - component: {fileID: 7346455853009304188}
   - component: {fileID: 814015836756251216}
   - component: {fileID: 7901590303513249767}
   - component: {fileID: 1127866891315672912}
-  - component: {fileID: 5420257631609857404}
+  - component: {fileID: 495583935541484571}
   m_Layer: 5
   m_Name: SideTextPrefab
   m_TagString: Untagged
@@ -194,120 +191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Left: 0
---- !u!114 &8602766877117934752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147954715852135617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41cf904d84eb4825bcbaec1aaabf06c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8812296205287476222}
-        m_TargetAssemblyTypeName: PositionAndSize, Assembly-CSharp
-        m_MethodName: OnSideTextSizeChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _conditions: []
-  _operator: 0
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 4eedb9e2e48e2454ab45ff1a7238acc5, type: 2}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
---- !u!114 &3582783611570867881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147954715852135617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a13c337fc59432a95a17e5465b0c03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8812296205287476222}
-        m_TargetAssemblyTypeName: PositionAndSize, Assembly-CSharp
-        m_MethodName: OnSidePaddingChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _conditions: []
-  _operator: 0
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: a809b8a2a75a4fc4e84c83f6b66e85e6, type: 2}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
---- !u!114 &2734876829329093402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147954715852135617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a13c337fc59432a95a17e5465b0c03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8812296205287476222}
-        m_TargetAssemblyTypeName: PositionAndSize, Assembly-CSharp
-        m_MethodName: OnTopPaddingChanged
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _conditions: []
-  _operator: 0
-  _replayEventBufferOnRegister: 1
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: 09eea3b10260c2144bd6473f71a401bf, type: 2}
-    _eventInstancer: {fileID: 0}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
 --- !u!114 &5656003268599100682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DesignScreenWidth: {fileID: 11400000, guid: 90133f4a045734c4caf9a1508159c2ff, type: 2}
---- !u!114 &5420257631609857404
+--- !u!114 &495583935541484571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -459,7 +342,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2147954715852135617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ea13680c22d9842b1eb2e0ac3cef0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 04861192f0a552543887faef1ee02165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _developerDescription: 
@@ -468,7 +351,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1127866891315672912}
         m_TargetAssemblyTypeName: ProportionalFontSize, Assembly-CSharp
-        m_MethodName: OnScreenSizeChanged
+        m_MethodName: OnFullLayoutChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8812296205287476222}
+        m_TargetAssemblyTypeName: PositionAndSize, Assembly-CSharp
+        m_MethodName: OnFullLayoutChanged
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -484,7 +379,7 @@ MonoBehaviour:
   _replayEventBufferOnRegister: 1
   _eventReference:
     _usage: 0
-    _event: {fileID: 11400000, guid: ef49633a81ac5c446af18f6a8c4cd1b9, type: 2}
+    _event: {fileID: 11400000, guid: 707c063fa3cb7384cbebbf9499e319b6, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

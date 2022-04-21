@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8916764287838234841}
   - component: {fileID: 6623811095801252490}
   - component: {fileID: 8916764287838234842}
+  - component: {fileID: 8943711167544821617}
   m_Layer: 0
   m_Name: ScreenProportionsManagerPrefab
   m_TagString: Untagged
@@ -60,3 +61,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScreenSize: {fileID: 11400000, guid: ef1944e9be9f006448e456a80fa6464a, type: 2}
+--- !u!114 &8943711167544821617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916764287838234843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8916764287838234842}
+        m_TargetAssemblyTypeName: ScreenProportionsManager, Assembly-CSharp
+        m_MethodName: OnStartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: ef67ee16f3bbed0429af471db928cf1d, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}

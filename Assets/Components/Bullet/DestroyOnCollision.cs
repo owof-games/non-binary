@@ -59,7 +59,10 @@ public class DestroyOnCollision : MonoBehaviour
                 _AlternativeTargetPosition = transform.position - (other.gameObject.transform.position - transform.position);
             }
             _StartingRelativePosition = transform.position - GetTargetPosition();
-            playerHit.OnHit();
+            if (playerHit != null)
+            {
+                playerHit.OnHit();
+            }
             Hit.Raise(Damage);
         }
     }

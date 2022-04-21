@@ -66,7 +66,7 @@ public class HealthManager : BaseManager
 
     private void OnHit(int damage)
     {
-        if (!_Invincible)
+        if (!_Invincible.Value)
         {
             var min = _StoryStep.IsBulletHell ? 0 : _MinHealthOutsideBulletHells;
             _Health.Value = Math.Max(min, _Health.Value - damage);

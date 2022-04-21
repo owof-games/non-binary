@@ -4,9 +4,7 @@ using RG.LogLibrary;
 
 public class MainTextPositionAndSize : MonoBehaviour
 {
-    private Vector2 _MainTextSize;
-
-    private float _SpacingBottom;
+    private FullLayout _FullLayout;
 
     private bool _MainTextBorder;
 
@@ -21,16 +19,9 @@ public class MainTextPositionAndSize : MonoBehaviour
         UpdateRect();
     }
 
-    public void OnMainTextSizeChanged(Vector2 mainTextSize)
+    public void OnFullLayoutChanged(FullLayout fullLayout)
     {
-        _MainTextSize = mainTextSize;
-        UpdateRect();
-    }
-
-    public void OnSpacingBottomChanged(float spacingBottom)
-    {
-        _SpacingBottom = spacingBottom;
-        UpdateRect();
+        _FullLayout = fullLayout;
     }
 
     public void OnMainTextBorderChanged(bool mainTextBorder)
@@ -45,17 +36,18 @@ public class MainTextPositionAndSize : MonoBehaviour
         {
             return;
         }
-        var spacingSide = (1 - _MainTextSize.x) / 2;
-        this.Verbose("computing anchors from main text size = {0}, spacing bottom = {1}, so spacing side = {2}",
-            _MainTextSize, _SpacingBottom, spacingSide);
+        _BorderImage.enabled = _MainTextBorder;
+        // we are contained in a rect that stretches in width for the whole scene and in height from
+        // the bottom of the scene to the top of the main rect; we must recompute our coordinates as
+        // such
         _RectTransform.anchorMin = new Vector2(
-            spacingSide,
-            _SpacingBottom / (_SpacingBottom + _MainTextSize.y)
+            _FullLayout.MainText.Percentage.xMin,
+            (_FullLayout.MainText.Percentage.yMin - _FullLayout.Scene.Percentage.yMin) /
+            (_FullLayout.MainText.Percentage.yMax - _FullLayout.Scene.Percentage.yMin)
         );
         _RectTransform.anchorMax = new Vector2(
-            1 - spacingSide,
+            _FullLayout.MainText.Percentage.xMax,
             1
         );
-        _BorderImage.enabled = _MainTextBorder;
     }
 }

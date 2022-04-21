@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityAtoms.BaseAtoms;
+using RG.LogLibrary;
 
 public class ShowHideHints : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class ShowHideHints : MonoBehaviour
 
     void Start()
     {
+        this.Verbose("starting");
         StartCoroutine(WaitToShowHints());
     }
 
@@ -29,11 +31,18 @@ public class ShowHideHints : MonoBehaviour
 
     private IEnumerator WaitToShowHints()
     {
+        this.Verbose("waiting for {0} seconds", _HasMovedDelay.Value);
         yield return new WaitForSeconds(_HasMovedDelay);
+        this.Verbose("checking if it moved...");
         if (!_HasMoved)
         {
+            this.Verbose("has not moved: start animation");
             _ShowingHints = true;
             _ShowDirector.Play();
+        }
+        else
+        {
+            this.Verbose("has moved already.");
         }
     }
 
@@ -44,9 +53,12 @@ public class ShowHideHints : MonoBehaviour
             _HasMoved = true;
             if (_ShowingHints)
             {
+                this.Verbose("has moved and was showing hints: hide them");
                 _ShowDirector.Stop();
                 _HideDirector.Play();
+                _ShowingHints = false;
             }
+            this.Verbose("raising start story event");
             _StartStoryEvent.Raise();
         }
     }

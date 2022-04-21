@@ -4,17 +4,13 @@ using UnityEngine.UI;
 
 public class PositionAndSize : MonoBehaviour
 {
-    private Vector2 _Size;
-
-    private float _SidePadding;
-
-    private float _TopPadding;
-
     private bool _SideTextBorder;
 
     private RectTransform _RectTransform;
 
     private Image _BorderImage;
+
+    private Rect _SideTextPercentageRect;
 
     [SerializeField]
     private bool _Left;
@@ -27,25 +23,9 @@ public class PositionAndSize : MonoBehaviour
         UpdateRect();
     }
 
-    public void OnSideTextSizeChanged(Vector2 size)
+    public void OnFullLayoutChanged(FullLayout fullLayout)
     {
-        this.Verbose("Received Side Text Size Changed: {0}", size);
-        _Size = size;
-        UpdateRect();
-    }
-
-    public void OnSidePaddingChanged(float sidePadding)
-    {
-        this.Verbose("Received Side Padding Changed: {0}", sidePadding);
-        _SidePadding = sidePadding;
-        UpdateRect();
-    }
-
-    public void OnTopPaddingChanged(float topPadding)
-    {
-        this.Verbose("Received Top Padding Changed: {0}", topPadding);
-        _TopPadding = topPadding;
-        UpdateRect();
+        _SideTextPercentageRect = (_Left ? fullLayout.LeftSideText : fullLayout.RightSideText).Percentage;
     }
 
     public void OnSideTextBorderChanged(bool sideTextBorder)
@@ -61,15 +41,15 @@ public class PositionAndSize : MonoBehaviour
         {
             return;
         }
+        _BorderImage.enabled = _SideTextBorder;
         _RectTransform.anchorMin = new Vector2(
-            _Left ? _SidePadding : 1 - _SidePadding - _Size.x,
-            1 - _TopPadding - _Size.y
+            _SideTextPercentageRect.xMin,
+            _SideTextPercentageRect.yMin
         );
         _RectTransform.anchorMax = new Vector2(
-            _Left ? _SidePadding + _Size.x : 1 - _SidePadding,
-            1 - _TopPadding
+            _SideTextPercentageRect.xMax,
+            _SideTextPercentageRect.yMax
         );
-        _BorderImage.enabled = _SideTextBorder;
         this.Verbose("Recomputed anchor min to {0} and anchor max to {1}", _RectTransform.anchorMin, _RectTransform.anchorMax);
     }
 }

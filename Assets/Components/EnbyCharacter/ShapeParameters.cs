@@ -93,7 +93,7 @@ public class ShapeParameters : MonoBehaviour
         }
         if (!_PreviousTorque.HasValue || _PreviousTorque.Value != Torque)
         {
-            _Material.SetFloat("_Torque", Torque);
+            _Material.SetFloat("_Theta", Torque);
             _PreviousTorque = Torque;
         }
         if (!_PreviousHue1.HasValue || _PreviousHue1.Value != Hue1)

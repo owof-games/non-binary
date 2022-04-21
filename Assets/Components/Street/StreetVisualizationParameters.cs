@@ -9,14 +9,14 @@ public class StreetVisualizationParameters : MonoBehaviour
     private float _TextureWidth;
     private float _TextureHeight;
 
-    public float WidthFactor = 0.2f;
+    // public float WidthFactor = 0.2f;
 
     public float FadeLevel = 0f;
 
     public float Speed = 1f;
     private float _DeltaV = 0;
 
-    public SizeVariable ScreenSize;
+    // public SizeVariable ScreenSize;
 
     private void Awake()
     {
@@ -32,34 +32,13 @@ public class StreetVisualizationParameters : MonoBehaviour
         {
             this.Info("vertex: {0},{1},{2}", vertex.x, vertex.y, vertex.z);
         }
+        UpdateLayout();
     }
 
     private void Update()
     {
-        var ss = ScreenSize.Value;
-        // resize texture
-        var dx = (ss.Width - ss.ProportionalWidth) / 2;
-        var dy = (ss.Height - ss.ProportionalHeight) / 2;
-        var blWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(
-            dx, dy, transform.position.z
-        ));
-        var trWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(
-            ss.Width - dx, ss.Height - dy, transform.position.z
-        ));
-        var quadWidth = trWorldPosition.x - blWorldPosition.x;
-        var quadHeight = trWorldPosition.y - blWorldPosition.y;
-        transform.localScale = new Vector3(
-            quadWidth,
-            quadHeight,
-            1
-        );
-        // width factor, weighting the actual screen space
-        var realWidthFactor = ss.ProportionalWidth * WidthFactor / ss.Width;
-        _Material.SetFloat("_WidthFactor", realWidthFactor);
-        // number of vertical repeats
-        var repeats = _TextureWidth * Screen.height / (WidthFactor * _TextureHeight * Screen.width);
-        _Material.SetFloat("_NumVerticalRepeats", repeats);
-        // fare level
+
+        // fade level
         _Material.SetFloat("_FadeLevel", FadeLevel);
         // animate V position
         _DeltaV += Time.deltaTime * Speed;
@@ -68,5 +47,37 @@ public class StreetVisualizationParameters : MonoBehaviour
             _DeltaV -= 1;
         }
         _Material.SetFloat("_DeltaV", _DeltaV);
+    }
+
+    private FullLayout _FullLayout;
+
+    public void OnFullLayoutChanged(FullLayout fullLayout)
+    {
+        _FullLayout = fullLayout;
+        UpdateLayout();
+    }
+
+    private void UpdateLayout()
+    {
+        if (_Material == null || _FullLayout.Screen.World.width == 0 || _FullLayout.Screen.World.height == 0)
+        {
+            return;
+        }
+        // scale to cover the whole screen
+        transform.position = new Vector3(
+            _FullLayout.Scene.World.center.x,
+            _FullLayout.Scene.World.center.y,
+            transform.position.z
+        );
+        transform.localScale = new Vector3(
+            _FullLayout.Scene.World.width,
+            _FullLayout.Scene.World.height,
+            1
+        );
+        // width factor to get the actual width occupied by the street
+        _Material.SetFloat("_WidthFactor", _FullLayout.Street.Percentage.width);
+        // number of vertical repeats
+        var repeats = _TextureWidth * _FullLayout.Scene.Screen.height / (_FullLayout.Street.Percentage.width * _TextureHeight * _FullLayout.Scene.Screen.width);
+        _Material.SetFloat("_NumVerticalRepeats", repeats);
     }
 }

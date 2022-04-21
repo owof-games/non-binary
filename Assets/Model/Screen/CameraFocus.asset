@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25756b6c66f60c4b860f3a66ec36b22, type: 3}
+  m_Name: CameraFocus
+  m_EditorClassIdentifier: 
+  _developerDescription: 'Rectangle in scene percentage coordinates (0,0 = bottom
+    left of the scene, 1,1 = top right of the scene) that expresses the part of the
+    sceen visible to the camera.
+
+    The camera must include this rectangle completely
+    and zoom it as much as possible.
+
+    The default value (0,0)=>(1,1) means thus
+    that the camera must focus on the whole scene.'
+  _id: 
+  _value:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _changed: {fileID: 11400000, guid: fc7d1219888f69449a2ffe505cdaf283, type: 2}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 1
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2
+    height: 1
+  _initialValue:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _preChangeTransformers: []

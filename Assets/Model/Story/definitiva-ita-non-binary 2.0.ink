@@ -1,3 +1,7 @@
+// MODIFICHE:
+// aggiunto il marker $character_creation$ subito prima di $bullet_hell_finale$
+// aggiunta le funzioni "swap_and_restart" e "restart" per invertire il gender, se serve, e ripartire
+
 //VARIABILI
 
 
@@ -20,8 +24,29 @@ VAR amab_tre = 1
         - gender == 2: 
         -> intro_amab
         }
+
+    === swap_and_restart ===
+xxx
+{
+    - gender == 1:
+        ~ gender = 2
+        -> intro_amab
+    - gender == 2:
+        ~ gender = 1
+        -> intro_afab
+}
+
+=== restart ===
+xxx
+    {
+    - gender == 1:
+    -> intro_afab
+    - gender == 2: 
+    -> intro_amab
+    }
     
     === bullet_hell_buono ===
+    $character_creation$
     $bullet_hell_finale$
     -> outro
     

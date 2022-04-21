@@ -15,7 +15,7 @@ public class BulletSourceComponent : MonoBehaviour
     [SerializeField]
     private BulletSourceEntry[] _BulletSources;
 
-    private List<BulletSource> _PlayedBulletSources = new List<BulletSource>();
+    private readonly List<BulletSource> _PlayedBulletSources = new List<BulletSource>();
 
     [SerializeField]
     private GameObject _PinkBullet;
@@ -96,10 +96,7 @@ public class BulletSourceComponent : MonoBehaviour
         });
     }
 
-    public Size ScreenSize
-    {
-        private get; set;
-    }
+    public FullLayout FullLayout { private get; set; }
 
     float _DeathOfLastBullet = 0;
 
@@ -122,15 +119,15 @@ public class BulletSourceComponent : MonoBehaviour
             return;
         }
         var relativeTime = Time.time - _StartingTime;
-        var ratio = ((float)ScreenSize.ProportionalWidth) / _DesignScreenWidth.Value;
+        var ratio = FullLayout.Screen.Screen.width / _DesignScreenWidth.Value;
         while (_Descriptions.Count > 0 &&
             relativeTime >= _Descriptions[0].DeltaTime)
         {
-            var xScale = ScreenSize.ProportionalWidth;
-            var yScale = ScreenSize.ProportionalHeight;
+            var xScale = FullLayout.Screen.Screen.width;
+            var yScale = FullLayout.Screen.Screen.height;
             var transformationMatrix = Matrix4x4.TRS(
-                new Vector3((ScreenSize.Width - ScreenSize.ProportionalWidth) / 2,
-                (ScreenSize.Height - ScreenSize.ProportionalHeight) / 2,
+                new Vector3((Screen.width - FullLayout.Screen.Screen.width) / 2,
+                (Screen.height - FullLayout.Screen.Screen.height) / 2,
                 0),
                 Quaternion.identity,
                 new Vector3(xScale, yScale, 1)
@@ -185,6 +182,10 @@ public class BulletSourceComponent : MonoBehaviour
     {
         _StartingTime = null;
         _Descriptions = null;
+        if (_CurrentBulletDescriptionEnumerable != null)
+        {
+            _CurrentBulletDescriptionEnumerable.Dispose();
+        }
         _CurrentBulletDescriptionEnumerable = null;
         _DeathOfLastBullet = 0;
     }

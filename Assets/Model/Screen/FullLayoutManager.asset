@@ -24,6 +24,8 @@ MonoBehaviour:
   _SpacingTopChanged: {fileID: 11400000, guid: 09eea3b10260c2144bd6473f71a401bf, type: 2}
   _StreetWidthChanged: {fileID: 11400000, guid: 02a4fd99522e07042b0a1e29011d70bc,
     type: 2}
+  _CameraFocusChanged: {fileID: 11400000, guid: fc7d1219888f69449a2ffe505cdaf283,
+    type: 2}
   _UpdateScreenCoordinates: {fileID: 11400000, guid: b9af4c318b4299545bbf636b9ba73c04,
     type: 2}
   FullLayoutVariable: {fileID: 11400000, guid: d367c19c7ec40944ca93f3ecf834760e, type: 2}

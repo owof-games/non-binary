@@ -12,11 +12,23 @@ public class SetAlphaAction : MonoBehaviour
         {
             throw new System.Exception("cannot find alpha management");
         }
+        SetValue();
     }
+
+    private float _LastValue = 1;
 
     public void SetAlphaMultiplierValue(float value)
     {
-        Debug.Log("setting alpha to " + value.ToString(), this);
-        _AlphaManagement.SetAlphaMultiplier(AlphaMultiplierName, value);
+        _LastValue = value;
+        SetValue();
+    }
+
+    private void SetValue()
+    {
+        if (_AlphaManagement != null)
+        {
+            // Debug.Log("setting alpha to " + _LastValue.ToString(), this);
+            _AlphaManagement.SetAlphaMultiplier(AlphaMultiplierName, _LastValue);
+        }
     }
 }

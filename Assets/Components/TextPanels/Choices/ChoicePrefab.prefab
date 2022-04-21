@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 1684854027510984569}
   - component: {fileID: 368428614580901195}
   - component: {fileID: 1019916940206463131}
-  - component: {fileID: 2819243872264610217}
+  - component: {fileID: 8627075649041549243}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.65
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DesignScreenWidth: {fileID: 11400000, guid: 90133f4a045734c4caf9a1508159c2ff, type: 2}
---- !u!114 &2819243872264610217
+--- !u!114 &8627075649041549243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6997010621649588217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2ea13680c22d9842b1eb2e0ac3cef0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 04861192f0a552543887faef1ee02165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _developerDescription: 
@@ -345,7 +345,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1019916940206463131}
         m_TargetAssemblyTypeName: ProportionalFontSize, Assembly-CSharp
-        m_MethodName: OnScreenSizeChanged
+        m_MethodName: OnFullLayoutChanged
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -361,7 +361,7 @@ MonoBehaviour:
   _replayEventBufferOnRegister: 1
   _eventReference:
     _usage: 0
-    _event: {fileID: 11400000, guid: ef49633a81ac5c446af18f6a8c4cd1b9, type: 2}
+    _event: {fileID: 11400000, guid: 707c063fa3cb7384cbebbf9499e319b6, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

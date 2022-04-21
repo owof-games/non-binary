@@ -16,6 +16,7 @@ MonoBehaviour:
   StoryStepVariable: {fileID: 11400000, guid: 075d5b3f2d0e854429e2eee2f00324c1, type: 2}
   NextLine: {fileID: 11400000, guid: 25093a9ea2e7f534da2357bccb19928b, type: 2}
   StartKnotEvent: {fileID: 11400000, guid: 5faa5f029fb535242930bf0ce6b08762, type: 2}
+  GoToKnotEvent: {fileID: 11400000, guid: ffed38d4b787f774995b5ef6dc10a981, type: 2}
   MakeChoiceEvent: {fileID: 11400000, guid: 14a507f39e52e034185dbb9822c9a673, type: 2}
   StartStory: {fileID: 11400000, guid: ef67ee16f3bbed0429af471db928cf1d, type: 2}
   IsAMAB: {fileID: 11400000, guid: 13734897409d326408d367bb7811d22f, type: 2}

@@ -1,14 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MainTextContainerPositionAndSize : MonoBehaviour
 {
-    private Vector2 _MainTextSize;
+    // private Vector2 _MainTextSize;
 
-    private float _SpacingBottom;
+    // private float _SpacingBottom;
 
     private RectTransform _RectTransform;
+
+    private FullLayout _FullLayout;
 
     private void Awake()
     {
@@ -16,25 +16,31 @@ public class MainTextContainerPositionAndSize : MonoBehaviour
         UpdateRect();
     }
 
-    public void OnMainTextSizeChanged(Vector2 mainTextSize)
-    {
-        _MainTextSize = mainTextSize;
-        UpdateRect();
-    }
+    // public void OnMainTextSizeChanged(Vector2 mainTextSize)
+    // {
+    //     _MainTextSize = mainTextSize;
+    //     UpdateRect();
+    // }
 
-    public void OnSpacingBottomChanged(float spacingBottom)
+    // public void OnSpacingBottomChanged(float spacingBottom)
+    // {
+    //     _SpacingBottom = spacingBottom;
+    //     UpdateRect();
+    // }
+
+    public void OnFullLayoutChanged(FullLayout fullLayout)
     {
-        _SpacingBottom = spacingBottom;
+        _FullLayout = fullLayout;
         UpdateRect();
     }
 
     private void UpdateRect()
     {
-        if (!_RectTransform)
+        if (_RectTransform == null || _FullLayout == null)
         {
             return;
         }
-        _RectTransform.anchorMin = new Vector2(0, 0); // exceed to avoid rounding errors and not covering all street
-        _RectTransform.anchorMax = new Vector2(1, _SpacingBottom + _MainTextSize.y);
+        _RectTransform.anchorMin = new Vector2(_FullLayout.Scene.Percentage.xMin, _FullLayout.Scene.Percentage.yMin);
+        _RectTransform.anchorMax = new Vector2(_FullLayout.Scene.Percentage.xMax, _FullLayout.MainText.Percentage.yMax);
     }
 }

@@ -316,8 +316,9 @@ GameObject:
   - component: {fileID: 9127031603100060258}
   - component: {fileID: 9127031603100060261}
   - component: {fileID: 9127031603100060260}
-  - component: {fileID: 9127031603100060259}
   - component: {fileID: 9127031603100060256}
+  - component: {fileID: 9127031603100060259}
+  - component: {fileID: 8347140876549932393}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -390,21 +391,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9127031603100060259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9127031603100060263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d9e2bbb30bba3f489bc21dced3d6ef0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WidthFactor: 0.2
-  Speed: 1.7
-  ScreenSize: {fileID: 11400000, guid: ef1944e9be9f006448e456a80fa6464a, type: 2}
 --- !u!114 &9127031603100060256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,3 +405,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
   Path: street
+--- !u!114 &9127031603100060259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127031603100060263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9e2bbb30bba3f489bc21dced3d6ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WidthFactor: 0.2
+  FadeLevel: 0
+  Speed: 1.7
+--- !u!114 &8347140876549932393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127031603100060263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04861192f0a552543887faef1ee02165, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9127031603100060259}
+        m_TargetAssemblyTypeName: StreetVisualizationParameters, Assembly-CSharp
+        m_MethodName: OnFullLayoutChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 707c063fa3cb7384cbebbf9499e319b6, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}

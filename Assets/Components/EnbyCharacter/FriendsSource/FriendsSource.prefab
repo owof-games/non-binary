@@ -49,6 +49,7 @@ MonoBehaviour:
   Friend: {fileID: 2203061329062367910, guid: bfb742433c7a68a47be093edecc00814, type: 3}
   SpeedFactor: 0.1
   TimeBetweenFriends: 3
+  StreetSpacePadding: 0.1
 --- !u!114 &3611108431429648273
 MonoBehaviour:
   m_ObjectHideFlags: 0

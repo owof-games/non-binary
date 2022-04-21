@@ -23,19 +23,25 @@ public class ProportionalFontSize : MonoBehaviour
         UpdateFontSize();
     }
 
-    private Size _ScreenSize;
+    // private Size _ScreenSize;
+    private FullLayout _FullLayout;
 
-    public void OnScreenSizeChanged(Size screenSize)
+    // public void OnScreenSizeChanged(Size screenSize)
+    // {
+    //     _ScreenSize = screenSize;
+    //     UpdateFontSize();
+    // }
+    public void OnFullLayoutChanged(FullLayout fullLayout)
     {
-        _ScreenSize = screenSize;
+        _FullLayout = fullLayout;
         UpdateFontSize();
     }
 
     private void UpdateFontSize()
     {
-        if (_TextMeshProUGUI)
+        if (_TextMeshProUGUI != null && _FullLayout != null)
         {
-            var ratio = ((float)_ScreenSize.ProportionalWidth) / _DesignScreenWidth.Value;
+            var ratio = (float)_FullLayout.Scene.Screen.width / _DesignScreenWidth.Value;
             _TextMeshProUGUI.fontSize = _FontSize * ratio;
             _TextMeshProUGUI.fontSizeMin = _FontSizeMin * ratio;
             _TextMeshProUGUI.fontSizeMax = _FontSizeMax * ratio;
