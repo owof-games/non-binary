@@ -41,7 +41,7 @@ public class UnityMainThreadDispatcher : MonoBehaviour
         }
     }
 
-    private static List<IEnumerator> _EnqueuedEnumerators = new List<IEnumerator>();
+    private static List<IEnumerator> _EnqueuedEnumerators = null;
 
     public static void EventuallyEnqueue(IEnumerator action)
     {
@@ -51,6 +51,10 @@ public class UnityMainThreadDispatcher : MonoBehaviour
         }
         else
         {
+            if (_EnqueuedEnumerators == null)
+            {
+                _EnqueuedEnumerators = new List<IEnumerator>();
+            }
             _EnqueuedEnumerators.Add(action);
         }
     }
@@ -136,11 +140,14 @@ public class UnityMainThreadDispatcher : MonoBehaviour
         {
             _Instance = this;
             DontDestroyOnLoad(this.gameObject);
-            foreach (var action in _EnqueuedEnumerators)
+            if (_EnqueuedEnumerators != null)
             {
-                Enqueue(action);
+                foreach (var action in _EnqueuedEnumerators)
+                {
+                    Enqueue(action);
+                }
+                _EnqueuedEnumerators = null;
             }
-            _EnqueuedEnumerators = null;
         }
     }
 

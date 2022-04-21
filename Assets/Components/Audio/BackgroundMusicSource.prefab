@@ -193,7 +193,7 @@ MonoBehaviour:
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   FadeOutDuration: 1
-  NumSFXAudioSources: 3
+  NumSFXAudioSources: 7
 --- !u!114 &2191811226805912325
 MonoBehaviour:
   m_ObjectHideFlags: 0

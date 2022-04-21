@@ -47,9 +47,7 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
-$character_creation$
-
-$bullet_hell_finale$
+$bullet_hell_amab_tre$
 
 // Che razza di bambino sei? #almost_there #people
 
@@ -102,5 +100,9 @@ Questo è invece un testo bello lungo. Questo è invece un testo bello lungo. Qu
 
 === purgatorio ===
 Sei arrivato al purgatorio!
+
+$character_creation$
+
+$bullet_hell_finale$
 
 ->DONE

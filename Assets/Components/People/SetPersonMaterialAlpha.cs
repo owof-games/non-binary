@@ -5,6 +5,11 @@ public class SetPersonMaterialAlpha : MonoBehaviour
     [SerializeField]
     private float _Alpha;
 
+    public void SetAlpha(float alpha)
+    {
+        _Alpha = alpha;
+    }
+
     private PeopleGenerator _PeopleGenerator;
 
     private void Awake()

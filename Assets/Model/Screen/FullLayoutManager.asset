@@ -26,6 +26,10 @@ MonoBehaviour:
     type: 2}
   _CameraFocusChanged: {fileID: 11400000, guid: fc7d1219888f69449a2ffe505cdaf283,
     type: 2}
+  _CameraFocusVariableToKeepReference: {fileID: 11400000, guid: c785d0cf672cc10458363652d75911f6,
+    type: 2}
+  _ScreenSizeVariableToKeepReference: {fileID: 11400000, guid: ef1944e9be9f006448e456a80fa6464a,
+    type: 2}
   _UpdateScreenCoordinates: {fileID: 11400000, guid: b9af4c318b4299545bbf636b9ba73c04,
     type: 2}
   FullLayoutVariable: {fileID: 11400000, guid: d367c19c7ec40944ca93f3ecf834760e, type: 2}

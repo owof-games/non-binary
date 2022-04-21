@@ -1,9 +1,4 @@
-// MODIFICHE:
-// aggiunto il marker $character_creation$ subito prima di $bullet_hell_finale$
-// aggiunta le funzioni "swap_and_restart" e "restart" per invertire il gender, se serve, e ripartire
-
 //VARIABILI
-
 
 //Gender: se 1 = AFAB, se 2 = AMAB
 
@@ -12,11 +7,14 @@ VAR gender = 1
 //Finali amab: se 1 = perdere, se 2 = sinceramente
 VAR amab_tre = 1
 
+VAR activate_shortcuts = 1
+
 
 //FUNZIONI
     -> random
     === random ===
     ~ gender = RANDOM (1,2)
+    ~ gender = 2
     
        {
         - gender == 1:
@@ -24,8 +22,13 @@ VAR amab_tre = 1
         - gender == 2: 
         -> intro_amab
         }
-
-    === swap_and_restart ===
+    
+    === bullet_hell_buono ===
+    $character_creation$
+    $bullet_hell_finale$
+    -> END
+    
+=== swap_and_restart ===
 xxx
 {
     - gender == 1:
@@ -44,62 +47,57 @@ xxx
     - gender == 2: 
     -> intro_amab
     }
-    
-    === bullet_hell_buono ===
-    $character_creation$
-    $bullet_hell_finale$
-    -> outro
-    
 
-    === outro === 
+  === outro === 
+
     {
-    - gender == 1:
-        + [Vivi la vita di Pallino]
+    - gender == 1: -> outro_afab
+    - gender == 2: -> outro_amab
+     }   
+    
+    = outro_afab
+     + [Vivi la vita di Pallino]
         -> intro_amab
         + [Rivivi la vita di Pallinə]
         -> intro_afab
         + [Voglio uscire]
         -> END
-    
-    - gender == 2:
-        + [Vivi la vita di Pallina]
+    = outro_amab
+    + [Vivi la vita di Pallina]
         -> intro_afab
         + [Rivivi la vita di Pallinə]
         -> intro_amab
         + [Voglio uscire]
         -> END
-        
-    }
-    
-    
-    
     
     === purgatorio ===
-    //check AFAB
-    {gender == 1} {atto_afab_tre}  -> finale_afab
-    {gender == 1} {atto_afab_due}  -> sconfitta_afab_due 
-    {gender == 1} {atto_afab_uno}  -> sconfitta_afab_uno 
-  
-    //check AMAB
-    {gender == 2} {amab_tre == 2} -> finale_amab_due
-    {gender == 2} {amab_tre == 1} -> finale_amab_uno 
-    {gender == 2} {atto_amab_due}  -> sconfitta_amab_due 
-    {gender == 2} {atto_amab_uno}  -> sconfitta_amab_uno 
-    
-
-
-
+        //check AFAB
+        {
+        - gender == 1 && atto_afab_tre: -> finale_afab
+        - gender == 1 && atto_afab_due:  -> sconfitta_afab_due 
+        - gender == 1 && atto_afab_uno:  -> sconfitta_afab_uno 
+      
+        //check AMAB
+        - gender == 2 && amab_tre == 2: -> finale_amab_due
+        - gender == 2 && amab_tre == 1: -> finale_amab_uno 
+        - gender == 2 && atto_amab_due:  -> sconfitta_amab_due 
+        - gender == 2 && atto_amab_uno:  -> sconfitta_amab_uno 
+    }  
 
 //STORIA PALLINO
     === intro_amab ===
     ~ gender = 2
+    ~ amab_tre = 0
         Mamma e l’auto ti cullano nel tragitto verso casa. #street
+        {
+            - activate_shortcuts == 1: -> atto_amab_uno
+        }
         “Appena <m>nato</m> e ha già la faccia da <m>furbetto</m>!”
         Papà è su di giri.
         La risata di mamma ti scuote dal dormiveglia.
-        Fuori dal finestrino i tuoi occhietti vedono un mondo sfocato fatto di luci e contorni, sagome e bagliori. #people
+        Fuori dal finestrino i tuoi occhietti vedono un mondo sfocato fatto di luci e contorni, sagome e bagliori. 
         È tutto nuovo, bellissimo. Senti di poter essere qualunque cosa.
-            + Fai un versetto[].
+            + [Fai un versetto]
             -
         Vuoi condividere la tua gioia, ma le voci sono alte e ti ignorano.
         “Secondo te avrà voglia di imparare il mestiere?”
@@ -108,7 +106,7 @@ xxx
         “Il mio o il tuo?”
         “Il mio! Dio, non voglio un <m>figlio</m> <f>estetista</f>!”
         Scendete dall’auto.
-            + Rigurgiti[].
+            + [Rigurgiti]
             -
         Non è che tu possa fare molto di più.
         Passi dalle braccia di mamma a quelle di nonna, zie e zii che ti corrono attorno.
@@ -126,9 +124,9 @@ xxx
         “Mamma, ha solo dodici anni!”
         Camminano e parlano, tutti. Si dicono come sarà il tuo futuro, discutono, ridono, tracciano confini. 
         Le loro parole si posano sui tuoi occhi.
-        Fuori, lungo la strada vedi sempre meno varietà, forme e colori si sfumano fino a quando non rimane che una distesa di <m>quadrati azzurri</m> e <f>triangoli rosa</f>.
-        Tutto ti sembra uguale.
-            + Piangi[].
+        Fuori, lungo la strada vedi sempre meno varietà, forme e colori si sfumano fino a quando non rimane che una distesa di <m>quadrati azzurri</m> e <f>triangoli rosa</f>. #people
+        Tutto ti sembra uguale. 
+            + [Piangi]
             -
         -> atto_amab_uno
     
@@ -136,6 +134,9 @@ xxx
     Infanzia. Estate. Parcogiochi. #title
     
         “Perché sei un <m>maschio</m>!”
+        {
+            - activate_shortcuts == 1: -> bullet_hell_amab_uno
+        }
         Il tono di chi dice qualcosa di ovvio.
             + “E quindi?”
             -
@@ -146,14 +147,14 @@ xxx
         Il sole è caldo e il parco è pieno di grida festose.
             + “Si fa sempre come vuoi te!”
             + “Può farlo Pallina.”
-            + La guardi con aria di sfida[].
+            + [La guardi con aria di sfida]
             -
         “Sono la più grande quindi decido io e quindi tu sei il <m>Principe</m>.”
         Marika si allontana con le treccine che ballonzolano.
         Iniziano a chiacchierare, a pianificare.
         Ogni tanto ti fanno qualche domanda ma a te non va proprio di rispondere ora.
         Guardi il tuo zaino con i nuovi numeri di Ranma 1/2, e pensi che eri così felice di startene a leggere al sole.
-            + Ti siedi sui gradini e le ignori[].
+            + [Ti siedi e le ignori].
             + Ti sforzi di seguire il discorso[], <>
             	ma hai perso qualcosa di importante, è comparso un drago, cosa c'entra un drago?
             + “Non avete fame?”[]. <>
@@ -164,7 +165,7 @@ xxx
         "<m>Pal-lin-oooooooooooooo</m>!"
         Marika stridula ti chiama.
         “È ora di iniziare!”
-            + Ti avvicini controvoglia[].
+            + [Ti avvicini controvoglia].
             -
         “Quindi Laura è la mia sorella piccola Pallina è la nostra mamma ma si è ammalata e ci serve la pozione ma ce l’ha il drago sotto la pancia e serve un eroe e stiamo chiamando...”
         “E chi fa il drago?” Pallina interrompe Marika.
@@ -178,7 +179,7 @@ xxx
         Unico, rosso fuoco fuori e giallo dentro.
         Bellissimo, gigantesco.
         Marika ti urla qualcosa. #completion_33
-            + La ignori[].
+            + [La ignori]
             + Le dici di venire[], <>
             	ma lei urla di correre contro il drago e non vuole che mamma muore e rimane orfana.
             + Annusi il fiore[], <>
@@ -206,10 +207,10 @@ xxx
         Risate.
         Ti alzi, alle tue spalle qualche bambino.
         Sono di poco più grandi, ogni tanto ti prendono di mira durante le pause a scuola, fanno i prepotenti con tutti. #completion_50
-            + Stringi i pugni[].
+            + [Stringi i pugni]
             + Ti allontani[], <>
             	qualcuno urla: “Ehi <m>frocetto</m>, sto parlando con te!”
-            + Con la voce più sicura che trovi, rispondi per le rime[], <>
+            + Rispondi per le rime[] con la voce più sicura che trovi, <>
             	ma balbetti un “Siete scappati dallo zoo?”
             -
         Ti arriva in testa una zolla di terra, ti pulisci gli occhi col dorso e non vedi chi ti butta sull'erba, schiacciandoti col suo peso.
@@ -225,12 +226,12 @@ xxx
         E Lorenzo inizia a volare.
         La sorpresa ti toglie anche la voglia di rialzarti.
         Passi veloci, qualche grido e poi una mano che si tende, quella di tuo fratello.
-            + La afferri[].
+            + [La afferri]
             -
         Ti solleva, ti passa dell’acqua, ti pulisce la faccia.
         “Niente di grave”, ti dice sorridendoti.
         Vi siedete sui gradini, recuperi dallo zaino due merendine mezze spappolate.
-            + Gliene passi una[].
+            + [Gliene passi una]
             -
         “Che hai combinato questa volta, <m>Pal</m>?”
         Gli racconti la storia del fiore.
@@ -248,7 +249,7 @@ xxx
         Che risposta si aspetta da te?
             + “Perché sono stupidi!”
             + “Perché non gioco con loro?”
-            + Resti in silenzio[].
+            + [Resti in silenzio]
             -
         “Sei sempre da solo o con le </f>bambine</f> o con la </f>nonna</f>. Coi <m>bambini</m> non ci stai mai, e questo è <m>strano</m>.”
         Lancia la cartaccia nel cestino.
@@ -272,7 +273,7 @@ xxx
         Lo osservi allontanarsi.
         Prendi lo zaino e ti avvii verso casa.
         La luce è bassa, le rondini corrono nel cielo.
-            + Canticchi qualcosa[].
+            + [Canticchi qualcosa]
             -
         Ti rendi conto che i pantaloni sono rotti, mamma si incazzerà a manetta.
         Ma poi, grida dall’altra parte della strada.
@@ -297,25 +298,28 @@ xxx
     Adolescenza. Inverno. Da nonna. #title
   
         Casa di nonna è come un cumulo di foglie, strati su strati di oggetti.
+        {
+            - activate_shortcuts == 1: -> Bullet_hell_amab_due
+        }
         Il salotto è invaso da quarant’anni di riviste di <f>moda</f>, <f>cucito</f>, <f>maglia</f>.
-            + Prendi una copia di Burda[].
+            + [Prendi una copia di Burda]
             -
         “Siamo qui per gettarla via ‘sta roba.”
         Omar entra con in mano una marea di scatoloni.
         Laura arriva da dietro e ti abbraccia.
         “Tutto ok tesoro?”
             + Fai sì con la testa[] e appoggi la rivista.
-            + Lanci la rivista in faccia a Omar[], che si scansa e ti dà della schiappa.
+            + Lanci la rivista contro Omar[], che si scansa e ti dà della schiappa.
             + “Mi ha insegnato a cucire[.“] <>
             di nascosto da mamma, da quando avevo dieci anni. Passavo qui le ore a leggere e a disegnare le decorazioni che poi lei faceva a maglia. Quando faceva freddo stavamo davanti alla TV a guardare documentari sui dinosauri e macinavamo chilometri di lana.”
-                ++ Era bello[].
+                ++ [Era bello]
             -
         
         “Non è mica morta”. Omar prende le altre riviste e le inscatola.
         “L’avete chiusa in una casa di riposo, è la stessa cosa.”
         “<m>Pal</m>, è per il suo bene.”
         Certo.
-            + Lei non ci voleva andare[].
+            + "Lei non ci voleva andare"[].
             -
         “Perché non avete accettato la nostra proposta?” Laura ha le mani sui fianchi e fissa Omar.
         Non vanno molto d’accordo. Quando vi siete messi assieme Omar era contento (“Quindi non sei frocio!”), ma Laura è convinta che abbia una pessima influenza su di te.
@@ -350,7 +354,7 @@ xxx
         “Sai che ti vuole un sacco bene, vero? Si vede nei suoi occhi ogni volta che ti guarda.”
         Laura ti sorride, passandoti un vestito.
         Ci metti un attimo a riconoscerlo.
-            + Osservi meglio la fantasia[].
+            + [Osservi meglio la fantasia]
             -
         Fiori di ibisco.
         Un <f>vestito lungo</f> che ti aveva fatto due anni fa.
@@ -358,11 +362,11 @@ xxx
         Hai urlato per nascondere la paura, paura di quanto lei avesse visto in te. 
         Paura del <f>piacere</f> che hai provato all’idea di indossarlo, di restare con lei lì con quel <f>lungo vestito</f> estivo a cucire e parlare, con la sicurezza che nessuna pallonata ti avrebbe distrutto.
         Laura ti guarda con tenerezza. 
-            + Condividi quel ricordo[].
+            + [Condividi quel ricordo]
             -> ricordo
-            + Infili il vestito nello scatolone[].
+            + [Infili il vestito nello scatolone]
             -> scatolone
-            + Parli del meteo[].
+            + [Parli del meteo]
             Laura ti bacia sulla guancia. "Dio, siamo già come quelle vecchie coppie che non hanno più nulla da dirsi?"
             -> scatolone
         
@@ -392,13 +396,13 @@ xxx
             Sospira.
             "Cristo, mamma è convinta che Laura sia una fase prima che tu ci dica di essere <m>gay</m>. Con te il mondo va al contrario.”
             Non sai capire come ti senti. Cosa provi ora? Cosa ha senso fare?
-                + Pensi a nonna, alla sua forza[].
+                + [Pensi a nonna, alla sua forza]
                     “Amo Laura, e non serve che siate tu o mamma a dirmi cosa fare o non fare!”
                     -> litigio
-                + Guardi tuo fratello, il tuo eroe[].
+                + [Guardi tuo fratello, il tuo eroe]
                     Ti ha detto “Ti voglio bene.”
                     -> accomodante
-                + La stanchezza ti macina le ossa[].
+                + [La stanchezza ti macina le ossa]
                     Li lasci lì e te ne vai.
                     -> litigio
             
@@ -431,9 +435,9 @@ xxx
             “Non vi tengo il muso, ma mi girano che mio fratello mi tratta come un mostro. Voglio bene anche io a nonna, davvero.”
             Vi volta le spalle, il tono della voce è più tremulo.
             “Non voglio svegliarmi ogni mattina con il timore che non risponda al telefono e sia morta in casa.”
-                + Appoggi una mano sulla spalla di Omar[].
-                + Guardi Laura, che ti prende la mano[].
-                + Guardi per terra[].
+                + [Appoggi una mano sulla spalla di Omar]
+                + [Guardi Laura, che ti prende la mano]
+                + [Osservi i tuoi piedi]
             “Non sei un mostro, non volevo ferirti.”
             -
             Glielo dici col cuore, speri che lo capisca davvero.
@@ -443,14 +447,14 @@ xxx
             “Sei sempre stato in un mondo tutto tuo. Ti lamenti di mamma, ma alla fine non fa altro che preoccuparsi per te.”
                 + “Non mi serve la sua preoccupazione."
                 + “E non vede te."
-                + Resti in silenzio[].
+                +  [Resti in silenzio]
             -
             “So di essere un grezzone e di non essere bravo come voi con le parole. Ma tengo a nonna, e voglio che sia felice. E tengo a te, e voglio che tu sia felice. Ma non so come farlo.”
                 + [Senti solo senso di colpa.] Gli occhi lucidi di Omar ti riempiono di senso di colpa.
                 -> colpa
                 + “Non pretendo tu sia perfetto[“], solo che tu mi permetta di essere me stesso."
                 -> myself
-                + Omar ha bisogno di te[]. 
+                + [Omar ha bisogno di te]
                 Metti da parte parole e spiegazioni e lo abbracci.
                 -> colpa
         
@@ -496,6 +500,9 @@ xxx
         Laura ti ripete di sbrigarti
             + “Ma mancano almeno sei ore!”
             -
+        {
+            - activate_shortcuts == 1: -> bullet_hell_amab_tre
+        }
         “E non bastano! Porta qualcosa da sgranocchiare.”
         Ravani tra i mobili della vostra cucina, recuperi cioccolata e burro d’arachidi.
         Non hai voglia di andare a quella stupida festa stasera.
@@ -511,7 +518,7 @@ xxx
             “C’è qualcosa di meglio dei labrador!” risponde. “Impossibile, niente è meglio dei labrador!”
             + [Le ricordi il matrimonio]“L’ultima volta che ho accettato ci siamo sposati, e devo ancora capire se sia stata una buona idea.”
             Laura ti dà un pugnetto in testa ridendo.
-            + Senti odore di trappola[]. Lei riconosce la tua espressione.
+            + [Senti odore di trappola] Lei riconosce la tua espressione.
             “Quando mai ho fatto qualcosa che ti ha messo nei guai?”. Fai una lista abbastanza dettagliata che contiene cioccolata, leoni marini, un costume da Elon Musk e una ghigliottina. Ah, sì, e quella volta al cimitero con la tavola Oujia. Lei ti osserva con le braccia incrociate, fintamente seria.
             -
         Ti porta nella stanza.
@@ -583,13 +590,17 @@ xxx
         Ma ora sei davvero tu.
         Ammiri i tuoi occhi enormi sotto l’eyeliner, e il modo in cui le labbra esplodano di rosso tra i peli della barba.
         Come i muscoli e le pieghe del vestito si esaltino a vicenda.
+            + [...]
+            -
+        ...
+            + [...]
+            -
+        ... ...
+        
+            + [...]
+            -
+        ... ... ...
         Piangi. #completion_70
-            + ...
-            -
-            + ...
-            -
-            + ...
-            -
         Laura ti abbraccia.
         “Tutto ok, tesoro?”
             + Respingi tutto quello che provi[], perché non può esserci spazio per questo. La sincerità la allontanerà come ha allontanato Omar.
@@ -671,9 +682,9 @@ xxx
         Ha gli occhi rigati dalle lacrime.
         Fuori fuochi e rumori di festa, bimbi che gridano.
         E lì, in fondo a tutto, col corpo e la testa svuotati, hai la risposta.
-            + “Non sono un <m>ragazzo</m>[.”]. <>
+            + “Non sono un [ragazzo.”]<>
             -
-            né una <f>ragazza</f>. O qualcosa a metà, ma più qualcosa d’altro. Come se continuassero a chiedermi se questa cosa è verde o gialla quando è viola, e non sapevo nemmeno che esistesse il viola.”
+            <m>ragazzo</m>. né una <f>ragazza</f>. O qualcosa a metà, ma più qualcosa d’altro. Come se continuassero a chiedermi se questa cosa è verde o gialla quando è viola, e non sapevo nemmeno che esistesse il viola.”
             Laura ti guarda confusa.
             + “Te ne andrai?”
         -
@@ -695,7 +706,7 @@ xxx
     === finale_amab_due ===
         Quando apri gli occhi, Laura è accovacciata davanti a te, gli occhi fissi nei tuoi.
         “Ehi, dolcezza!”
-            + Appoggi la fronte alla sua.
+            + [Appoggi la fronte alla sua]
             -
         “Cos’è successo in quella testolina?”
         Prendi un respiro.
@@ -723,7 +734,7 @@ xxx
         Ti guardi allo specchio.
         I pianti e le tensioni hanno incasinato <f>parrucca</f> e <m>trucco</m>.
         Ti senti bellә come non è mai successo in tutta la tua vita, ma l'idea di farti vedere dai tuoi amici così, ti spaventa.
-            + Fai di no con la testa[].
+            + [Fai di no con la testa]
             -
         Laura ti sorride.
         "Ho un piano B: una festa di ragazze lesbiche, un posto tranquillo dove stare, dovrebbero esserci anche un paio di vecchie compagne di scuola."
@@ -740,15 +751,15 @@ xxx
         “Non serve, davvero.”
         La voce di mamma ti sveglia. Sta parlando con nonna, sembra infastidita.
         Sei appena nata, ma le tensioni le senti tutte.
-            + Gridi[].
+            + [Gridi]
             -
         È l’unica cosa che sai fare se qualcosa ti dà fastidio.
         “Ha fame!” dice nonna, le mani strette sul volante.  #street
         “Le do da mangiare a casa sennò ora vomita, tanto manca poco.”
         Nonna sbuffa, mamma pure.
-            + Sbadigli[].
+            + [Sbadigli].
             -
-        I tuoi occhi si sforzano di guardare fuori dal finestrino. #people
+        I tuoi occhi si sforzano di guardare fuori dal finestrino. 
         Mezzi ciechi riconoscono giusto aloni, figure, contorni che sembrano poter essere qualsiasi cosa.
         Come te.
         La macchina si ferma.
@@ -760,7 +771,7 @@ xxx
         Mamma apre casa, c’è odore di chiuso e cibo andato a male.
         “Benvenuta, <f>Pallina</f>.”
         Il tono della sua voce è pieno di orgoglio.
-            + Ti ciucci il dito[].
+            + [Ti ciucci il dito]
             -
         Lei sorride e ti mostra il bilocale.
         “Lo so che è piccolo, ma siamo solo noi, tesoro. Due <f>donne</f> contro il mondo!”, ride.
@@ -773,9 +784,9 @@ xxx
         Ti porta al seno.
         “Sai una cosa? Sarai la più brava della scuola, così mi renderai orgogliosa. E ti prenderò un sacco di <f>vestiti a fiori</f>, perché da piccola li volevo anche io, a tutte piacciono i <f>vestiti a fiori</f>.”
         Ti cambia posizione.
-        “E poi diventerai una <f>dottoressa</f>, sì, hai le mani da <f>dottoressa</f>. Magari </f>ostetrica<f>, così farai felice tante altre <f>mamme</f>. Anche se io sarò la tua, sempre.”
+        “E poi diventerai una <f>dottoressa</f>, sì, hai le mani da <f>dottoressa</f>. Magari <f>ostetrica</f>, così farai felice tante altre <f>mamme</f>. Anche se io sarò la tua, sempre.”
         Sospira.
-            + Il sonno  ti afferra[].
+            + [Il sonno  ti afferra]
             -
         “E magari quando ti sposerai con un brav’<m>uomo</m> mi farai vivere con voi, così ti aiuterò coi nipotini, e tu potrai continuare a lavorare. E se sarò ancora <f>bella</f>...”
         Ma stai già dormendo.
@@ -783,7 +794,7 @@ xxx
         Ma non ci sono più colori e forme e tutte le cose possibili.
         Ci sono solo <m>quadratini azzurri</m>
         <f>triangoli rosa</f>
-        e mani enormi che ti schiacciano e strappano, cercando di darti una forma.
+        e mani enormi che ti schiacciano e strappano, cercando di darti una forma. #people
         -> atto_afab_uno
     
     === atto_afab_uno ===
@@ -797,7 +808,7 @@ xxx
         Che l'incontro genitori/insegnanti è un momento in cui i genitori vengono giudicati severamente.
         Che un genitore solo è sempre colpevole, e per questo non dovete fare nessun errore.
         Pensi che non abbia molto senso, ma ti fidi di lei.
-            + Guardi fuori[].
+            + [Guardi fuori]
             -
         Ti fidi, ma questo non cancella la noia.
         Dei ragazzi si rincorrono.
@@ -819,14 +830,14 @@ xxx
         Loro fanno promesse, rotte nel momento stesso in cui la finestra viene richiusa.
         La suora si affaccia da una porticina, chiama tua madre.
         “Stai qui dieci minuti, solo dieci minuti ok? E poi avrai il tuo gelato.”
-            + Fai sì con la testa[].
+            + [Fai sì con la testa]
             -
         Quanto sono lunghi, dieci minuti? 
         Conti sei respiri. Sette. Decidi che sono abbastanza.
         Ti alzi.
-            + Raggiungi i ragazzi[].
+            + [Raggiungi i ragazzi]
             -> gioco
-            + Vai dalle tue compagne[].
+            + [Vai dalle tue compagne]
             -> compagne
             
         
@@ -853,14 +864,14 @@ xxx
                 Pallino e Laura fanno il tifo per te. #completion_50
                 Sorridi, rubi la palla a Lorenzo che ti sbatte a terra.
                 Il ragazzo di quinta dice qualcosa ma lo ignori.
-                    + Tiri un pugno a Lorenzo[]. 
+                    + [Tiri un pugno a Lorenzo]
                     -
                 È il caos.
                 I ragazzini prendono in giro Lorenzo perché si è fatto <m>picchiare da una bambina</m>.
                 Senti Chloe alle tue spalle chiamare suor Addolorata.
                 Guardi Lorenzo che trattiene a fatica le lacrime.
                 Una mano ti afferra la spalla, ti investe un profumo dolcissimo. 
-                    + Sbuffi[].
+                    + [Sbuffi]
                     -
                 Come un palloncino che si sgonfia, hai smesso di volare. #completion_70
                 La mano è quella di mamma, la sua voce urla che il vestito è strappato, il <f>vestito buono</f> e Cristo, no! Le scarpe bianche sono lerce!
@@ -868,7 +879,7 @@ xxx
                 Marika ti indica e ride.
                 “<f>Non è una cosa da bambine</f>!”
                 Quanto è noiosa Marika!
-                    + Le fai la linguaccia[].
+                    + [Le fai la linguaccia]
                     -
                 Mamma ti tira una sberla.
                 Ti senti al centro di un palco, e tutti urlano il tuo nome.
@@ -877,7 +888,7 @@ xxx
                 Perché <f>non ti vesti a dovere</f>?
                 Perché usi le <m>parolacce</m> e <m>picchi</m>?
                 Perché sei <m>brava a calcio</m>?
-                Cosa sei <m>Pallina</m>, cosa sei? #almost_there
+                Cosa sei <f>Pallina</f>, cosa sei? #almost_there
                 ->bullet_hell_uno_afab
                 
             = compagne
@@ -896,7 +907,7 @@ xxx
                     -
                 “Anche noi. Stiamo giocando alle <f>principesse</f>, ce ne manca una.”
                 Ti guarda speranzosa.
-                    + Ignori il sottotesto.
+                    + [Ignori il sottotesto]
                     -
                 “Vieni?”
                 Non ne hai voglia, ma hai un’idea.
@@ -914,7 +925,7 @@ xxx
                 “Ma Chloe è una secchiona, poi lo porta sicuro alle suore!”
                 Laura non è convinta.
                 “Non sono secchiona!”
-                    + Osservi Chloe[].
+                    + [Osservi Chloe]
                     -
                 Si avvicina all’albero, appoggia la mano e guarda verso l’alto.
                 “E se perdo?”
@@ -926,7 +937,7 @@ xxx
                 Furba, fa in modo di occupare i rami più stretti, così che tu non possa superarla.
                 Ci sono persone che fanno il tifo.
                 I ragazzi urlano il tuo nome.
-                    + Salti su un ramo più debole[].
+                    + [Salti su un ramo instabile]
                     -
                 Ce la fai, lei però recupera lo svantaggio. 
                 Il suo vestito si strappa e lo ignora.
@@ -961,7 +972,7 @@ xxx
     -> atto_afab_due
     
     === atto_afab_due ===
-    Adolecenza. Inverno. Liceo.  #title
+    Adolescenza. Inverno. Liceo.  #title
     
         Dal piano di sotto solo qualche risata.
         C’è un silenzio strano: nessuno ha sonno, eppure le parole sembrano finite.
@@ -1014,11 +1025,11 @@ xxx
             -
         “Cosa dirà tua madre?”
         Te lo chiede stendendo un piccolo sacco a pelo, così piccolo che ti chiedi come ci starà il tuo corpicione lì dentro.
-        Metti le mani sui fianchi e imiti tua mamma. 
-            + ["Perchè io, signorina!"]“Perché io signorina non ti ho mica cresciuta da sola per vederti poi diventare <f>una teppista</f>! Faccio due lavori e uno è per pagare i tuoi danni, acciderbolina!”
-            -
+            + [Imiti tua madre] 
+        -
+        “Perché io signorina non ti ho mica cresciuta da sola per vederti poi diventare <f>una teppista</f>! Faccio due lavori e uno è per pagare i tuoi danni, acciderbolina!”
         Ci scherzi sopra, ma vorresti capisse che queste cose le fai anche per lei, perché storie come la sua o quella di Marika non si ripetano più.
-        Ma lei ti vorrebbe solo a studiare e fare volontariato in chiesa. Più avanti un bravo marito ingegnere, due figli e un appartamento sotto al suo.
+        Ma lei ti vorrebbe solo a studiare e fare volontariato in chiesa. Più avanti un <f>bravo marito</f> ingegnere, <f>due figli</f> e un appartamento sotto al suo.
         Te la immagini sola, a casa, preoccupata, e ti si spezza il cuore.
         “Intendevo di noi.” #completion_50
         La voce di Chloe si è fatta bassa.
@@ -1056,7 +1067,7 @@ xxx
         Le sue dita si infilano sotto, ti senti morire.
             + Provi a resistere[]. Il tuo corpo si irrigidisce.
             “Stai trattenendo il respiro?” Chloe ti guarda perplessa.
-            + Levi la mano[].
+            + [Levi la mano]
             -
         Lei si alza, va alla finestra.
         Detesti quando cerca di farti sentire in colpa, detesti che ci riesca sempre.
@@ -1070,7 +1081,7 @@ xxx
         Continua a dirti che ti ama, ma poi sembra sempre volere qualcosa che non sei.
         “Hai ragione. Ma questa cosa è difficile anche per me.”
         Il corpo di Chloe torna accanto al tuo, ti abbraccia, ma senti che è lontana anni luce.
-            + La stringi[].
+            + [La stringi]
             -
         Arriva questa idea, questo pensiero che diventa una certezza.
         Se finisce la storia con lei, nessuna ti amerà più.
@@ -1095,7 +1106,7 @@ xxx
         “Chloe mi diceva che state pensando di andare in Spagna per, insomma...”
         Guardi tua moglie: questa cosa della <f>maternità</f> l’ha accennata giusto due sere fa.
         Ha già deciso che avrete un figlio, a quanto pare.
-            + Resti in silenzio[].
+            + [Resti in silenzio]
             + “È solo un’idea per ora.”
             + “È un processo lungo[.“] ma sì, ci stiamo ragionando.”
             -
@@ -1119,7 +1130,7 @@ xxx
         “Forse il titolo è un po’ prosaico”, commenta la finta Ellen.
         Chloe difende ridendo il nome della festa, perché ovviamente “Halloween senza uomini” l’ha scelto lei, come il novanta per cento delle cose della serata.
         “Tutto bene?”, Emma interrompe i tuoi pensieri.
-            + Fai sì con la testa[].
+            + [Fai sì con la testa]
             + “Detesto questa gente.”
             + Ti tappi le orecchie[], fingendo di urlare disperata.
             -
@@ -1144,8 +1155,8 @@ xxx
             + “Se vogliamo sopravvivere...”
             -
         “Queste sono le parole di Chloe, porca la cacca. Tu sai che ti voglio bene, vero?”
-            + Resti in silenzio[].
-            + Fai sì con la testa[].
+            + [Resti in silenzio]
+            + [Fai sì con la testa].
             + “Anche io, Bunny.”
             -
         Ti prende le mani.
@@ -1166,7 +1177,7 @@ xxx
         La voce cade nel silenzio totale, persino la musica è scomparsa. #completion_50
         “Le regole sono regole e...”, è la voce di Chloe, che trema.
         Sai che è incazzata. Le due iene sono alle sue spalle, in mano due Martini.
-            + Ti avvicini[].
+            + [Ti avvicini]
             -
         “Laura, non importa, andiamo altrove.” 
         Riconosci di colpo le due persone che stanno discutendo con Chloe.
@@ -1174,8 +1185,8 @@ xxx
         E Pallino che, che. Non riesci ad ascoltare i tuoi pensieri, a capire "che" cosa.
         Sai che in teoria è in costume, vestito da biondina, ma ti rendi conto anche che per Pallino quello non è solo un costume.
         Quel toc freddo, di nuovo, nello stomaco.
-        + Vai verso Chloe[].
-        -
+            + [Vai verso Chloe]
+            -
         Ma Emma si mette in mezzo.
         “È questo quello che non deve accadere. Non siamo questa cosa qui.”
         Senti Laura dire qualcosa col tono di chi è stanco di ripetere la stessa frase ancora una volta.
@@ -1183,9 +1194,9 @@ xxx
         Laura intercetta il tuo sguardo, ti riconosce.
         Chloe si rende conto che la tizia sta guardando altrove.
         Ti vede, e con gli occhi ti supplica di darle soccorso.
-        + Sorridi a Laura[]. -> Pacificazione
-        + Ti appoggi a Chloe[]. -> Durezza
-        + Te ne vai a bere[]. -> al_bancone_emma
+            + [Sorridi a Laura] -> Pacificazione
+            + [Ti appoggi a Chloe] -> Durezza
+            + [Te ne vai a bere] -> al_bancone_emma
 
         
             = Pacificazione
@@ -1197,7 +1208,8 @@ xxx
                 “Conosci queste persone?” ti chiede Chloe.
                 A quanto pare non le ha riconosciute.
                 Con la coda dell’occhio vedi Emma uscire.
-                    + La insegui[].-> pre_terzo_bullet_hell_afab
+                    + [La insegui]
+                    -> pre_terzo_bullet_hell_afab
         
             
             = Durezza
@@ -1220,7 +1232,7 @@ xxx
                 Assieme a loro se ne vanno diverse persone, alcune sono attiviste del gruppo.
                 Chloe ti bacia e ringrazia.
                 Emma si avvicina, ti guarda, e in silenzio se ne va.
-                    + La insegui[].
+                    + [La insegui]
                 ->  pre_terzo_bullet_hell_afab
             
             
@@ -1238,7 +1250,7 @@ xxx
                 Gli sguardi delle altre persone pronti a giudicarlo, sezionarlo.
                 A decidere attraverso le sue forme, cosa sei.
                 Tutti gli occhi sono quelli di Chloe.
-                    + Ti appoggi a un muro[].
+                    + [Ti appoggi a un muro]
                     -
                 Ti manca il fiato e quel senso di disagio, di freddo è lì che si crepa, che ti riempie delle parole e dei giudizi, delle promesse e delle velate minacce.
                 Di Chloe che vuole che tu sia la sua <f>ragazza</f>, la sua <f>donna</f>, la <f>madre</f> della vostra bambina.
@@ -1255,12 +1267,12 @@ xxx
                     + Chiudi gli occhi[.], concentrandoti sulla musica.
                     -
                 “Non è che se non guardi le cose queste spariscono!”
-                    + Ordini un altro shot[].
+                    + [Ordini un altro shot]
                     -
                 “<f>Pallina</f>!”, Emma ti prende le mani. “Cosa sta accadendo?”
                 Ti senti rompere, senti che sta per cedere qualcosa.
                 La guardi negli occhi, fai per parlare.
-                    + Ma ordini ancora uno shot[].
+                    + [Ma ordini ancora uno shot]
                     -
                 L’alcool arriva tutto in una botta, ti senti stordita e nauseata.
                 Il chiasso all’ingresso sta allontanando le persone, la musica si è fermata, ma tu ti accorgi solo di Emma che ti guarda preoccupata.
@@ -1289,7 +1301,7 @@ xxx
     === finale_afab ===
         “<f>Pallina</f>! Ti prego guardami!”
         È la voce di Bunny.
-            + Ti sforzi di aprire gli occhi[].
+            + [Ti sforzi di aprire gli occhi]
             -
         Pesano quintali.
         Sei in ginocchio, e davanti a te c’è Emma.
@@ -1307,10 +1319,10 @@ xxx
         Che ti dice che andrà tutto bene.
         Pian piano riprendi fiato, ti lasci andare su di lei.
         Non avevi mai realizzato quanto la sua amicizia fosse il tuo posto sicuro.
-            + “Bunny, non credo di essere <f>una ragazza</f>.”
+            + “Bunny, non credo di essere una [ragazza."]<f>ragazza</f>.”
             -
         Lei resta in silenzio, toccandoti i capelli.
-            + “E nemmeno <m>un ragazzo</m>[.“]. <>
+            + “E nemmeno un [ragazzo."]<m>ragazzo</m>.<>
             E quando ho visto prima Pallino, quando ho visto quanto fosse felice in quel modo altro, ho pensato che quello è il mio posto. E mi ha fatto paura.”
             -
         “Qual è la cosa peggiore che potrebbe accaderti, se fosse così?”
@@ -1445,7 +1457,7 @@ xxx
             -
         Mamma fa per dire qualcosa, poi si ferma.
         "Ti va se te li taglio io?"
-            + Le prendi la mano[].
+            + [Le prendi la mano]
             -
         Ti abbraccia.
         Quando si stacca ha gli occhi lucidi.
@@ -1470,7 +1482,7 @@ xxx
             + "Bunny, secondo te cosa sono?"
             -
         "In che senso?"
-            + "Non mi sento <f>una ragazza</f>[."]. E nemmeno <m>un ragazzo</m>. O qualcosa nel mezzo. Più una cosa "altra", diversa. Ma ogni volta che ci penso mi manca l'aria, mi sento morire. E per colpa di questa cosa, Chloe se ne andrà."
+            + "Non mi sento una [ragazza."]<f>ragazza</f>. E nemmeno <m>un ragazzo</m>. O qualcosa nel mezzo. Più una cosa "altra", diversa. Ma ogni volta che ci penso mi manca l'aria, mi sento morire. E per colpa di questa cosa, Chloe se ne andrà."
             -
         "Chloe...", ma poi Emma cambia idea.
         Apre il suo specchietto da trucco, vi guardate assieme.

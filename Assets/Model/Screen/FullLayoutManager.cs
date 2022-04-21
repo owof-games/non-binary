@@ -40,6 +40,12 @@ public class FullLayoutManager : BaseManager
     private RectEvent _CameraFocusChanged;
     private Rect _CameraFocus;
 
+    [SerializeField]
+    private RectVariable _CameraFocusVariableToKeepReference;
+
+    [SerializeField]
+    private SizeVariable _ScreenSizeVariableToKeepReference;
+
 
     [SerializeField]
     private VoidEvent _UpdateScreenCoordinates;
