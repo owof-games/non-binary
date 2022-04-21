@@ -6701,5 +6701,10 @@ PrefabInstance:
       propertyPath: FadeLevel
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9127031603100060259, guid: f8dd868f42c6a9b45ae7e61a3e2d0647,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8dd868f42c6a9b45ae7e61a3e2d0647, type: 3}

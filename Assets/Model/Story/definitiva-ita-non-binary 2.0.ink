@@ -7,14 +7,14 @@ VAR gender = 1
 //Finali amab: se 1 = perdere, se 2 = sinceramente
 VAR amab_tre = 1
 
-VAR activate_shortcuts = 1
+VAR activate_shortcuts = 0
 
 
 //FUNZIONI
     -> random
     === random ===
     ~ gender = RANDOM (1,2)
-    ~ gender = 2
+    //~ gender = 2
     
        {
         - gender == 1:

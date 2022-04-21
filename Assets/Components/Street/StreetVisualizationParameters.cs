@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityAtoms;
 using RG.LogLibrary;
@@ -18,38 +19,62 @@ public class StreetVisualizationParameters : MonoBehaviour
 
     // public SizeVariable ScreenSize;
 
+    public List<string> MyLog = new List<string>();
+
     private void Awake()
     {
-        // get the material
-        var renderer = GetComponent<Renderer>();
-        _Material = renderer.material;
-        // save the texture size
-        var texture = _Material.GetTexture("_StreetTexture");
-        _TextureWidth = texture.width;
-        _TextureHeight = texture.height;
-        //
-        foreach (var vertex in GetComponent<MeshFilter>().mesh.vertices)
+        var i = 0;
+        try
         {
-            this.Info("vertex: {0},{1},{2}", vertex.x, vertex.y, vertex.z);
+            // get the material
+            var renderer = GetComponent<Renderer>();
+            i++;
+            _Material = renderer.material;
+            i++;
+            // save the texture size
+            var texture = _Material.GetTexture("_StreetTexture");
+            i++;
+            _TextureWidth = texture.width;
+            i++;
+            _TextureHeight = texture.height;
+            i++;
+            // foreach (var vertex in GetComponent<MeshFilter>().mesh.vertices)
+            // {
+            //     this.Info("vertex: {0},{1},{2}", vertex.x, vertex.y, vertex.z);
+            // }
+            UpdateLayout();
         }
-        UpdateLayout();
+        catch (System.Exception e)
+        {
+            MyLog.Add($"exception in awake [{i}]: {e}");
+            throw;
+        }
     }
+
+    public Material MyMaterial { get => _Material; }
 
     private void Update()
     {
-
-        // fade level
-        _Material.SetFloat("_FadeLevel", FadeLevel);
-        // animate V position
-        _DeltaV += Time.deltaTime * Speed;
-        while (_DeltaV > 1)
+        try
         {
-            _DeltaV -= 1;
+            // fade level
+            _Material.SetFloat("_FadeLevel", FadeLevel);
+            // animate V position
+            _DeltaV += Time.deltaTime * Speed;
+            while (_DeltaV > 1)
+            {
+                _DeltaV -= 1;
+            }
+            _Material.SetFloat("_DeltaV", _DeltaV);
         }
-        _Material.SetFloat("_DeltaV", _DeltaV);
+        catch (System.Exception e)
+        {
+            MyLog.Add("exception in update: " + e.ToString());
+            throw;
+        }
     }
 
-    private FullLayout _FullLayout;
+    private FullLayout _FullLayout = null;
 
     public void OnFullLayoutChanged(FullLayout fullLayout)
     {
@@ -59,25 +84,39 @@ public class StreetVisualizationParameters : MonoBehaviour
 
     private void UpdateLayout()
     {
-        if (_Material == null || _FullLayout.Screen.World.width == 0 || _FullLayout.Screen.World.height == 0)
+        try
         {
-            return;
+            if (_Material == null || _FullLayout == null || _FullLayout.Screen.World.width == 0 || _FullLayout.Screen.World.height == 0)
+            {
+                return;
+            }
+            Debug.Log("svp: updating position");
+            // scale to cover the whole screen
+            transform.position = new Vector3(
+                _FullLayout.Scene.World.center.x,
+                _FullLayout.Scene.World.center.y,
+                transform.position.z
+            );
+            Debug.Log("svp: updating local scale");
+            transform.localScale = new Vector3(
+                _FullLayout.Scene.World.width,
+                _FullLayout.Scene.World.height,
+                1
+            );
+            // width factor to get the actual width occupied by the street
+            Debug.Log("svp: setting width factor");
+            _Material.SetFloat("_WidthFactor", _FullLayout.Street.Percentage.width);
+            // number of vertical repeats
+            Debug.Log("svp: setting vertical repeatss");
+            var repeats = _TextureWidth * _FullLayout.Scene.Screen.height / (_FullLayout.Street.Percentage.width * _TextureHeight * _FullLayout.Scene.Screen.width);
+            _Material.SetFloat("_NumVerticalRepeats", repeats);
+            Debug.Log("svp: done!");
         }
-        // scale to cover the whole screen
-        transform.position = new Vector3(
-            _FullLayout.Scene.World.center.x,
-            _FullLayout.Scene.World.center.y,
-            transform.position.z
-        );
-        transform.localScale = new Vector3(
-            _FullLayout.Scene.World.width,
-            _FullLayout.Scene.World.height,
-            1
-        );
-        // width factor to get the actual width occupied by the street
-        _Material.SetFloat("_WidthFactor", _FullLayout.Street.Percentage.width);
-        // number of vertical repeats
-        var repeats = _TextureWidth * _FullLayout.Scene.Screen.height / (_FullLayout.Street.Percentage.width * _TextureHeight * _FullLayout.Scene.Screen.width);
-        _Material.SetFloat("_NumVerticalRepeats", repeats);
+        catch (System.Exception e)
+        {
+            Debug.LogException(e);
+            MyLog.Add("exception in updatelayout: " + e.ToString());
+            throw;
+        }
     }
 }
