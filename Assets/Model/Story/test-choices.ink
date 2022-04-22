@@ -43,6 +43,8 @@ Questo è l'intro AMAB
 
 === resto_della_storia ===
 
+Infanzia. Estate. Parcogiochi. #title
+
 // -> test_lotta_tags ->
 
 Finalmente ti vedi. #people

@@ -1,11 +1,8 @@
-using System.Threading;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using UnityEngine.InputSystem;
 using RG.LogLibrary;
-using System;
 
 [CreateAssetMenu(fileName = "StoryInputManager", menuName = "non-binary/Create Story Input Manager", order = 1)]
 public class StoryInputManager : BaseManager
@@ -24,6 +21,10 @@ public class StoryInputManager : BaseManager
 
     private bool _MustLaunchWordBullets;
 
+    public BoolVariable TextIsFadingIn;
+
+    public VoidEvent SkipToFadeInTextEnd;
+
     protected override void OnEnableManager()
     {
         RegisterTo(InputNextLine, OnInputNextLine);
@@ -38,6 +39,11 @@ public class StoryInputManager : BaseManager
         if (_InBulletHell)
         {
             BaseLogger.Info(this, "ignoring it because we are in a bullet hell!");
+
+        }
+        else if (TextIsFadingIn.Value)
+        {
+            SkipToFadeInTextEnd.Raise();
         }
         else if (_MustLaunchWordBullets)
         {
@@ -65,7 +71,8 @@ public class StoryInputManager : BaseManager
             BaseLogger.Info(this, "setting action map variable to ChoiceActionMap");
             // SetActionMap("MovementActionMap");
             ActionMapVariable.Value = "MovementActionMap";
-            if(storyStep.NumMTags > 0 || storyStep.NumFTags > 0) {
+            if (storyStep.NumMTags > 0 || storyStep.NumFTags > 0)
+            {
                 _MustLaunchWordBullets = true;
             }
         }

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1429943409468154887}
   - component: {fileID: 8664409275695375574}
   - component: {fileID: 5349949853275349021}
+  - component: {fileID: 6297922955026065864}
   m_Layer: 5
   m_Name: TitlePrefab
   m_TagString: Untagged
@@ -153,6 +154,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d374a67d2358ea7419284d23d672d201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _SingleLetterFadeInTime:
+    _usage: 0
+    _value: 1
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  _NumLettersFadeInPerSecond:
+    _usage: 0
+    _value: 10
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  TextIsFadingIn: {fileID: 11400000, guid: 64560a0cc291635459bb4c23c62bc343, type: 2}
 --- !u!114 &5009067847634965958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b938433d03155f841ae599e55142988b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _developerDescription: 
+  _developerDescription: Show title (fade in animation) when we get a #title
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -230,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04861192f0a552543887faef1ee02165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _developerDescription: 
+  _developerDescription: Adapt font size to the current layout
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -256,3 +270,44 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!114 &6297922955026065864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061489060259447792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: When the user presses enter or space to fast skip text while
+    it's fading it, do it!
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7215874553508037906}
+        m_TargetAssemblyTypeName: StoryTitleHandler, Assembly-CSharp
+        m_MethodName: OnSkipToFadeInTextEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 2cadb6c26fb0472478ed641c62ca0b69, type: 2}
+    _eventInstancer: {fileID: 0}
+    _collection: {fileID: 0}
+    _list: {fileID: 0}
+    _collectionInstancer: {fileID: 0}
+    _listInstancer: {fileID: 0}

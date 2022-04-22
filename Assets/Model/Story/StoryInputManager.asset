@@ -20,3 +20,6 @@ MonoBehaviour:
   StoryStepChanged: {fileID: 11400000, guid: bc8566f5352d8ea468bbdd141a470d70, type: 2}
   ActionMapVariable: {fileID: 11400000, guid: f45d6ecf70f374a40a0194203b166419, type: 2}
   LaunchWordBullets: {fileID: 11400000, guid: ae149dfe30c35f840ac12bb3000e67d9, type: 2}
+  TextIsFadingIn: {fileID: 11400000, guid: 64560a0cc291635459bb4c23c62bc343, type: 2}
+  SkipToFadeInTextEnd: {fileID: 11400000, guid: 2cadb6c26fb0472478ed641c62ca0b69,
+    type: 2}
