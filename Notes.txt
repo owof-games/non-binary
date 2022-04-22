@@ -1,0 +1,8 @@
+far aumentare più lentamente il numero di friends, partendo anche da meno
+
+
+
+problemi:
+- inizializzazione interna / inizializzazione esterna
+- catena di reference con change che chiede manager
+- replay degli eventi: 1 per changed, 0 altrimenti
