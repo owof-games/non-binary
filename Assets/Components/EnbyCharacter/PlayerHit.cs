@@ -17,9 +17,12 @@ public class PlayerHit : MonoBehaviour
     [SerializeField]
     private BoolReference _Invincible;
 
+    private Animator _Animator;
+
     private void Awake()
     {
         _Material = GetComponentInChildren<Renderer>().material;
+        _Animator = GetComponent<Animator>();
     }
 
     public void OnHit()
@@ -30,6 +33,7 @@ public class PlayerHit : MonoBehaviour
             StartCoroutine(ResetBeginHit());
         }
         _HitParticleSystem.Play();
+        _Animator.SetTrigger("Hit");
     }
 
     [SerializeField]
