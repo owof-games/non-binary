@@ -539,7 +539,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.8
+  m_fontSize: 26.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2224,7 +2224,7 @@ GameObject:
   - component: {fileID: 4045588762264709720}
   - component: {fileID: 4045588762264709727}
   - component: {fileID: 4045588762264709726}
-  - component: {fileID: 4045588762264709725}
+  - component: {fileID: 8849494421408492538}
   m_Layer: 5
   m_Name: Ending Titles
   m_TagString: Untagged
@@ -2288,7 +2288,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4045588762264709725
+--- !u!114 &8849494421408492538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2297,10 +2297,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 4045588762264709721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1cbfc863f923b34e872e9d20feb7b61, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fe8d66db2904d14e8d8866ac5eeb9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstControl: {fileID: 4045588761171702562}
+  FirstControlIfTrue: {fileID: 6431084865085055889}
+  FirstControlIfFalse: {fileID: 4045588761743485767}
+  Condition:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 13734897409d326408d367bb7811d22f, type: 2}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &6431084865085055889
 GameObject:
   m_ObjectHideFlags: 0
