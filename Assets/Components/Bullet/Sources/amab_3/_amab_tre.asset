@@ -19,7 +19,7 @@ MonoBehaviour:
     Active: 1
     JumpDirectlyToHellMode: 0
     InitialDelay: 5
-    DelayFactor: 0.95
+    DelayFactor: 0.9
     MinimumForStage: 12
     MinimumDelayBetweenDescriptionsInStage: 0.5
     MinumumDelayBetweenStages: 0.7
@@ -27,13 +27,13 @@ MonoBehaviour:
   - BulletSource: {fileID: 11400000, guid: e19d36166275d3643ae828f10089878f, type: 2}
     DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: fdee93019492ac049b6564434dd4e580, type: 2}
-    DeltaTime: 8
+    DeltaTime: 7
   - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}
-    DeltaTime: 8
+    DeltaTime: 7
   - BulletSource: {fileID: 11400000, guid: e846676222fb8bb4dbbdbb0495fdc5d1, type: 2}
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: 43fd7225153e2164c979549e55c80b95, type: 2}
-    DeltaTime: 2
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: dbea0ebed2fe9aa4f9c106417e36ebb7, type: 2}
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: 076ecbaf774a0f64a9bb99a249c77723, type: 2}

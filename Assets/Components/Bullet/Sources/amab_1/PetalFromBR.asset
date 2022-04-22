@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
   m_Name: PetalFromBR
   m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
   _Positions:
   - {x: 7.9, y: 0.1}
   - {x: 7.9, y: 2.5}
@@ -27,8 +30,13 @@ MonoBehaviour:
   - {x: 6.5, y: 1.5}
   _AutomaticTranslation: {x: 0.6, y: 0}
   _AutomaticScaling: {x: 0.00025, y: 0.000444}
+  _AutomaticRotation: {x: 0, y: 0, z: 0, w: 1}
+  _TakePositionsFrom: {fileID: 0}
+  _LocalTranslation: {x: 0, y: 0}
+  _LocalScaling: {x: 1, y: 1}
+  _LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   _VelocitySteps:
-  - Duration: 3
+  - Duration: 6
     Type: 1
     Magnitude: 0.8
     UniformDirection: {x: 0, y: 0}

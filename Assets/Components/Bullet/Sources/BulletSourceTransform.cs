@@ -32,17 +32,19 @@ public class BulletSourceTransform : BulletSource
                 rsTransform = rs * rsTransform;
                 fullTransform = trs * fullTransform;
             }
+            Debug.Log("full transform is " + fullTransform.ToString());
             var descriptions = BulletSource.Descriptions;
             foreach (var d in descriptions)
             {
                 var description = d.Clone();
                 description.InitialPosition = fullTransform.MultiplyPoint3x4(description.InitialPosition);
+                description.InitialVelocity = rsTransform.MultiplyPoint3x4(description.InitialVelocity);
                 for (var i = 0; i < description.VelocitySteps.Length; i++)
                 {
                     description.VelocitySteps[i].NewVelocity = rsTransform.MultiplyPoint3x4(description.VelocitySteps[i].NewVelocity);
                 }
+                yield return description;
             }
-            return descriptions;
         }
     }
 }

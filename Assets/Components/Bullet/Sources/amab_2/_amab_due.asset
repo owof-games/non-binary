@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcb378ce78de7e42af4d301da2b69f7, type: 3}
   m_Name: _amab_due
   m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
+  _HellModeDescription:
+    Active: 0
+    JumpDirectlyToHellMode: 0
+    InitialDelay: 0
+    DelayFactor: 0
+    MinimumForStage: 0
+    MinimumDelayBetweenDescriptionsInStage: 0
+    MinumumDelayBetweenStages: 0
   _BulletSourceBlocks:
   - BulletSource: {fileID: 11400000, guid: cf76022bbece083428305272406af602, type: 2}
     DeltaTime: 1
@@ -35,3 +46,9 @@ MonoBehaviour:
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: c4562a8dae72a924f94e8c05e632750b, type: 2}
     DeltaTime: 3.5
+  - BulletSource: {fileID: 11400000, guid: b32aaeec43b26b8489d2006ef3046774, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: dc93710ee59086041ba4b383030c1a89, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: f47eadeaa1af7364eb4c252212e2ff8d, type: 2}
+    DeltaTime: 2

@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbcb378ce78de7e42af4d301da2b69f7, type: 3}
   m_Name: _amab_uno
   m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
+  _HellModeDescription:
+    Active: 0
+    JumpDirectlyToHellMode: 0
+    InitialDelay: 0
+    DelayFactor: 0
+    MinimumForStage: 0
+    MinimumDelayBetweenDescriptionsInStage: 0
+    MinumumDelayBetweenStages: 0
   _BulletSourceBlocks:
   - BulletSource: {fileID: 11400000, guid: bd66f96bccf023641a23dfaf0c42793e, type: 2}
     DeltaTime: 1

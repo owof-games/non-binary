@@ -10,42 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
-  m_Name: eyelash3r_from_below_wait_and_expand
+  m_Name: SmallLightningFromTopAndRight
   m_EditorClassIdentifier: 
   _BaseLogger:
     Configuration: {fileID: 0}
     Path: 
-  _Positions:
-  - {x: 0, y: 6}
-  - {x: 0, y: 8}
-  - {x: 0, y: 10}
+  _Positions: []
   _AutomaticTranslation: {x: 0, y: 0}
   _AutomaticScaling: {x: 1, y: 1}
   _AutomaticRotation: {x: 0, y: 0, z: 0, w: 1}
-  _TakePositionsFrom: {fileID: 11400000, guid: a2961d029d101d5488ff0f49ada2dc41, type: 2}
-  _LocalTranslation: {x: 0, y: -0.68}
+  _TakePositionsFrom: {fileID: 11400000, guid: 1dc2eff79c47b494894a4a9acef56366, type: 2}
+  _LocalTranslation: {x: 0.05, y: 0.7}
   _LocalScaling: {x: 1, y: 1}
   _LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   _VelocitySteps:
-  - Duration: 4.5
+  - Duration: 8
     Type: 0
-    Magnitude: 0.0025
-    UniformDirection: {x: 0, y: 1}
-    RadialCenter: {x: 0, y: 0}
-    PlanarX: 0
-  - Duration: 1.5
-    Type: 0
-    Magnitude: 0
+    Magnitude: 0.0045
     UniformDirection: {x: 0, y: -1}
-    RadialCenter: {x: 0, y: 0}
-    PlanarX: 0
-  - Duration: 6
-    Type: 1
-    Magnitude: 0.01
-    UniformDirection: {x: 0, y: 0}
     RadialCenter: {x: 0, y: 0}
     PlanarX: 0
   _RotationCenter: {x: 0, y: 0}
   _AbsoluteRotationSpeed: 0
   _MaxRotationAngle: 0
-  _IsPink: 0
+  _IsPink: 1

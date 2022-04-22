@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9eb2b1414127b49943dec797b01f4e, type: 3}
   m_Name: CentralBox
   m_EditorClassIdentifier: 
+  _BaseLogger:
+    Configuration: {fileID: 0}
+    Path: 
   _Positions:
   - {x: 0, y: 2}
   - {x: 1, y: 2}
@@ -38,10 +41,26 @@ MonoBehaviour:
   _AutomaticTranslation: {x: 0.45, y: 0.5}
   _AutomaticScaling: {x: 0.4, y: 0.68}
   _AutomaticRotation: {x: 0, y: 0, z: 0, w: 1}
+  _TakePositionsFrom: {fileID: 0}
+  _LocalTranslation: {x: 0, y: 0}
+  _LocalScaling: {x: 1, y: 1}
+  _LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   _VelocitySteps:
-  - Duration: 5.6
+  - Duration: 5.2
     Type: 1
     Magnitude: -0.003
+    UniformDirection: {x: 0, y: 0}
+    RadialCenter: {x: 0, y: 0}
+    PlanarX: 0
+  - Duration: 1
+    Type: 0
+    Magnitude: 0
+    UniformDirection: {x: 0, y: 0}
+    RadialCenter: {x: 0, y: 0}
+    PlanarX: 0
+  - Duration: 1.2
+    Type: 1
+    Magnitude: -0.001
     UniformDirection: {x: 0, y: 0}
     RadialCenter: {x: 0, y: 0}
     PlanarX: 0

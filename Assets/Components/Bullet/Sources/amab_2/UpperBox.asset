@@ -10,16 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19336b1a1045aea458f6e45ae140397a, type: 3}
-  m_Name: RotatedBox
+  m_Name: UpperBox
   m_EditorClassIdentifier: 
   BulletSource: {fileID: 11400000, guid: f47eadeaa1af7364eb4c252212e2ff8d, type: 2}
   Operations:
   - Scale: {x: 1, y: 1}
     Rotate: 0
-    Translate: {x: -0.45, y: -0.5}
-  - Scale: {x: 2.5, y: 1.47}
-    Rotate: 70
-    Translate: {x: 0, y: 0}
-  - Scale: {x: 0.4, y: 0.68}
-    Rotate: 0
-    Translate: {x: 0.5, y: 0.5}
+    Translate: {x: 0, y: 0.2}

@@ -15,12 +15,14 @@ MonoBehaviour:
   _BaseLogger:
     Configuration: {fileID: 0}
     Path: 
-  _HellMode: 0
-  _HellInitialDelay: 8
-  _HellDelayFactor: 0.99
-  _HellMinimumForStage: 6
-  _HellMinimumDelayBetweenDescriptionsInStage: 0.5
-  _HellMinumumDelayBetweenStages: 1
+  _HellModeDescription:
+    Active: 0
+    JumpDirectlyToHellMode: 0
+    InitialDelay: 0
+    DelayFactor: 0
+    MinimumForStage: 0
+    MinimumDelayBetweenDescriptionsInStage: 0
+    MinumumDelayBetweenStages: 0
   _BulletSourceBlocks:
   - BulletSource: {fileID: 11400000, guid: 711cacf49581d5f4f85cdeb7e47c11c5, type: 2}
     DeltaTime: 1
@@ -50,3 +52,7 @@ MonoBehaviour:
     DeltaTime: 3
   - BulletSource: {fileID: 11400000, guid: df8240ce80644ef4b8f4af0416f09df4, type: 2}
     DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: a3c7fdbff9c331548a660b3e6ee7b4a6, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: a0086fa574d98124385d63124fa1dd64, type: 2}
+    DeltaTime: 1.5

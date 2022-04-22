@@ -47,7 +47,7 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
-$bullet_hell_amab_tre$
+$bullet_hell_afab_due$
 
 // Che razza di bambino sei? #almost_there #people
 

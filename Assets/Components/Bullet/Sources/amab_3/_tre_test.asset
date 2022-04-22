@@ -15,13 +15,22 @@ MonoBehaviour:
   _BaseLogger:
     Configuration: {fileID: 11400000, guid: 684cc1c823dae8344844993f090e906e, type: 2}
     Path: bullet.hell
-  _HellMode: 1
-  _HellInitialDelay: 5
-  _HellDelayFactor: 0.98
+  _HellModeDescription:
+    Active: 0
+    JumpDirectlyToHellMode: 0
+    InitialDelay: 0
+    DelayFactor: 0
+    MinimumForStage: 0
+    MinimumDelayBetweenDescriptionsInStage: 0
+    MinumumDelayBetweenStages: 0
   _BulletSourceBlocks:
-  - BulletSource: {fileID: 11400000, guid: d2767ab8abaf3a6449475d12bc2e53f4, type: 2}
+  - BulletSource: {fileID: 11400000, guid: 076ecbaf774a0f64a9bb99a249c77723, type: 2}
     DeltaTime: 0
-  - BulletSource: {fileID: 11400000, guid: 6642b0dbe003f1448a9f15ff223b2800, type: 2}
-    DeltaTime: 5
-  - BulletSource: {fileID: 11400000, guid: f400aa14874da5642a8ef24dff1b0362, type: 2}
+  - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: b4c919878a2f58f46955c34b06fb94ab, type: 2}
     DeltaTime: 0

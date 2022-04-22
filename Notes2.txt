@@ -1,0 +1,10 @@
+provare a usare il mouse => come?
+suggerimento tasti => effetto pressione
+barra spaziatrice => effetto pressione
+non è chiaro che facciano male => come fare? suono greve (o comunque diverso), cambio colore verso il rosso, vibrazione
+appare gente: ti viene voglia di andarci
+scelte: ok
+bullet hell 1: iniziare più lentamente
+creare un avvertimento più efficace di inizio bullet hell
+personalizzazione: rendere più chiaro il cambio di cursore e la selezione attuale
+viene da inseguire i personaggi

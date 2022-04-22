@@ -15,35 +15,37 @@ MonoBehaviour:
   _BaseLogger:
     Configuration: {fileID: 0}
     Path: 
-  _HellMode: 0
-  _HellInitialDelay: 8
-  _HellDelayFactor: 0.99
-  _HellMinimumForStage: 6
-  _HellMinimumDelayBetweenDescriptionsInStage: 0.5
-  _HellMinumumDelayBetweenStages: 1
+  _HellModeDescription:
+    Active: 0
+    JumpDirectlyToHellMode: 0
+    InitialDelay: 0
+    DelayFactor: 0
+    MinimumForStage: 0
+    MinimumDelayBetweenDescriptionsInStage: 0
+    MinumumDelayBetweenStages: 0
   _BulletSourceBlocks:
   - BulletSource: {fileID: 11400000, guid: 121fd6d7b421918418ec92240be5c324, type: 2}
-    DeltaTime: 0
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: 516f86d7a845bb042a0018dbacad6eeb, type: 2}
     DeltaTime: 3
   - BulletSource: {fileID: 11400000, guid: ea6f504575b660e44822f35c80b56464, type: 2}
-    DeltaTime: 3
+    DeltaTime: 2
   - BulletSource: {fileID: 11400000, guid: e45f1e69a8f4bae41a328fc1e6119bbb, type: 2}
-    DeltaTime: 3
+    DeltaTime: 1.5
   - BulletSource: {fileID: 11400000, guid: 49d0eefdc3d83f74abb4f5f67c9ed526, type: 2}
-    DeltaTime: 3
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: 516f86d7a845bb042a0018dbacad6eeb, type: 2}
     DeltaTime: 3
   - BulletSource: {fileID: 11400000, guid: ea6f504575b660e44822f35c80b56464, type: 2}
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: 67a393636333a374a84bb603529228dc, type: 2}
-    DeltaTime: 3
+    DeltaTime: 2
   - BulletSource: {fileID: 11400000, guid: 121fd6d7b421918418ec92240be5c324, type: 2}
-    DeltaTime: 3
+    DeltaTime: 1.5
   - BulletSource: {fileID: 11400000, guid: e45f1e69a8f4bae41a328fc1e6119bbb, type: 2}
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: 49d0eefdc3d83f74abb4f5f67c9ed526, type: 2}
-    DeltaTime: 3
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: ab2a3655bfb581543b7fe6c1fd8473d7, type: 2}
     DeltaTime: 3
   - BulletSource: {fileID: 11400000, guid: eb8a97f77e4718040a992b0ae6c4ad8c, type: 2}
@@ -62,3 +64,27 @@ MonoBehaviour:
     DeltaTime: 0
   - BulletSource: {fileID: 11400000, guid: 67a393636333a374a84bb603529228dc, type: 2}
     DeltaTime: 4
+  - BulletSource: {fileID: 11400000, guid: 60634816a2a9eae469f3bf2a5cb7d972, type: 2}
+    DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: 34e04df491cae1c4490fb3e3bc7aab95, type: 2}
+    DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: 67a393636333a374a84bb603529228dc, type: 2}
+    DeltaTime: 2
+  - BulletSource: {fileID: 11400000, guid: 6e7f1d999d12e7642ac2c15e6ffb553a, type: 2}
+    DeltaTime: 1.5
+  - BulletSource: {fileID: 11400000, guid: 170b6d2d95cfc7a45a5ce2d63a2844d5, type: 2}
+    DeltaTime: 1
+  - BulletSource: {fileID: 11400000, guid: 49d0eefdc3d83f74abb4f5f67c9ed526, type: 2}
+    DeltaTime: 0.5
+  - BulletSource: {fileID: 11400000, guid: 67a393636333a374a84bb603529228dc, type: 2}
+    DeltaTime: 1.5
+  - BulletSource: {fileID: 11400000, guid: 6e7f1d999d12e7642ac2c15e6ffb553a, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: 34e04df491cae1c4490fb3e3bc7aab95, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: 49d0eefdc3d83f74abb4f5f67c9ed526, type: 2}
+    DeltaTime: 2
+  - BulletSource: {fileID: 11400000, guid: 60634816a2a9eae469f3bf2a5cb7d972, type: 2}
+    DeltaTime: 0
+  - BulletSource: {fileID: 11400000, guid: 170b6d2d95cfc7a45a5ce2d63a2844d5, type: 2}
+    DeltaTime: 0
