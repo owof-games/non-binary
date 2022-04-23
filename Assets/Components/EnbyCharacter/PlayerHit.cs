@@ -33,7 +33,10 @@ public class PlayerHit : MonoBehaviour
             StartCoroutine(ResetBeginHit());
         }
         _HitParticleSystem.Play();
-        _Animator.SetTrigger("Hit");
+        if (_Animator != null)
+        {
+            _Animator.SetTrigger("Hit");
+        }
     }
 
     [SerializeField]

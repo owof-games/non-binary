@@ -8,3 +8,6 @@ bullet hell 1: iniziare più lentamente
 creare un avvertimento più efficace di inizio bullet hell
 personalizzazione: rendere più chiaro il cambio di cursore e la selezione attuale
 viene da inseguire i personaggi
+
+
+ommand failed with exit code 1: git commit -m "feat: Title fadein animation" -m "Make the #title elements fade in slowly, and allow for the "next line" button to skip to the end of the animation." -m "Closes #46" error: pathspec 'line' did not match any file(s) known to git

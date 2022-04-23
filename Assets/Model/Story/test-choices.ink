@@ -43,13 +43,15 @@ Questo è l'intro AMAB
 
 === resto_della_storia ===
 
-Infanzia. Estate. Parcogiochi. #title
+// Infanzia. Estate. Parcogiochi. #title
 
 // -> test_lotta_tags ->
 
 Finalmente ti vedi. #people
 
-$bullet_hell_afab_due$
+$character_creation$
+
+$bullet_hell_finale$
 
 // Che razza di bambino sei? #almost_there #people
 

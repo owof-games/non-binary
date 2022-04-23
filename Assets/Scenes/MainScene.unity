@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destination: {x: 0, y: 0, z: -1}
-  T: 1
+  T: 0
 --- !u!95 &488158098
 Animator:
   serializedVersion: 4
@@ -2978,6 +2978,7 @@ GameObject:
   - component: {fileID: 1605035905}
   - component: {fileID: 1605035904}
   - component: {fileID: 1605035908}
+  - component: {fileID: 1605035909}
   m_Layer: 0
   m_Name: EndingAnimation
   m_TagString: Untagged
@@ -3237,8 +3238,6 @@ PlayableDirector:
     value: {fileID: 1605035905}
   - key: {fileID: 7892665558752616952, guid: 1188eda09b94df0489185515ceade6fe, type: 2}
     value: {fileID: 921129308}
-  - key: {fileID: 3886802759063738471, guid: 1188eda09b94df0489185515ceade6fe, type: 2}
-    value: {fileID: 488158098}
   - key: {fileID: -1270847639372203173, guid: 1188eda09b94df0489185515ceade6fe, type: 2}
     value: {fileID: 1128744341}
   m_ExposedReferences:
@@ -3270,6 +3269,20 @@ MonoBehaviour:
   t: 0
   CameraFocusVariable: {fileID: 11400000, guid: c785d0cf672cc10458363652d75911f6,
     type: 2}
+--- !u!114 &1605035909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605035902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f306751b010ae41889657156b46b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DragToCenter: {fileID: 488158097}
+  T: 0
 --- !u!114 &1624899628 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4045588761718091751, guid: 3fe10a25b466fe4418362a9c437f481e,
