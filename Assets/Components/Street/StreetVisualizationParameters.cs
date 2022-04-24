@@ -90,27 +90,27 @@ public class StreetVisualizationParameters : MonoBehaviour
             {
                 return;
             }
-            Debug.Log("svp: updating position");
+            // Debug.Log("svp: updating position");
             // scale to cover the whole screen
             transform.position = new Vector3(
                 _FullLayout.Scene.World.center.x,
                 _FullLayout.Scene.World.center.y,
                 transform.position.z
             );
-            Debug.Log("svp: updating local scale");
+            // Debug.Log("svp: updating local scale");
             transform.localScale = new Vector3(
                 _FullLayout.Scene.World.width,
                 _FullLayout.Scene.World.height,
                 1
             );
             // width factor to get the actual width occupied by the street
-            Debug.Log("svp: setting width factor");
+            // Debug.Log("svp: setting width factor");
             _Material.SetFloat("_WidthFactor", _FullLayout.Street.Percentage.width);
             // number of vertical repeats
-            Debug.Log("svp: setting vertical repeatss");
+            // Debug.Log("svp: setting vertical repeatss");
             var repeats = _TextureWidth * _FullLayout.Scene.Screen.height / (_FullLayout.Street.Percentage.width * _TextureHeight * _FullLayout.Scene.Screen.width);
             _Material.SetFloat("_NumVerticalRepeats", repeats);
-            Debug.Log("svp: done!");
+            // Debug.Log("svp: done!");
         }
         catch (System.Exception e)
         {

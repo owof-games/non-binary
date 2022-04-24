@@ -132,7 +132,15 @@ public class MusicManager : BehaviourManager
                 _NextAudioClip = audioEntry.AudioClip;
             }
         }
-        if (_AudioSource.clip == null && _NextAudioClip != null)
+        this.Info("Moving from clip {0} to clip {1}",
+            _AudioSource.clip != null ? _AudioSource.clip.name : null,
+            _NextAudioClip != null ? _NextAudioClip.name : null);
+        if (_AudioSource.clip == _NextAudioClip)
+        {
+            // nothing to do: we are already playing the correct clip
+            return;
+        }
+        else if (_AudioSource.clip == null && _NextAudioClip != null)
         {
             // no audio: immediately switch
             _AudioSource.clip = _NextAudioClip;

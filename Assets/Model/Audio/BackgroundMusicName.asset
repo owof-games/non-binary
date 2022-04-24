@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
-  _value: street
+  _value: intro
   _changed: {fileID: 11400000, guid: 6c92dff205fd61041ac7dca6810d448b, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 1
   _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: bullet_hell_amab_uno
-  _initialValue: intro
+  _oldValue: intro
+  _initialValue: menu
   _preChangeTransformers: []

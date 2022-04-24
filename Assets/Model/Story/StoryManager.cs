@@ -36,9 +36,9 @@ public class StoryManager : BaseManager
         // create a story manager that is sensitive to the ink json asset
         _CachedStoryManager = new StoryCache();
         _CachedStoryManager.NewStoryObjectCreated += NewStoryObjectCreated;
-        Debug.Log("story: get");
+        // Debug.Log("story: get");
         _CachedStoryManager.GetStory(InkJSONAsset); // force creation
-        Debug.Log("story: got");
+        // Debug.Log("story: got");
 
         // register to events
         // RegisterTo(IsFemaleChanged, OnIsFemaleChanged);
@@ -66,7 +66,7 @@ public class StoryManager : BaseManager
     {
         // TODO
         // _Story.variablesState["gender_femmina"] = _LastGenderValue;
-        Debug.Log("story: new story object created");
+        // Debug.Log("story: new story object created");
         _Story.ObserveVariable("gender", GenderChanged);
         // OnNextLine(true);
         UnityMainThreadDispatcher.EventuallyEnqueue(Initialize());

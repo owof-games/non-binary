@@ -49,13 +49,15 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
-// $character_creation$
+// -> test_afab_due ->
 
-// $bullet_hell_finale$
+$character_creation$
+
+$bullet_hell_finale$
 
 // Che razza di bambino sei? #almost_there #people
 
-$bullet_hell_amab_due$
+// $bullet_hell_amab_due$
 
 // E adesso un altro bullet hell
 
@@ -110,3 +112,13 @@ $character_creation$
 $bullet_hell_finale$
 
 ->DONE
+
+=== test_afab_due ===
+
+Quando inizia a russare tu sei ancora lì, gli occhi spalancati e il cervello bloccato su una domanda, una sola domanda.
+            + “Cosa sono?” #almost_there
+            -
+
+$bullet_hell_afab_due$
+
+->->
