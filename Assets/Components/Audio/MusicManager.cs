@@ -7,6 +7,8 @@ public class MusicManager : BehaviourManager
 {
     #region lifecycle management
 
+    public bool DoDebugAudioClips = false;
+
     protected override void ManagerAwake()
     {
         InitializeFadeout();
@@ -17,14 +19,17 @@ public class MusicManager : BehaviourManager
     {
         for (; ; )
         {
-            var i = 0;
-            foreach (var audioSource in GetComponents<AudioSource>())
+            if (DoDebugAudioClips)
             {
-                this.Verbose("{0}: clip {1}, {2}",
-                    i++,
-                    audioSource.clip ? audioSource.clip.name : "",
-                    audioSource.isPlaying ? "playing" : "stopped"
-                );
+                var i = 0;
+                foreach (var audioSource in GetComponents<AudioSource>())
+                {
+                    this.Verbose("{0}: clip {1}, {2}",
+                        i++,
+                        audioSource.clip ? audioSource.clip.name : "",
+                        audioSource.isPlaying ? "playing" : "stopped"
+                    );
+                }
             }
             yield return new WaitForSeconds(2);
         }
@@ -116,18 +121,31 @@ public class MusicManager : BehaviourManager
         this.Error("could not find sfx named '{0}'", sfxName);
     }
 
+    private bool _UpdateBackgroundMusicCoroutineStarted = false;
+
     public void UpdateBackgroundMusic(string name)
     {
         this.Verbose("UpdateBackgroundMusic({0})", name);
         _BackgroundMusicName = name;
+        if (!_UpdateBackgroundMusicCoroutineStarted)
+        {
+            _UpdateBackgroundMusicCoroutineStarted = true;
+            StartCoroutine(UpdateBackgroundMusicCoroutine());
+        }
+    }
+
+    private IEnumerator UpdateBackgroundMusicCoroutine()
+    {
+        yield return null;
+        _UpdateBackgroundMusicCoroutineStarted = false;
         if (_AudioSource == null)
         {
-            return;
+            yield break;
         }
         _NextAudioClip = null;
         foreach (var audioEntry in Entries)
         {
-            if (audioEntry.Name == name)
+            if (audioEntry.Name == _BackgroundMusicName)
             {
                 _NextAudioClip = audioEntry.AudioClip;
             }
@@ -138,7 +156,7 @@ public class MusicManager : BehaviourManager
         if (_AudioSource.clip == _NextAudioClip)
         {
             // nothing to do: we are already playing the correct clip
-            return;
+            yield break;
         }
         else if (_AudioSource.clip == null && _NextAudioClip != null)
         {

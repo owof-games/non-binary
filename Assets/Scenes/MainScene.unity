@@ -2268,6 +2268,14 @@ MonoBehaviour:
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   _StartKnotEvent: {fileID: 11400000, guid: 5faa5f029fb535242930bf0ce6b08762, type: 2}
+  BackgroundMusicName: {fileID: 11400000, guid: 7552d61c773f6094490b4cf03e56bbb4,
+    type: 2}
+  PurgatoryMusicTag:
+    _usage: 0
+    _value: purgatory
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &1011853812
 GameObject:
   m_ObjectHideFlags: 0

@@ -177,10 +177,12 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
   - Name: bullet_hell_afab_tre
     AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
-  - Name: bullet_hell_finale
+  - Name: purgatory
     AudioClip: {fileID: 8300000, guid: 5af7decd0e6f6d046b773c7a6b51b202, type: 3}
   - Name: customization
     AudioClip: {fileID: 8300000, guid: 5af7decd0e6f6d046b773c7a6b51b202, type: 3}
+  - Name: bullet_hell_finale
+    AudioClip: {fileID: 8300000, guid: c1dbd800bb5335647b5303032c3b1a04, type: 3}
   - Name: ending
     AudioClip: {fileID: 8300000, guid: c1dbd800bb5335647b5303032c3b1a04, type: 3}
   SFXEntries:
