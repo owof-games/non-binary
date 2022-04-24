@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ecco chi sono\t"
+  m_text: "E non mi sento pi\xF9 sol\u0259"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 087751f7ebad50342a873ab25c83d82f, type: 2}
   m_sharedMaterial: {fileID: -5314071300202764218, guid: 087751f7ebad50342a873ab25c83d82f,
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sorridi al tuo riflesso
+  m_text: Ecco chi sono
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 087751f7ebad50342a873ab25c83d82f, type: 2}
   m_sharedMaterial: {fileID: -5314071300202764218, guid: 087751f7ebad50342a873ab25c83d82f,
