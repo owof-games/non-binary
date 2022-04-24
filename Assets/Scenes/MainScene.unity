@@ -6210,6 +6210,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 6434741913754907215, guid: 218faf4cf46cd9a47961f573000165eb,
+        type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFullLayoutChanged
+      objectReference: {fileID: 0}
     - target: {fileID: 6842880985925702881, guid: 218faf4cf46cd9a47961f573000165eb,
         type: 3}
       propertyPath: m_RootOrder
