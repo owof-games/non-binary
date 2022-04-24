@@ -49,13 +49,13 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
-$character_creation$
+// $character_creation$
 
-$bullet_hell_finale$
+// $bullet_hell_finale$
 
 // Che razza di bambino sei? #almost_there #people
 
-// $bullet_hell_amab_due$
+$bullet_hell_amab_due$
 
 // E adesso un altro bullet hell
 
