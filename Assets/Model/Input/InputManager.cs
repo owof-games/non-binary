@@ -28,11 +28,14 @@ public class InputManager : BaseManager
 
     public InputAction_CallbackContextEvent NextLine;
 
+    public InputAction_CallbackContextEvent AnyMouse;
+
     protected override void OnEnableManager()
     {
         var menuActionMap = GetInputActionMap("MenuActionMap");
         GetInputAction(menuActionMap, "PreviousEntry").performed += LoggedRaise(PreviousEntry, "PreviousEntry");
         GetInputAction(menuActionMap, "NextEntry").performed += LoggedRaise(NextEntry, "NextEntry");
+        GetInputAction(menuActionMap, "AnyMouse").performed += LoggedRaise(AnyMouse, "AnyMouse");
 
         var movementActionMap = GetInputActionMap("MovementActionMap");
         GetInputAction(movementActionMap, "Directions").performed += LoggedRaise(Directions, "Directions");

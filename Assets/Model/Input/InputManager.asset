@@ -25,3 +25,4 @@ MonoBehaviour:
   Directions: {fileID: 11400000, guid: 3386595843eaa9e43b9c4e4b40264cc5, type: 2}
   DirectionsCanceled: {fileID: 11400000, guid: db9037dcc9f20724abdadf8aa83f3291, type: 2}
   NextLine: {fileID: 11400000, guid: f0f7ea85e6cf90a4290d4c47e7ac7c09, type: 2}
+  AnyMouse: {fileID: 11400000, guid: 14cbeb30b4f80c04eb2c19a441499e5c, type: 2}
