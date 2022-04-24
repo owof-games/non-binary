@@ -17,10 +17,8 @@ VAR gender = 1
 xxx
 {
     - gender == 1:
-        ~ gender = 2
         -> intro_amab
     - gender == 2:
-        ~ gender = 1
         -> intro_afab
 }
 
@@ -34,10 +32,12 @@ xxx
     }
 
 === intro_afab ===
+~ gender = 1
 Questo è l'intro AFAB
 -> resto_della_storia
 
 === intro_amab ===
+~ gender = 2
 Questo è l'intro AMAB
 -> resto_della_storia
 
