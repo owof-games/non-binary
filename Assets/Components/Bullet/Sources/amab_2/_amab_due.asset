@@ -48,7 +48,11 @@ MonoBehaviour:
     DeltaTime: 3.5
   - BulletSource: {fileID: 11400000, guid: b32aaeec43b26b8489d2006ef3046774, type: 2}
     DeltaTime: 3
+  - BulletSource: {fileID: 11400000, guid: 33cab1e9cc39f8248a2cfc8b17a11cfc, type: 2}
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: dc93710ee59086041ba4b383030c1a89, type: 2}
     DeltaTime: 2.5
+  - BulletSource: {fileID: 11400000, guid: f00342bdad6f92a468697018a6737679, type: 2}
+    DeltaTime: 1
   - BulletSource: {fileID: 11400000, guid: f47eadeaa1af7364eb4c252212e2ff8d, type: 2}
     DeltaTime: 2
