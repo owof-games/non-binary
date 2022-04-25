@@ -96,7 +96,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.9
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.2
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -553,6 +553,7 @@ GameObject:
   - component: {fileID: 962428521674837173}
   - component: {fileID: 5586747315677564220}
   - component: {fileID: 5600464900515435106}
+  - component: {fileID: 7679617760286736533}
   m_Layer: 5
   m_Name: CharacterEditor
   m_TagString: Untagged
@@ -633,6 +634,21 @@ MonoBehaviour:
   Hue2Slider: {fileID: 3077729002633260149}
   InnerRadiusSlider: {fileID: 3077729002331913446}
   TorqueSlider: {fileID: 3077729002722438709}
+--- !u!114 &7679617760286736533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627899393692351437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939f3ccbd853c94faf661497deb9a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Images:
+  - {fileID: 3984422880360118733}
+  ScreenWidthReference: 1920
 --- !u!1001 &3438889737944456788
 PrefabInstance:
   m_ObjectHideFlags: 0
