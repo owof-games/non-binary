@@ -22,7 +22,7 @@ public class CharacterMovementManager : BehaviourManager
     public void OnDirectionsChanged(InputAction.CallbackContext callbackContext)
     {
         VelocityVariable.Value = Speed *
-            FullLayout.Value.Screen.Screen.width *
+            FullLayout.Value.Screen.World.width *
             callbackContext.ReadValue<Vector2>()
             / 100;
     }
