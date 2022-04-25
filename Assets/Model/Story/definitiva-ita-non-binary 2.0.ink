@@ -864,7 +864,7 @@ VAR amab_tre = 1
                 ->bullet_hell_uno_afab
                 
             = compagne
-                Non esattamente la tua prima scelta ma quella più sensata: niente pallone uguale niente pasticci uguale niente sgridate di <f>mamma</f>.
+                Non esattamente la tua prima scelta ma quella più sensata: niente <m>pallone</m> uguale niente pasticci uguale niente sgridate di <f>mamma</f>.
                 “Belle scarpe!” commenta <f>Marika</f>.
                 Ti guardi i piedi.
                 Ti stanno strette, le hai messe solo per la comunione di tuo <m>cugino</m>.
@@ -1288,7 +1288,7 @@ VAR amab_tre = 1
         Cerchi qualcosa da dire, e ti rendi conto che c’è un sacco di spazio ora nella tua testa.
         Spazio per nuove parole.
         Il gelo nella pancia è sparito.
-            + “Bunny.”
+            + “Emma.”
             -
         La tua <f>amica</f> ti guarda preoccupata.
             + “Ho paura.”
@@ -1298,7 +1298,7 @@ VAR amab_tre = 1
         Che ti dice che andrà tutto bene.
         Pian piano riprendi fiato, ti lasci andare su di <f>lei</f>.
         Non avevi mai realizzato quanto la sua amicizia fosse il tuo posto sicuro.
-            + “Bunny, non credo di essere una [ragazza."]<f>ragazza</f>.”
+            + “Emma, non credo di essere una [ragazza."]<f>ragazza</f>.”
             -
         <f>Lei</f> resta in silenzio, toccandoti i capelli.
             + “E nemmeno un [ragazzo."]<m>ragazzo</m>.<>
@@ -1475,7 +1475,7 @@ VAR amab_tre = 1
         "Solo tu puoi sapere chi sei. Fuori possono dire che non esisti, ma è un problema loro. Non è che perché <f>Chloe</f> è <f>lesbica</f> non possa avere pregiudizi, ma quelli sono problemi suoi. Tu sai chi sei, e hai il diritto di dirlo ad alta voce ogni volta che vuoi."
             + "Come fai ad essere così saggia?"
             -
-      Ti guardi nel piccolo specchio.
+        Ti guardi nel piccolo specchio.
         Ti sforzi di ignorare i segni del sonno e i capelli sfatti e pian piano il tuo volto emerge, lə tua vera te, e lə ami.#almost_there
             + [Sorridi a Bunny]
             -
