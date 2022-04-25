@@ -49,9 +49,9 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
--> test_afab_due ->
+// -> test_afab_due ->
 
-// $character_creation$
+$character_creation$
 
 // $bullet_hell_finale$
 
