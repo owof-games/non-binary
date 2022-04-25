@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06535d43386f6354bbd1d2a7d191fa1c, type: 3}
   m_Name: StoryManager
   m_EditorClassIdentifier: 
-  InkJSONAsset: {fileID: 4900000, guid: 655df5ba7730eee4b907ce89e93cdea7, type: 3}
+  InkJSONAsset: {fileID: 4900000, guid: 05c1a0d8db96303489559aa87858023a, type: 3}
   StoryStepVariable: {fileID: 11400000, guid: 075d5b3f2d0e854429e2eee2f00324c1, type: 2}
   NextLine: {fileID: 11400000, guid: 25093a9ea2e7f534da2357bccb19928b, type: 2}
   StartKnotEvent: {fileID: 11400000, guid: 5faa5f029fb535242930bf0ce6b08762, type: 2}

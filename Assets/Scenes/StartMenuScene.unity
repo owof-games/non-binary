@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 92
+  m_fontSize: 123.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1660,7 +1660,7 @@ MonoBehaviour:
     type: 2}
   StoryManager: {fileID: 11400000, guid: 8844d402104d0714481e665d6e107e66, type: 2}
   ItalianInkJSONAsset: {fileID: 4900000, guid: dd8e8fd22574f6c448fb77b3bde56bf7, type: 3}
-  EnglishInkJSONAsset: {fileID: 4900000, guid: 6137b5de8a912cf4c84c438afd942b56, type: 3}
+  EnglishInkJSONAsset: {fileID: 4900000, guid: 05c1a0d8db96303489559aa87858023a, type: 3}
 --- !u!95 &60310915262760239
 Animator:
   serializedVersion: 4
