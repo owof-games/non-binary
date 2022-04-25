@@ -11,7 +11,7 @@ VAR amab_tre = 1
 //FUNZIONI
     -> random
     === random ===
-    + [translated by mickey]
+    translated by mickey
     ~ gender = RANDOM (1,2)
     
        {
@@ -108,7 +108,7 @@ VAR amab_tre = 1
         "Because you're a <m>boy</m>!"
             + "So what?"
             -
-        "And so you can't do <f>Ariel</f> because <f>she</f>'s a <f>priiiiiiiiiiiinces</f>! We need a <m>priiiiiiiiiiiiince</m>, that's all you're here for!"
+        "And so you can't do <f>Ariel</f> because <f>she</f>'s a <f>priiiiiiiiiiiincess</f>! We need a <m>priiiiiiiiiiiiince</m>, that's all you're here for!"
         <f>Marika</f> has <f>her</f> arms wrapped around <f>her</f> chest and is looking at you like you are the stupidest thing in the world.
         The other <f>girls</f> are bored.
         <f>Laura</f> keeps huffing, <f>Elisa</f> throws rocks at lizards.
