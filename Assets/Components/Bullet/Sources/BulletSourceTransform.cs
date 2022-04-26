@@ -32,7 +32,7 @@ public class BulletSourceTransform : BulletSource
                 rsTransform = rs * rsTransform;
                 fullTransform = trs * fullTransform;
             }
-            Debug.Log("full transform is " + fullTransform.ToString());
+            // Debug.Log("full transform is " + fullTransform.ToString());
             var descriptions = BulletSource.Descriptions;
             foreach (var d in descriptions)
             {

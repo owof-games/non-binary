@@ -14,7 +14,6 @@ VAR gender = 1
     }
 
 === swap_and_restart ===
-xxx
 {
     - gender == 1:
         -> intro_amab
@@ -23,7 +22,6 @@ xxx
 }
 
 === restart ===
-xxx
     {
     - gender == 1:
     -> intro_afab
@@ -49,11 +47,13 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
+// Titolo della sezione. #title
+
 // -> test_afab_due ->
 
 $character_creation$
 
-// $bullet_hell_finale$
+$bullet_hell_finale$
 
 // Che razza di bambino sei? #almost_there #people
 

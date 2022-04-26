@@ -26,7 +26,6 @@ VAR amab_tre = 1
     -> DONE
     
 === swap_and_restart ===
-    xxx
     {
         - gender == 1:
             -> intro_amab
@@ -35,7 +34,6 @@ VAR amab_tre = 1
     }
     
     === restart ===
-    xxx
         {
         - gender == 1:
         -> intro_afab

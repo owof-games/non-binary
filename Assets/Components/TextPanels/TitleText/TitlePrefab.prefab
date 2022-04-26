@@ -154,15 +154,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d374a67d2358ea7419284d23d672d201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _SingleLetterFadeInTime:
+  SingleLetterFadeInTime:
     _usage: 0
     _value: 1
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
-  _NumLettersFadeInPerSecond:
+  NumLettersFadeInPerSecond:
     _usage: 0
     _value: 10
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  InitialFadeInDelay:
+    _usage: 0
+    _value: 2
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

@@ -20,12 +20,12 @@ public class StartGame : MonoBehaviour
         ActionMapVariable.Value = "";
         // start animation
         PlayableDirector.Play();
+        // fade out music
+        BackgroundMusicName.Value = "";
     }
 
     public void NextScene()
     {
-        // TEMPORARY: disable audio
-        // BackgroundMusicName.Value = "";
         SceneManager.LoadScene("MainScene");
     }
 }

@@ -22,6 +22,31 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
+  - Path: managers.screen
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: managers.charactermovement
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: managers.storyinput
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: managers.fulllayout
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: managers.story
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
   - Path: main16to9
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
@@ -37,16 +62,6 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
-  - Path: managers.screen
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
-  - Path: managers.charactermovement
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
   - Path: genderedtext
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
@@ -57,24 +72,14 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
-  - Path: managers.story
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
   - Path: choicetext
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
-  - Path: managers.storyinput
+  - Path: buttons.multichoice
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
-  - Path: buttons.multichoice
-    IsVerboseEnabled: 1
-    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: bullet.blue
@@ -88,11 +93,6 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: people
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
-  - Path: managers.fulllayout
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
     IsWarningEnabled: 0

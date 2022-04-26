@@ -25,7 +25,7 @@ MonoBehaviour:
     MinumumDelayBetweenStages: 0
   _BulletSourceBlocks:
   - BulletSource: {fileID: 11400000, guid: 711cacf49581d5f4f85cdeb7e47c11c5, type: 2}
-    DeltaTime: 1
+    DeltaTime: 2
   - BulletSource: {fileID: 11400000, guid: 377835cd914b89144b6fb6f121d9c0d5, type: 2}
     DeltaTime: 7
   - BulletSource: {fileID: 11400000, guid: 852e5339625c2fa4e91d16b343797fd6, type: 2}

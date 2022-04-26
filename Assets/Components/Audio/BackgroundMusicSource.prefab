@@ -158,33 +158,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46af600101f12534481271e3ba75ffc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DoDebugAudioClips: 0
   Entries:
   - Name: menu
     AudioClip: {fileID: 8300000, guid: 7abfde449299f6a4195fd66be3d94682, type: 3}
+    OverrideFadeOutDuration: 10
+    NotLooping: 0
   - Name: intro
     AudioClip: {fileID: 8300000, guid: 43378251456cff242851ddb27d1ef5ad, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: street
     AudioClip: {fileID: 8300000, guid: 3a3e28748a3370d419f1258192322d01, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: bullet_hell_amab_uno
     AudioClip: {fileID: 8300000, guid: 63b0553fa24961641ab9b6e381c1e5a6, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: bullet_hell_afab_uno
     AudioClip: {fileID: 8300000, guid: 63b0553fa24961641ab9b6e381c1e5a6, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: bullet_hell_amab_due
     AudioClip: {fileID: 8300000, guid: 189b7a5f3cdd17f4ea62c9324a4b0fc3, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: bullet_hell_afab_due
     AudioClip: {fileID: 8300000, guid: 189b7a5f3cdd17f4ea62c9324a4b0fc3, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: bullet_hell_amab_tre
     AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: bullet_hell_afab_tre
     AudioClip: {fileID: 8300000, guid: 2408d84613ece584c93634525fdfb37a, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 0
   - Name: purgatory
     AudioClip: {fileID: 8300000, guid: 5af7decd0e6f6d046b773c7a6b51b202, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 1
   - Name: customization
     AudioClip: {fileID: 8300000, guid: 5af7decd0e6f6d046b773c7a6b51b202, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 1
   - Name: bullet_hell_finale
     AudioClip: {fileID: 8300000, guid: c1dbd800bb5335647b5303032c3b1a04, type: 3}
+    OverrideFadeOutDuration: 0
+    NotLooping: 1
   - Name: ending
     AudioClip: {fileID: 8300000, guid: c1dbd800bb5335647b5303032c3b1a04, type: 3}
+    OverrideFadeOutDuration: 4.5
+    NotLooping: 1
   SFXEntries:
   - Name: hit
     AudioClips:

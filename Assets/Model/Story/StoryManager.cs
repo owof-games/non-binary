@@ -88,6 +88,7 @@ public class StoryManager : BaseManager
 
     private void OnStartKnot(string knot)
     {
+        BaseLogger.Info(this, "Moving to knot {0}", knot);
         _Story.ChoosePathString(knot);
         OnNextLine();
     }
