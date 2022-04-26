@@ -35,7 +35,7 @@ VAR amab_tre = 1
     }
     
     === restart ===
-        {
+    {
         - gender == 1:
         -> intro_afab
         - gender == 2: 
