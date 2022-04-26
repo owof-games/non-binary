@@ -30,6 +30,8 @@ public class InputManager : BaseManager
 
     public InputAction_CallbackContextEvent AnyMouse;
 
+    public InputAction_CallbackContextEvent OpenPauseMenu;
+
     protected override void OnEnableManager()
     {
         var menuActionMap = GetInputActionMap("MenuActionMap");
@@ -42,6 +44,10 @@ public class InputManager : BaseManager
         GetInputAction(movementActionMap, "Directions").canceled += LoggedRaise(DirectionsCanceled, "DirectionsCanceled");
         GetInputAction(movementActionMap, "NextLine").performed += OnNextLinePerformed;
         GetInputAction(movementActionMap, "NextLine").canceled += OnNextLineRaised; //NextLine.Raise; // canceled = onkeyup
+        GetInputAction(movementActionMap, "OpenPauseMenu").performed += LoggedRaise(OpenPauseMenu, "OpenPauseMenu");
+
+        var choiceActionMap = GetInputActionMap("ChoiceActionMap");
+        GetInputAction(choiceActionMap, "OpenPauseMenu").performed += LoggedRaise(OpenPauseMenu, "OpenPauseMenu");
 
         RegisterTo(ActionMapVariableChanged, EnableCurrentActionMap);
         EnableCurrentActionMap(ActionMapVariable.Value);

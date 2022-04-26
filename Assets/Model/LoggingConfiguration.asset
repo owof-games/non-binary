@@ -43,8 +43,8 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.story
-    IsVerboseEnabled: 1
-    IsInfoEnabled: 1
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: main16to9
@@ -135,5 +135,10 @@ MonoBehaviour:
   - Path: hints
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: pausemenu
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0

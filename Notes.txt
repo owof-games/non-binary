@@ -7,3 +7,4 @@ problemi:
 - catena di reference con change che chiede manager
 - replay degli eventi: 1 per changed, 0 altrimenti
 - pattern di aggiornamento da fonti molteplici: nell'awake e in ogni OnXXXChange va chiamata una funzione comune, lì vanno verificati tutti i valori che siano validi (impostati E con un valore sensato, ad es per evitare divisioni per zer - vedi MainTextPositionAndSize)
+- praticamente mai usato con successo condition / action response
