@@ -257,7 +257,7 @@ VAR amab_tre = 1
     -> atto_amab_due
     
     === atto_amab_due ===
-    Teenage. Winter. At grandma's house. #title
+    Teenage. Autumn. At grandma's house. #title
   
     <f>Grandma</f>'s house is like a pile of leaves, layers upon layers of objects.
     The living room is overrun with forty years of <f>fashion</f>, <f>sewing</f>, <f>knitting</f> magazines.

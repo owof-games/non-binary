@@ -11,7 +11,7 @@ VAR amab_tre = 1
 //FUNZIONI
     -> random
     === random ===
-    + [Traduzione a cura di Alex David Fernández]
+    Traduzione a cura di Alex David Fernández
     ~ gender = RANDOM (1,2)
     
        {
