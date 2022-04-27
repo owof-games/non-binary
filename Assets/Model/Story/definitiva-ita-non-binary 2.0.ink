@@ -1169,7 +1169,7 @@ VAR amab_tre = 1
         Stringe Pallino a sé.
         "Sperava di non venir presә a brutte parole almeno qui, ma a quanto pare.”
         <f>Laura</f> intercetta il tuo sguardo, ti riconosce.
-        <f>Chloe</f> si rende conto che la tizia sta guardando altrove.
+        <f>Chloe</f> si rende conto che la <f>tizia</f> sta guardando altrove.
         Ti vede, e con gli occhi ti supplica di darle soccorso.
             + [Sorridi a Laura] -> Pacificazione
             + [Ti appoggi a Chloe] -> Durezza
@@ -1195,7 +1195,7 @@ VAR amab_tre = 1
                 Ti rendi conto che è a disagio per la situazione, ma è comunque raggiante.
                 Il modo in cui le sue dita si muovono, come gli occhi esplorano lo spazio.
                 Il sorriso che arriva sulla sua bocca quando si vede nel riflesso della porta.
-                Come scosta i <f>capelli lunghi</f>, lasciando che la mano poi rimanga sul </m>petto peloso scoperto</m>.
+                Come scosta i <f>capelli lunghi</f>, lasciando che la mano poi rimanga sul <m>petto peloso scoperto</m>.
                 Guardi il tuo di <f>petto</f>, che cerchi sempre di dimenticare, di ignorare.
                 Non porti più il binder da anni, da quando <f>Chloe</f> ti ha detto: “O quello, o me”.
                     + “Andatevene.”
@@ -1299,7 +1299,7 @@ VAR amab_tre = 1
             + “Emma, non credo di essere una [ragazza."]<f>ragazza</f>.”
             -
         <f>Lei</f> resta in silenzio, toccandoti i capelli.
-            + “E nemmeno un [ragazzo."]<m>ragazzo</m>.<>
+            + “E nemmeno un [ragazzo."]<m>ragazzo</m>."<>
             E quando ho visto prima Pallino, quando ho visto quanto fosse felice in quel modo altro, ho pensato che quello è il mio posto. E mi ha fatto paura.”
             -
         “Qual è la cosa peggiore che potrebbe accaderti, se fosse così?”
@@ -1396,14 +1396,14 @@ VAR amab_tre = 1
             -
         "Se lo facessi allora non ti vorrei bene, perché il mondo ti divorerebbe."
         Guardi <f>Laura</f>, le sorridi.
-            + "Forse il tuo, di mondo[]. Ma ce ne sono altri dove c'è posto anche per me."
+            + "Forse il tuo, di mondo.["] Ma ce ne sono altri dove c'è posto anche per me."
             -
         <m>Omar</m> se ne va.
         <f>Laura</f> ti abbraccia.
         Piange.
         "Ti amo."
         <f>La</f> baci guardandola negli occhi.
-         C'è il tuo riflesso nelle sue lacrime e finalmente vedi lə tua vera te, e lə ami. #almost_there
+        C'è il tuo riflesso nelle sue lacrime e finalmente vedi lə tua vera te, e lə ami. #almost_there
             + [Sorridi]
             -
         -> bullet_hell_buono
