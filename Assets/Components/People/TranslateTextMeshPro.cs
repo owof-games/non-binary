@@ -23,17 +23,22 @@ public class TranslateTextMeshPro : MonoBehaviour
         UpdateText();
     }
 
+    private static string SplitBr(string text)
+    {
+        return text.Replace("<br/>", "\n");
+    }
+
     private void UpdateText()
     {
         if (_Text == null)
         {
             return;
         }
-        _Text.text = _LocalizationInfo.Current switch
+        _Text.text = SplitBr(_LocalizationInfo.Current switch
         {
             LocalizationInfo.Languages.Italian => ItalianText.Value,
             LocalizationInfo.Languages.English => EnglishText.Value,
             _ => ""
-        };
+        });
     }
 }
