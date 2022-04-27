@@ -590,7 +590,7 @@ VAR amab_tre = 1
             Tuo <m>padre</m> che continua a regalarti biglietti per lo <m>stadio</m>.
             I giudizi, le cose dette e non dette.
             Ti guardi allo specchio e sembri una cosa a metà, una <m>cosa sbagliata</m>.
-            Un </f>bau bau</f>, un <m>abominio</m>.
+            Un </f>babau</f>, un <m>abominio</m>.
             Te lo chiedi però.
             Cosa sono?
             Cosa sei <m>Pallino</m>?
@@ -607,7 +607,7 @@ VAR amab_tre = 1
                 -
             “È stata, è stata una specie di trappola. Ne ero consapevole, anche se ho fatto finta di no."
             Prende fiato.
-            "Ti conosco da così tanti anni, e tante cose si vedono.Una relazione alla fine ti mostra sempre tutto ciò che sta tra le pieghe, no?"
+            "Ti conosco da così tanti anni, e tante cose si vedono. Una relazione alla fine ti mostra sempre tutto ciò che sta tra le pieghe, no?"
             Ti affera la mano.
             "È quella la cosa bella e spaventosa. Notare cose che magari l’altra persona non vuole vedere.”
                 + “Io vorrei vederle.”
