@@ -266,7 +266,7 @@ VAR amab_tre = 1
     -> atto_amab_due
     
     === atto_amab_due ===
-    Adolescenza. Inverno. Da nonna. #title
+    Adolescenza. Autunno. Da nonna. #title
   
         Casa di <f>nonna</f> è come un cumulo di foglie, strati su strati di oggetti.
         Il salotto è invaso da quarant’anni di riviste di <f>moda</f>, <f>cucito</f>, <f>maglia</f>.
