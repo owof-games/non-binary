@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fe6f8275613408d9adc4435b52bf4f, type: 3}
+  m_Name: ThanksIT
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value: "<b>Il pack \xE8 grato a:</b><br/>Marta Palvarini, Rimini Lazzaroni e Ugo
+    Rao per la disponibilit\xE0, lo scambio, e l\u2019aiuto nell\u2019ampliare la
+    nostra visione della realt\xE0 non binaria.<br/><br/>Un ringraziamento speciale
+    a Mario A. Di Bernardo, che oltre ad averci aiutat\u025C come beta tester e riempit\u025C
+    di spunti e riflessioni, ha organizzato e coordinato la cellula bolognese della
+    Global Game Jam ha permesso a tutt\u025C noi di vivere questa fantastica esperienza.<br/>Grazie
+    per esser entrato nelle nostre vite.<br/><br/>E un grazie a te, giocatric\u0259:
+    speriamo che il tempo trascorso assieme sia stato tempo di valore. Se avrai voglia
+    di condividere con noi la tua esperienza o le tue opinioni, ti aspettiamo sui
+    nostri social a braccia aperte.<br/><br/>Paws up<br/>owof "

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fe6f8275613408d9adc4435b52bf4f, type: 3}
+  m_Name: ThanksEN
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value: '<b>The pack is grateful to:</b><br/>Marta Palvarini, Rimini Lazzaroni
+    and Ugo Rao for the time dedicated to us, the exchange of ideas, and the help
+    in broadening our vision of non-binary experiences.<br/><br/>A special thanks
+    to Mario A. Di Bernardo, who not only has helped us as a beta tester and filled
+    us with inspirations and food for thought, but also because he organized and
+    coordinated the Bologna chapter of the Global Game Jam and allowed us all to
+    live such a fantastic experience.<br/>Thanks for entering our lives.<br/><br/>And
+    thanks to you, player: we hope the time together was a valuable time. If you
+    want to share your experience or opinions with us, we welcome you in our socials
+    with open arms.<br/><br/>Paws up<br/>owof'

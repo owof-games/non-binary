@@ -15,13 +15,13 @@ MonoBehaviour:
   _developerDescription: 
   _id: 
   _value:
-    Current: 1
+    Current: 2
   _changed: {fileID: 11400000, guid: b29f27cf51e94164c847d1f505a61e6b, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 1
   _triggerChangedWithHistoryOnOnEnable: 0
   _oldValue:
-    Current: 1
+    Current: 2
   _initialValue:
     Current: 1
   _preChangeTransformers: []
