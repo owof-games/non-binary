@@ -2621,6 +2621,11 @@ PrefabInstance:
       objectReference: {fileID: 488158073}
     - target: {fileID: 3567129970580155237, guid: 3efddc29086ef6046b6e528396f98906,
         type: 3}
+      propertyPath: BulletDelayPerLetter
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567129970580155237, guid: 3efddc29086ef6046b6e528396f98906,
+        type: 3}
       propertyPath: _WordBulletLifeDuration._value
       value: 5
       objectReference: {fileID: 0}

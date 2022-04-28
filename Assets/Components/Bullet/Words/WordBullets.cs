@@ -1,4 +1,4 @@
-using System.Text.RegularExpressions;
+using System.Collections;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using RG.LogLibrary;
@@ -38,17 +38,21 @@ public class WordBullets : MonoBehaviour
 
     private int _LastNumFTags;
 
+    public float BulletDelayPerLetter = 0.005f;
+
     public void OnStoryStepChanged(StoryStep newStoryStep)
     {
         if (newStoryStep.Kind == StoryStepKind.Text)
         {
             _LastNumMTags = newStoryStep.NumMTags;
             _LastNumFTags = newStoryStep.NumFTags;
+            StartCoroutine(OnLaunchWordBullets(newStoryStep.Text.Length * BulletDelayPerLetter));
         }
     }
 
-    public void OnLaunchWordBullets()
+    public IEnumerator OnLaunchWordBullets(float delay)
     {
+        yield return new WaitForSeconds(delay);
         for (var i = 0; i < _LastNumMTags; i++)
         {
             LaunchBullet(_BlueBullet, FullLayout.Street.World.xMin, FullLayout.LeftSideText.World.yMin, FullLayout.LeftSideText.World.yMax, _ExtraRotationM);

@@ -33,8 +33,8 @@ MonoBehaviour:
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.storyinput
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: managers.fulllayout
@@ -87,17 +87,32 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
+  - Path: bullet.words
+    IsVerboseEnabled: 1
+    IsInfoEnabled: 1
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet.contour
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet.hell
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
+  - Path: bullet.scissors
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
+    IsWarningEnabled: 0
+    IsErrorEnabled: 0
   - Path: maintext.container
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: people
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
-  - Path: bullet.words
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
     IsWarningEnabled: 0
@@ -117,28 +132,13 @@ MonoBehaviour:
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
-  - Path: bullet.contour
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
-  - Path: bullet.hell
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
-  - Path: bullet.scissors
-    IsVerboseEnabled: 0
-    IsInfoEnabled: 0
-    IsWarningEnabled: 0
-    IsErrorEnabled: 0
   - Path: hints
     IsVerboseEnabled: 0
     IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0
   - Path: pausemenu
-    IsVerboseEnabled: 1
-    IsInfoEnabled: 1
+    IsVerboseEnabled: 0
+    IsInfoEnabled: 0
     IsWarningEnabled: 0
     IsErrorEnabled: 0

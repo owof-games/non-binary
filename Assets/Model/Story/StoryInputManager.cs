@@ -19,7 +19,7 @@ public class StoryInputManager : BaseManager
 
     public VoidEvent LaunchWordBullets;
 
-    private bool _MustLaunchWordBullets;
+    // private bool _MustLaunchWordBullets;
 
     public BoolVariable TextIsFadingIn;
 
@@ -45,11 +45,11 @@ public class StoryInputManager : BaseManager
         {
             SkipToFadeInTextEnd.Raise();
         }
-        else if (_MustLaunchWordBullets)
-        {
-            _MustLaunchWordBullets = false;
-            LaunchWordBullets.Raise();
-        }
+        // else if (_MustLaunchWordBullets)
+        // {
+        //     _MustLaunchWordBullets = false;
+        //     LaunchWordBullets.Raise();
+        // }
         else
         {
             StoryNextLine.Raise();
@@ -68,13 +68,14 @@ public class StoryInputManager : BaseManager
         }
         else if (storyStep.Kind == StoryStepKind.Text)
         {
-            BaseLogger.Info(this, "setting action map variable to ChoiceActionMap");
+            BaseLogger.Info(this, "setting action map variable to MovementActionMap");
             // SetActionMap("MovementActionMap");
             ActionMapVariable.Value = "MovementActionMap";
-            if (storyStep.NumMTags > 0 || storyStep.NumFTags > 0)
-            {
-                _MustLaunchWordBullets = true;
-            }
+            // if (storyStep.NumMTags > 0 || storyStep.NumFTags > 0)
+            // {
+                // _MustLaunchWordBullets = true;
+                // LaunchWordBullets.Raise();
+            // }
         }
     }
 
