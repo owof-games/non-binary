@@ -62,7 +62,7 @@ VAR amab_tre = 1
     ~ gender = 2
     ~ amab_tre = 0
         <f>Mom</f> and the car rock you on the ride home. #street
-        "Barely born and <m>he</m>'s already got a sly face!"
+        "Luca! You're barely born and you're already got a sly face!"
         <m>Dad</m> is on a roll.
         <f>Mom</f>'s laugh shakes you from your slumber.
         Outside the window your little eyes see a blurry world of lights and contours, silhouettes and glows.

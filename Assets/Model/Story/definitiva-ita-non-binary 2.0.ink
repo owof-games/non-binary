@@ -61,7 +61,7 @@ VAR amab_tre = 1
     ~ gender = 2
     ~ amab_tre = 0
         Mamma e l’auto ti cullano nel tragitto verso casa. #street
-        “Appena <m>nato</m> e ha già la faccia da <m>furbetto</m>!”
+        “Pallino! Appena <m>nato</m> e hai già la faccia da <m>furbetto</m>!”
         <m>Papà</m> è su di giri.
         La risata di <f>mamma</f> ti scuote dal dormiveglia.
         Fuori dal finestrino i tuoi occhietti vedono un mondo sfocato, fatto di luci e contorni, sagome e bagliori. 
