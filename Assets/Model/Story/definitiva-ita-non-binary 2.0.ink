@@ -128,7 +128,7 @@ VAR amab_tre = 1
             -
         In fondo al parco tuo <m>fratello</m> <m>Omar</m> sta giocando con altri <m>ragazzi</m>.
         Anche se è molto più grande, cerca sempre di giocare con te. È un bravo <m>fratellone</m>.
-        "<m>Pal-lin-oooooooooooooo</m>!"
+        "<m>Pal</m>-<m>lin</m>-<m>oooooooooooooo</m>!"
         <f>Marika</f> stridula ti chiama.
         “È ora di iniziare!”
             + [Ti avvicini controvoglia]
@@ -158,7 +158,7 @@ VAR amab_tre = 1
             -
         <f>Lei</f> lo annusa.
         Vi girate: <f>Marika</f> se ne sta andando, <f>Laura</f> la insegue.
-        “La prossima volta lo faccio io il </m>principe</m>!”
+        “La prossima volta lo faccio io il <m>principe</m>!”
         Pallina è risoluta.
             + “La prossima volta mi nascondo."
             + “E Marika è il drago!”
@@ -561,7 +561,7 @@ VAR amab_tre = 1
         “Tutto ok, tesoro?”
             + Respingi tutto quello che provi[], perché non può esserci spazio per questo. La sincerità la allontanerà come ha allontanato Omar.
             -> Respingi
-            + Non puoi dirle la verità[], non puoi. Laura è magnifica, ma lo era anche Omar, e dov'è ora?
+            + Non puoi dirle la verità[], non puoi. Laura è <f>magnifica</f>, ma lo era anche <m>Omar</m>, e dov'è ora?
             -> Perdere
             + Provi a cercare le parole[] per dirle ciò che senti.
             -> Sinceramente
@@ -652,7 +652,7 @@ VAR amab_tre = 1
         “È una cosa che faremo assieme questa cosa del trovare il viola, ok? Non sei <m>solo</m>, <f>sola</f>, quel che è. Cazzo. Ci sono. Ti amo. Dirò delle cazzate e per questo ti chiedo già scusa ma insomma.”
         La zittisci con un bacio.
             + “Andiamo a mostrare questә me al mondo?”
-            + “Sai che rabbia proverà Marika[?"] quando non sarà la prima in qualcosa per una volta?”
+            + “Sai che rabbia proverà [Marika?"]<f>Marika</f> quando non sarà la prima in qualcosa per una volta?”
             + “Vieni[!"], prima che divenga la Britney del 2007!”
             -
         "Ho un piano B: una festa di <f>ragazze</f> <f>lesbiche</f>, un posto tranquillo dove stare, dovrebbero esserci anche un paio di <f>vecchie</f> <f>compagne</f> di scuola!"
