@@ -993,8 +993,8 @@ VAR amab_tre = 1
             -
         “Cosa dirà tua <f>madre</f>?”
         Te lo chiede stendendo un piccolo sacco a pelo, così piccolo che ti chiedi come ci starà il tuo corpicione lì dentro.
-            + [Imiti tua madre] 
-        “Perché io <f>signorina</f> non ti ho mica cresciuta da <f>sola</f> per vederti poi diventare <m>un teppista</m>! Faccio due lavori e uno è per pagare i tuoi danni, acciderbolina!”
+            + [Imiti tua madre]
+            “Perché io <f>signorina</f> non ti ho mica cresciuta da <f>sola</f> per vederti poi diventare <m>un teppista</m>! Faccio due lavori e uno è per pagare i tuoi danni, acciderbolina!”
         -
         Ci scherzi sopra, ma vorresti capisse che queste cose le fai anche per <f>lei</f>, perché storie come la sua o quella di <f>Marika</f> non si ripetano più.
         Ma <f>lei</f> ti vorrebbe solo a studiare e fare volontariato in chiesa. Più avanti un <f>bravo marito</f> ingegnere, <f>due figli</f> e un appartamento sotto al suo.
