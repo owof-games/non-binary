@@ -174,7 +174,6 @@ VAR amab_tre = 1
         You get up, behind you a few children.
         They're only slightly older, occasionally picking on you during breaks at school, bullying everyone. #completion_50
             + [You clench your fists]
-            
             + You back away[], <>
             	someone yells, "Hey <f>faggot</f>, I'm talking to you!"
             + You respond in rhyme[], <>
@@ -204,9 +203,9 @@ VAR amab_tre = 1
         <m>Omar</m> laughs, running <m>his</m> big hand through your hair.
         "For a flower, fuck! You got beat up for a flower!"
             + "It was the last one!"
-        "You know what the great thing about flowers is, Lu? They grow back, unlike your little head, if you break it, it doesn't grow back!"
+            "You know what the great thing about flowers is, Lu? They grow back, unlike your little head, if you break it, it doesn't grow back!"
             + "I didn't mean to get beat up!"
-        <m>Omar</m> sighs. You can see <m>he</m>'s looking for the words to say something.
+            <m>Omar</m> sighs. You can see <m>he</m>'s looking for the words to say something.
             -
             + [You keep quiet]
             -
@@ -271,7 +270,6 @@ VAR amab_tre = 1
     <f>Laura</f> comes in from behind and gives you a hug.
     "Are you okay honey?"
         + [You set the magazine down]
-        
         + You throw the magazine in Omar's face[], who shrugs and calls you a dork.
         + "Grandma taught me how to sew[."] <>
         on the sly from <f>Mom</f>, since I was ten years old. I would spend hours here reading and drawing <f>decorations</f> that <f>she</f> would then <f>knit</f>. When it was cold we'd sit in front of the TV and watch dinosaur documentaries and grind miles of wool."
@@ -390,7 +388,6 @@ VAR amab_tre = 1
             <f>She</f> turns <f>her</f> back on you, the tone of <f>her</f> voice more tremulous.
             "I don't want to wake up every morning with the fear that <f>she</f> won't answer the phone and <f>she</f> is dead alone here in the house."
                     + [You rest a hand on Omar's shoulder]
-                    
                     + [You look at Laura, who takes your hand]
                     "You're not a monster, I didn't mean to hurt you."
                     + [You don't say a thing]
@@ -1060,7 +1057,6 @@ VAR amab_tre = 1
         You look at your wife: <f>she</f> this mentioned this <f>motherhood</f> thing only two nights ago.
         She already decided you will have a child, apparently.
             + [You remain silent]
-            
             + "It's just an idea for now."
             + "It's a long process[."] but yeah, we're thinking about it."
             -
@@ -1085,7 +1081,6 @@ VAR amab_tre = 1
         <f>Chloe</f> laughingly defends the name of the party, because obviously "Halloween Without <m>Men</m>" was <f>her</f> choice, like ninety percent of the night's stuff.
         "Are you okay?", <f>Emma</f> interrupts your thoughts.
             + [You nod]
-            
             + "I hate these people."
             + You plug your ears[], pretending to scream in despair.
             -
@@ -1113,9 +1108,7 @@ VAR amab_tre = 1
             -
         "Those are <f>Chloe</f>'s words, for fuck's sake. You know you’re my bestie, right?"
             + [Stay silent]
-            
             + [You nod]
-            
             + "And you’re mine, Bunny."
             -
         <f>She</f> takes your hands.
@@ -1294,7 +1287,7 @@ VAR amab_tre = 1
             You remain silent.
             You realize that the alternative is losing yourself.
                 +"I think I'm going to need your support, Emma."
-            -
+                -
             "I'm not going anywhere honey, but don't call me Emma again or I will start to scream."
             You point to her costume foulard, messy because of the night and the running.
                 +"May I, Bunny?"
@@ -1308,7 +1301,7 @@ VAR amab_tre = 1
             You grab <f>her</f> hand.
             <f>She</f> picks up <f>her</f> phone, ready for a selfie together. #almost_there
                 + [The screen shows your body]
-           -
+                -
         -> bullet_hell_buono
 
 //FINALI INTERMEDI

@@ -282,7 +282,6 @@ VAR amab_tre = 1
             di nascosto da <f>mamma</f>, da quando avevo dieci anni. Passavo qui le ore a leggere e a disegnare le decorazioni che poi lei faceva a <f>maglia</f>. Quando faceva freddo stavamo davanti alla TV a guardare documentari sui dinosauri e macinavamo chilometri di lana.”
                 ++ [Era bello]
             -
-        
         “Non è mica morta”. <m>Omar</m> prende le altre riviste e le inscatola.
         “L’avete chiusa in una casa di riposo, è la stessa cosa.”
         “<m>Pal</m>, è per il suo bene.”
@@ -298,7 +297,6 @@ VAR amab_tre = 1
             + “Così mamma può vendere la casa[."] e farci i soldi.”
                 “I soldi servono per pagare la casa di riposo, idiota.”
             -
-        
         Continuate a inscatolare in silenzio, l’unico rumore è lo spostarsi degli oggetti.
         <m>Omar</m> impila le cose con rabbia, chiude gli scatoloni, scende le scale pestando i piedi, torna, ripete.
         <f>Laura</f> ti passa le cose, quando i vostri sguardi si incrociano ti sorride, ogni tanto ti dà un bacio sulla guancia. #completion_33
@@ -996,8 +994,8 @@ VAR amab_tre = 1
         “Cosa dirà tua <f>madre</f>?”
         Te lo chiede stendendo un piccolo sacco a pelo, così piccolo che ti chiedi come ci starà il tuo corpicione lì dentro.
             + [Imiti tua madre] 
-        -
         “Perché io <f>signorina</f> non ti ho mica cresciuta da <f>sola</f> per vederti poi diventare <m>un teppista</m>! Faccio due lavori e uno è per pagare i tuoi danni, acciderbolina!”
+        -
         Ci scherzi sopra, ma vorresti capisse che queste cose le fai anche per <f>lei</f>, perché storie come la sua o quella di <f>Marika</f> non si ripetano più.
         Ma <f>lei</f> ti vorrebbe solo a studiare e fare volontariato in chiesa. Più avanti un <f>bravo marito</f> ingegnere, <f>due figli</f> e un appartamento sotto al suo.
         Te la immagini <f>sola</f>, a casa, preoccupata, e ti si spezza il cuore.
@@ -1036,6 +1034,7 @@ VAR amab_tre = 1
         Le sue dita si infilano sotto, ti senti morire.
             + Provi a resistere[]. Il tuo corpo si irrigidisce.
             “Stai trattenendo il respiro?” <f>Chloe</f> ti guarda perplessa.
+            -
             + [Levi la mano]
             -
         <f>Lei</f> si alza, va alla finestra.
@@ -1076,7 +1075,6 @@ VAR amab_tre = 1
         Guardi tua <f>moglie</f>: questa cosa della <f>maternità</f> l’ha accennata giusto due sere fa.
         Ha già deciso che avrete un figlio, a quanto pare.
             + [Resti in silenzio]
-            
             + “È solo un’idea per ora.”
             + “È un processo lungo[.“] ma sì, ci stiamo ragionando.”
             -
@@ -1101,7 +1099,6 @@ VAR amab_tre = 1
         <f>Chloe</f> difende ridendo il nome della festa, perché ovviamente “Halloween senza <m>uomini</m>” l’ha scelto <f>lei</f>, come il novanta per cento delle cose della serata.
         “Tutto bene?”, <f>Emma</f> interrompe i tuoi pensieri.
             + [Fai sì con la testa]
-            
             + “Detesto questa gente.”
             + Ti tappi le orecchie[], fingendo di urlare disperata.
             -
@@ -1129,9 +1126,7 @@ VAR amab_tre = 1
             -
         “Queste sono le parole di <f>Chloe</f>, porca la cacca. Tu sai che ti voglio bene, vero?”
             + [Resti in silenzio]
-            
             + [Fai sì con la testa]
-            
             + “Anche io, Bunny.”
             -
         Ti prende le mani.
