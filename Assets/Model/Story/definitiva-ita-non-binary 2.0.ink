@@ -269,6 +269,7 @@ VAR amab_tre = 1
   
         Casa di <f>nonna</f> è come un cumulo di foglie, strati su strati di oggetti.
         Il salotto è invaso da quarant’anni di riviste di <f>moda</f>, <f>cucito</f>, <f>maglia</f>.
+        La quintessenza di nonna.
             + [Prendi una copia di Burda]
             -
         “Siamo qui per gettarla via ‘sta roba.”
@@ -553,7 +554,7 @@ VAR amab_tre = 1
         Ma ora sei davvero tu.
         Ammiri i tuoi occhi enormi sotto l’<f>eyeliner</f>, e il modo in cui le <f>labbra</f> esplodano di rosso tra i peli della <m>barba</m>.
         Come i muscoli e le pieghe del vestito si esaltino a vicenda.
-            + [...]
+            + ...
             -
         Piangi. #completion_70
         <f>Laura</f> ti abbraccia.
