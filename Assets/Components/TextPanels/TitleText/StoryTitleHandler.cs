@@ -31,6 +31,11 @@ public class StoryTitleHandler : MonoBehaviour
 
     public FloatReference InitialFadeInDelay;
 
+    private static string SplitBr(string text)
+    {
+        return text.Replace("<br/>", "\n");
+    }
+
     private void UpdateTMPro()
     {
         if (!_TextMeshPro)
@@ -40,7 +45,7 @@ public class StoryTitleHandler : MonoBehaviour
         if (_StoryStep.Kind == StoryStepKind.Text && _StoryStep.IsTitle)
         {
             _TextMeshPro.enabled = true;
-            _Text = _StoryStep.Text;
+            _Text = SplitBr(_StoryStep.Text);
             _StringBuilder = new StringBuilder(_StoryStep.Text.Length * "<color=#ffffff>x</color>".Length);
             TextIsFadingIn.Value = true;
             _StartAnimationTime = Time.time;

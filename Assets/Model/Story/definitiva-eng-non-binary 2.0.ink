@@ -101,7 +101,7 @@ VAR amab_tre = 1
 
     
     ===atto_amab_uno===
-    Childhood. Summer. A park. #title
+    Childhood<br/>Summer<br/>A park #title
     
         "Because you're a <m>boy</m>!"
             + "So what?"
@@ -259,7 +259,7 @@ VAR amab_tre = 1
     -> atto_amab_due
     
     === atto_amab_due ===
-    Teenage. Autumn. At grandma's house. #title
+    Teenage<br/>Autumn<br/>At grandma's house #title
   
     <f>Grandma</f>'s house is like a pile of leaves, layers upon layers of objects.
     The living room is overrun with forty years of <f>fashion</f>, <f>sewing</f>, <f>knitting</f> magazines.
@@ -450,7 +450,7 @@ VAR amab_tre = 1
         -> atto_amab_tre
         
     === atto_amab_tre===
-        Adulthood. Autumn. Home. #title
+        Adulthood<br/>Autumn<br/>Home #title
 
         <f>Laura</f> repeats to you to hurry up.
             + "But that's at least six hours away!"
@@ -757,7 +757,7 @@ VAR amab_tre = 1
 
     
     === atto_afab_uno ===
-    Childhood. Spring. School. #title
+    Childhood<br/>Spring<br/>School #title
         
         With your feet you tap an imaginary rhythm on the floor.
         "<f>Elisa</f>, stay still!"
@@ -926,7 +926,7 @@ VAR amab_tre = 1
     -> atto_afab_due
     
     === atto_afab_due ===
-    Teenage. Winter. School.  #title
+    Teenage<br/>Winter<br/>School  #title
     
         From downstairs only a few laughs.
         There is a strange silence: no one is sleepy, yet the chatting seems to be over.
@@ -1048,7 +1048,7 @@ VAR amab_tre = 1
     -> atto_afab_tre
     
     === atto_afab_tre ===
-    Adulthood. Autumn. At disco.  #title
+    Adulthood<br/>Autumn<br/>At disco  #title
     
         You watch your <f>mom</f> and <f>Chloe</f> talk at the club counter. 
         You still can't get over how things have changed.

@@ -100,7 +100,7 @@ VAR amab_tre = 1
         -> atto_amab_uno
     
     ===atto_amab_uno===
-    Infanzia. Estate. Parco giochi. #title
+    Infanzia<br/>Estate<br/>Parco giochi #title
     
         “Perché sei un <m>maschio</m>!”
         Il tono di chi dice qualcosa di ovvio.
@@ -266,7 +266,7 @@ VAR amab_tre = 1
     -> atto_amab_due
     
     === atto_amab_due ===
-    Adolescenza. Autunno. Da nonna. #title
+    Adolescenza<br/>Autunno<br/>Da nonna #title
   
         Casa di <f>nonna</f> è come un cumulo di foglie, strati su strati di oggetti.
         Il salotto è invaso da quarant’anni di riviste di <f>moda</f>, <f>cucito</f>, <f>maglia</f>.
@@ -461,7 +461,7 @@ VAR amab_tre = 1
         -> atto_amab_tre
         
     === atto_amab_tre===
-    Età adulta. Autunno. Casa. #title
+    Età adulta<br/>Autunno<br/>Casa #title
 
         <f>Laura</f> ti ripete di sbrigarti
             + “Ma mancano almeno sei ore!”
@@ -758,7 +758,7 @@ VAR amab_tre = 1
         -> atto_afab_uno
     
     === atto_afab_uno ===
-    Infanzia. Primavera. Scuola. #title
+    Infanzia<br/>Primavera<br/>Scuola #title
         
         Coi piedi batti un ritmo immaginario sul pavimento.
         “<f>Pallina</f>, stai ferma!”
@@ -932,7 +932,7 @@ VAR amab_tre = 1
     -> atto_afab_due
     
     === atto_afab_due ===
-    Adolescenza. Inverno. Liceo.  #title
+    Adolescenza<br/>Inverno<br/>Liceo  #title
     
         Dal piano di sotto solo qualche risata.
         C’è un silenzio strano: nessuno ha sonno, eppure le parole sembrano finite.
@@ -1058,7 +1058,7 @@ VAR amab_tre = 1
     -> atto_afab_tre
     
     === atto_afab_tre ===
-    Età adulta. Autunno. Discoteca. #title
+    Età adulta<br/>Autunno<br/>Discoteca #title
     
         Guardi tua <f>madre</f> e <f>Chloe</f> parlare al bancone del locale.
         Ancora non ti capaciti di come le cose siano cambiate.

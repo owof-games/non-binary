@@ -47,6 +47,8 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
+Infanzia<br/>Estate<br/>Parco giochi #title
+
 // Titolo della sezione. #title
 
 // -> test_afab_due ->
