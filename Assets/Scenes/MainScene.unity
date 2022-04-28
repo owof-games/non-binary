@@ -311,6 +311,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2013605841}
+          m_TargetAssemblyTypeName: OpenPauseMenu, Assembly-CSharp
+          m_MethodName: ResumeSelectedGameObject
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!320 &57898267
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -2622,7 +2634,7 @@ PrefabInstance:
     - target: {fileID: 3567129970580155237, guid: 3efddc29086ef6046b6e528396f98906,
         type: 3}
       propertyPath: BulletDelayPerLetter
-      value: 0.015
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3567129970580155237, guid: 3efddc29086ef6046b6e528396f98906,
         type: 3}

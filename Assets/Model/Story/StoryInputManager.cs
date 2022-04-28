@@ -17,7 +17,7 @@ public class StoryInputManager : BaseManager
 
     public StringVariable ActionMapVariable;
 
-    public VoidEvent LaunchWordBullets;
+    // public VoidEvent LaunchWordBullets;
 
     // private bool _MustLaunchWordBullets;
 
@@ -73,8 +73,8 @@ public class StoryInputManager : BaseManager
             ActionMapVariable.Value = "MovementActionMap";
             // if (storyStep.NumMTags > 0 || storyStep.NumFTags > 0)
             // {
-                // _MustLaunchWordBullets = true;
-                // LaunchWordBullets.Raise();
+            // _MustLaunchWordBullets = true;
+            // LaunchWordBullets.Raise();
             // }
         }
     }

@@ -30,6 +30,7 @@ public class SetTextContent : MonoBehaviour
             {
                 _LastWords = string.Join(" ", words.Select(w => "<nobr>" + w.ToLower() + "</nobr>"));
                 this.Info("next gendered words to add: {0}", _LastWords);
+                OnLaunchWordBullets();
                 return;
             }
         }
