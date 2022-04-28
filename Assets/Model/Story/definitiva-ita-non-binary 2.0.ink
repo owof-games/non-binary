@@ -64,11 +64,11 @@ VAR amab_tre = 1
         “Appena <m>nato</m> e ha già la faccia da <m>furbetto</m>!”
         <m>Papà</m> è su di giri.
         La risata di <f>mamma</f> ti scuote dal dormiveglia.
-        Fuori dal finestrino i tuoi occhietti vedono un mondo sfocato fatto di luci e contorni, sagome e bagliori. 
+        Fuori dal finestrino i tuoi occhietti vedono un mondo sfocato, fatto di luci e contorni, sagome e bagliori. 
         È tutto nuovo, bellissimo. Senti di poter essere qualunque cosa.
             + [Fai un versetto]
             -
-        Vuoi condividere la tua gioia, ma le voci sono alte e ti ignorano.
+        Vuoi condividere la tua gioia, ma gli adulti ti ignorano.
         “Secondo te avrà voglia di imparare il mestiere?”
         <m>Papà</m> svolta a destra.
         <f>Mamma</f> ti guarda.
@@ -84,11 +84,11 @@ VAR amab_tre = 1
         Rosa le tue guance mentre fanno commenti sul tuo pisellino.
         Su una mensola una serie di peluches: un’<m>auto</m>, un <m>pompiere</m>, un orsacchiotto, un <m>bulldog</m>, un <m>pallone</m> da <m>calcio</m>.
         Tuo <m>fratello</m> ti mette il <m>pallone</m> tra le mani, se la ride.
-        “Queste sono mani da <m>portiere</m>, guarda che aggancio!”
+        “Queste sono mani da <m>portiere</m>, guarda che presa!”
         Ti guarda pieno di ammirazione.
             + Volevi solo qualcosa a cui aggrapparti[], questa gente dice troppe cose e ti gira la testa.
             -
-        <f>Nonna</f> chiede a tuo <m>fratello</m> se ti vuole tenere in braccio, <m>lui</m> dice che ha paura di romperti.
+        <f>Nonna</f> chiede a tuo <m>fratello</m> se ti vuole tenere in braccio, <m>lui</m> risponde che ha paura di romperti.
         “Guarda che con un <m>bimbo</m> in braccio fai strage di <f>ragazzine</f>!”
         “<f>Mamma</f>, ha solo dodici anni!”
         Camminano e parlano, tutti. Si dicono come sarà il tuo futuro, discutono, ridono, tracciano confini. 
@@ -128,7 +128,7 @@ VAR amab_tre = 1
             	<f>Laura</f> ti passa la sua merendina sorridendoti. È sempre così gentile con te.	
             -
         In fondo al parco tuo <m>fratello</m> <m>Omar</m> sta giocando con altri <m>ragazzi</m>.
-        Anche se è molto più grande di te, cerca sempre di giocare assieme. È un bravo <m>fratellone</m>.
+        Anche se è molto più grande, cerca sempre di giocare con te. È un bravo <m>fratellone</m>.
         "<m>Pal-lin-oooooooooooooo</m>!"
         <f>Marika</f> stridula ti chiama.
         “È ora di iniziare!”
@@ -222,7 +222,7 @@ VAR amab_tre = 1
             + “Perché non gioco con loro?”
             + [Resti in silenzio]
             -
-        “Sei sempre da <m>sol</m> o con le </f>bambine</f> o con la </f>nonna</f>. Coi <m>bambini</m> non ci stai mai, e questo è <m>strano</m>.”
+        “Sei sempre da <m>solo</m> o con le </f>bambine</f> o con la </f>nonna</f>. Coi <m>bambini</m> non ci stai mai, e questo è <m>strano</m>.”
         Lancia la cartaccia nel cestino.
             + “Gioco con te.”
             -
@@ -298,7 +298,7 @@ VAR amab_tre = 1
                 “I soldi servono per pagare la casa di riposo, idiota.”
             -
         Continuate a inscatolare in silenzio, l’unico rumore è lo spostarsi degli oggetti.
-        <m>Omar</m> impila le cose con rabbia, chiude gli scatoloni, scende le scale pestando i piedi, torna, ripete.
+        <m>Omar</m> impila le cose con rabbia, chiude gli scatoloni, scende le scale pestando i piedi, risale, ricomincia.
         <f>Laura</f> ti passa le cose, quando i vostri sguardi si incrociano ti sorride, ogni tanto ti dà un bacio sulla guancia. #completion_33
             + Nonna adora Laura[]
             -
@@ -461,7 +461,7 @@ VAR amab_tre = 1
         -> atto_amab_tre
         
     === atto_amab_tre===
-    Età adulta. Autunno. Casa vostra. #title
+    Età adulta. Autunno. Casa. #title
 
         <f>Laura</f> ti ripete di sbrigarti
             + “Ma mancano almeno sei ore!”
@@ -485,7 +485,7 @@ VAR amab_tre = 1
             “Quando mai ho fatto qualcosa che ti ha messo nei guai?”. Fai una lista abbastanza dettagliata che contiene cioccolata, leoni marini, un costume da Elon Musk e una ghigliottina. Ah, sì, e quella volta al cimitero con la tavola Oujia. <f>Lei</f> ti osserva con le braccia incrociate, fintamente seria.
             -
         Ti porta nella stanza.
-        Ci sono pezzi di jeans, trucchi, un capello osceno e una parrucca.
+        Ci sono pezzi di jeans, <f>trucchi</f>, un capello osceno e una <f>parrucca</f>.
             + “Dov'è il cadavere di RuPaul?”
             -
         Ti guarda, gli occhi pieni di affetto.
@@ -506,9 +506,9 @@ VAR amab_tre = 1
             + “I miei?"
             -
         <f>Laura</f> solleva i pezzi di jeans.
-        “<f>Britney</f> e <m>Justin</m> nel 2001! Dai, cosa c’è di più cringe del finto denim e di Timberlake?”
+        “<f>Britney</f> e <m>Justin</m> nel 2001! Dai, cosa c’è di più cringe del finto denim e di <m>Timberlake</m>?”
         Afferra i pezzi di tessuto con stampa denim.
-        “Ho trovato due costumi ma non mi piacevano molto e così li ho smontati per rifarli meglio ma ehm, creo videogiochi, non sono una <f>sarta</f>. E ho pensato che potresti aiutarci tu, e in cambio ti trucco!”
+        “Ho trovato due costumi ma non mi piacevano molto e così li ho smontati per rifarli meglio ma ehm, creo videogiochi, non sono una <f>sarta</f>. E ho pensato che potresti aiutarci tu, e in cambio ti <f>trucco</f>!”
             + “Non cucio da quando avevo tredici anni!”
             “Sono sicura che sia come andare in bicicletta.”
             + “Trucco?”
@@ -517,7 +517,7 @@ VAR amab_tre = 1
             -
         “E, sorpresa delle sorprese... io farò <m>Justin</m> e tu <f>Britney</f>!”
         Fai per dire qualcosa, ma.
-        Ma qualcosa si muove nella pancia, un calore che si alimenta mentre osservi il tessuto di jeans, la </m>parrucca</m>, i <f>trucchi</f>. #completion_50
+        Ma qualcosa si muove nella pancia, un calore che si alimenta mentre osservi il tessuto di jeans, la <f>parrucca</f>, i <f>trucchi</f>. #completion_50
         Ti siedi in silenzio davanti alla macchina da cucire e, beh: è come tornare in bicicletta.
             + Inizi a cucire[] i pezzi di stoffa.
             -
@@ -539,7 +539,7 @@ VAR amab_tre = 1
         “Quando ho avuto l’idea mi sono accorta che in realtà era lì da sempre. Che era qualcosa che volevo fare con te, che potevo fare solo con te.”
         Ti bacia sulla nuca, ti afferra la mano per farti alzare, ti porta allo specchio.
         Il <f>vestito</f> è orribile, la <f>parrucca</f> è tremenda.
-        Ma i tuoi occhi si riempiono di ciò che vedono, del volto ridisegnato dal <f>trucco</f>, della vita tracciata dalla cintura, del <m>petto peloso</m> che esce dalla <m>scollatura</m>. 
+        Ma i tuoi occhi si riempiono di ciò che vedono, del volto ridisegnato dal <f>trucco</f>, della <f>vita</f> tracciata dalla cintura, del <m>petto peloso</m> che esce dalla <m>scollatura</m>. 
         Ti gira la testa.
             + “Dovrei rasarmi?”
             -
@@ -551,18 +551,10 @@ VAR amab_tre = 1
         È come se qualcuno avesse tolto una patina dai tuoi occhi.
         Come se fino ad ora il corpo che vedevi allo specchio fosse quello di un’altra persona, qualcosa che continuavi a cancellare, che non volevi mai ricordare.
         Ma ora sei davvero tu.
-        Ammiri i tuoi occhi enormi sotto l’<f>eyeliner</f>, e il modo in cui le labbra esplodano di rosso tra i peli della <m>barba</m>.
+        Ammiri i tuoi occhi enormi sotto l’<f>eyeliner</f>, e il modo in cui le <f>labbra</f> esplodano di rosso tra i peli della <m>barba</m>.
         Come i muscoli e le pieghe del vestito si esaltino a vicenda.
             + [...]
             -
-        ...
-            + [...]
-            -
-        ... ...
-        
-            + [...]
-            -
-        ... ... ...
         Piangi. #completion_70
         <f>Laura</f> ti abbraccia.
         “Tutto ok, tesoro?”
@@ -754,7 +746,7 @@ VAR amab_tre = 1
         Ti cambia posizione.
         “E poi diventerai una <f>dottoressa</f>, sì, hai le mani da <f>dottoressa</f>. Magari <f>ostetrica</f>, così farai felice tante altre <f>mamme</f>. Anche se io sarò la <f>tua</f>, sempre.”
         Sospira.
-            + [Il sonno  ti afferra]
+            + [Il sonno ti afferra]
             -
         “E magari quando ti sposerai con un brav’<m>uomo</m> mi farai vivere con voi, così ti aiuterò coi nipotini, e tu potrai continuare a lavorare. E se sarò ancora <f>bella</f>...”
         Ma stai già dormendo.
@@ -835,7 +827,7 @@ VAR amab_tre = 1
                     + [Tiri un pugno a Lorenzo]
                     -
                 È il caos.
-                I <m>ragazzini</m> prendono in giro <,>Lorenzo</m> perché si è fatto <m>picchiare</m> da una <f>bambina</f>.
+                I <m>ragazzini</m> prendono in giro <m>Lorenzo</m> perché si è fatto <m>picchiare</m> da una <f>bambina</f>.
                 Senti <f>Chloe</f> alle tue spalle chiamare <f>suor Addolorata</f>.
                 Guardi <m>Lorenzo</m> che trattiene a fatica le <f>lacrime</f>.
                 Una mano ti afferra la spalla, ti investe un profumo dolcissimo. 
@@ -875,7 +867,7 @@ VAR amab_tre = 1
                     -
                 “Anche noi. Stiamo giocando alle <f>principesse</f>, ce ne manca <f>una</f>.”
                 Ti guarda speranzosa.
-                    + [Ignori il sottotesto]
+                    + [La ignori]
                     -
                 “Vieni?”
                 Non ne hai voglia, ma hai un’idea.
@@ -885,7 +877,7 @@ VAR amab_tre = 1
                 Alle sue spalle sono arrivate le altre. #completion_50
                     + “Su quell’albero[..."]”, indichi un vecchio olmo dai rami bassi “c’è il registro di <f>suor Addolorata</f>. Se lo prendi prima di me, hai vinto.”
                     -
-                “Sei stata tu quindi a rubarlo?” <f>Laura</f> è sorpresa.
+                “Sei stata tu a rubarlo?” <f>Laura</f> è sorpresa.
                 Ti senti orgogliosa.
                 Niente registro, niente prova delle decine di note che hai preso.
                 E di quelle di molti compagni di classe.
@@ -908,7 +900,7 @@ VAR amab_tre = 1
                     + [Salti su un ramo instabile]
                     -
                 Ce la fai, <f>lei</f> però recupera lo svantaggio. 
-                Il suo vestito si strappa e lo ignora.
+                Il suo <f>vestito</f> si strappa e lo ignora.
                 Forse ora <f>Chloe</f> ti sta simpatica.
                 Alle urla dei bambini però ora ci sono quelle degli adulti. #completion_70
                 “Scendete subito!”
@@ -975,15 +967,15 @@ VAR amab_tre = 1
         <f>Chloe</f> ti fissa sorridendo, orgogliosa e innamorata.
         <f>Emma</f> legge qualcosa nel suo sguardo.
         Non vi ha mai chiesto niente, ma sa.
-        “Scendo dalle gemelle, provo a dormire un po'.”
+        “Scendo dalle <f>gemelle</f>, provo a dormire un po'.”
         La abbracci.
             + “Prenditi cura delle primine!”
             + “Ti voglio bene, Bunny!”
-            + “Se non te la senti[...], nessuno ti giudica.”
+            + “Se non te la senti[..."], nessuno ti giudica.”
             <f>Lei</f> ti sorride, stanca: “Abbiamo iniziato assieme, finiamo assieme”.
             -
-        “Come fai ad essere tanto <f>figa</f>?”  #completion_33
-         Come la porta si chiude, <f>Chloe</f> ti bacia.
+        Come la porta si chiude, <f>Chloe</f> ti bacia. #completion_33
+        “Come fai ad essere tanto <f>figa</f>?”
             + “Divoro la rabbia del Guagliotti.”[]
             Ti dà un altro bacio. “Speravo fosse un po’ merito mio.”
             + “Rubo la bellezza delle vergini.”[]
