@@ -93,7 +93,7 @@ VAR amab_tre = 1
         “<f>Mamma</f>, ha solo dodici anni!”
         Camminano e parlano, tutti. Si dicono come sarà il tuo futuro, discutono, ridono, tracciano confini. 
         Le loro parole si posano sui tuoi occhi.
-        Fuori, lungo la strada vedi sempre meno varietà, forme e colori si sfumano fino a quando non rimane che una distesa di <m>quadrati azzurri</m> e <f>triangoli rosa</f>. #people
+        Fuori, lungo la strada vedi sempre meno varietà, forme e colori si sfumano fino a quando non rimane che una distesa di <m>quadrati</m> <m>azzurri</m> e <f>triangoli</f> <f>rosa</f>. #people
         Tutto ti sembra uguale. 
             + [Piangi]
             -
@@ -754,8 +754,8 @@ VAR amab_tre = 1
         Ma stai già dormendo.
         Nel sogno vedi la strada di prima, il viaggio che hai fatto.
         Ma non ci sono più colori e forme e tutte le cose possibili.
-        Ci sono solo <m>quadratini azzurri</m>
-        <f>triangoli rosa</f>
+        Ci sono solo <m>quadratini</m> <m>azzurri</m>
+        <f>triangoli</f> <f>rosa</f>
         e mani enormi che ti schiacciano e strappano, cercando di darti una forma. #people
         -> atto_afab_uno
     
@@ -1033,7 +1033,7 @@ VAR amab_tre = 1
         Dopo un’intera giornata è una tortura, la schiena è a pezzi ma non vuoi levartelo.
         Le sue dita si infilano sotto, ti senti morire.
             + Provi a resistere[]. Il tuo corpo si irrigidisce.
-            “Stai trattenendo il respiro?” <f>Chloe</f> ti guarda perplessa.
+            “Stai trattenendo il respiro?” Chloe ti guarda perplessa.
             -
             + [Levi la mano]
             -
@@ -1107,7 +1107,7 @@ VAR amab_tre = 1
         <f>Emma</f> infila il braccio sotto al tuo.
         È vestita come se fosse appena uscita dalla doccia, con un gigantesco foulard sui capelli.
         “Posso parlarti?” 
-            + Lanci un'occhiata a Chloe[], che però è presa a riverire la coppia.
+            + Lanci un'occhiata a [Chloe]<f>Chloe</f>, che però è presa a riverire la coppia.
             -
         L’improvvisata discoteca è già piena, centinaia di <f>donne</f> che si agitano e ballano e chiacchierano. #completion_33
         Diverse hanno la spilletta di “<f>Tre lesbiche del cazzo</f>”.
@@ -1123,10 +1123,10 @@ VAR amab_tre = 1
         L’avete creata voi tre, è nata dagli anni delle occupazioni e dei cortei, dei Pride, delle manifestazioni non autorizzate contro il politico <m>fascio</m> di turno.
         “Non è più il progetto in cui credevamo, <f>Pallina</f>. Questa roba è, è altro, è il sogno bagnato di <f>Chloe</f>."
         Si getta un'occhiata alle spalle.
-        "Questa è la gente contro cui abbiamo lottato, che ci fanno quelle due <f>stronze</f> qui?”
+        "Questa è la gente contro cui abbiamo lottato, che ci fanno quelle due stronze qui?”
             + “Se vogliamo sopravvivere...”
             -
-        “Queste sono le parole di <f>Chloe</f>, porca la cacca. Tu sai che ti voglio bene, vero?”
+        “Queste sono le parole di Chloe, porca la cacca. Tu sai che ti voglio bene, vero?”
             + [Resti in silenzio]
             + [Fai sì con la testa]
             + “Anche io, Bunny.”
@@ -1136,7 +1136,7 @@ VAR amab_tre = 1
         C’è un toc freddo da qualche parte nella tua pancia.
         Dove hai messo un sistema di difesa che ultimamente spara contro tutto, in modo indiscriminato, pur di non guardarsi dentro.
             + Entri nel locale[], ma <f>Emma</f> ti ferma sulla soglia.
-            + Molli la mano di Emma[], cerchi una sigaretta nelle tasche strette.
+            + Molli la mano di [Emma]<f>Emma</f>, cerchi una sigaretta nelle tasche strette.
             + “C'è chi ha deciso di crescere, e chi no.”
             Lo dici con cattiveria, ma lei non molla.
             -
@@ -1153,7 +1153,7 @@ VAR amab_tre = 1
             -
         “<f>Laura</f>, non importa, andiamo altrove.” 
         Riconosci le due persone che stanno discutendo con <f>Chloe</f>.
-        <f>Laura</f>, la tua vecchia compagna di scuola, vi siete perse dopo i primi anni di liceo.
+        <f>Laura</f>, la tua <f>vecchia</f> <f>compagna</f> di scuola, vi siete perse dopo i primi anni di liceo.
         E <m>Pallino</m> che, che. Non riesci ad ascoltare i tuoi pensieri, a capire "che" cosa.
         Sai che in teoria è in costume, vestito da biondina, ma ti rendi conto anche che per <f>Pallino</f> quello non è solo un costume.
         Quel toc freddo, di nuovo, nello stomaco.
@@ -1298,7 +1298,7 @@ VAR amab_tre = 1
             + “Emma, non credo di essere una [ragazza."]<f>ragazza</f>.”
             -
         Lei resta in silenzio, toccandoti i capelli.
-            + “E nemmeno un [ragazzo."]<m>ragazzo</m>."<>
+            + “E nemmeno un [ragazzo."]<m>ragazzo</m>.<>
             E quando ho visto prima Pallino, quando ho visto quanto fosse felice in quel modo altro, ho pensato che quello è il mio posto. E mi ha fatto paura.”
             -
         “Qual è la cosa peggiore che potrebbe accaderti, se fosse così?”

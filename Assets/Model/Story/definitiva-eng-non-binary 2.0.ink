@@ -95,7 +95,7 @@ VAR amab_tre = 1
         They walk and talk, all of them.
         They tell each other what your future is going to be, they laugh, they draw boundaries. 
         Their words fall on your eyes.
-        Outside, along the road, you see less and less variety, shapes and colors fade until all that remains is an expanse of <m>blue squares</m> and <f>pink triangles</f>. #people
+        Outside, along the road, you see less and less variety, shapes and colors fade until all that remains is an expanse of <m>blue</m> <m>squares</m> and <f>pink</f> <f>triangles</f>. #people
             + [You cry]
             -
         -> atto_amab_uno
@@ -752,8 +752,8 @@ VAR amab_tre = 1
         But you are already asleep.
         In the dream you see the road from before, the journey you took.
         But there are no more colors and shapes and all the possible things.
-        There are only <m>blue squares</m>
-        <f>pink</f> triangles
+        There are only <m>blue</m> <m>squares</m>
+        <f>pink</f> <f>triangles</f>
         and huge hands crushing and tearing at you, trying to shape you. #people       
      -> atto_afab_uno
 
