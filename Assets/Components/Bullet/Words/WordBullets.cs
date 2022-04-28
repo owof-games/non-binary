@@ -86,6 +86,6 @@ public class WordBullets : MonoBehaviour
         var destroyOnCollision = go.GetComponent<DestroyOnCollision>();
         destroyOnCollision.Damage = _WordBulletDamage.Value;
         // emit a sound to attract attention
-        _PlaySFX.Raise("hit");
+        _PlaySFX.Raise("launch_word_bullet");
     }
 }
