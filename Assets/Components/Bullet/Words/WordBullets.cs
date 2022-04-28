@@ -44,6 +44,8 @@ public class WordBullets : MonoBehaviour
     {
         if (newStoryStep.Kind == StoryStepKind.Text)
         {
+            this.Verbose("Starting word bullets coroutine with {0} mtags and {1} ftags",
+                newStoryStep.NumMTags, newStoryStep.NumFTags);
             _LastNumMTags = newStoryStep.NumMTags;
             _LastNumFTags = newStoryStep.NumFTags;
             StartCoroutine(OnLaunchWordBullets(newStoryStep.Text.Length * BulletDelayPerLetter));
