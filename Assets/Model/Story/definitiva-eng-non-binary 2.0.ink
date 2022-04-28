@@ -93,7 +93,7 @@ VAR amab_tre = 1
         "Look, with a baby in your arms, all the little <f>girls</f> will fall for you”
         "<f>Mom</f>, <m>he</m>'s only twelve!"
         They walk and talk, all of them.
-        They tell each other what your future will be like, they discuss, they laugh, they draw boundaries. 
+        They tell each other what your future is going to be, they laugh, they draw boundaries. 
         Their words fall on your eyes.
         Outside, along the road, you see less and less variety, shapes and colors fade until all that remains is an expanse of <m>blue squares</m> and <f>pink triangles</f>. #people
             + [You cry]
@@ -113,7 +113,7 @@ VAR amab_tre = 1
         The other <f>girls</f> are bored.
         <f>Laura</f> keeps huffing, <f>Elisa</f> throws rocks at lizards.
         The sun is warm and the park is filled with festive shouts.
-            + "It's always done the way you want it!"
+            + "We always do what you want!"
             + "Elisa can do it."
             + [You glare at her]
             -
@@ -121,7 +121,7 @@ VAR amab_tre = 1
         <f>Marika</f> walks away with <f>her</f> braids dancing.
         They start chatting, planning.
         Every now and then they ask you a few questions but you really don't feel like answering them now.
-        You look at your backpack with the new issues of Ranma 1/2, and you think you were so happy to just sit and read in the sun.
+        You look at your backpack with the new manga of Ranma 1/2, and you think you were so happy to just sit and read in the sun.
             + [You sit on the steps and ignore them]
             + You make an effort to follow along[], <>
             	but you missed something important, a dragon showed up, what's a dragon got to do with it?
@@ -180,7 +180,7 @@ VAR amab_tre = 1
             + [You clench your fists]
             + You back away[], <>
             	someone yells, "Hey <f>faggot</f>, I'm talking to you!"
-            + You respond in rhyme[], <>
+            + You answer back[], <>
             	but you stammer out a "Did you escape from the zoo?"
             -
         A clod of dirt lands on your head, you wipe your eyes with your back of your hand and don't see who's throwing you down on the grass, crushing you with their weight.
@@ -766,7 +766,7 @@ VAR amab_tre = 1
         <f>Mom</f> smiles but <f>she</f> is a statue, <f>she</f> wants you to be a statue.
         A <f>beautiful</f> little <f>statue</f> in a <f>floral dress</f>, white shoes, and <f>upswept hair</f>.
         <f>She</f> spent the entire car ride telling you that you need to make a good impression.
-        That the parent/teacher meeting is a time when parents are judged harshly.
+        That the parent/teacher meeting is an event when parents are judged harshly.
         That a <f>single mother</f> is always guilty, and because of that you must not make any mistakes.
         You think it doesn't make much sense, but you trust her.
             + [Look outside]
@@ -872,7 +872,7 @@ VAR amab_tre = 1
                     -
                 "Are you coming?"
                 You don't feel like it, but you have an idea.
-                    + "Would you like a challenge?["] If you win, I'll play <f>princesses</f> until the end of school."
+                    + "Would you like a dare?["] If you win, I'll play <f>princesses</f> until the end of school."
                     -
                 <f>Chloe</f>'s gaze is doubtful.
                 Behind her come the others. #completion_50
@@ -882,7 +882,7 @@ VAR amab_tre = 1
                 You are full of pride. No record, no proof of the dozens of notes you took.
                 And those of many classmates.
                 "What a <m>tomboy</m>!" <f>Marika</f> raises <f>her</f> pointed nose.
-                "But <f>Chloe</f> is a nerd, <f>she</f> will take it for sure to the <f>nuns</f>!" <f>Laura</f> is unconvinced.
+                "But <f>Chloe</f> is a nerd, <f>she</f> will take it for sure to the <f>nuns</f>!" <f>Laura</f> is doubtious.
                 "I'm not a nerd!"
                     + [You look at Chloe]
                     -
@@ -954,14 +954,14 @@ VAR amab_tre = 1
             -
         "There's nothing more we can do, I'm afraid."
         <f>Emma</f> looks out of the window.
-        <f>Marika</f>: suspended after reporting <m>principal</m> harassment.
+        <f>Marika</f>: suspended after reporting that abuser of the <m>principal</m>.
         And no one willing to do anything about it
             + "And then tomorrow Lorenzo will be in deep shit!"
             -
         "I wonder if <m>his</m> majesty as well as eternal school representative <m>Lorenzo</m> Shitface Guagliotti will do something useful.”
-        "Naa, <m>he</m>'ll say something about the legality to be respected and the need to cooperate with the teachers."
+        "Naa, <m>he</m>'ll say something about the laws to respected and the need to cooperate with the teachers."
         Chloe clings to your arm.
-            + "With his legality we get beaten up[."]. <m>He</m> can shove it up <m>his</m> ass."
+            + "With his law-abiding we get beaten up[."]. <m>He</m> can shove it up <m>his</m> ass."
             -
         <f>Chloe</f> stares at you smiling, proud and in love.
         <f>Emma</f> reads something in <f>her</f> gaze.
@@ -1071,7 +1071,7 @@ VAR amab_tre = 1
         "I can't wait to be a grandmother."
         Your <f>mother</f> is beaming.
         <f>She</f> looks around.
-        "Maybe it's time for me to go now, but I've been happy to help you guys out."
+        "Maybe it's time for me to go now, but I've been happy to help you girls out."
         <f>She</f> gives you a hug and walks out of the club.
         "Why didn't you wear the costume I got you?"
         Chloe looks annoyed at your loose sweatshirt.
@@ -1219,7 +1219,7 @@ VAR amab_tre = 1
                     + [You lean against a wall]
                     -
                 You're out of breath and that sense of discomfort, of cold is there cracking, filling you with words and opinions, promises and veiled threats.
-                Of <f>Chloe</f> wanting you to be <m>her</m> <f>girlfriend</f>, <f>her</f> <f>woman</f>, the <f>mother</f> of <f>her</f> child.
+                Of <f>Chloe</f> wanting you to be <f>her</f> <f>girlfriend</f>, <f>her</f> <f>woman</f>, the <f>mother</f> of <f>her</f> child.
                 There are questions you don't want to hear because you're thinking about your <f>mom</f>, your <f>mom</f> who took thirty years to accept that you're a <f>lesbian</f>, and now you really want to change everything, again?
                 Do you want to risk losing <f>her</f> again?
                 You start crying, drained.
