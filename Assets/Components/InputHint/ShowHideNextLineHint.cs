@@ -16,8 +16,11 @@ public class ShowHideNextLineHint : MonoBehaviour
         _Animator = GetComponent<Animator>();
     }
 
+    private bool _HasStoryStarted = false;
+
     public void OnStartStory()
     {
+        _HasStoryStarted = true;
         StartCoroutine(WaitToShowHint());
     }
 
@@ -25,8 +28,11 @@ public class ShowHideNextLineHint : MonoBehaviour
 
     public void OnNextLine()
     {
-        _HasNextLineHappened = true;
-        _Animator.SetTrigger("hide");
+        if (_HasStoryStarted)
+        {
+            _HasNextLineHappened = true;
+            _Animator.SetTrigger("hide");
+        }
     }
 
     private IEnumerator WaitToShowHint()
