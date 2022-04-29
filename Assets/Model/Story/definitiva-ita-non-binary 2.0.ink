@@ -86,7 +86,7 @@ VAR amab_tre = 1
         Tuo <m>fratello</m> ti mette il <m>pallone</m> tra le mani, se la ride.
         “Queste sono mani da <m>portiere</m>, guarda che presa!”
         Ti guarda pieno di ammirazione.
-            + Volevi solo qualcosa a cui aggrapparti[], questa gente dice troppe cose e ti gira la testa.
+            + Volevi solo aggrapparti a qualcosa[], questa gente dice troppe cose e ti gira la testa.
             -
         <f>Nonna</f> chiede a tuo <m>fratello</m> se ti vuole tenere in braccio, <m>lui</m> risponde che ha paura di romperti.
         “Guarda che con un <m>bimbo</m> in braccio fai strage di <f>ragazzine</f>!”
@@ -112,7 +112,7 @@ VAR amab_tre = 1
         <f>Laura</f> continua a sbuffare, <f>Pallina</f> lancia sassi alle lucertole.
         Il sole è caldo e il parco è pieno di grida festose.
             + “Si fa sempre come vuoi te!”
-            + “Può farlo Pallina.”
+            + “Può farlo [Pallina.”]<f>Pallina</f>."
             + [La guardi con aria di sfida]
             -
         “Sono la più grande quindi decido io e quindi tu sei il <m>principe</m>.”
@@ -146,8 +146,8 @@ VAR amab_tre = 1
         Bellissimo, gigantesco.
         Marika ti urla qualcosa. #completion_33
             + [La ignori]
-            + Le dici di venire[], <>
-            	ma <f>lei</f> urla di correre contro il drago e non vuole che <f>mamma</f> muore e rimane <f>orfana</f>.
+            + [Le dici di venire]
+            	<f>Le</f> dici di venire ma <f>lei</f> urla di correre contro il drago e non vuole che <f>mamma</f> muore e rimane <f>orfana</f>.
             + Annusi il fiore[], <>
             	ed è tipo la cosa più buona dell’universo, più buona anche delle torte di <f>nonna</f>.
             -
@@ -161,7 +161,7 @@ VAR amab_tre = 1
         “La prossima volta lo faccio io il <m>principe</m>!”
         Pallina è risoluta.
             + “La prossima volta mi nascondo."
-            + “E Marika è il drago!”
+            + [“E Marika è il drago!”]"E <f>Marika</f> è il drago!"
             + “Promesso?”[] <>
             	E <f>lei</f> ti risponde sì, e se <f>Marika</f> rompe le scatole la butta nel fango.
             -
@@ -277,7 +277,7 @@ VAR amab_tre = 1
         <f>Laura</f> arriva da dietro e ti abbraccia.
         “Tutto ok tesoro?”
             + Fai sì con la testa[] e appoggi la rivista.
-            + Lanci la rivista contro Omar[], che si scansa e ti dà della schiappa.
+            + Lanci la rivista contro [Omar]<f>Omar</f>, che si scansa e ti dà della schiappa.
             + “Mi ha insegnato a cucire[.“] <>
             di nascosto da mamma, da quando avevo dieci anni. Passavo qui le ore a leggere e a disegnare le decorazioni che poi lei faceva a maglia. Quando faceva freddo stavamo davanti alla TV a guardare documentari sui dinosauri e macinavamo chilometri di lana.”
                 ++ [Era bello]
@@ -300,7 +300,7 @@ VAR amab_tre = 1
         Continuate a inscatolare in silenzio, l’unico rumore è lo spostarsi degli oggetti.
         <m>Omar</m> impila le cose con rabbia, chiude gli scatoloni, scende le scale pestando i piedi, risale, ricomincia.
         Laura ti passa le cose, quando i vostri sguardi si incrociano ti sorride, ogni tanto ti dà un bacio sulla guancia. #completion_33
-            + Nonna adora Laura[]
+            + [Nonna adora Laura]<f>Nonna</f> adora <f>Laura</f>.
             -
         È sempre stata dell’idea che se una regola è sbagliata è tuo dovere infrangerla.
         Dopo la morte di <m>nonno</m> non ha mai indossato il lutto, era contenta che quel violento fosse morto e non voleva fingere il contrario.
@@ -312,8 +312,7 @@ VAR amab_tre = 1
             <> Vorrei essere come <f>lei</f>.”
             + “Vi somigliate tanto, voi due.[”]
             <> Le sue reti erano di lana e le tue di bit, ma avete tanto in comune.” <f>Laura</f> ride: "Woah, non sapevo fossi un <m>poeta</m>!"
-            + “Mamma non l’ha mai capita[“]
-            <>, per <f>lei</f> l’importante è quello che pensano gli altri e basta.”
+            + [“Mamma non l’ha mai capita“] "<f>Mamma</f> non l'ha mai capita, per <f>lei</f> l’importante è quello che pensano gli altri e basta.”
             -
         
         “Sai che ti vuole un sacco bene, vero? Si illumina ogni volta che ti guarda.”
@@ -339,7 +338,7 @@ VAR amab_tre = 1
             Man mano che parli senti sparire un peso a cui avevi fatto l'abitudine fino a dimenticartene.
             Fuori l’autunno sembra caldo, ma il volto di <f>Laura</f> si fa freddo.
             La sua mano stretta nella tua sembra un pugno. 
-                + “Son cose dell’infanzia...”[]  <>
+                + “Son cose dell’infanzia...”[] <>
                 -
             provi a dire, anche se due anni fa ne avevi tredici di anni.
             “Non, non ti giudico <m>Pal</m>, davvero. vorrei solo capire...”
@@ -417,7 +416,7 @@ VAR amab_tre = 1
             “So di essere un grezzone e di non essere bravo come voi con le parole. Ma tengo a <f>nonna</f>, e voglio che sia felice. E tengo a te, e voglio che tu sia felice. Ma non so come farlo.”
                 + [Senti solo senso di colpa.] Gli occhi lucidi di <m>Omar</m> ti riempiono di senso di colpa.
                 -> colpa
-                + “Non pretendo tu sia perfetto[“], solo che tu mi permetta di essere me stesso."
+                + “Non pretendo tu sia [perfetto]<m>perfetto</m>, solo che tu mi permetta di essere me stesso."
                 -> myself
                 + [Omar ha bisogno di te]
                 Metti da parte parole e spiegazioni e lo abbracci.
@@ -487,7 +486,7 @@ VAR amab_tre = 1
         Ti porta nella stanza.
         Ci sono <f>trucchi</f>, un capello osceno, una <f>parrucca</f>.
         E un sacco di pezzi di tessuto.
-            + “Dov'è il cadavere di RuPaul?”
+            + “Dov'è il cadavere di [RuPaul?”]<f>RuPaul</f>?"
             -
         Ti guarda, gli occhi pieni di affetto.
         "Ogni tanto penso a quel <m>ragazzino</m> timido e insicuro che ho conosciuto vent'anni fa, e mi stupisce vedere chi sei diventato."
@@ -495,15 +494,15 @@ VAR amab_tre = 1
         <f>Laura</f> cambia discorso. #completion_33
         “Ti ricordi che l’anno scorso Marika ha detto che siamo gli unici a non fare costumi di coppia?”
             + “Ed è un problema?”
-            + “È difficile dimenticarlo[!"], visto che l’ha urlato ubriaca dal balcone.”
-            + “Mi ricordi perché è tua amica?”
+            + “È difficile dimenticarlo[!"], visto che l’ha urlato <f>ubriaca</f> dal balcone.”
+            + “Mi ricordi perché è [tua amica?”]<f>tua</f> <f>amica</f>?"
             Ti lancia addosso un marshmallow.
             -
         “Quest’anno voglio dimostrarle che si sbaglia. E mi sono chiesta: qual è la coppia più spaventosa da portare ad una festa di Halloween?”
         Cerchi inutilmente una risposta sensata.
         Laura ti guarda con trepidazione.
-            + “Bonnie e Clyde?”
-            + “Woody Allen e Soon-Yi?”
+            + [“Bonnie e Clyde?”]"<f>Bonnie</f> e <m>Clyde</m>?"
+            + [“Woody Allen e Soon-Yi?”]“<m>Woody Allen</m> e <f>Soon-Yi</f>?”
             + “I miei?"
             -
         “<f>Britney</f> e <m>Justin</m> nel 2001! Dai, cosa c’è di più cringe del finto denim e di <m>Timberlake</m>?”
@@ -512,7 +511,7 @@ VAR amab_tre = 1
         Ti guarda speranzosa.
             + “Non cucio da quando avevo tredici anni!”
                 “Sono sicura che sia come andare in bicicletta.”
-            + “Trucco?”
+            + [“Trucco?”]"<f>Trucco</f>?"
             + “Possiamo vestirci da noi?”
                 <f>Laura</f> ti ignora.
             -
@@ -559,9 +558,9 @@ VAR amab_tre = 1
         Piangi. #completion_70
         <f>Laura</f> ti abbraccia.
         “Tutto ok, tesoro?”
-            + Respingi tutto quello che provi[], perché non può esserci spazio per questo. La sincerità la allontanerà come ha allontanato Omar.
+            + Respingi tutto quello che provi[], perché non può esserci spazio per questo. La sincerità la allontanerà come ha allontanato <m>Omar</m>.
             -> Respingi
-            + Non puoi dirle la verità[], non puoi. Laura è <f>magnifica</f>, ma lo era anche <m>Omar</m>, e dov'è ora?
+            + Non puoi dirle la verità[], non puoi. <f>Laura</f> è <f>magnifica</f>, ma lo era anche <m>Omar</m>, e dov'è ora?
             -> Perdere
             + Provi a cercare le parole[] per dirle ciò che senti.
             -> Sinceramente
@@ -653,7 +652,7 @@ VAR amab_tre = 1
         La zittisci con un bacio.
             + “Andiamo a mostrare questә me al mondo?”
             + “Sai che rabbia proverà [Marika?"]<f>Marika</f> quando non sarà la prima in qualcosa per una volta?”
-            + “Vieni[!"], prima che divenga la Britney del 2007!”
+            + “Vieni[!"], prima che divenga la <f>Britney</f> del 2007!”
             -
         "Ho un piano B: una festa di <f>ragazze</f> <f>lesbiche</f>, un posto tranquillo dove stare, dovrebbero esserci anche un paio di <f>vecchie</f> <f>compagne</f> di scuola!"
         Il modo in cui ti guarda ti fa sentire invincibile.
@@ -688,7 +687,7 @@ VAR amab_tre = 1
             -
         <f>Lei</f> si rilassa, sorride.
         “Hai ragione. L’importante è solo una cosa: le troveremo assieme. Ritroveremo i frutti di bosco e la mia eterosessualità o qualsiasi cosa sia.”
-            + “Te la immagini Marika[?"] che non sa più come presentarci ai suoi amici?”
+            + “Te la immagini [Marika?"]<f>Marika</f>, che non sa più come presentarci ai suoi amici?”
             -
         “A proposito di <f>Marika</f>: te la senti di andare a quella festa?”
         Ti guardi allo specchio.
@@ -775,7 +774,7 @@ VAR amab_tre = 1
         Ti fidi, ma questo non cancella la noia.
         Dei <m>ragazzi</m> si rincorrono.
         Quello sbruffone di <m>Lorenzo</m> ha portato un pallone, stanno facendo le squadre.
-            + “Mamma?”
+            + [“Mamma?”]"<f>Mamma?</f>"
             -
         Ti ignora.
         Dall’altro lato del giardino le <f>compagne</f> di classe chiacchierano.
@@ -893,7 +892,7 @@ VAR amab_tre = 1
                     -
                 Si avvicina all’albero, appoggia la mano e guarda verso l’alto.
                 “E se perdo?”
-                    + [Sai cosa vuoi.]“Tu e Marika la smettete di farmi fare la <f>principessa</f> ogni giorno, e mi lasciate fare il <m>cacciatore</m>, o il <m>drago</m>.”
+                    + [Sai cosa vuoi.]“Tu e <f>Marika</f> la smettete di farmi fare la <f>principessa</f> ogni giorno, e mi lasciate fare il <m>cacciatore</m>, o il <m>drago</m>.”
                     -
                 Non ti aspetta, e inizia a salire.
                 Ti tuffi sul ramo più basso.
@@ -950,20 +949,20 @@ VAR amab_tre = 1
         Ora però il piazzale riposa.
         “Tanta roba per “<f>tre lesbiche del cazzo</f>!”, vero?”
         Emma si sforza di sembrare serena, ma sta tremando.
-            + “Sono orgogliosa di te, Bunny.”
+            + “Sono orgogliosa di te, [Bunny.”]<f>Bunny</f>."
             -
         Ed è vero, perché nonostante ansie e paure <f>Emma</f>-Superfandi<f>SailorMoon</f>-<f>Bunny</f> non vi ha mai smollate, manco quando mezzo consiglio studentesco vi ha insultate davanti a tutti.
         Tre <f>lesbiche</f> del cazzo.
         Eppure avete avuto l’ok, avete trovato più di trenta <f>studentesse</f> disponibili, e l’occupazione è iniziata.
         “Pensi possa davvero servire a <f>Marika</f>, tutto questo?”
         Chloe ti ripassa la sigaretta.
-            + “Almeno saprà di non essere sola.”
+            + “Almeno saprà di non essere [sola.”]<f>sola</f>."
             -
         “Non possiamo fare di più, temo.”
         <f>Emma</f> guarda fuori dalla finestra.
         <f>Marika</f>: sospesa dopo aver accusato di molestie il <m>preside</m>.
         E nessuno che vuol fare qualcosa.
-            + “Domani il Guagliotti mangerà merda!”
+            + “Domani [il Guagliotti mangerà merda!”]il <m>Guagliotti</m> mangerà merda!”
             -
         “Chissà se l'eterno rappresentante d'istituto <m>Lorenzo</m> Facciadimerda Guagliotti ammetterà che era il caso di organizzare almeno un’autogestione.”
         “Naa, dirà qualcosa sulla legalità da rispettare.”
@@ -973,19 +972,19 @@ VAR amab_tre = 1
         <f>Chloe</f> ti fissa sorridendo, orgogliosa e innamorata.
         <f>Emma</f> legge qualcosa nel suo sguardo.
         Non vi ha mai chiesto niente, ma sa.
-        “Scendo dalle <f>gemelle</f>, provo a dormire un po'.”
+        “Scendo da <f>Laura</f> e dalle <f>gemelle</f>, provo a dormire un po'.”
         La abbracci.
             + “Prenditi cura delle primine!”
-            + “Ti voglio bene, Bunny!”
+            + “Ti voglio bene, [Bunny!”]<f>Bunny</f>!"
             + “Se non te la senti[..."], nessuno ti giudica.”
             <f>Lei</f> ti sorride, stanca: “Abbiamo iniziato assieme, finiamo assieme”.
             -
         Come la porta si chiude, <f>Chloe</f> ti bacia. #completion_33
         “Come fai ad essere tanto <f>figa</f>?”
         Sorridi.
-            + “Divoro la rabbia del Guagliotti.”[]
+            + “Divoro la rabbia del [Guagliotti.”]<m>Guagliotti</m>.”
             Ti dà un altro bacio. “Speravo fosse un po’ merito mio.”
-            + “Rubo la bellezza delle vergini.”[]
+            + “Rubo la bellezza delle [vergini.”]<f>vergini</f>."
             “Allora sono salva”, ti risponde con malizia.
             + “Ignoro i miei sentimenti[."], così marciscono, diventano compost e alimentano le mie cellule.”
             “Idiota”, finge di darti una sberla.
@@ -1033,7 +1032,7 @@ VAR amab_tre = 1
         Dopo un’intera giornata è una tortura, la schiena è a pezzi ma non vuoi levartelo.
         Le sue dita si infilano sotto, ti senti morire.
             + Provi a resistere[]. Il tuo corpo si irrigidisce.
-            “Stai trattenendo il respiro?” Chloe ti guarda perplessa.
+            “Stai trattenendo il respiro?” <f>Chloe</f> ti guarda perplessa.
             -
             + [Levi la mano]
             -
@@ -1048,7 +1047,7 @@ VAR amab_tre = 1
         Dai la colpa alla stanchezza, ma sai anche che non ne puoi più. Che tutto questo ti ferisce.
         Continua a dirti che ti ama, ma poi sembra sempre volere qualcosa che non sei.
         “Hai ragione. Ma questa cosa è difficile anche per me.”
-        Il corpo di Chloe< torna accanto al tuo, ti abbraccia, ma senti che è lontana anni luce.
+        Il corpo di Chloe torna accanto al tuo, ti abbraccia, ma senti che è lontana anni luce.
             + [La stringi]
             -
         Arriva questa idea, questo pensiero che diventa una certezza.
@@ -1094,7 +1093,7 @@ VAR amab_tre = 1
             -
         <f>Chloe</f> ti dà una gomitata.
         Bisbiglia: “Sii gentile, sono loro a finanziarci”.
-            + Sorridi alle due[.] che ti stanno osservando.
+            + Sorridi [alle due]<f>alle</f> che ti stanno osservando.
             -
         “Avete fatto davvero un gran lavoro, complimenti”, dice la finta <f>Portia</f>.
         “Forse il titolo è un po’ prosaico”, commenta la finta <f>Ellen</f>.
@@ -1115,7 +1114,7 @@ VAR amab_tre = 1
         Noti che <f>Emma</f> non porta la sua.
         Ti trascina fuori, sul retro del locale.
         Prende fiato, sta un po’ tremando ma la conosci abbastanza da sapere che non è per colpa del freddo.
-            + “Tutto ok Bunny?”
+            + “Tutto ok [Bunny?”]<f>Bunny?</f>"
             -
         <f>Le</f> passi un braccio attorno al collo.
         “Lascio l’associazione.”
@@ -1129,7 +1128,7 @@ VAR amab_tre = 1
         “Queste sono le parole di Chloe, porca la cacca. Tu sai che ti voglio bene, vero?”
             + [Resti in silenzio]
             + [Fai sì con la testa]
-            + “Anche io, Bunny.”
+            + “Anche io, [Bunny.”]<f>Bunny</f>."
             -
         Ti prende le mani.
         “Non sei più te stessa, <f>Pallina</f>. Praticamente ubbidisci solo a <f>Chloe</f>, non la metti mai in discussione. Dov’è la <f>Pallina</f> che rispondeva “fanculo!” a ogni cosa? Che cercava di salvare il mondo? Quella il cui divano ha ospitato quintali di <f>ragazze</f> cacciate di casa?”
@@ -1254,7 +1253,7 @@ VAR amab_tre = 1
                 Il chiasso all’ingresso sta allontanando le persone, la musica si è fermata, ma tu ti accorgi solo di <f>Emma</f> che ti guarda preoccupata.
                 Ti chiedi se <f>lei</f> possa vederti davvero, vedere cosa sei.
                 Perché hai evitato per così tanto di guardarti dentro, e ora non sai più cosa potresti trovarci.
-                    + “Non so chi sono, Bunny.”
+                    + “Non so chi sono, [Bunny.”]<f>Bunny</f>."
                     -
                 Ti senti cadere. L’alcool altera tutto.
                 La caduta è infinita, accelerata dai commenti di una vita.
@@ -1285,7 +1284,7 @@ VAR amab_tre = 1
         Cerchi qualcosa da dire, e ti rendi conto che c’è un sacco di spazio ora nella tua testa.
         Spazio per nuove parole.
         Il gelo nella pancia è sparito.
-            + “Emma.”
+            + [“Emma.”]"<f>Emma</f>."
             -
         Ti guarda preoccupata.
             + “Ho paura.”
@@ -1295,23 +1294,23 @@ VAR amab_tre = 1
         Che ti dice che andrà tutto bene.
         Pian piano riprendi fiato, ti lasci andare su di <f>lei</f>.
         Non avevi mai realizzato quanto la sua amicizia fosse il tuo posto sicuro.
-            + “Emma, non credo di essere una [ragazza."]<f>ragazza</f>.”
+            + [“Emma, non credo di essere una ragazza."]"<f>Emma</f>, non credo di essere una <f>ragazza</f>.”
             -
         Lei resta in silenzio, toccandoti i capelli.
-            + “E nemmeno un [ragazzo."]<m>ragazzo</m>.<>
+            + “E nemmeno un [ragazzo."]<m>ragazzo</m>.<> 
             E quando ho visto prima Pallino, quando ho visto quanto fosse felice in quel modo altro, ho pensato che quello è il mio posto. E mi ha fatto paura.”
             -
         “Qual è la cosa peggiore che potrebbe accaderti, se fosse così?”
-            +“Perderei Chloe.”
+            +“Perderei [Chloe.”]<f>Chloe</f>."
             -
         “E se continuassi a non cercare una risposta?”
         Resti in silenzio.
         Ti rendi conto che l’alternativa è perdere te.
-            +“Avrò bisogno di te, Emma.”
+            +“Avrò bisogno di te, [Emma.”]<f>Emma</f>."
             -
         “Non vado da nessuna parte tesoro, ma non chiamarmi ma più <f>Emma</f> o mi metto a gridare.”
         Indichi il suo foulard sopra la testa, mezzo sfatto dalla serata, dalle corse.
-            +“Posso, Bunny?”
+            +“Posso, [Bunny?”]<f>Bunny</f>?"
             -
         Te lo passa, <f>le</f> chiedi di chiudere gli occhi.
         È immenso, lo usi per fasciarti il <m>seno</m> stretto, per farlo sparire.
@@ -1348,7 +1347,7 @@ VAR amab_tre = 1
         Ti tende la mano, un invito ad alzarti.
         "Ascolti sempre quello che dicono la <f>maestra</f> o <f>Marika</f> o gli altri bambini, ma non è che sanno tutto loro e tu no."
         È superseria.
-            +"Omar dice che devo essere come loro."
+            +["Omar dice che devo essere come loro."]"<m>Omar</m> dice che devo essere come loro."
             -
         "Mica <m>Omar</m> sa tutto. Guardati."
         Ti fa voltare.
@@ -1356,7 +1355,7 @@ VAR amab_tre = 1
         "Tu sei tu, punto. Io sono io. Punto. Loro fanno quel che vogliono, noi facciamo quel che vogliamo."
         Ti guardi nella vetrina, e inizi a vedere qualcosa, qualcosa che prima non c'era, qualcosa che era stato coperto dalle parole di tuo <m>fratello</m> e dei bambini e delle maestre e di tua <f>madre</f>.
         Sai che c'è qualcosa che puoi dire a Pallina, qualcosa che lei può capire. #almost_there
-            + ["Pallina, vuoi sapere una cosa bella?"]
+            + ["Pallina, vuoi sapere una cosa bella?"]"<f>Pallina</f>, vuoi sapere una cosa bella?"
             -
         -> bullet_hell_buono
 
@@ -1372,7 +1371,7 @@ VAR amab_tre = 1
         "Ad una certa sei svenuto. Ci siamo preoccupati."
         <f>Laura</f> ti stringe una mano.
         "Sei davvero una <f>femminuccia</f> <m>Pal</m>!"
-        <m>Omar</m> ti tira un pugno sulla spalla.
+        Omar ti tira un pugno sulla spalla.
             + "Basta."
             -
         Dura, la parola arriva in faccia a <m>Omar</m>, e ti va bene così.
@@ -1382,17 +1381,17 @@ VAR amab_tre = 1
             + "Bas-ta."
             -
         "<m>Pal</m>, hai battuto la testa?"
-        Fissi <m>Omar</m> negli occhi.
-            + "Ne ho abbastanza Omar[."] dei tuoi <m>frocio</m>, <f>gay</f>, </m>ricchione</m>, <f>femminuccia</f>, <f>lesbiche</f> e via di seguito. Non sei manco originale, e fanno male. Fanno male."
+        Fissi Omar negli occhi.
+            + "Ne ho abbastanza[!"] dei tuoi <m>frocio</m>, <f>gay</f>, </m>ricchione</m>, <f>femminuccia</f>, <f>lesbiche</f> e via di seguito. Non sei manco originale, e fanno male. Fanno male."
             -
         "Perché sei..."
             + "Perché non sono te[."], e va bene così. Basta. Non devo somigliarti, non voglio nemmeno, perché dovrei?"
             -
         Tuo <m>fratello</m> stringe le labbra e i pugni.
         "È il caso che me ne vada."
-            + "Omar?"
+            + ["Omar?"]"<m>Omar</m>?"
             -
-        Tuo fratello si ferma.
+        Si ferma.
             + "Lasciami essere chi sono[."], se mi vuoi davvero bene."
             -
         "Se lo facessi allora non ti vorrei bene, perché il mondo ti divorerebbe."
@@ -1430,10 +1429,10 @@ VAR amab_tre = 1
         Prova a sorriderti, "E dovrai fidarti di me. In cambio, sopporti le suore fino alla fine dell'anno, e poi cambiamo scuola."
         Ti stai guardando le mani, perché non sai cosa dire. È la prima volta che ti trattano da persona adulta.
         E poi ti rendi conto che una cosa la sai.
-            + "Mamma? Vorrei tagliarmi i capelli."
+            + ["Mamma? Vorrei tagliarmi i capelli."]"<f>Mamma</f>? Vorrei tagliarmi i capelli."
             -
         "Questa mi sembra una richiesta facile, tesoro", ti scompiglia i lunghi riccioli.
-            +"Li voglio rasati come Lore."
+            +["Li voglio rasati come Lore."]"Li voglio <m>rasati</m> come <m>Lore</m>."
             -
         <f>Mamma</f> fa per dire qualcosa, poi si ferma.
         "Ti va se te li taglio io?"
@@ -1455,12 +1454,11 @@ VAR amab_tre = 1
         Sta leggendo qualcosa, e ti sorride quando ti svegli, un sorriso piccolo e triste.
         "<f>Chloe</f> se ne è andata stanotte, mi dispiace."
         Ti fa più male di quanto vorresti.
-            + Ti alzi e ti appoggi a lei[],
-            <> hai bisogno di conforto.
+            + Ti alzi e ti appoggi a [lei]<f>lei</f>, hai bisogno di conforto.
             -
         <f>Lei</f> ti stringe forte, lasciandoti tutto il tempo del mondo.
         Quando ti stacchi, ti dice che il corteo sotto ti aspetta, ma tu hai altro per la testa.
-            + "Bunny, secondo te cosa sono?"
+            + ["Bunny, secondo te cosa sono?"]"<f>Bunny</f>, secondo te cosa sono?"
             -
         "In che senso?"
             + "Non mi sento una [ragazza."]<f>ragazza</f>. E nemmeno un <m>ragazzo</m>. O qualcosa nel mezzo. Più una cosa "altra", diversa. Ma ogni volta che ci penso mi manca l'aria, mi sento morire. E per colpa di questa cosa, <f>Chloe</f> se ne andrà."

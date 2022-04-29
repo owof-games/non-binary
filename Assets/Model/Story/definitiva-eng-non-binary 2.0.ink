@@ -114,7 +114,7 @@ VAR amab_tre = 1
         <f>Laura</f> keeps huffing, <f>Elisa</f> throws rocks at lizards.
         The sun is warm and the park is filled with festive shouts.
             + "We always do what you want!"
-            + "Elisa can do it."
+            + ["Elisa can do it."]"<f>Elisa</f> can do it."
             + [You glare at her]
             -
         "I'm the oldest so I decide and therefore you are the <m>prince</m>."
@@ -148,8 +148,8 @@ VAR amab_tre = 1
         Beautiful, gigantic.
         Marika yells something at you.
             + [You ignore her]
-            + You tell her to come[], <>
-            	but she screams to run against the dragon and she doesn't want <f>mom</f> to die and be an orphan.
+            + You tell [her to come]<>
+            	<f>her</f> to come, but <f>she</f> screams to run against the dragon and <f>she</f> doesn't want <f>mom</f> to die and be an orphan.
             + You smell the flower[], <>
             	and it's like the best thing in the universe, better even than <f>Grandma</f>'s pies.
             -
@@ -163,7 +163,7 @@ VAR amab_tre = 1
         "Next time I'll do the <m>prince</m>!"
         Elisa's voice is resolute.
             + "Next time I see you, I'll hide."
-            + "And Marika is the dragon!"
+            + ["And Marika is the dragon!"]"And <f>Marika</f> is the dragon!"
             + "Promise?"[] <>
             	And <f>she</f> says yes, and if <f>Marika</f> is a pain in the ass <f>she</f> will throw <f>her</f> in the mud.
             -
@@ -277,21 +277,20 @@ VAR amab_tre = 1
     "Are you okay honey?"
         + [You set the magazine down]
         + You throw the magazine in Omar's face[], who shrugs and calls you a dork.
-        + "Grandma taught me how to sew[."] <>
-        on the sly from <f>Mom</f>, since I was ten years old. I would spend hours here reading and drawing <f>decorations</f> that <f>she</f> would then <f>knit</f>. When it was cold we'd sit in front of the TV and watch dinosaur documentaries and grind miles of wool."
+        + ["Grandma taught me how to sew."]"<f>Grandma</f> taught me how to sew on the sly from <f>Mom</f>, since I was ten years old. I would spend hours here reading and drawing <f>decorations</f> that <f>she</f> would then <f>knit</f>. When it was cold we'd sit in front of the TV and watch dinosaur documentaries and grind miles of wool."
             ++ [It was nice]
             -
     "It's not like <f>she</f> died." <m>Omar</m> takes the other magazines and boxes them up.
     "You locked <f>her</f> in a nursing home, it's the same thing."
     "Luca, it's for her own good."
-        + "She didn't want to go".
+        + ["She didn't want to go".]"<f>She</f> didn't want to go".
         -
     "Why didn't you accept our proposal?" <f>Laura</f> has <f>her</f> hands on <f>her</f> hips and stares at <m>Omar</m>.
     They don't get along very well. When you got together <m>Omar</m> was happy ("So you're not a <f>faggot</f>!"), but <f>Laura</f> is convinced <m>he</m>'s a bad influence on you.
     "Two fifteen year old dykes to stand behind an old crazy lady?"
-        + "She's your fucking grandmother!"
-        + "At least she'd be happy."
-        + "So Mom can sell the house[."] and make money off of it."
+        + ["She's your fucking grandmother!"]"<f>She</f>'s your fucking <f>grandmother</f>!"
+        + ["At least she'd be happy."]"At least <f>she</f>'d be happy."
+        + ["So Mom can sell the house."]"So <f>Mom</f> can sell the house and make money off of it."
             "The money is to pay for the nursing home, you idiot."
         -
     You continue boxing in silence, the only noise being the items moved around. <m>Omar</m> stacks things angrily, closes the boxes, walks down the stairs stomping <m>his</m> feet, returns, repeats.
@@ -309,8 +308,7 @@ VAR amab_tre = 1
         <> I would like to be like <f>her</f>."
         + "You two are so much alike.["]
         <> <f>Her</f> nets were made of wool and yours of bits, but you have so much in common." <f>Laura</f> laughs, "Woah, I didn't know you were a poet!"
-        + "Mom never got it["]
-        <>, what matters to <f>her</f> is what other people think and that's it."
+        + ["Mom never got it."]"<f>Mom</f> never got it. What matters to <f>her</f> is what other people think and that's it."
         -
     
     "You know <f>she</f> loves you a lot, right? You can see it in <f>her</f> eyes every time <f>she</f> looks at you."
@@ -405,7 +403,7 @@ VAR amab_tre = 1
             He almost trembles.
             "You've always been in a world of your own. You complain about Mom, but in the end all she does is worrying about you."
                     + "I don't need her worry."
-                    + "And <f>she</f> doesn't see you."
+                    + ["And she doesn't see you."]"And <f>she</f> doesn't see you."
                     + [You remain silent]            
                     -
         "I know I'm a roughneck and I'm not as good with words as you are. But I care about Grandma, and I want her to be happy. And I care about you, and I want you to be happy. But I don't know how to do that."
@@ -467,7 +465,7 @@ VAR amab_tre = 1
         You rummage through your kitchen cabinets, retrieving chocolate and peanut butter.
         You don't feel like going to that stupid party tonight.
             + "But what if we stay home[?"] and watch horror and eat junk food?"
-            + "Did I mention that I hate Marika?"
+            + "Did I mention that I hate [Marika?"]<f>Marika</f>?"
             + "But since when do you like Halloween?"
             -
         You walk up the stairs without <f>Laura</f> answering. The only light is from the study.
@@ -484,7 +482,7 @@ VAR amab_tre = 1
         <f>She</f> takes you into the room.
         There are pieces of jeans, <f>makeup</f>, an obscene hat and a <f>wig</f>.
         What the hell is going on?
-            + "Where is RuPaul's body?"
+            + ["Where is RuPaul's body?"]"Where is <f>RuPaul</f>'s body?"
             -
         <f>She</f> looks at you, <f>her</f> eyes full of affection.
         "Every now and then I think of that shy, insecure <m>kid</m> I met twenty years ago, and I'm amazed to see who you've become."
@@ -493,14 +491,14 @@ VAR amab_tre = 1
         "Remember how last year <f>Marika</f> said we're the only ones who don't do couples costumes?"
             + "And that's a problem?"
             + "It's hard to forget[!"], since <f>she</f> yelled it drunk from the balcony."
-            + "Remind me why she's your friend?"
+            + "Remind me why [she's your friend?"]<f>she</f>'s your friend?"
             <f>She</f> throws a marshmallow at you. 
             -
         "This year I want to prove <f>her</f> wrong. And I've asked myself, what's the scariest couple to bring to a Halloween party?"
         You search fruitlessly for a sensible answer.
         Laura looks at you with anticipation.
-            + "Bonnie and Clyde?"
-            + "Woody Allen and Soon-Yi?"
+            + ["Bonnie and Clyde?"]"<f>Bonnie</f> and <m>Clyde</m>?"
+            + ["Woody Allen and Soon-Yi?"]"<m>Woody Allen</m> and <f>Soon-Yi</f>?"
             + "My parents?"
             -
         <f>Laura</f> lifts up the denim pieces.
@@ -509,7 +507,7 @@ VAR amab_tre = 1
         "I found two costumes but I didn't really like them so I took them apart to make them better but um, I make video games, I'm not a seamstress. And I thought you could help, and in return I'll put on your makeup!"
             + "I haven't sewn since I was thirteen!"
             "I'm sure it's like riding a bike."
-            + "Makeup?"
+            + ["Makeup?"]"<f>Makeup</f>?"
             + "Can't we just go dressed like ourselves?"
             <f>Laura</f> ignores you.
             -
@@ -638,7 +636,7 @@ VAR amab_tre = 1
         <f>Her</f> eyes are streaked with tears.
         Outside fires and noises of celebration, children screaming.
         And there, at the bottom of it all, with your body and head emptied, you have the answer.
-            + "I am not a [boy."]<>           
+            + "I am not a [boy."]<>
              -
         <m>boy</m> or a <f>girl</f>. Or something in between, but more like something else. Like I keep wondering if this thing is white or yellow or black when it's purple, and I didn't even know purple existed."
         Laura looks at you confused.
@@ -650,8 +648,8 @@ VAR amab_tre = 1
         "This is something we're going to do together, finding this purple thing, okay? You're not alone, lonely, whatever. Fuck. I'm here. I love you. I'm going to say some shit and for that I already apologize but in short..."
         You shush her with a kiss.
             + "Are we going to show this new me to the world?"
-            + "Do you know how angry Marika will be[?"] when <f>she</f>'s not the first in something for once?"
-            + "Come on, before I become the Britney of 2007!"
+            + "Do you know how angry [Marika will be?"]<f>Marika</f> will be when <f>she</f>'s not the first in something for once?"
+            + "Come on[!], before I become the <f>Britney</f> of 2007!"
             -
         "I've got a plan B: a <f>lesbian</f> <f>girl</f> party, a quiet place to hang out, a couple of old school friends should be there too!"
         The way <f>she</f> looks at you makes you feel invincible.
@@ -672,8 +670,9 @@ VAR amab_tre = 1
             -
         "I'd been noticing for a long time that there's something going on inside you. I wondered what would happen if that thing never came out, and I didn't like any of the answers, not at all."
         She sits down next to you.
-            +"I know what I'm not, Laura[“]. I don't feel like a <m>man</m>, but I don't feel like a <f>woman</f> either. It's like being asked to choose only between eating an apple or a pear, when my mouth is full of the taste of every berry."
-                "Apples are boring!" jokes <f>Laura</f>.
+            +"I know what I'm not, [Laura.“]<f>Laura.</f> I don't feel like a <m>man</m>, but I don't feel like a <f>woman</f> either. It's like being asked to choose only between eating an apple or a pear, when my mouth is full of the taste of every berry."
+            -
+        "Apples are boring!" jokes <f>Laura</f>.
             + "Not when cooked with sugar and cinnamon."
             -
         "This metaphor is getting creepy," <f>she</f> kisses you, "but I think I get it."
@@ -686,7 +685,7 @@ VAR amab_tre = 1
             -
         <f>She</f> relaxes, smiling.
         "You're right. Only one thing matters: we'll find them together. We'll find the berries and my heterosexuality or whatever it is."
-            + "Can you imagine Marika[?"] not knowing how to introduce us to <f>her</f> friends anymore?"
+            + "Can you imagine [Marika?"]<f>Marika</f> not knowing how to introduce us to <f>her</f> friends anymore?"
             -
         "Speaking of <f>Marika</f>: do you feel like going to that party?"
         You look in the mirror.
@@ -774,7 +773,7 @@ VAR amab_tre = 1
         You trust <f>her</f>, but that doesn't erase the boredom.
         Some <m>guys</m> are chasing each other.
         That loudmouth <m>Lorenzo</m> brought a <m>ball</m>, they're making teams.
-            + "Mom?"
+            + ["Mom?"]"<f>Mom</f>?"
             -
         <f>She</f> ignores you.
         Across the yard your classmates are chatting.
@@ -888,7 +887,7 @@ VAR amab_tre = 1
                     -
                 <f>Chloe</f> walks over to the tree, rests <f>her</f> hand on it and looks up.
                 "What if I lose?"
-                    + "You and Marika stop making me be a princess["] every day, and let me be a <m>hunter</m>, or a <m>dragon</m>."
+                    + ["You and Marika stop making me be a princess"]"You and <f>Marika</f> stop making me be a <f>princess</f> every day, and let me be a <m>hunter</m>, or a <m>dragon</m>."
                     -
                 <f>Chloe</f> doesn't wait for you, and starts climbing.
                 You dive onto the lowest branch.
@@ -950,13 +949,13 @@ VAR amab_tre = 1
         Yet you got the okay, found over thirty willing <f>female</f> students, and the squatting began.
         "Do you think <f>Marika</f> could really use all of this?"
         Chloe hands the cigarette back to you.
-            + "At least she'll know she's not alone."
+            + ["At least she'll know she's not alone."]"At least <f>she</f>'ll know <f>she</f>'s not alone."
             -
         "There's nothing more we can do, I'm afraid."
         <f>Emma</f> looks out of the window.
         <f>Marika</f>: suspended after reporting that abuser of the <m>principal</m>.
         And no one willing to do anything about it
-            + "And then tomorrow Lorenzo will be in deep shit!"
+            + ["And then tomorrow Lorenzo will be in deep shit!"]"And then tomorrow <m>Lorenzo</m> will be in deep shit!"
             -
         "I wonder if <m>his</m> majesty as well as eternal school representative <m>Lorenzo</m> Shitface Guagliotti will do something useful.”
         "Naa, <m>he</m>'ll say something about the laws to respected and the need to cooperate with the teachers."
@@ -966,16 +965,16 @@ VAR amab_tre = 1
         <f>Chloe</f> stares at you smiling, proud and in love.
         <f>Emma</f> reads something in <f>her</f> gaze.
         <f>She</f> never asked you anything, but <f>she</f> knows.
-        "I'm going to go down to the twins, try to get some sleep."
+        "I'll go downstairs with <f>Laura</f> and the other <f>girls</f>, try to get some sleep."
         You hug her.
             + "Take care of the younger ones!"
-            + "I love you, Bunny!"
+            + ["I love you, Bunny!"]"I love you, <f>Bunny</f>!"
             + "If you don't feel like it, no one will judge you."
             <f>She</f> smiles at you, tired, "We started together, let's finish together."
             -
         As the door closes, <f>Chloe</f> kisses you.
         "How are you so cool?"  #completion_33
-            + "I feed off of Lorenzo's anger."[]
+            + ["I feed off of Lorenzo's anger."]"I feed off of <m>Lorenzo</m>'s anger."
             <f>She</f> gives you another kiss. "I was hoping it was a little bit about me."
             + "I steal beauty from young virgins."[]
             "Then I'm safe," <f>she</f> replies mischievously.
@@ -996,7 +995,7 @@ VAR amab_tre = 1
             -
         You get off the desk.
         "What answer is 'uh'?"
-            + "I haven't told her anything yet."
+            + ["I haven't told her anything yet."]"I haven't told <f>her</f> anything yet."
             -
         "But that won't be a problem for <f>her</f>, will it? <f>She</f> even saw the pictures from last Pride!"
         And it didn't go so well.
@@ -1047,7 +1046,7 @@ VAR amab_tre = 1
         To ignore.
         Maybe they're not that important, right?
         When <f>she</f> starts snoring you're still there, eyes wide open and brain locked on one question, one question only. #almost_there
-            + "Am I a girl?" 
+            + ["Am I a girl?"] "Am I a <f>girl</f>?" 
             -
     -> bullet_hell_due_afab
     
@@ -1083,7 +1082,7 @@ VAR amab_tre = 1
             +"What's wrong with the neighborhood?"[] you ask without thinking.
             -
         Chloe elbows you and whispers, "Be nice, they're the ones funding us."
-            + You smile [them.] to the two women who are looking at you.
+            + You smile [them.] to the two <f>women</f> who are looking at you.
             -
         "You <f>girls</f> did a really great job, congratulations," says the fake <f>Portia</f>.
         "Maybe the title is a little prosaic," comments the fake <f>Ellen</f>.
@@ -1096,7 +1095,7 @@ VAR amab_tre = 1
         <f>Emma</f> slips <f>her</f> arm under yours.
         <f>She</f>'s dressed like <f>she</f> just got out of the shower, with a giant scarf/towel over <f>her</f> hair.
         "Can I talk to you?"
-            + You cast a glance at Chloe[], who is caught up in revering the couple.
+            + You cast a glance at [Chloe]<f>Chloe</f>, who is caught up in revering the couple.
             -       
         The impromptu disco is already full, hundreds of <f>women</f> jiggling and dancing and chatting. #completion_33
         Several of them have "Three Fucking <f>Dykes</f>" pins.
@@ -1105,7 +1104,7 @@ VAR amab_tre = 1
         <f>She</f> drags you out to the back of the club.
         <f>She</f> catches <f>her</f> breath, <f>she</f>'s shivering a little but you know <f>her</f> well enough to know it's not because of the cold.
         You pass an arm around her neck.
-            + "Are you okay Bunny?"
+            + "Are you okay [Bunny?"]<f>Bunny</f>?"
             -
         "I'm leaving the association."
         It's a cold, unexpected blow.
@@ -1118,14 +1117,14 @@ VAR amab_tre = 1
         "Those are Chloe's words, for fuck's sake. You know you’re my bestie, right?"
             + [Stay silent]
             + [You nod]
-            + "And you’re mine, Bunny."
+            + "And you’re mine, [Bunny."]<f>Bunny</f>."
             -
         <f>She</f> takes your hands.
         "You're not yourself anymore, <f>Elisa</f>. You're basically just obeying <f>Chloe</f>, never questioning <f>her</f>. Where's the <f>Elisa</f> who used to say "fuck you!" to everyone? The one who was trying to save the world? The one whose couch housed tons of <f>girls</f> kicked out of their home?"
         There's a cold knock somewhere in your belly.
         Where you've put a defense system that has been firing at everything lately, indiscriminately, as long as you don't look inside.
             + You head back inside the club[], but <f>Emma</f> stops you.
-            + You let go of Emma's hand[], reaching into your tight pockets for a cigarette.
+            + You let go of [Emma's hand]<f>Emma</f>'s hand, reaching into your tight pockets for a cigarette.
             + "Some people have decided to grow up, and some haven't."
             You say that in a mean way, but <f>she</f> doesn't let go.            
             -
@@ -1244,7 +1243,7 @@ VAR amab_tre = 1
                 The noise at the entrance is driving people away, the music has stopped, but you only notice <f>Emma</f> looking at you worriedly.
                 You wonder if <f>she</f> can really see you, see what you are.
                 Because you've been denying yourself for so long, and you now have no answers.
-                    + "I don't know who I am, Emma."
+                    + "I don't know who I am, [Emma."]<f>Emma</f>."
                     -
                 You feel yourself falling. The alcohol alters everything.
                 The fall is endless, slowed by the comments of a lifetime.
@@ -1275,7 +1274,7 @@ VAR amab_tre = 1
             You look for something to say, and realize there's plenty of room now in your head.
             Space for new words.
             The chill in your belly is gone.
-                + "Emma."
+                + ["Emma."]"<f>Emma</f>."
                 -
             Your friend looks at you worriedly.
                 + "I'm scared."
@@ -1285,23 +1284,23 @@ VAR amab_tre = 1
             Who tells you that everything is going to be okay.
             Slowly, you catch your breath, you let go of <f>her</f>.
             You never realized how much <f>her</f> friendship was your safe place.
-                + "Emma, I don't think I'm a [girl."]<f>girl</f>."
+                + ["Emma, I don't think I'm a girl."]"<f>Emma</f>, I don't think I'm a <f>girl</f>."
                 -
             She remains silent, touching your hair.
-                + "Nor a [boy."]<m>boy</m>."<>
-                and when I saw Luca earlier, when I saw how happy they were in that other way, I thought, "That's where I belong. And it scared me."
+                + "Nor a [boy."]<m>boy</m>.<> 
+                And when I saw Luca earlier, when I saw how happy they were in that other way, I thought, "That's where I belong. And it scared me."
                 -
             "What's the worst thing that could happen to you if it did?"
-                +"I would lose Chloe."
+                +"I would lose [Chloe."]</f>Chloe</f>."
                 -
             "What if you keep not looking for an answer to that question?"
             You remain silent.
             You realize that the alternative is losing yourself.
-                +"I think I'm going to need your support, Emma."
+                +"I think I'm going to need your support, [Emma."]<f>Emma</f>."
                 -
             "I'm not going anywhere honey, but don't call me Emma again or I will start to scream."
             You point to her costume foulard, messy because of the night and the running.
-                +"May I, Bunny?"
+                +"May I, [Bunny?"]<f>Bunny</f>?"
                 -
             <f>She</f> hands it to you, you ask <f>her</f> to close <f>her</f> eyes.
             It's immense, you use it to bind your breasts tight, to make them disappear.
@@ -1337,14 +1336,14 @@ VAR amab_tre = 1
         "Not always, only when it comes to win at football."
         <f>She</f> holds out <f>her</f> hand to you, an invitation to stand up.
         "You always listen to what the teacher or <f>Marika</f> or the other <m>boys</m> say, but it's not like they know everything and you don't."
-            +"Omar says I have to be like them."
+            +["Omar says I have to be like them."]"<m>Omar</m> says I have to be like them."
             -
         "It's not like <m>Omar</m> knows everything too. Look at you."
         <f>She</f> turns you around.
         There is an abandoned storefront in front of you.
         "You are you, period. I am me. Period. They do what they want, we do what we want."
         You look into the store window, and you begin to see something, something that wasn't there before, something that had been covered up by the words of your <m>brother</m> and the <m>boys</m> and the teachers and your <f>mother</f>. #almost_there   
-            + ["Elisa, you want to hear something good?"]
+            + ["Elisa, you want to hear something good?"]"<f>Elisa</f>, you want to hear something good?"
             -
         -> bullet_hell_buono
 
@@ -1371,14 +1370,14 @@ VAR amab_tre = 1
         You stare into <m>Omar</m>'s eyes.
         "<f>LuLu</f>, did you hit your head?"
         LuLu, again.
-            + "I've had enough, Omar.["] Of your <f>LuLu</f>, <f>faggot</f>, <m>gay</m>, <m>fag</m>, <f>sissy</f>, <f>lesbian</f>, and so on. You're not even that original, and they hurt. They hurt."
+            + "I've had enough[!"]! Of your <f>LuLu</f>, <f>faggot</f>, <m>gay</m>, <m>fag</m>, <f>sissy</f>, <f>lesbian</f>, and so on. You're not even that original, and they hurt. They hurt."
             -
         "Because you're..."
             + "Because I'm not you[."], and that's okay. That's enough. I don't have to look like you, I don't even want to, why should I?"
             -
         Your <m>brother</m> clenches <m>his</m> lips and fists.
         "It's time for me to go."           
-            + "Omar?"
+            + ["Omar?"]"<m>Omar</m>?"
             -
         Your <m>brother</m> stops.
             + "Let me be who I am[."], if you love me."
@@ -1418,10 +1417,10 @@ VAR amab_tre = 1
         She tried to smile to you, "and you will have to trust me. In return, you put up with the nuns until the end of primary school, and then that's it."
         You look at your hands, because you don't know what to say. It's the first time you've been treated like an adult.
         And then you realize you know one thing.
-            + "Mom? I'd like to get a haircut."
+            + ["Mom? I'd like to get a haircut."]"<f>Mom</f>? I'd like to get a haircut."
             -
         "That sounds like an easy request, honey," <f>she</f> musses your long curls.
-            +"I want it shaved like Lorenzo."
+            +["I want it shaved like Lorenzo."]"I want it <m>shaved</m> like <m>Lorenzo</m>."
             -
         <f>Mom</f> is about to say something, then stops.
         "Would you like me to cut them for you?"
@@ -1431,7 +1430,7 @@ VAR amab_tre = 1
         When <f>she</f> pulls away <f>her</f> eyes are wet.
         <f>She</f> walks you to the bathroom, and as the locks fall off you feel like a veneer is disappearing.
         And as it disappears, something emerges. #almost_there
-            + ["Mommy, I see myself!"]
+            + ["Mommy, I see myself!"]"<f>Mommy</f>, I see myself!"
             -
     -> bullet_hell_buono
     
@@ -1444,12 +1443,11 @@ VAR amab_tre = 1
         <f>She</f>'s reading something, and <f>she</f> smiles at you when you wake up, a small, sad smile.
         "<f>Chloe</f> left last night, I'm sorry."
         It hurts you more than you want it to.
-            + You get up and lean against her[],
-            <> you need comfort.
+            + You get up and lean against [her],<f>her</f>, you need comfort.
             -
         <f>She</f> holds you tight, giving you all the time in the world.
         When you pull away, she tells you that the demo below is waiting for you.
-            + "Bunny, what do you think I am?"
+            + ["Bunny, what do you think I am?"]"<f>Bunny</f>, what do you think I am?"
             -
         "What do you mean?"
             + "I don't, I don't feel like a [girl."]<f>girl</f>. Or even a <m>boy</m>. Or anything in between. More of an "other", different thing. But every time I think about it, I'm gasping, I feel like I'm dying. And because of this thing, <f>Chloe</f> will be gone."
