@@ -307,7 +307,7 @@ VAR amab_tre = 1
         + "It takes courage to break the rules.["]
         <> I would like to be like <f>her</f>."
         + "You two are so much alike.["]
-        <> <f>Her</f> nets were made of wool and yours of bits, but you have so much in common." <f>Laura</f> laughs, "Woah, I didn't know you were a poet!"
+        <> <f>Her</f> nets were made of wool and yours of bits, but you have so much in common." <f>Laura</f> laughs, "Woah, I didn't know you were a <f>poet</f>!"
         + ["Mom never got it."]"<f>Mom</f> never got it. What matters to <f>her</f> is what other people think and that's it."
         -
     

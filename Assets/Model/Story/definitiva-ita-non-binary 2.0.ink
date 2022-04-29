@@ -311,7 +311,7 @@ VAR amab_tre = 1
             + “Ci vuole coraggio[..."] a rompere le regole.”
             <> Vorrei essere come <f>lei</f>.”
             + “Vi somigliate tanto, voi due.[”]
-            <> Le sue reti erano di lana e le tue di bit, ma avete tanto in comune.” <f>Laura</f> ride: "Woah, non sapevo fossi un <m>poeta</m>!"
+            <> Le sue reti erano di lana e le tue di bit, ma avete tanto in comune.” <f>Laura</f> ride: "Woah, non sapevo fossi un <f>poeta</f>!"
             + [“Mamma non l’ha mai capita“] "<f>Mamma</f> non l'ha mai capita, per <f>lei</f> l’importante è quello che pensano gli altri e basta.”
             -
         
