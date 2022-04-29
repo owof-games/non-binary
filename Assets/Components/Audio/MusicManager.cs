@@ -59,6 +59,8 @@ public class MusicManager : BehaviourManager
     public struct AudioGroupEntry
     {
         public string Name;
+        [Range(0f, 1f)]
+        public float Volume;
         public AudioClip[] AudioClips;
     }
 
@@ -115,6 +117,7 @@ public class MusicManager : BehaviourManager
                     if (!audioSource.isPlaying)
                     {
                         audioSource.clip = clip;
+                        audioSource.volume = audioEntry.Volume;
                         this.Info("playing SFX {0}", clip.name);
                         audioSource.Play();
                         return;

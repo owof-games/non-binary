@@ -851,34 +851,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
         type: 3}
-      propertyPath: SFXEntries.Array.data[1].Name
-      value: hit_finale
+      propertyPath: SFXEntries.Array.data[0].Volume
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
         type: 3}
-      propertyPath: SFXEntries.Array.data[2].Name
-      value: launch_word_bullet
+      propertyPath: SFXEntries.Array.data[1].Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
         type: 3}
-      propertyPath: SFXEntries.Array.data[0].AudioClips.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 112e4e776ce3416468440fb7434f1487, type: 3}
-    - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
-        type: 3}
-      propertyPath: SFXEntries.Array.data[1].AudioClips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: e4c0db53a6aeade43af4b28f79011563, type: 3}
-    - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
-        type: 3}
-      propertyPath: SFXEntries.Array.data[1].AudioClips.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: e4c0db53a6aeade43af4b28f79011563, type: 3}
-    - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
-        type: 3}
-      propertyPath: SFXEntries.Array.data[2].AudioClips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 112e4e776ce3416468440fb7434f1487, type: 3}
+      propertyPath: SFXEntries.Array.data[2].Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2191811226805912324, guid: d62f82c6c48e4e44f98bff9bb6465cce,
         type: 3}
       propertyPath: m_Name
