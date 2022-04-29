@@ -81,7 +81,7 @@ VAR amab_tre = 1
         Passi dalle braccia di <f>mamma</f> a quelle di <f>nonna</f>, <f>zie</f> e <m>zii</m> che ti corrono attorno.
         La tua cameretta è già piena: un lettino con coperte <m>azzurre</m>, <m>azzurre</m> le tendine, <m>azzurre</m> le pareti.
         <m>Azzurro</m> l'armadio, il tappeto, il pigiamino che ti mettono.
-        Rosa le tue guance mentre fanno commenti sul tuo pisellino.
+        Rosa le tue guance mentre fanno commenti sul tuo <m>pisellino</m>.
         Su una mensola una serie di peluches: un’<m>auto</m>, un <m>pompiere</m>, un orsacchiotto, un <m>bulldog</m>, un <m>pallone</m> da <m>calcio</m>.
         Tuo <m>fratello</m> ti mette il <m>pallone</m> tra le mani, se la ride.
         “Queste sono mani da <m>portiere</m>, guarda che presa!”
