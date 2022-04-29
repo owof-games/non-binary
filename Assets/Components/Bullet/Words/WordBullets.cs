@@ -44,6 +44,8 @@ public class WordBullets : MonoBehaviour
     {
         if (newStoryStep.Kind == StoryStepKind.Text)
         {
+            this.Verbose("Starting word bullets coroutine with {0} mtags and {1} ftags",
+                newStoryStep.NumMTags, newStoryStep.NumFTags);
             _LastNumMTags = newStoryStep.NumMTags;
             _LastNumFTags = newStoryStep.NumFTags;
             StartCoroutine(OnLaunchWordBullets(newStoryStep.Text.Length * BulletDelayPerLetter));
@@ -84,6 +86,6 @@ public class WordBullets : MonoBehaviour
         var destroyOnCollision = go.GetComponent<DestroyOnCollision>();
         destroyOnCollision.Damage = _WordBulletDamage.Value;
         // emit a sound to attract attention
-        _PlaySFX.Raise("hit");
+        _PlaySFX.Raise("launch_word_bullet");
     }
 }

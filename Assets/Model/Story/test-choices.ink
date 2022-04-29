@@ -47,6 +47,10 @@ Questo è l'intro AMAB
 
 Finalmente ti vedi. #people
 
+$bullet_hell_amab_uno$
+
+Finale
+
 // Infanzia<br/>Estate<br/>Parco giochi #title
 
 // Titolo della sezione. #title
