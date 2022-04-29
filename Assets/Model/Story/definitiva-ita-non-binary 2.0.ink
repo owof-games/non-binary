@@ -106,7 +106,7 @@ VAR amab_tre = 1
         Il tono di chi dice qualcosa di ovvio.
             + “E quindi?”
             -
-        “E quindi non puoi fare Ariel perché è una <f>prin</f>-<f>ci</f>-<f>pes</f>-<f>sa</f>. A noi ci serve un <m>principe</m>, sei qui solo per questo!”
+        “E quindi non puoi fare <f>Ariel</f> perché è una <f>prin</f>-<f>ci</f>-<f>pes</f>-<f>sa</f>. A noi ci serve un <m>principe</m>, sei qui solo per questo!”
         <f>Marika</f> ha le braccia strette al petto e ti guarda come se tu fossi la cosa più stupida al mondo.
         Le altre <f>bimbe</f> sono annoiate.
         <f>Laura</f> continua a sbuffare, <f>Pallina</f> lancia sassi alle lucertole.
@@ -169,7 +169,7 @@ VAR amab_tre = 1
         Netta si infila tra voi due.
         Colpisce il fiore.
         La palla cade a terra e porta tutti i petali con sé.
-        <f>Pallina</f> si gira, urla un “Cretino!” e corre contro a qualcuno, lasciandoti lì.
+        <f>Pallina</f> si gira, urla un “<m>Cretino</m>!” e corre contro a qualcuno, lasciandoti lì.
         Ti chini per raccogliere i petali.
         “<f>Guardatela</f>, la <f>femminuccia</f>.”
         Risate.
@@ -292,9 +292,9 @@ VAR amab_tre = 1
         Non vanno molto d’accordo. Quando vi siete messi assieme <m>Omar</m> era contento (“Quindi non sei <f>frocio</f>!”), ma <f>Laura</f> è convinta che abbia una pessima influenza su di te.
         “<f>Due ragazzine</f> di quindici anni a stare dietro a una <f>vecchia</f> rincoglionita?”
         Laura fa per dire qualcosa ma la interrompi.
-            + “È tua nonna, cazzo!”
+            + [“È tua nonna, cazzo!”] “È tua <f>nonna</f>, cazzo!”
             + “Almeno sarebbe stata felice.”
-            + “Così mamma può vendere la casa[."] e farci i soldi.”
+            + [“Così mamma può vendere la casa."]"Così <f>mamma</f> può vendere la casa e farci i soldi.”
                 “I soldi servono per pagare la casa di riposo, idiota.”
             -
         Continuate a inscatolare in silenzio, l’unico rumore è lo spostarsi degli oggetti.
@@ -767,14 +767,14 @@ VAR amab_tre = 1
         Una <f>bella</f> <f>statuina</f> col <f>vestito a fiori</f>, le <f>scarpe bianche</f> e i <f>capelli raccolti</f>.
         Ha passato tutto il viaggio in auto a dirti che dovete fare una buona impressione.
         Che l'incontro genitori/insegnanti è un momento in cui i genitori vengono giudicati severamente.
-        Che un genitore solo è sempre colpevole, e per questo non dovete fare nessun errore.
+        Che una <f>madre</f> single solo è sempre colpevole, e per questo non dovete fare nessun errore.
         Pensi che non abbia molto senso, ma ti fidi di <f>lei</f>.
             + [Guardi fuori]
             -
         Ti fidi, ma questo non cancella la noia.
         Dei <m>ragazzi</m> si rincorrono.
         Quello sbruffone di <m>Lorenzo</m> ha portato un pallone, stanno facendo le squadre.
-            + [“Mamma?”]"<f>Mamma?</f>"
+            + [“Mamma?”]"<f>Mamma</f>?"
             -
         Ti ignora.
         Dall’altro lato del giardino le <f>compagne</f> di classe chiacchierano.
