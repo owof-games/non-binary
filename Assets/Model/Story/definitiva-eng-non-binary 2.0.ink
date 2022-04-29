@@ -61,8 +61,8 @@ VAR amab_tre = 1
     === intro_amab ===
     ~ gender = 2
     ~ amab_tre = 0
-        <f>Mom</f> and the car rock you on the ride home. #street
-        "Luca! You're barely born and you're already got a sly face!"
+        Mom and the car rock you on the ride home. #street
+        "Luca! You're barely born and you already got a sly face!"
         <m>Dad</m> is on a roll.
         <f>Mom</f>'s laugh shakes you from your slumber.
         Outside the window your little eyes see a blurry world of lights and contours, silhouettes and glows.
@@ -96,6 +96,7 @@ VAR amab_tre = 1
         They tell each other what your future is going to be, they laugh, they draw boundaries. 
         Their words fall on your eyes.
         Outside, along the road, you see less and less variety, shapes and colors fade until all that remains is an expanse of <m>blue</m> <m>squares</m> and <f>pink</f> <f>triangles</f>. #people
+        Everything looks the same.
             + [You cry]
             -
         -> atto_amab_uno
@@ -287,7 +288,7 @@ VAR amab_tre = 1
         -
     "Why didn't you accept our proposal?" <f>Laura</f> has <f>her</f> hands on <f>her</f> hips and stares at <m>Omar</m>.
     They don't get along very well. When you got together <m>Omar</m> was happy ("So you're not a <f>faggot</f>!"), but <f>Laura</f> is convinced <m>he</m>'s a bad influence on you.
-    "Two fifteen year old dykes to stand behind an old crazy lady?"
+    "Two fifteen-year-old dykes to stand behind an old crazy lady?"
         + ["She's your fucking grandmother!"]"<f>She</f>'s your fucking <f>grandmother</f>!"
         + ["At least she'd be happy."]"At least <f>she</f>'d be happy."
         + ["So Mom can sell the house."]"So <f>Mom</f> can sell the house and make money off of it."
@@ -1055,7 +1056,7 @@ VAR amab_tre = 1
     -> atto_afab_tre
     
     === atto_afab_tre ===
-    Adulthood<br/>Autumn<br/>At disco  #title
+    Adulthood<br/>Autumn<br/>At the disco  #title
     
         You watch your <f>mom</f> and <f>Chloe</f> talk at the club counter. 
         You still can't get over how things have changed.

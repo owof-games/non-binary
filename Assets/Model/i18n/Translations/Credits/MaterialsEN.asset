@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
-  _value: '<b>Materials and tools</b><br/>Music: ASCARI<br/>Font: OpenDyslexic<br/>Text
+  _value: "<b>Materials and tools</b><br/>Music: ASCARI<br/>Font: OpenDyslexic<br/>Text
     language: Ink (Inkle)<br/>Programming environment: Unity<br/><br/><b>Beta testers</b><br/>Andrea
-    Nannerini, Marta Ciaccasassi, Aurelio Castro.<br/><br/><b>Translators</b><br/>mickey
-    (English), Alex Fernandez (Spanish)'
+    Nannerini, Marta Ciaccasassi, Aurelio Castro, Cristiano Brignola, Rimini Lazzaroni,
+    Alex Fern\xE1ndez.<br/><br/><b>Translators</b><br/>mickey (English), Alex Fern\xE1ndez
+    (Spanish)"

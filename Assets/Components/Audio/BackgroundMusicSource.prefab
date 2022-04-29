@@ -214,17 +214,17 @@ MonoBehaviour:
     NotLooping: 1
   SFXEntries:
   - Name: hit
-    Volume: 0
+    Volume: 0.4
     AudioClips:
     - {fileID: 8300000, guid: d68fa6df7b32e7846b2da19cd0fc2cb3, type: 3}
     - {fileID: 8300000, guid: 715ab2afbeba5ed48972269440f33150, type: 3}
   - Name: hit_finale
-    Volume: 0
+    Volume: 1
     AudioClips:
     - {fileID: 8300000, guid: 112e4e776ce3416468440fb7434f1487, type: 3}
     - {fileID: 8300000, guid: e4c0db53a6aeade43af4b28f79011563, type: 3}
   - Name: launch_word_bullet
-    Volume: 0
+    Volume: 1
     AudioClips:
     - {fileID: 8300000, guid: 112e4e776ce3416468440fb7434f1487, type: 3}
     - {fileID: 8300000, guid: e4c0db53a6aeade43af4b28f79011563, type: 3}

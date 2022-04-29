@@ -34,10 +34,6 @@ public class WordBullets : MonoBehaviour
     [SerializeField]
     private IntConstant _WordBulletDamage;
 
-    private int _LastNumMTags;
-
-    private int _LastNumFTags;
-
     public float BulletDelayPerLetter = 0.005f;
 
     public void OnStoryStepChanged(StoryStep newStoryStep)
@@ -46,20 +42,18 @@ public class WordBullets : MonoBehaviour
         {
             this.Verbose("Starting word bullets coroutine with {0} mtags and {1} ftags",
                 newStoryStep.NumMTags, newStoryStep.NumFTags);
-            _LastNumMTags = newStoryStep.NumMTags;
-            _LastNumFTags = newStoryStep.NumFTags;
-            StartCoroutine(OnLaunchWordBullets(newStoryStep.Text.Length * BulletDelayPerLetter));
+            StartCoroutine(OnLaunchWordBullets(newStoryStep.Text.Length * BulletDelayPerLetter, newStoryStep.NumMTags, newStoryStep.NumFTags));
         }
     }
 
-    public IEnumerator OnLaunchWordBullets(float delay)
+    public IEnumerator OnLaunchWordBullets(float delay, int numMTags, int numFTags)
     {
         yield return new WaitForSeconds(delay);
-        for (var i = 0; i < _LastNumMTags; i++)
+        for (var i = 0; i < numMTags; i++)
         {
             LaunchBullet(_BlueBullet, FullLayout.Street.World.xMin, FullLayout.LeftSideText.World.yMin, FullLayout.LeftSideText.World.yMax, _ExtraRotationM);
         }
-        for (var i = 0; i < _LastNumFTags; i++)
+        for (var i = 0; i < numFTags; i++)
         {
             LaunchBullet(_PinkBullet, FullLayout.Street.World.xMax, FullLayout.RightSideText.World.yMin, FullLayout.RightSideText.World.yMax, _ExtraRotationF);
         }

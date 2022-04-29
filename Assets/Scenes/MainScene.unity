@@ -849,21 +849,6 @@ PrefabInstance:
       propertyPath: FadeOutDuration
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
-        type: 3}
-      propertyPath: SFXEntries.Array.data[0].Volume
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
-        type: 3}
-      propertyPath: SFXEntries.Array.data[1].Volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191811226805912322, guid: d62f82c6c48e4e44f98bff9bb6465cce,
-        type: 3}
-      propertyPath: SFXEntries.Array.data[2].Volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2191811226805912324, guid: d62f82c6c48e4e44f98bff9bb6465cce,
         type: 3}
       propertyPath: m_Name

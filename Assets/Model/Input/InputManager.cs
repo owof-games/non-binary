@@ -105,7 +105,9 @@ public class InputManager : BaseManager
 
     private void EnableCurrentActionMap(string actionMapName)
     {
-        BaseLogger.Info(this, $"setting action map from {_CurrentlyEnabledInputActionMap?.name} to {actionMapName}");
+        BaseLogger.Info(this, "setting action map from {0} to {1}",
+            _CurrentlyEnabledInputActionMap?.name,
+            actionMapName);
         if (_CurrentlyEnabledInputActionMap?.name == "ChoiceActionMap" &&
             actionMapName == "MovementActionMap")
         {
