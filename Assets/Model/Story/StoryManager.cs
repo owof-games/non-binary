@@ -13,7 +13,13 @@ public class StoryManager : BaseManager
 
     private StoryCache _CachedStoryManager;
 
-    private Ink.Runtime.Story _Story { get => _CachedStoryManager.GetStory(InkJSONAsset); }
+    private Ink.Runtime.Story _Story
+    {
+        get
+        {
+            return _CachedStoryManager.GetStory(InkJSONAsset, this, BaseLogger);
+        }
+    }
 
     public StoryStepVariable StoryStepVariable;
 
@@ -37,7 +43,7 @@ public class StoryManager : BaseManager
         _CachedStoryManager = new StoryCache();
         _CachedStoryManager.NewStoryObjectCreated += NewStoryObjectCreated;
         // Debug.Log("story: get");
-        _CachedStoryManager.GetStory(InkJSONAsset); // force creation
+        ForceStoryCreation();
         // Debug.Log("story: got");
 
         // register to events
@@ -69,15 +75,30 @@ public class StoryManager : BaseManager
         // Debug.Log("story: new story object created");
         _Story.ObserveVariable("gender", GenderChanged);
         // OnNextLine(true);
-        UnityMainThreadDispatcher.EventuallyEnqueue(Initialize());
+        BaseLogger.Verbose(this, "enqueuing initialize call in main thread");
+        UnityMainThreadDispatcher.EventuallyEnqueue(Initialize(InkJSONAsset));
     }
 
-    private IEnumerator Initialize()
+    private IEnumerator Initialize(TextAsset jsonAsset)
     {
         BaseLogger.Info(this, "initializing in a little while...");
         yield return new WaitForSeconds(0.1f);
-        BaseLogger.Info(this, "ok, initializing.");
-        OnNextLine(true);
+        if (jsonAsset != InkJSONAsset)
+        {
+            BaseLogger.Info(this, "skipping initialize because json asset was {0} and now is {1}",
+            jsonAsset.name, InkJSONAsset.name);
+            ForceStoryCreation();
+        }
+        else
+        {
+            BaseLogger.Info(this, "ok, initializing.");
+            OnNextLine(true);
+        }
+    }
+
+    private void ForceStoryCreation()
+    {
+        _CachedStoryManager.GetStory(InkJSONAsset, this, BaseLogger); // force creation
     }
 
     private void GenderChanged(string variableName, object newValue)
@@ -147,20 +168,15 @@ public class StoryManager : BaseManager
             _Story.currentChoices.Count, _Story.currentText.Trim(), string.Join(", ", _Story.currentTags));
         if (_Story.currentChoices.Count == 0)
         {
+            BaseLogger.Verbose(this, "ParseStoryStep: text node, setting to {0}", StoryStepVariable.Value);
             StoryStepVariable.Value = new StoryStep(
                 _Story.currentText.Trim(),
                 _Story.currentTags
             );
-            BaseLogger.Verbose(this, "ParseStoryStep: text node, setting to {0}", StoryStepVariable.Value);
-            // if (StoryStepVariable.Value.Kind == StoryStepKind.Marker)
-            // {
-            //     // immediately go on after sending the notifications
-            //     BaseLogger.Verbose(this, "ParseStoryStep: advancing because it is a marker");
-            //     OnNextLine();
-            // }
         }
         else
         {
+            BaseLogger.Verbose(this, "ParseStoryStep: choice node, setting to {0}", StoryStepVariable.Value);
             StoryStepVariable.Value = new StoryStep(
                 _Story.currentText.Trim(),
                 (from choice in _Story.currentChoices
@@ -171,7 +187,6 @@ public class StoryManager : BaseManager
                  }).ToArray(),
                 _Story.currentTags
             );
-            BaseLogger.Verbose(this, "ParseStoryStep: choice node, setting to {0}", StoryStepVariable.Value);
         }
     }
 }
