@@ -11,7 +11,7 @@ VAR amab_tre = 1
 //FUNZIONI
     -> random
     === random ===
-    Traduzione a cura di Alex David Fernández
+    + [Traducción de Alex David Fernández]
     ~ gender = RANDOM (1,2)
     
        {
@@ -61,200 +61,203 @@ VAR amab_tre = 1
     === intro_amab ===
     ~ gender = 2
     ~ amab_tre = 0
-        Mamma e l’auto ti cullano nel tragitto verso casa. #street
-        “Appena <m>nato</m> e ha già la faccia da <m>furbetto</m>!”
-        Papà è su di giri.
-        La risata di mamma ti scuote dal dormiveglia.
-        Fuori dal finestrino i tuoi occhietti vedono un mondo sfocato fatto di luci e contorni, sagome e bagliori. 
-        È tutto nuovo, bellissimo. Senti di poter essere qualunque cosa.
-            + [Fai un versetto]
+        <f>Mamá</f> en el coche, te acuna de camino a casa. #street
+        “Acaba de nacer mi <m>hijo</m> y ya tiene una <f>cara</f> de astuto!”
+        <m>Papá</m> está muy emocionado.
+        La risa de <f>mamá</f> te despierta.
+        Desde la ventana tus ojitos ven un mundo desenfocado, lleno de luces, contornos y siluetas. 
+        Es todo nuevo, bellísimo, sientes que puedes ser lo que quieras.
+
+            + [Haces un sonido]
             -
-        Vuoi condividere la tua gioia, ma le voci sono alte e ti ignorano.
-        “Secondo te avrà voglia di imparare il mestiere?”
-        Papà svolta a destra.
-        Mamma ti guarda.
-        “Il mio o il tuo?”
-        “Il mio! Dio, non voglio un <m>figlio</m> <f>estetista</f>!”
-        Scendete dall’auto.
-            + [Rigurgiti]
+        Quieres compartir tu dicha, pero las voces son altas y te ignoran.
+        “¿Crees que quiera aprender la profesión?”
+        <m>Papá</m> se gira a la derecha.
+        <f>Mamá</f> te observa.
+        “¿él mío o él tuyo?”
+        “El mío! Dios, no quiero un <m>hijo</m> <f>esteticista</f>!”
+        Se detiene el auto y se baja.
+
+            + [Vomitas]
             -
-        Non è che tu possa fare molto di più.
-        Passi dalle braccia di mamma a quelle di nonna, zie e zii che ti corrono attorno.
-        La tua cameretta è già piena: un lettino con coperte <m>azzurre</m>, <m>azzurre</m> le tendine, <m>azzurre</m> le pareti.
-        <m>Azzurro</m> l'armadio, il tappeto, il pigiamino che ti mettono.
-        Rosa le tue guance mentre fanno commenti sul tuo pisellino.
-        Su una mensola una serie di peluches: un’<m>auto</m>, un <m>pompiere</m>, un orsacchiotto, un <m>bulldog</m>, un <m>pallone da calcio</m>.
-        Tuo fratello ti mette il <m>pallone</m> tra le mani, se la ride.
-        “Queste sono mani da <m>portiere</m>, guarda che aggancio!”
-        Ti guarda pieno di ammirazione.
-            + Tu volevi solo qualcosa a cui aggrapparti[], questa gente dice troppe cose e ti gira la testa.
+        No es que puedas hacer mucho más.
+        Pasas de los brazos de <f>mamá</f> a los de la <f>abuela</f>, <f>tías</f> y <m>tíos</m> que te rodean.
+        Tu habitación está ya arreglada: una cuna con sabanas <m>azules</m>, <m>azules</m> las cortinas, <m>azules</m> las paredes.
+        <m>Azul</m> el armario, la alfombra, el pijama que te ponen.
+        Rosadas tus mejillas mientras comentan encima de tu <m>pipicito</m>.
+        Sobre un estante una serie de peluches: un <m>auto</m>, un <m>bombero</m>, un osito, un <m>bulldog</m>, una <m>pelota</m> de futbol.
+        Tu <m>hermano</m>te pone la <m>pelota</m> entre tus manos y se ríe.
+        “Estas son manos de portero, mira cómo la agarra!”
+        Te observa lleno de admiración.
+
+            + Tu solo querías algo a que agarrarte[], esta gente dice muchas cosas y te sientes confundido.
             -
-        Nonna chiede a tuo fratello se ti vuole tenere in braccio, lui dice che ha paura di romperti.
-        “Guarda che con un bimbo in braccio fai strage di ragazzine!”
-        “Mamma, ha solo dodici anni!”
-        Camminano e parlano, tutti. Si dicono come sarà il tuo futuro, discutono, ridono, tracciano confini. 
-        Le loro parole si posano sui tuoi occhi.
-        Fuori, lungo la strada vedi sempre meno varietà, forme e colori si sfumano fino a quando non rimane che una distesa di <m>quadrati azzurri</m> e <f>triangoli rosa</f>. #people
-        Tutto ti sembra uguale. 
-            + [Piangi]
+        La <f>abuela</f> pregunta a tu <m>hermano</m> si quiere tenerte en brazos, él dice que tiene miedo de romperte.
+        “Mira que tener un bebé entres los brazos impacta mucho a las <f>chicas</f>!”
+        <f>Mamá</f> exclama: “¡Tiene solo doce años!”
+        Todos caminan y hablan, comentan cómo será tu futuro, discuten, ríen, ponen límites. 
+        Sus palabras caen en tus ojos.
+
+        Afuera, a lo largo del camino ves menos variedad, formas y colores se mezclan hasta qué no queda más que un paisaje de <m>cuadrados</m> azules y <f>triangulas</f> <f>rosados</f>. #people
+        Todo te parece igual.
+            + [Lloras]
             -
         -> atto_amab_uno
     
     ===atto_amab_uno===
-    Infanzia. Estate. Parcogiochi. #title
+        Infancia. Verano. Patio de recreo. #title
     
-        “Perché sei un <m>maschio</m>!”
-        Il tono di chi dice qualcosa di ovvio.
-            + “E quindi?”
+        “Porqué eres un <m>macho</m>!”
+        El tono de quién dice algo de obvio.
+            + “¿Entonces?”
             -
-        “E quindi non puoi fare Ariel perché è una <f>prin-ci-pes-sa</f>. A noi ci serve un <m>principe</m>, sei qui solo per questo!”
-        Marika ha le braccia strette al petto e ti guarda come se tu fossi la cosa più stupida al mondo.
-        Le altre bimbe sono annoiate.
-        Laura continua a sbuffare, Pallina lancia sassi alle lucertole.
-        Il sole è caldo e il parco è pieno di grida festose.
-            + “Si fa sempre come vuoi te!”
-            + “Può farlo Pallina.”
-            + [La guardi con aria di sfida]
+        “Entonces no puede ser <f>Ariel</f> porqué es una <f>prin</f>-<f>ce</f>-<f>sa</f>. A nosotros nos sirve un <m>príncipe</m>, estás aquí exclusivamente por eso!”
+        <f>María</f> tienes los brazos cruzados y te mira cómo si tu fueses la cosa más estúpida del mundo.
+        Las otras <f>niñas</f> están aburridas.
+        <f>Laura</f> sigue bufando, <f>Pallina</f> lanza piedras a los lagartos.
+        El sol está cálido y el parque está lleno de voces felices.
+
+            + “¡Se hace siempre como dices tú!”
+            + “Puede hacerlo Pallina.”
+            + [La miras con actitud desafiante]
             -
-        “Sono la più grande quindi decido io e quindi tu sei il <m>Principe</m>.”
-        Marika si allontana con le treccine che ballonzolano.
-        Iniziano a chiacchierare, a pianificare.
-        Ogni tanto ti fanno qualche domanda ma a te non va proprio di rispondere ora.
-        Guardi il tuo zaino con i nuovi numeri di Ranma 1/2, e pensi che eri così felice di startene a leggere al sole.
-            + [Ti siedi e le ignori].
-            + Ti sforzi di seguire il discorso[], <>
-            	ma hai perso qualcosa di importante, è comparso un drago, cosa c'entra un drago?
-            + “Non avete fame?”[]. <>
-            	Laura ti passa la sua merendina sorridendoti. È sempre così gentile con te.	
+        “Soy la más grande así que mando yo y digo que tú eres <m>Príncipe</m>.”
+        <f>María</f> si aleja con sus trencitas que bailan.
+        Inician a hablar y a planificar.
+        De vez en cuando te hacen preguntas, pero no quieres responder.
+        Revisas tu morral con las nuevas ediciones de Ranma ½ y piensas que estabas más feliz leyendo mientras tomabas el sol.
+            + Te sientas[] en los escalones y las ignoras.
+            + Te esfuerza por seguir la conversación[], <>
+            	pero perdiste algo de importante, aparece un <m>dragón</m>, ¿Qué tiene que ver el <m>dragón</m>??
+            + “¿No tienen hambre?”[]. <>
+            	<f>Laura</f> te regala su merienda mientras te sonríe. Es siempre amable contigo.
             -
-        In fondo al parco tuo fratello Omar sta giocando con altri ragazzi.
-        Anche se è molto più grande di te, cerca sempre di giocare assieme. È un bravo fratellone.
-        "<m>Pal-lin-oooooooooooooo</m>!"
-        Marika stridula ti chiama.
-        “È ora di iniziare!”
-            + [Ti avvicini controvoglia].
+        Al otro lado del parque tu <m>hermano</m> <m>Omar</m> está jugando con <m>otros</m> <m>chicos</m>.
+        Aunque sea más grande que tú, siempre trata de jugar contigo. Es un <m>buen</m> <m>hermano</m>.
+        "¡<m>Pal</m>-<m>lin</m>-<m>oooooooooooooo</m>!"
+        <f>María</f> con voz chillona te llama.
+        “¡Vamos a comenzar!”
+            + [Te acercas sin muchas ganas].
             -
-        “Quindi Laura è la mia sorella piccola Pallina è la nostra mamma ma si è ammalata e ci serve la pozione ma ce l’ha il drago sotto la pancia e serve un eroe e stiamo chiamando...”
-        “E chi fa il drago?” Pallina interrompe Marika.
-        Le treccine tremano dal fastidio.
-        “Quella siepe è il drago.”
-        "Col cavolo! Il cespuglio è la mamma che tanto se è malata mica si muove, e io faccio il drago!"
-        Le due iniziano a litigare, decidi che è il caso di fare qualcosa.
-            + “Caricaaaa!”
+        “Entonces <f>Laura</f> es la <f>hermana</f> <f>pequeña</f>, <f>Pallina</f> es <f>nuestra</f> <f>madre</f>, pero se ha enfermado y necesitamos de poción que está debajo la barriga del <m>dragón</m> y solo un <m>héroe</m> valiente y llamamos…”
+        “¿Y quién hará el <m>dragón</m>?” <f>Pallina</f> interrumpe <f>María</f>.
+        Las trencitas tiemblan por el fastidio de la interrupción.
+        “Ese arbusto será el <m>dragón</m>.”
+        "¡Ni de broma! ¡El arbusto es la <f>mamá</f> que igual está enferma así que no se mueve, y yo seré el <m>dragón</m>!"
+        Las dos inician a pelear, así que decides que es momento de hacer algo.
+            + “¡A la cargaaaaaa!”
             -
-        Corri contro il drago che forse è la mamma, quando lo noti.
-        Unico, rosso fuoco fuori e giallo dentro.
-        Bellissimo, gigantesco.
-        Marika ti urla qualcosa. #completion_33
-            + [La ignori]
-            + Le dici di venire[], <>
-            	ma lei urla di correre contro il drago e non vuole che mamma muore e rimane orfana.
-            + Annusi il fiore[], <>
-            	ed è tipo la cosa più buona dell’universo, più buona anche delle torte di nonna.
+       Corres en contra el <m>dragón</m> que quizás sea la <f>madre</f>, cuando lo notas.
+        Único, rojo fuego fuera y amarillo dentro.
+        Bellísimo, gigantesco.
+        <f>María</f> te grita algo. #completion_33
+            + [La ignoras]
+            + Le dices que venga[], <>
+            	pero ella grita de correr hacia el <m>dragón</m> por qué no quiere que la <f>madre</f> fallezca y se quede <f>huérfana</f>.
+            + Sientes el olor de las flores[], <>
+            	Es la mejor cosa del universo incluso mejor que las tortas de la <f>abuela</f>.
             -
-        “Qualcuno ha strappato tutti gli altri."
-        Pallina è al tuo fianco. Ha ragione, ci sono boccioli ovunque tra l'erba.
-            + “Non è giusto[."], è così strano e bello.”
+        “Alguien ha cortado todas las demás."
+        <f>Pallina</f> está a tu lado. Tiene razón, hay cogollos en todas partes en la hierba.
+            + “No es justo[."], es extraño y bello.”
             -
-        Lei lo annusa.
-        Vi girate: Marika se ne sta andando, Laura la insegue.
-        “La prossima volta lo faccio io il principe!” La voce di Pallina è risoluta.
-            + “La prossima volta mi nascondo."
-            + “E Marika è il drago!”
-            + “Promesso?”[] <>
-            	E lei ti risponde sì, e se Marika rompe le scatole la butta nel fango.
+        Ella siente el olor.
+        Te giras junto a <f>Pallina</f>: <f>María</f> se está yendo, <f>Laura</f> la sigue.
+        “¡La próxima vez yo seré el <m>príncipe</m>!” La voz de <f>Pallina</f> es firme.
+            + “La próxima vez yo me escondo."
+            + “¡Y María es el dragón!”
+            + “¿Promesa?”[] <>
+            	Ella te responde que sí, y si <f>María</f> comienza a fastidiar la empuja al fango.
             -
-        E poi arriva una pallonata.
-        Netta si infila tra voi due.
-        Colpisce il fiore.
-        La palla cade a terra e porta tutti i petali con sé.
-        Pallina si gira, urla un “Cretino!” e corre contro a qualcuno, lasciandoti lì.
-        Ti chini per raccogliere i petali.
-        “Guardatela, la <f>femminuccia</f>.”
-        Risate.
-        Ti alzi, alle tue spalle qualche bambino.
-        Sono di poco più grandi, ogni tanto ti prendono di mira durante le pause a scuola, fanno i prepotenti con tutti. #completion_50
-            + [Stringi i pugni]
-            + Ti allontani[], <>
-            	qualcuno urla: “Ehi <m>frocetto</m>, sto parlando con te!”
-            + Rispondi per le rime[] con la voce più sicura che trovi, <>
-            	ma balbetti un “Siete scappati dallo zoo?”
+        De forma precisa se mete entre ustedes dos.
+        Pisa las flores.
+        La <m>pelota</m> cae a tierra y se lleva todos los pétalos consigo.
+        <f>Pallina</f> se voltea, grita “¡Idiota!” y corre hacia alguien, dejándote ahí.
+        Te agachas para recoger los pétalos.
+        “Mírenla,  la <f>niñita</f>.”
+        Risas.
+        Te levantas, detrás de ti hay un <m>niño</m>.
+        Son un poco más grande que tú, de vez en cuando te persiguen durante el recreo en la escuela, son unos pesados con todos. #completion_50
+            + [Aprietas los puños]
+            + Te alejas[], <>
+            	alguien grita: “¡Oye <f>mariquita</f>, te estoy hablando a ti!”
+            + Respondes a tono[] con la voz más segura que puedes hacer, pero balbuceas un “¿Sé escaparon del zoológico?”
             -
-        Ti arriva in testa una zolla di terra, ti pulisci gli occhi col dorso e non vedi chi ti butta sull'erba, schiacciandoti col suo peso.
-        Provi a scalciare, colpisci qualcosa, un gridolino ti dà soddisfazione.
-            + Cerchi di alzarti[], ma ti schiacciano di nuovo a terra.
-            + Provi con un altro calcio[], che però va a vuoto. 
-            + "Smettetela!"
+        Te llega a la cabeza un pedazo de tierra con césped, te limpias los ojos y no ves quien te tira a tierra, aplastándote con su peso.
+        Pruebas a patear, <m>golpeas</m> a algo, un grito te da la satisfacción de haber dado centro.
+            + Tratas de pararte[], pero te aplastan de nuevo a tierra.
+            + Pruebas con otra patada[], que falla. 
+            + ["¡Deténganse!"]
             -
-        Allunghi le mani, lanci quello che trovi, provi a graffiare, morsicare. 
-        Tutte cose <f>da donna</f> secondo tuo fratello. Gli <m>uomini</m> devono sapere <m>fare a pugni</m>.
-        “<f>Frocetto</f>!” ti manca l’aria.
-        Lorenzo, ora lo riconosci, abbozza un pugno per finta sul tuo naso, provi a mollargliene uno vero.
-        E Lorenzo inizia a volare.
-        La sorpresa ti toglie anche la voglia di rialzarti.
-        Passi veloci, qualche grido e poi una mano che si tende, quella di tuo fratello.
-            + [La afferri]
+        Estiras las manos, lanzas lo primero que consigues, pruebas a rasguñar y a morder. 
+        Solo cosas de <f>mujer</f> opina tu <m>hermano</m>.  Los <m>hombres</m> tienen que saber <m>dar puños</m>.
+        “¡Mariquita!” te falta el aire.
+        <m>Lorenzo</m>, ahora lo reconoces, finge un puño hacia tu nariz, pruebas a devolverle uno de verdad.
+        Y <m>Lorenzo</m> inicia a volar.
+        La sorpresa te quita las ganas de levantarte.
+        Pasos veloces, algunos gritos y después una mano que te ayuda a levantarte, tu <m>hermano</m>.
+            + [Agarras su mano]
             -
-        Ti solleva, ti passa dell’acqua, ti pulisce la faccia.
-        “Niente di grave”, ti dice sorridendoti.
-        Vi siedete sui gradini, recuperi dallo zaino due merendine mezze spappolate.
-            + [Gliene passi una]
+        Te levanta, te pasa el agua y te limpia la <f>cara</f>.
+        “Nada grave”, te dice sonriéndote.
+        Se sientan juntos en los escalones, recuperas tu bolso y dos dulces algo aplastados.
+            + [Le das una a tu hermano]
             -
-        “Che hai combinato questa volta, <m>Pal</m>?”
-        Gli racconti la storia del fiore.
-        Omar ride, ti passa la manona tra i capelli.
-        “Per un fiore, caz, capperi! Ti sei fatto menare per un fiore!” 
-            + “Era l’ultimo!”
-            ”Lo sai qual è la cosa bella dei fiori, Pal? È che ricrescono, a differenza della tua testolina che se te la rompi non ricresce più!”
-            + “Non volevo mica farmi picchiare!”
-            Omar sospira. Vedi che sta cercando le parole per dire qualcosa.
+        “¿Qué hiciste esta vez?, <m>Pal</m>?”
+        Le cuentas la historia de la flor.
+        <m>Omar</m> se ríe, te acaricia el cabello.
+        “¡Por una flor, joder, rayos! ¡Te dejaste golpear por una flor!” 
+            + “¡Era la última!”[]-
+            “¿Sabes que es lo hermoso de las flores, <m>Pal</m>? ¡Es que siempre nacen de nuevo, a diferencia de tu <f>pequeña</f> cabeza, si se rompe no crece de nuevo!”
+            + “¡No quería que me golpearan!”[].
+            <m>Omar</m> suspira. Ves que está buscando las palabras para decir algo.
             -
-        “<m>Pal</m>, non posso passare la vita a difenderti, lo sai vero?” #completion_70
-        “Ma mica lo voglio!”
-        “Però...” Omar guarda davanti a sé, tortura con le mani la cartaccia della merendina.
-        “Secondo te perché ce l’hanno con te, <m>Pal</m>?”
-        Che risposta si aspetta da te?
-            + “Perché sono stupidi!”
-            + “Perché non gioco con loro?”
-            + [Resti in silenzio]
+        “<m>Pal</m>,¿No puedo pasar toda la vida defendiéndote, lo sabes verdad?” #completion_70
+        “¡Tampoco quiero que lo hagas!”
+        “Pero...” <m>Omar</m> se pierde viendo el vacío, aplasta el envoltorio del dulce.
+        “¿Por qué crees que se fijan en ti, <m>Pal</m>?”
+        ¿Qué respuesta se espera de ti?
+            + “¡Porqué son estúpidos!”
+            + “¿Por qué no juego con ellos?”
+            + [Te quedas en silencio]
             -
-        “Sei sempre da solo o con le </f>bambine</f> o con la </f>nonna</f>. Coi <m>bambini</m> non ci stai mai, e questo è <m>strano</m>.”
-        Lancia la cartaccia nel cestino.
-            + “Gioco con te.”
+        “Estas siempre solo con  las <f>chicas</f> o con  la <f>abuela</f>. Con  los <m>chicos</m> no estas nunca, esto es <f>extraño</f>.”
+        Lanza el envoltorio a la basura.
+            + “Juego contigo.”
             -
-        “Che sono tuo fratello, ed è diverso. E sono grande, e un giorno non ci sarò quando servirà e questi mi preoccupa.”
-            + “Non voglio che ti preoccupi per me.”
+        “Que soy tu <m>hermano</m>, es diferente. Soy grande, un día no estaré cuando hará falta y me preocupa que pueda suceder.”
+            + “No quiero que te preocupes por mí.”
             -
-        Omar ti guarda negli occhi, serio.
-        “Devi imparare come si sta al mondo, fratellino. Gioca coi tuoi <m>compagni</m>, <m>menali</m> quando ti offendono, e lascia stare le bambine. Tanto vedrai che tra un paio d’anni non vorranno più giocare con te.”
-        Ti sorride.
-            + “Perché?”
+        <m>Omar</m> te mira a los ojos, con mucha seriedad.
+        “Tienes que aprender cómo se vive en el mundo, <m>hermanito</m>. Juego con tus <m>compañeros/m>, <m>golpéalos/m> cuando te ofenden y aléjate de las <f>niñas</f>. De igual forma verás que dentro algunos años ya no van a querer jugar contigo.”
+        Te sonríe.
+            + “¿Por qué?”
             -
-        “Perché vorranno fare <f>cose da ragazze</f>, e i ragazzi <m>cose da ragazzi</m>. Così va la vita.”
-        Forse la vita è stupida.
-            + “Tu sarai per sempre mio amico?”
+        “Porqué harán <f>cosas</f> de <f>chicas</f>, y los <m>chicos</m> <m>cosas</m> de <m>chicos</m>. Así es la vida.”
+        Quizás la vida es estúpida.
+            + “¿Tú siempre serás mi amigo?”
             -
-        “Sempre, <m>Pal</m>.”
-        Ti strofina una nocca sulla testa.
-        “Ma ora devo andare dalla morosa. Un’altra cosa che un giorno capirai.”
-        Lo osservi allontanarsi.
-        Prendi lo zaino e ti avvii verso casa.
-        La luce è bassa, le rondini corrono nel cielo.
-            + [Canticchi qualcosa]
+        “Siempre, <m>Pal</m>.”
+        Te frota con sus nudillos la cabeza.
+        “Pero ahora tengo que ir con mi <m>novia/m>. Otra cosa que un día entenderás.”
+        Observas cómo se aleja.
+        Agarras tu bolso e inicias el camino a casa.
+        La luz tenue, las golondrinas pasean por el cielo.
+            + [Cantas una melodía]
             -
-        Ti rendi conto che i pantaloni sono rotti, mamma si incazzerà a manetta.
-        Ma poi, grida dall’altra parte della strada.
-        Sono tutti lì in fila, i ragazzi di prima.
-        Noti che Lorenzo ha un occhio gonfio, speri sia merito tuo.
-        Ti stanno urlando contro.
-        Che sei una <f>femminuccia</f>, che non sei un <m>ragazzino</m>.
-        Che ti è caduto il <m>pisellino</m>, te l’ha mangiato il cane vero?
-        Che coi capelli lunghi <f>sembri una ragazza</f>.
-        Vorresti che Omar fosse con te, ma sei solo.
+        Te das cuenta que tus pantalones están rotos, <f>Mamá</f> se molestará muchísimo.
+        Pero después, sientes un grito desde el otro lado de la calle.
+        Están todos en fila, como si te esperaran, los <m>chicos</m> de antes.
+        Notas que <m>Lorenzo</m> tiene un ojo morado, esperas que sea merito tuyo.
+        Te están gritando muchas cosas.
+        Que eres  una <f>niñita</f>, que no eres <m>niño</m> de verdad.
+        Que se te cayó el <m>pipicito</m>, Se lo comió el perro, ¿verdad?
+        Con el cabello largo pareces una <f>chica</f>.
+        Quisieras que <m>Omar</m> estuviera contigo, pero estás solo.
         Solo.
-        Che cosa sei, <m>Pallino</m>?
-        Cosa sei?
-        Che razza di bambino sei? #almost_there
+        ¿Qué eres, <m>lentejuelas</m>?
+        ¿Qué eres?
+        ¿Qué tipo de <m>niño</m> eres? #almost_there
         -> bullet_hell_amab_uno
     
     === bullet_hell_amab_uno ===
@@ -262,195 +265,197 @@ VAR amab_tre = 1
     -> atto_amab_due
     
     === atto_amab_due ===
-    Adolescenza. Inverno. Da nonna. #title
+        Adolescencia. Invierno. A casa de la Abuela. #title
   
-        Casa di nonna è come un cumulo di foglie, strati su strati di oggetti.
-        Il salotto è invaso da quarant’anni di riviste di <f>moda</f>, <f>cucito</f>, <f>maglia</f>.
-            + [Prendi una copia di Burda]
+        La casa de la <f>abuela</f> es un cúmulo de flores, niveles y niveles de objetos sobrepuestos.
+        El salón está lleno de cuarenta años de revistas de <f>moda</f>, <f>costura</f>, <f>blusas</f>.
+            + [Agarras una copia de Burda]
             -
-        “Siamo qui per gettarla via ‘sta roba.”
-        Omar entra con in mano una marea di scatoloni.
-        Laura arriva da dietro e ti abbraccia.
-        “Tutto ok tesoro?”
-            + Fai sì con la testa[] e appoggi la rivista.
-            + Lanci la rivista contro Omar[], che si scansa e ti dà della schiappa.
-            + “Mi ha insegnato a cucire[.“] <>
-            di nascosto da mamma, da quando avevo dieci anni. Passavo qui le ore a leggere e a disegnare le decorazioni che poi lei faceva a maglia. Quando faceva freddo stavamo davanti alla TV a guardare documentari sui dinosauri e macinavamo chilometri di lana.”
-                ++ [Era bello]
+
+        Estamos aquí para botar todo esto.”
+        <m>Omar</m> entra con un montón de cajas en la mano.
+        <f>Laura</f> llega detrás y te abraza.
+        “¿Estás bien cariño?”
+            + Dices “Si” con la cabeza[] y colocas la revista en la mesa.
+            + Lanzas la revista a Omar<[], evita y te dice “perdedor”.
+            + “Me ha enseñado a cocer[.“] <>
+            Sin que <f>mamá</f> lo supiera, desde que tenía diez años. Pasaba aquí las horas a <f>leer y diseñar</f> las decoraciones que después ella hacía en <f>blusas</f>. Cuando hacia frio nos sentábamos delante la TV a ver documentarios de dinosaurios e hilábamos kilómetros de lana.”
             -
-        
-        “Non è mica morta”. Omar prende le altre riviste e le inscatola.
-        “L’avete chiusa in una casa di riposo, è la stessa cosa.”
-        “<m>Pal</m>, è per il suo bene.”
-        Certo.
-            + "Lei non ci voleva andare"[].
+       “No está muerta”. <m>Omar</m> agarra las revistas y las mete en la caja.
+        “La abandonaron en una casa de reposo, es la misma cosa.”
+        “<m>Pal</m>, es por su bien.”
+        Claro.
+            + [Ella no quería ir]
             -
-        “Perché non avete accettato la nostra proposta?” Laura ha le mani sui fianchi e fissa Omar.
-        Non vanno molto d’accordo. Quando vi siete messi assieme Omar era contento (“Quindi non sei frocio!”), ma Laura è convinta che abbia una pessima influenza su di te.
-        “<f>Due ragazzine</f> di quindici anni a stare dietro a una vecchia rincoglionita?”
-        Laura fa per dire qualcosa ma la interrompi.
-            + “È tua nonna, cazzo!”
-            + “Almeno sarebbe stata felice.”
-            + “Così mamma può vendere la casa[."] e farci i soldi.”
-                “I soldi servono per pagare la casa di riposo, idiota.”
+
+        “¿Por qué no aceptaron <f>nuestra</f> propuesta?” <f>Laura</f> pone sus manos en la cintura y observa a <m>Omar</m>.
+        No se llevan muy bien. Cuando empezaron su relación <m>Omar</m> era feliz (“¡Entonces no eres un <m>maricon</m>!”), pero <f>Laura</f> está convencida que él sea una influencia pésima para ti.
+        “¿Dos <f>chicas</f> de quince años que están detrás de una <f>vieja</f> confundida?”
+        <f>Laura</f> quería decir algo, pero la interrumpes.
+            + “¡Es tu abuela, joder!”
+            + “Al menos hubiese sido feliz”
+            + “Así mamá puede vender la casa[."] y hacer dinero.”
+                “El dinero sirve para pagar la casa de reposo, idiota.”
             -
-        
-        Continuate a inscatolare in silenzio, l’unico rumore è lo spostarsi degli oggetti.
-        Omar impila le cose con rabbia, chiude gli scatoloni, scende le scale pestando i piedi, torna, ripete.
-        Laura ti passa le cose, quando i vostri sguardi si incrociano ti sorride, ogni tanto ti dà un bacio sulla guancia. #completion_33
-            + Nonna adora Laura[].
+
+        Continúan a hacer cajas sin decir una palabra, solo se escuchan el sonido de los objetos.
+        <m>Omar</m> apila las cosas con rabia, cierra las cajas, baja las escaleras pisando con fuerza, regresa, repite.
+        <f>Laura</f> te pasa las cosas, cuando vuestras miradas se cruzan te sonríe, de vez en cuando te besa en la mejilla. #completion_33
+            + [La abuela adora Laura]
+
             -
-        È sempre stata dell’idea che se una regola è sbagliata è tuo dovere infrangerla.
-        Dopo la morte di nonno non ha mai indossato il lutto, era contenta che quel violento fosse morto e non voleva fingere il contrario.
-        Quando ha iniziato ad andare a caccia qualche uomo l’ha presa in giro, qualcuno ha provato ad avvicinarsi troppo.
-        “Fanno tanto i grossi, ma se gli spari vicino ai piedi vedi come scappano.”
-        E Laura è un po’ come lei. #completion_50
-        “A che pensi?”
-        
-            + “Ci vuole coraggio[..."] a rompere le regole.”
-            <> Vorrei essere come lei.”
-            + “Vi somigliate tanto, voi due.[”]
-            <> Le sue reti erano di lana e le tue di bit, ma avete tanto in comune.” Laura ride: "Woah, non sapevo fossi un poeta!"
-            + “Mamma non l’ha mai capita[“]
-            <>, per lei l’importante è quello che pensano gli altri e basta.”
+        La <f>abuela</f> siempre ha pensado que si una regla es <f>errónea</f> es tu deber romperla.
+        Después de la muerte del <m>abuelo</m> no uso jamás el negro por el luto, era feliz que ese <m>hombre</m> violento había muerto y no quería fingir el contrario.
+        Cuando inicio a <m>cazar</m>, algunos <m>hombres</m> se burlaron de ella, algún <m>hombre</m> trato de acercase a ella.
+        “Todos fingen de ser <m>duros</m>, pero si les disparas cerca de los pies todos huyen asustados.”
+        Y <f>Laura</f> se parece a ella. #completion_50
+        “¿Qué piensas?”
+            + “Se necesita valor[..."] para romper las reglas.”
+            <> Quisiera ser como ella.”
+            + “Se parecen tanto, ustedes dos.[”]
+            <> Sus redes eran de lana y las tuyas de bit, pero ustedes se parecen tanto.” <f>Laura</f> ríe: "¡Woah, no sabía que eras un <m>poeta/m>!"
+            + “Mamá jamás la ha entendido[“]
+            <>, para ella lo importante es lo que dicen los demás y basta.”
             -
-        
-        “Sai che ti vuole un sacco bene, vero? Si vede nei suoi occhi ogni volta che ti guarda.”
-        Laura ti sorride, passandoti un vestito.
-        Ci metti un attimo a riconoscerlo.
-            + [Osservi meglio la fantasia]
+
+        “Sabes que ella te quiere muchísimo, ¿verdad? Se ve en sus ojos cada vez que te mira.”
+        <f>Laura</f> te sonríe, pasándote un <f>vestido</f>.
+        Te toma un tiempo reconocerlo.
+            + [Observas con más atención el estampado]
             -
-        Fiori di ibisco.
-        Un <f>vestito lungo</f> che ti aveva fatto due anni fa.
-        Hai litigato con lei per quel <f>vestito</f>.
-        Hai urlato per nascondere la paura, paura di quanto lei avesse visto in te. 
-        Paura del <f>piacere</f> che hai provato all’idea di indossarlo, di restare con lei lì con quel <f>lungo vestito</f> estivo a cucire e parlare, con la sicurezza che nessuna pallonata ti avrebbe distrutto.
-        Laura ti guarda con tenerezza. 
-            + [Condividi quel ricordo]
+               Flores de Jamaica.
+        Un <f>vestido</f> largo que te hizo hace dos años.
+        Te peleaste con ella por ese <f>vestido</f>.
+        Gritas para esconder el miedo, miedo de cuanto ella pudiera ver de ti. 
+        Miedo del <f>placer</f> que has sentido con la idea de usar el <f>vestido</f>, de permanecer con ella, allí con ese largo <f>vestido</f> de verano, <f>cocer</f> y hablar, con la tranquilidad y seguridad de que ningún pelotazo te haría daño.
+        <f>Laura</f> te observa con ternura. 
+            + [Compartes ese recuerdo]
             -> ricordo
-            + [Infili il vestito nello scatolone]
+            + [Metes el vestido en la caja]
             -> scatolone
-            + [Parli del meteo]
-            Laura ti bacia sulla guancia. "Dio, siamo già come quelle vecchie coppie che non hanno più nulla da dirsi?"
+            + [Hablas del clima]
+            <f>Laura</f> te besa en la mejilla. "¿Dios, ya somos como esas parejas viejas que no tienen nada nuevo que decirse?"
             -> scatolone
         
         = ricordo
-            Man mano che parli senti sparire un peso a cui avevi fatto l'abitudine fino a dimenticartene.
-            Fuori l’autunno sembra caldo, ma il volto di Laura si fa freddo.
-            La sua mano stretta nella tua sembra un pugno. 
-                + “Son cose dell’infanzia...”[]  <>
+            Poco a poco que hablas sientes como dejas de cargar un peso al que estabas acostumbrado y habías olvidado.
+            Afuera el otoño parece cálido, pero la <f>cara</f> de <f>Laura</f> se vuelve fría.
+            Su mano cerrada sobre la tuya parece un puño. 
+                + “Son cosas de la infancia...”
                 -
-            provi a dire, anche se due anni fa ne avevi tredici di anni.
-            “Non, non ti giudico <m>Pal</m>, davvero. vorrei solo capire...”
-            “Anche io.” #completion_70
-            Omar è sulla soglia.
-            “Sei <f>gay</f>, <m>Pallino</m>? Anche se sei con Laura non vuol dire che tu sia <m>normale</m>.”
-            “No!”
-            Laura prende le tue difese, pur tentennando.
-            “Omar, perché devi essere grezzo come la merda?”
-            “Dico solo quello che penso.”
-            Tuo fratello ti si avvicina.
-            “Sai perché mamma non ti vuole con nonna? Perché ha passato il tempo ad assecondare le tue <m>stranezze</m>.”
-            Ha i pugni stretti.
-                + “Non sono stranezze!”
+            Tratas de decir, aunque dos años atrás tenías trece años.
+            “No, no te estoy juzgando <m>Pal</m>, de verdad solo quiero entender...”
+            “Yo también.” #completion_70
+            <m>Omar</m> está cerca.
+            “¿Eres <m>gay</m>, <m>lentejuelas</m>? Aunque estés con <f>Laura</f> no quiere decir que seas <m>normal</m>.”
+            “¡No!”
+            <f>Laura</f> te defiende, aunque está temblando.
+            “<m>Omar</m>, ¿Por qué tienes que ser <m>tosco</m> cómo la mierda?”
+            “Solo digo lo que pienso.”
+            Tu <m>hermano</m> se te acerca.
+            “¿Sabéis por qué mama no quiere que estes con la <f>abuela</f>? Porqué ha pasado todo el tiempo junto a ti apoyando tus cosas  <f>raritas</f> .”
+            <m>Omar</m> tiene los puños cerrados y apretados.
+                + “¡No son cosas raritas!”
                 -
-            “Di certo non sono cose <m>normali</m>. Io, <m>Pal</m>, Cristo, ti voglio bene, davvero.”
-            Omar sta guardando il pavimento. Non ti ha mai detto una cosa del genere.
-            “Voglio, vogliamo solo vederti felice. Invece tu vuoi solo essere strano."
-            Sospira.
-            "Cristo, mamma è convinta che Laura sia una fase prima che tu ci dica di essere <m>gay</m>. Con te il mondo va al contrario.”
-            Non sai capire come ti senti. Cosa provi ora? Cosa ha senso fare?
-                + [Pensi a nonna, alla sua forza]
-                    “Amo Laura, e non serve che siate tu o mamma a dirmi cosa fare o non fare!”
+
+            “Seguramente no son cosas <m>normales</m>. Yo, <m>Pal</m>, Dios mío, te quiero mucho, de verdad.”
+            <m>Omar</m> baja la mirada. No te ha hablado en ese modo jamás.
+            “Quiero, queremos solo verte feliz. Tu solo quieres ser <m>raro</m>."
+            Suspira.
+            "Dios, <f>mamá</f> está convencida que <f>Laura</f> es una fase antes de aceptar que eres <m>gay</m>. Contigo el mundo va, al contrario.”
+            No sabes cómo te sientes. ¿Qué sientes? ¿Qué puedes hacer?
+                + [Piensas a la abuela, su fuerza]
+                    “¡Yo amo a <f>Laura</f>, no necesito que tu o <f>mamá</f> digan que tengo o no que hacer!”
                     -> litigio
-                + [Guardi tuo fratello, il tuo eroe]
-                    Ti ha detto “Ti voglio bene.”
+                + [Miras a tu hermano, tu héroe]
+                    Te ha dicho “Te quiero mucho.”
                     -> accomodante
-                + [La stanchezza ti macina le ossa]
-                    Li lasci lì e te ne vai.
-                    -> litigio
+                + [La fatiga te pesa en todos los huesos]
+                   Te vas dejándolos solos.
+                   -> litigio
             
             = litigio
-                Tuo fratello alza la voce, ti urla dietro.
-                Laura inizia a litigare con lui.
-                Fanno una lista delle cose che fanno di te un </m>uomo</m> e delle cose che fai <f>da donna</f>.
-                Ogni parola arriva come uno schiaffo, come un proiettile.
-                Vorresti dire che sta a te decidere, che tua deve essere la voce e non la loro!
-                Ma che cosa diresti ora?
-                Perché non sai rispondere alla voce che nella tua testa ti chiede:
-                “Cosa sei, <m>Pallino</m>? 
-                </m>Un ragazzo</m>? 
-                <f>Una ragazza</f> 
-                Cosa sei?” #almost_there
+                Tu <m>hermano</m> alza la voz, te grita mientras te vas...
+                <f>Laura</f> inicia una discusión con <m>Omar</m>.
+                Hacen una lista de las cosas que te hacen un <m>hombre</m> y las cosas que haces de <f>mujer</f>.
+                Cada palabra te cachetea, como una bala.
+                Quisieras decir que solo tú puedes decidir, que es tu voz la que tiene que alzarse y no la de ellos.
+                ¿Pero que puedes decir ahora?
+                No sabes que responder a la voz en tu cabeza que te pregunta constantemente:
+                “¿Qué eres, <m>lentejuelas</m>? 
+                ¿Un <m>chico</m>? 
+                Una <f>chica</f> 
+                ¿Qué eres?”  #almost_there
                 -> Bullet_hell_amab_due
             
             = accomodante
-                Prendi il <f>vestito</f> dalle mani di Laura, e lo metti nello scatolone.
-                Omar propone di fare una pausa per una birra.
-                Laura ti guarda negli occhi, fa per dire qualcosa, ma poi si allontana.
-                Il vestito ti osserva dallo scatolone e silenzioso ti accusa:
-                “Cosa sei, <m>Pallino</m>? <m>Un ragazzo</m>? Una <f>ragazza</f>? Cosa sei?” #almost_there
+                Agarras el <f>vestido</f> de las manos de <f>Laura</f>, lo guardas en la caja.
+                <m>Omar</m> propone de tomar una pausa para una cerveza.
+                <f>Laura</f> te ve a los ojos, quiere decir algo, pero se detiene y simplemente se aleja.
+                Observas el <f>vestido</f>, en algún modo ahora es el <f>vestido</f> que te observa a ti, en silencio te exige respuestas:
+                “¿Qué eres, <m>lentejuelas</m>? ¿Un  <m>chico</m>? ¿Una <f>chica</f>? ¿Qué eres? #almost_there
                 -> Bullet_hell_amab_due
     
         
         = scatolone
-            Omar si presenta sulla soglia con tre birre in mano, un gesto di pace.
-            “Hai smesso di tenerci il muso?” gli chiede Laura, stappando la bottiglia.
-            “Non vi tengo il muso, ma mi girano che mio fratello mi tratta come un mostro. Voglio bene anche io a nonna, davvero.”
-            Vi volta le spalle, il tono della voce è più tremulo.
-            “Non voglio svegliarmi ogni mattina con il timore che non risponda al telefono e sia morta in casa.”
-                + [Appoggi una mano sulla spalla di Omar]
-                + [Guardi Laura, che ti prende la mano]
-                + [Osservi i tuoi piedi]
-            “Non sei un mostro, non volevo ferirti.”
+            <m>Omar</m> si presenta en la entrada de casa con tres cervezas, una oferta de paz.
+            “¿Ya te quitaste la mala <f>cara</f>?” Le pregunta <f>Laura</f>, destapando la botella.
+            “No tengo mala <f>cara</f>, me molesta que mi <m>hermano</m> me trate cómo un <m>monstruo</m>. Quiero mucho a la <f>abuela</f>, de verdad.”
+            Se gira de espaldas, tiene un tono de voz más titubante.
+            “No quiero despertarme todos los días con el miedo que no responda el teléfono y que muera sola en casa.”
+                + [Apoyas una mano en la espalda de Omar]
+                + [Ves a Laura, te agarra la mano]
+                + [Tienes la mirada triste al suelo]
+            “No eres un <m>monstruo</m>, no quería lastimarte.”
             -
-            Glielo dici col cuore, speri che lo capisca davvero.
-            Omar si rigira tra le dita il tappo della bottiglia. #completion_70
-            “C’è stato un momento nella nostra vita in cui qualcuno ha deciso che dovevo essere quello <m>forte</m> e <m>pratico</m>, forse perché tu fratellino...” ti guarda.
-            Quasi trema.
-            “Sei sempre stato in un mondo tutto tuo. Ti lamenti di mamma, ma alla fine non fa altro che preoccuparsi per te.”
-                + “Non mi serve la sua preoccupazione."
-                + “E non vede te."
-                +  [Resti in silenzio]
+            Lo dices con el corazón, deseas que él lo entienda de verdad.
+            <m>Omar</m> juega con la tapa de la cerveza entre sus dedos. #completion_70
+            “En algún momento de la <f>nuestra</f> vida, alguien decidió que tenía que ser <m>fuerte</m> e <m>práctico</m>, quizás porqué tu <m>hermanito</m>...” te observa con ojos llenos de sentimiento.
+            Está casi temblando.
+            “Siempre has estado en tu proprio mundo, todo tuyo. Te quejas de <f>mamá</f>, pero lo único que hace es preocuparse por ti.”
+                + “No necesito su preocupación."
+                + “Y no te mira a ti."
+                + [No sabes que decir]
             -
-            “So di essere un grezzone e di non essere bravo come voi con le parole. Ma tengo a nonna, e voglio che sia felice. E tengo a te, e voglio che tu sia felice. Ma non so come farlo.”
-                + [Senti solo senso di colpa.] Gli occhi lucidi di Omar ti riempiono di senso di colpa.
+            “Sé que soy un <m>tosco</m> y <m>grosero</m> y no soy bueno con las palabras como ustedes dos. Pero la <f>abuela</f> es importante para mí y quiero que sea feliz. También eres importante para mí, quiero que tu seas feliz, <m>lentejuelas</m>. Pero no sé cómo hacerlo.”
+                + [Te sientes culpable.] Los ojos bañados de <m>Omar</m> te llenan de culpa.
                 -> colpa
-                + “Non pretendo tu sia perfetto[“], solo che tu mi permetta di essere me stesso."
+                + “No quiero que tu seas perfecto[“], solo quiero tú me permitas ser yo mismo."
                 -> myself
-                + [Omar ha bisogno di te]
-                Metti da parte parole e spiegazioni e lo abbracci.
-                -> colpa
+                + [Omar te necesita]
+                    Las palabras y las explicaciones están demás, abrazas a <m>Omar</m>
+                    -> colpa
         
             = myself
-                “E che vuol dire Pal? Che cosa sei?”
-                Ti guardi le mani, sperando che qualcuno ci abbia scritto le parole per dirlo, ma non trovi che lo sporco della casa e degli scatoloni.
-                “Omar, lascialo in pace.”
-                Laura cerca di difenderti, ma tuo fratello  la ignora.
-                “È quello che voglio ma devo anche capire che vuol dire, no, lasciarlo in pace?"
-                Omar ti si avvicina.
-                "Cosa sei <m>Pallino</m>? Perché io mica lo capisco. Stai con Laura e mi dico che <m>sei un uomo</m>, ti piacciono però le cose da <f>frocio</f> e quante volte nonna ti ha riempito di <f>maglie coi brillantini</f> che manco mamma avrebbe messo? Cosa sei <m>Pallino</m>, dimmelo ti prego, così posso aiutarti.”
-                E tu vorresti davvero dare una risposta, trovare una soluzione ma non lo sai <m>Pallino</m> cosa sei?
-                Cosa sei <m>Pallino</m>? #almost_there
+                “¿Y qué entiendes <m>Pal</m>? ¿Qué eres?”
+                Te miras las manos, esperando que las palabras aparezcan mágicamente, pero no hay nada, solo el polvo de la casa y de las cajas.
+                “<m>Omar</m>, déjalo en paz.”
+                <f>Laura</f> trata de defenderte, pero tu <m>hermano</m> la ignora.
+                “Es lo que quiero, pero también quiero entender que significa dejarlo en paz, ¿no?"
+                <m>Omar</m> se te acerca.
+                "¿Qué eres <m>lentejuelas</m>? Porque yo no lo entiendo. Estás con <f>Laura</f> y pienso es un <m>hombre</m>, pero te gustan las cosas de <m>maricon</m> y todas las veces que la <f>abuela</f> te ha <f>vestido</f> con camisas y <f>blusas</f> con  <f>lentejuelas</f> y brillantina  que ni siquiera <f>mamá</f> habría usado… ¿Qué eres <m>lentejuelas</m>?, dímelo por favor, así puedo ayudarte.”
+                Y tú quieres responder, de verdad, conseguir una solución, una respuesta, pero ni siquiera tú lo sabes, ¿Qué eres, <m>lentejuelas</m>?
+                ¿Qué eres <m>lentejuelas</m>? #almost_there
+
                 -> Bullet_hell_amab_due
         
             = colpa
-                “Vai bene così, fratellone, davvero. Non potrei chiedere di meglio.”
-                Sorridi mentre glielo dici e lui risponde al sorriso per poi darti un pugno chiamandoti <m>ricchione</m>, e riprende a inscatolare roba, a raccontare anedotti sull'ultima serata fatta coi ragazzi.
-                Laura ti guarda e c’è qualcosa di amaro nel suo sguardo.
-                “Non puoi fare felici tutti, Pal. A forza di farlo finirai per sparire.”
-                    + “E che dovrei fare?”
+                “Está bien así, <m>hermano</m>, de verdad. No podría pedir más.”
+                Sonríes mientras se lo dices y él sonríe como respuesta, después te da un puño diciéndote mariquito e inicia de nuevo a meter cosas en las cajas y a contar anécdotas de su última salida con los <m>chicos</m>.
+                <f>Laura</f> te mira, con ojos amargos.
+                “No puedes hacer felices a todos, <m>Pal</m>. Si sigues así… Desaparecerás.”
+                    + “¿Y qué tengo que hacer?”
                     -
-                “Dire la tua verità, quella che sia.”
-                    + “Su cosa?”
+                “Di tu verdad, la que sea, dila.”
+                    + “¿Sobre qué?”
                     -
-                Laura alza le spalle, ma gli occhi sono lì tesi ad aspettarsi una risposta.
-                L’unica cosa che fai è allontanarti.
-                Vai in camera di nonna.
-                La finestra è socchiusa, la sua vestaglia stesa sul tavolino accanto a sigarette e medicine.
-                A una foto di te, lei e Omar tanti anni fa, quando tutto sembrava semplice, quando nessuno pretendeva da te risposte.
-                Ma è impossibile tornare a quel momento, perché gli occhi di Laura te lo stanno chiedendo ancora.
-                Cosa sei <m>Pallino</m>? Cosa sei? #almost_there
+                <f>Laura</f> subes los hombros, con un sentido de duda, pero con los ojos firmes y espera una respuesta.
+                La <f>única</f> cosa que haces es alejarte.
+                Vas a la habitación de la <f>abuela</f>.
+                La ventana está apoyada, sus vestidos sobra la mesita al lado de cigarros y medicinas
+                Ves una foto de tuya, de la <f>abuela</f> y de <m>Omar</m> tantos años atrás, cuando todo era simple, cuando nadie te pedía respuestas a preguntas que no entiendes.
+                Pero no puedes regresar al pasado, porque los ojos de <f>Laura</f> te observan y te preguntan todavía.
+                ¿Qué eres <m>lentejuelas</m>? ¿Que eres? #almost_there
                 -> Bullet_hell_amab_due
         
         
@@ -459,174 +464,168 @@ VAR amab_tre = 1
         -> atto_amab_tre
         
     === atto_amab_tre===
-    Età adulta. Autunno. Casa vostra. #title
+    Edad adulta. Otoño. Casa de ustedes. #title
 
-        Laura ti ripete di sbrigarti
-            + “Ma mancano almeno sei ore!”
+        <f>Laura</f> te repite de apurarte.
+            + “¡Pero todavía faltan seis horas!”
             -
-        “E non bastano! Porta qualcosa da sgranocchiare.”
-        Ravani tra i mobili della vostra cucina, recuperi cioccolata e burro d’arachidi.
-        Non hai voglia di andare a quella stupida festa stasera.
-            + “Ma se rimanessimo a casa[?"] a guardare horror e mangiare schifezze?”
-            + [Tu detesti Marika!]“Ti ho già detto che odio Marika?”
-            + “Ma da quando ti piace Halloween?”
+        “¡No alcanzan! ¡Trae algo de comer!”
+        Buscas en todos los muebles de la cocina, consigues chocolate y crema de almendras.
+        No quieres ir a esa estúpida fiesta está noche.
+            + “¿Y si nos quedamos en casa[?"] ¿Y vemos un film de horror y comemos comida chatarra?”
+            + [¡Tu odias a María!] “¿Te he dicho que odio a <f>María</f>?”
+            + “¿Desde cuándo te gusta Halloween?”
             -
-        Sali le scale senza che Laura ti risponda. L’unica luce è quella dello studiolo.
-        Continua a stupirti questa casa, questa vita. Le cose che avete fatto assieme.
-        Fai per entrare ma lei si fionda sulla soglia, ti cinge il collo con le braccia.
-        “Promettimi che per una volta, una sola volta mi dirai di sì senza fare domande.”
-            + ["Ci sono dei labrador?"]“Solo se ci sono dei labrador in quella stanza”.
-            “C’è qualcosa di meglio dei labrador!” risponde. “Impossibile, niente è meglio dei labrador!”
-            + [Le ricordi il matrimonio]“L’ultima volta che ho accettato ci siamo sposati, e devo ancora capire se sia stata una buona idea.”
-            Laura ti dà un pugnetto in testa ridendo.
-            + [Senti odore di trappola] Lei riconosce la tua espressione.
-            “Quando mai ho fatto qualcosa che ti ha messo nei guai?”. Fai una lista abbastanza dettagliata che contiene cioccolata, leoni marini, un costume da Elon Musk e una ghigliottina. Ah, sì, e quella volta al cimitero con la tavola Oujia. Lei ti osserva con le braccia incrociate, fintamente seria.
+        Subes las escaleras sin que <f>Laura</f> te responda. La <f>única</f> luz es aquella del pequeño estudio.
+        Todavía te sorprendes con la casa, con la vida. Las cosas que han hecho juntos.
+        Intentas entrar, pero ella sale a la puerta y rodea tu cuello con sus brazos.
+        “Prométeme que, por una vez, solo una vez me dirás que si sin hacer tantas preguntas”
+            + ["¿Habrá perros labradores?"] “Solo si hay perros labradores en esa habitación”.
+            “¡Hay algo mejor que los labradores!” responde. “¡Imposible, nada es mejor que los labradores!”
+            + [Le recuerdas el matrimonio] “La última vez que acepté sin hacer preguntas terminamos esposados y todavía no se si fue una buena idea”. 
+            <f>Laura</f> te da un puñito en la cabeza.
+            + Sientes el olor de una trampa[]. Ella reconoce tu expresión.
+            “¿Cuándo he hecho cualquier cosa que pudiera meterte en problemas?”. Haces una lista suficientemente detallada que describe chocolate, leones marinos, un disfraz de Elon Musk y una guillotina. Ah, también aquella vez en el cementerio con la tabla Ouija. Ella te observa con los brazos cruzados, fingiendo seriedad.
             -
-        Ti porta nella stanza.
-        Ci sono pezzi di jeans, trucchi, un capello osceno e una parrucca.
-            + “Dov'è il cadavere di RuPaul?”
+        Te lleva al cuarto.
+        En la cama ves pedazos de jeans, <f>maquillaje</f>, un sombre horrible y una <f>peluca</f>.
+            + “¿Dónde está el cadáver de RuPaul?”
             -
-        Ti guarda, gli occhi pieni di affetto.
-        "Ogni tanto penso a quel ragazzino timido e insicuro che ho conosciuto vent'anni fa, e mi stupisce vedere chi sei diventato."
-        Non sai cosa rispondere, anche se è vero: ad un certo punto, inaspettatamente, l'età adulta ti ha regalato una sicurezza che non avresti mai immaginato di poter avere.
-        Laura cambia discorso. #completion_33
-        “Ti ricordi che l’anno scorso Marika ha detto che siamo gli unici a non fare costumi di coppia?”
-            + “Ed è un problema?”
-            + “È difficile dimenticarlo[!"], visto che l’ha urlato ubriaca dal balcone.”
-            + “Mi ricordi perché è tua amica?”
-            Ti lancia addosso un marshmallow.
+        Te mira, ojos llenos de afecto.
+        "De vez en cuando pienso al <m>niño</m> tímido e inseguro que conocí veinte años atrás y me sorprende ver en quien te convertiste”.
+        No sabes que responder, aunque es verdad: a cierto punto, inesperadamente, la edad adulta te regaló una seguridad en ti mismo que no habías jamás imaginado de poder tener.
+                <f>Laura</f> cambia discurso. #completion_33
+        “¿Te recuerdas el año pasado <f>María</f> dijo que somos los únicos a hacer disfraces de parejas?”
+            + “¿Es un problema?”
+            + “Es difícil olvidarlo[!"], lo gritó a los cuatro vientos desde el balcón.”
+            + “¿Me recuerdas por qué es tu amiga?”
+            Te tira un malvavisco.
             -
-        “Quest’anno voglio dimostrarle che si sbaglia. E mi sono chiesta: qual è la coppia più spaventosa da portare ad una festa di Halloween?”
-        Cerchi inutilmente una risposta sensata.
-        Laura ti guarda con trepidazione.
-            + “Bonnie e Clyde?”
-            + “Woody Allen e Soon-Yi?”
-            + “I miei?"
+        “Este año quiero demostrarle que se equivoca. Y me pregunto: ¿cuál es la pareja más horrible para una fiesta de Halloween?”
+        Buscas una respuesta sensata, inútilmente.
+        <f>Laura</f> te observa con inquietud.
+            + “¿Bonnie y Clyde?”
+            + “¿Woody Allen y Soon-Yi?”
+            + “¿Mis padres?"
             -
-        Laura solleva i pezzi di jeans.
-        “Britney e Justin nel 2001! Dai, cosa c’è di più cringe del finto denim e di Timberlake?”
-        Afferra i pezzi di tessuto con stampa denim.
-        “Ho trovato due costumi ma non mi piacevano molto e così li ho smontati per rifarli meglio ma ehm, creo videogiochi, non sono una sarta. E ho pensato che potresti aiutarci tu, e in cambio ti trucco!”
-            + “Non cucio da quando avevo tredici anni!”
-            “Sono sicura che sia come andare in bicicletta.”
-            + “Trucco?”
-            + “Possiamo vestirci da noi?”
-            Laura ti ignora.
+        <f>Laura</f> toma los pantalones de jean.
+        “¡<f>Britney</f> y <m>Justin</m> nel 2001! Vale, ¿Qué podría ser más incómodo del falso Jean y Timberlake?”
+        Agarra los pedazos de tela con estampado denim.
+        “Conseguí dos disfraces, pero no me gustaban mucho y así que los desarmé para hacerlos mejor, pero… Ohm… Yo creo videojuegos, no soy una <f>costurera</f>. ¡Así que pensé que podrías ayudarnos tú, y en cambio yo te <f>maquillo</f>!”
+            + “¡No he cocido nada desde que tenía trece años!”
+            “Estoy segurísima que es como andar en bicicleta, no se olvida.”
+            + “¿Maquillaje?”
+            + “¿Podemos ir vestidos normalmente?”
+            <f>Laura</f> te ignora.
             -
-        “E, sorpresa delle sorprese... io farò Justin e tu <f>Britney</f>!”
-        Fai per dire qualcosa, ma.
-        Ma qualcosa si muove nella pancia, un calore che si alimenta mentre osservi il tessuto di jeans, la </m>parrucca</m>, i <f>trucchi</f>. #completion_50
-        Ti siedi in silenzio davanti alla macchina da cucire e, beh: è come tornare in bicicletta.
-            + Inizi a cucire[] i pezzi di stoffa.
+        “Y, sorpresa de las sorpresas... ¡Yo seré <m>Justin</m> y tu <f>Britney</f>!”
+        Estas por decir algo, pero…
+        Pero algo se mueve en tu barriga, un calor crece mientras observas la tela de jeans, <f>peluca</f>, <f>maquillaje</f>. #completion_50
+        Te sientas en silencio delante la máquina de coser, beh: como volver a la bicicleta.
+            + Inicias a coser[] los pedazos de tela.
             -
-        È un saltellare di ricordi questo pomeriggio, passate da una cosa all’altra.
-        Citare la starlet scomparsa di turno vi fa parlare di cosa stavate facendo quell’anno, un brano riporta un’amicizia rotta, una nottata ubriachi al mare.
-        “Non vi siete più sentiti?”
-        Sai che parla di Omar.
-        Non vi parlate da due anni ormai, ma ogni tanto Laura te lo richiede.
+        Es un salto a los recuerdos, pasando de una cosa a la otra.
+        Citar la estrella desaparecida de turno hace que empiecen hablar de lo que estaban haciendo ese año, una canción trae con sé una amistad rota, una noche borrachos al mar.
+        “¿No se hablan todavía?”
+        Habla de <m>Omar</m>, pero eso ya lo sabes.
+        No se hablan desde hace dos años, pero de vez en cuando <f>Laura</f> te lo pregunta de nuevo.
             + “No."
-            A un certo punto, non hai più sopportato le sue insinuazioni.
+            A cierto punto, no soportas más sus insinuaciones.
             -
-        Il tessuto scorre veloce sotto la macchina.
-        Laura prova il vestito: conciata da Justin è ridicolmente uno schianto.
-        “E ora siediti, è il mio turno!”
-        La sua mano leggera mescola, traccia, spennella la tua faccia.
-        Ogni volta che si allontana sorride soddisfatta.
-            + “Da quando l'avevi progettato?”
+        La tela pasa velozmente por la máquina de coser.
+        <f>Laura</f> se prueba el disfraz: vestida como <m>Justin</m> se ve ridículamente encantadora.
+        “¡Ahora siéntate, es mi turno!”
+        Su mano ligera mezcla, <f>diseña</f> y pinta tu <f>cara</f>.
+        De vez en cuando se aleja para ver el proceso y sonríe satisfecha del progreso.
+            + “¿Desde cuándo planificas esto?”
             -
-        “Quando ho avuto l’idea mi sono accorta che in realtà era lì da sempre. Che era qualcosa che volevo fare con te, che potevo fare solo con te.”
-        Ti bacia sulla nuca, ti afferra la mano per farti alzare, ti porta allo specchio.
-        Il <f>vestito</f> è orribile, la <f>parrucca</f> è tremenda.
-        Ma i tuoi occhi si riempiono di ciò che vedono, del volto ridisegnato dal trucco, della vita tracciata dalla cintura, del petto peloso che esce dalla <m>scollatura</m>. 
-        Ti gira la testa.
-            + “Dovrei rasarmi?”
+        “Cuando me di cuenta de la idea noté que estuvo en mi mente todo el tiempo. Es algo que quería hacer contigo, algo que solo podría hacer contigo.”
+        Te besa en la nuca, te toma la mano para ayudarte a pararte, te acompaña al espejo.
+        El <f>vestido</f> es horrible, la <f>peluca</f> es terrible.
+        Pero tus ojos se fijan en la imagen adelante, una <f>cara</f> rediseñada con <f>maquillaje</f>, la cintura marcada por la correa, el pecho peludo que se ve del <f>escote</f>. 
+        Te sientes mareado.
+            + “¿Debería depilarme?”
             -
-        Lo mormori.
-        “Solo se non ti piaci così.”
-        Laura stringe la tua mano.
-        Ti guardi, e così ti piaci tantissimo.
-        Hai paura, ti manca l’aria, eppure hai la certezza che per la prima volta ti stai vedendo veramente.
-        È come se qualcuno avesse tolto una patina dai tuoi occhi.
-        Come se fino ad ora il corpo che vedevi allo specchio fosse quello di un’altra persona, qualcosa che continuavi a cancellare, che non volevi mai ricordare.
-        Ma ora sei davvero tu.
-        Ammiri i tuoi occhi enormi sotto l’eyeliner, e il modo in cui le labbra esplodano di rosso tra i peli della barba.
-        Come i muscoli e le pieghe del vestito si esaltino a vicenda.
-            + [...]
-            -
-        ...
-            + [...]
-            -
-        ... ...
-        
-            + [...]
-            -
-        ... ... ...
-        Piangi. #completion_70
-        Laura ti abbraccia.
-        “Tutto ok, tesoro?”
-            + Respingi tutto quello che provi[], perché non può esserci spazio per questo. La sincerità la allontanerà come ha allontanato Omar.
+        Susurras.
+        “Solo si no te gusta.”
+        <f>Laura</f> aprieta tu mano.
+        Te miras al espejo, y te gusta muchísimo como te ves.
+        Tienes miedo, te hace falta el aire, sin embargo, estás seguro que lo que estás viendo eres tú verdaderamente.
+        Es como si alguien te hubiera quitado una venda de los ojos.
+        Cómo si hasta ahora el cuerpo que ves en el espejo fuera de otra persona, una persona que continuabas a borrar y a reprimir, una persona que no querías recordar nunca.
+        Pero eres tú, tú de verdad.
+        Admiras tus enormes ojos debajo el delineador de ojos, el modo cómo tu boca explota de rojo entre los pelos de la barba.
+        Cómo los <m>músculos</m> y los doblajes del <f>vestido</f> se resaltan entre ellos.
+        + [...]
+        -
+        Lloras. #completion_70
+        <f>Laura</f> ti abbraccia.
+        <f>Laura</f> te abraza.
+        “¿Estás bien, cariño?”
+            + Reprimes todo lo que sientes[], porque no hay espacio para esto, la sinceridad alejará a <f>Laura</f>, justo como hizo con <m>Omar</m>.
             -> Respingi
-            + Non puoi dirle la verità[], non puoi. Laura è magnifica, ma lo era anche Omar, e dov'è ora?
-            -> Perdere
-            + Provi a cercare le parole[] per dirle ciò che senti.
+            + No puedes decirle la verdad[], no puedes. <f>Laura</f> es magnífica, pero también <m>Omar</m> lo era, ¿Y ahora dónde está? 
+        -> Perdere
+            + Tratas de conseguir las palabras[] para decirle lo que sientes. 
             -> Sinceramente
         
         = Sinceramente
         ~  amab_tre = 2
         
-            Ma non vengono, è come se ci fosse un vuoto, un pezzo che manca.
-            Sorridi, balbetti che tutto è bello, è stato solo inaspettato.
-            Ti manca il fiato.
-            Ti intravedi di nuovo allo specchio e sorridi.
-            Una voce dentro di te ti urla che fai schifo.
-            Cerchi di ignorare quella voce, ma è forte di tutto quello che ti è stato detto durante la tua vita.
-            Omar che non ti ritiene un <m>vero uomo</m>.
-            La vicina che scherzando vi chiama “<f>lesbiche</f>”.
-            Tua madre che ti dice che somigli troppo a <f>nonna</f>.
-            Tuo padre che continua a regalarti <m>biglietti per lo stadio</m>.
-            I giudizi, le cose dette e non dette.
-            Ti guardi allo specchio e sembri una cosa a metà, una <m>cosa sbagliata</m>.
-            Un bau bau, un abominio.
-            Te lo chiedi però.
-            Cosa sono?
-            Cosa sei <m>Pallino</m>?
-            Cosa diavolo fottutamente sei? #almost_there
+            Pero no te vienen, es como estuvieras vacío, te falta una pieza.
+            Sonríes, balbuceas que todo es hermoso, pero no te lo esperabas.
+            Te hace falta el aliento.
+            Te entrevés de nuevo al espejo y sonríes.
+            Una voz dentro de ti te grita que das asco.
+            Tratas de ignorar esa voz, pero es muy <m>fuerte</m> por todo lo que te han dicho en la vida.
+            <m>Omar</m> no te considera un <m>hombre</m> de verdad.
+            La <f>vecina</f> bromeando les dice “las <f>lesbianas</f>”.
+            Tu <f>mamá</f> que dice que te pareces muchísimo a la <f>abuela</f>.
+            <m>Papá</m> que continua a regalarte <m>boletos</m> para el estadio.
+            Los prejuicios, las cosas dichas y las no dichas.
+            Te miras al espejo y pareces una cosa incompleta, una cosa <f>errónea</f>.
+            Un bau bau, una abominación.
+            Pero igual te lo preguntas.
+            ¿Qué soy?
+            ¿Qué eres <m>lentejuelas</m>?
+            ¿Qué diablos eres? #almost_there
             -> bullet_hell_amab_tre_bis
         
         = Perdere
         ~  amab_tre = 1
         
-            Lei ti fa sedere vicino a sé, il suo odore morbido che ti riempie.
-            Ti guarda, e leggi nei suoi occhi la preoccupazione.
-            “Mi spiace, tesoro”, ti dice.
-                + “Per cosa?”
+            Ella te dice de sentarte a su lado, su olor suave te envuelve.
+            Te observa, y lees la preocupación en sus ojos.
+            “Lo lamento. cariño”, te dice.
+                + “¿Por qué?”
                 -
-            “È stata, è stata una specie di trappola. Ne ero consapevole, anche se ho fatto finta di no."
-            Prende fiato.
-            "Ti conosco da così tanti anni, e tante cose si vedono. Una relazione alla fine ti mostra sempre tutto ciò che sta tra le pieghe, no? È quella la cosa bella e spaventosa. Notare cose che magari l’altra persona non vuole vedere.”
-                + “Io vorrei vederle.”
-                + “Non so dove guardare.”
-                + "Ho paura delle conseguenze."
+            “Ha sido un tipo de trampa. Lo sabía, aunque he fingido que no lo fuese."
+            Respira profundo.
+            "Te conozco desde hace tantos años, he visto tantas cosas. Una relación al final te muestra todo lo que se esconde detrás de la cortina, ¿No? Esa es la cosa <f>bella</f> e inquietante. Darse cuenta de las cosas que la otra persona no quiere ver.”
+                + “Yo quisiera verlas.”
+                + “No sé dónde verlas.”
+                + "Tengo miedo de las consecuencias."
                 -
-            “Hai provato a rispondere alla domanda più semplice?”
-            Provi a guardarla negli occhi.
-            “<m>Sei un ragazzo, <m>Pal</m>?”
-            Ti guardi le mani.
-            La tensione delle ultime ore è troppa, la voce di Laura sparisce, sommersa da tutti i commenti della tua vita.
-            Da Omar che ti chiede se sei </m>frocio</m>, dai compagni di scuola che ti chiamano <f>femminuccia</f>.
-            Dal prof di ginnastica che ti diceva che sei <f>troppo delicato</f>, da quella di letteratura che esaltava la tua <f>sensibilità femminile</f>.
-            Quel tizio sul bus e "perché hai le <f>unghie così curate</f>?"
-            Il tuo collega che dice che sei </m>grezzo come un muratore</m> ma hai il <f>faccino da bambola</f>.
-            Tutte le voci che per tutta la vita ti chiedono solo di prendere posizione, di dire loro cosa sei.
-            Che è un atto dovuto, dar loro una risposta.
-            Cosa sei, cosa sei <m>Pallino</m>?
-            Cosa sei? #almost_there
+            “¿Has intentado responder a la pregunta más simple?”
+            Tratas de verla a los ojos.
+            “¿Eres un <m>hombre</m>, <m>Pal</m>?”
+            Te miras las manos.
+            La tensión de las últimas horas es demasiada, la voz de <f>Laura</f> desaparece, cubierta de todos los comentarios que has sentido en tu vida.
+            <m>Omar</m> te pregunta si eres maricón, los <m>compañeros/m> de la escuela que te llaman <f>niñita</f>.
+            El profesor de deporte que te decía que eres <f>muy delicado</f>, aquella profesora de literatura que exaltaba tu <f>sensibilidad femenina</f>.
+            Aquel tipo del autobús que te pregunta "¿por qué tienes <f>las uñas tan limpias</f>?"
+            Tu colega que te dice que eres <m>rudo como un albañil</m> pero con la <f>cara</f> de una <f>muñeca</f>.
+            Todas las voces que toda tu vida te exigen una aclaratoria, que digas a todos que eres.
+            Que les debes a todos, les debes una respuesta.
+            ¿Qué eres, <m>lentejuelas</m>?
+            ¿Qué eres? #almost_there
+
             -> bullet_hell_amab_tre
         
         = Respingi
-            Ma reprimere non funziona più.
-            C’è troppo calore nella pancia, è troppo bella la sensazione che hai provato.
-            Ti alzi, cammini per la stanza, cerchi di tirare fuori qualcosa.
+            Pero reprimir ya no funciona más.
+            Sientes un calor en la barriga, lo que has sentido es muy bello para reprimirlo.
+            Te levantas, caminas por la habitación, buscas algo.
             -> Perdere
             
         
@@ -639,69 +638,69 @@ VAR amab_tre = 1
     -> finale_amab_due
         
     === finale_amab_uno ===
-        Riapri gli occhi e sei tra le braccia di Laura.
-        Ha gli occhi rigati dalle lacrime.
-        Fuori fuochi e rumori di festa, bimbi che gridano.
-        E lì, in fondo a tutto, col corpo e la testa svuotati, hai la risposta.
-            + “Non sono un [ragazzo.”]<>
+        Abres de nuevo los ojos y estás entre los brazos de <f>Laura</f>.
+        Tienes los ojos rojos y grandes por las lágrimas.
+        Afuera fuegos artificiales y ruido de fiesta, <m>niños</m> que gritan.
+        Y allí, detrás de todo el caos, con el cuerpo y la mente vacíos, tienes la respuesta.
+            + “No soy un [chico.”]<>
             -
-            <m>ragazzo</m>. né una <f>ragazza</f>. O qualcosa a metà, ma più qualcosa d’altro. Come se continuassero a chiedermi se questa cosa è verde o gialla quando è viola, e non sapevo nemmeno che esistesse il viola.”
-            Laura ti guarda confusa.
-            + “Te ne andrai?”
+            <m>chico</m>. ni  una <f>chica</f>. O algo entre los dos, pero algo más de una cosa. Cómo si continúan a preguntarme si esta cosa es amarilla o verde, pero en realidad es violeta, y ni siquiera sabía que existía el violeta.”
+            <f>Laura</f> te mira confundida.
+            + “¿Te irás?”
         -
-        Ti tira un pugno sulla spalla, seria.
-        “Idiota, no, mai. Ti amo.”
-        Rimanete in silenzio per un attimo, poi ti passa della birra.
-        “È una cosa che faremo assieme questa cosa del trovare il viola, ok? Non sei solo, sola, quel che è. Cazzo. Ci sono. Ti amo. Dirò delle cazzate e per questo ti chiedo già scusa ma insomma.”
-        La zittisci con un bacio.
-            + “Andiamo a mostrare questә me al mondo?”
-            + “Sai che rabbia proverà Marika[?"] quando non sarà la prima in qualcosa per una volta?”
-            + “Vieni[!"], prima che divenga la Britney del 2007!”
+        Te golpea en los hombros, seria.
+        “Idiota, no, jamás. Te amo.”
+        Se quedan en silencio por un momento, te da una cerveza.
+        “¿Es una cosa que haremos juntos, conseguir el violeta, ok? No estás solo, sola, lo que sea. Joder. Estoy aquí. Te amo. Diré estupideces y por esto te pido disculpas, pero, o sea.”
+        La silencias con un beso.
+            + “¿Vamos a mostrar este yo al mundo?”
+            + “¿Sabes que rabia sentirá María[?"] Cuando no será la primera en algo?”
+            + “¡Ven[!"], antes que me vuelva la <f>Britney</f> del 2007!”
             -
-        "Ho un piano B: una festa di ragazze <f>lesbiche</f>, un posto tranquillo dove stare, dovrebbero esserci anche un paio di vecchie compagne di scuola!"
-        Il modo in cui ti guarda ti fa sentire invincibile.
-        Scendete assieme in strada, le dita intrecciate.
-        Sei pienә di vita. #almost_there
+        "Tengo un plan B: una fiesta de  <f>chicas</f> <f>lesbianas</f>, un lugar tranquilo donde estar, deberían estar algunas viejas <f>compañeras</f> de la escuela"
+        La manera cómo te mira te hace sentir invencible.
+        Caminan juntos la calle, los dedos entrelazados.
+        Estás llene de vida #almost_there
         -> bullet_hell_buono
     
     === finale_amab_due ===
-        Quando apri gli occhi, Laura è accovacciata davanti a te, gli occhi fissi nei tuoi.
-        “Ehi, dolcezza!”
-            + [Appoggi la fronte alla sua]
+        Cuando abres los ojos, <f>Laura</f> está agachada delante de ti, con los ojos fijos en los tuyos.
+        “¡Oye, cariño!”
+            + [Apoyas la frente con la de Laura]
             -
-        “Cos’è successo in quella testolina?”
-        Prendi un respiro.
-            + “Avevi già capito?”
+        “¿Cosa sucedió en esta cabecita?”
+        Respiras.
+            + “¿Ya lo sabías?”
             -
-        “Mi ero accorta da tempo che c’è qualcosa che ti gira dentro da un po’. Mi sono chiesta cosa sarebbe successo se non fosse mai uscita quella cosa, e ogni risposta non mi piaceva, per nulla.”
-        Si siede accanto a te, lasci che ti stringa.
-        “So cosa non sono, Laura. Non mi sento un <m>uomo</m>, ma nemmeno una <f>donna</f>. È come se mi venisse chiesto di scegliere solo tra mangiare una mela o una pera, quando la mia bocca è piena del gusto di ogni frutto di bosco.”
-        “Le mele sono noiose!” scherza Laura.
-            + “Non cotte[."] con lo zucchero e la cannella.”
+        “Me di cuenta que desde hace tiempo algo te pasaba por la mente. Me pregunté que habría sucedido si no hubiera salido nunca ese algo, y ninguna de las respuestas me gustaba, para nada.”
+        Se sienta al lado tuyo, dejas que te apriete.
+        “Sé lo que no soy, <f>Laura</f>. No me siento <m>hombre</m>, pero tampoco <f>mujer</f>. Es como si me preguntaran de escoger entre la manzana y la pera, pero en realidad en mi boca solo quiero frutos del bosque.”
+        “¡Las manzanas son aburridas!” bromea <f>Laura</f>.
+            + “No cocidas [."] con la azúcar y la canela.”
             -
-        “Questa metafora sta diventando creepy,” ti bacia, “ma credo di aver capito.”
-        “E a te va bene?”
-        “Almeno ora quando la vicina fascia ci chiama “<f>lesbiche</f>” posso dirle che è vero!”
-        Si gira di colpo.
-        “Ma non è vero, vero? Oh mamma, cosa devo dire ora? Ma quindi non sono più <f>etero</f>?”
-        Le afferri le mani.
-            + ["Abbiamo tempo."]“Direi che abbiamo tutto il tempo del mondo per trovare queste risposte, non serve per forza farlo stasera, no?”
+        “Esta metáfora se está volviendo extraña,” te besa, “pero creo que entendí.”
+        “¿Y estás bien así?”
+        “¡Al menos ahora cuando la <f>vecina</f> <m>fascista</m> nos llame “<f>lesbianas</f>” puedo decirle que es verdad!”
+        Se voltea de golpe.
+        “¿Pero no es verdad, ¿verdad? Oh Madre mía, ¿Qué tengo que decir ahora? ¿Entonces ahora no soy <m>hetero</m>?”
+        Tomas sus manos.
+            + ["Tenemos tiempo."] “Creo que tenemos todos el tiempo del mundo para conseguir estas respuestas, no tenemos que hacerlo esta noche, ¿no?”
             -
-        Lei si rilassa, sorride.
-        “Hai ragione. L’importante è solo una cosa: le troveremo assieme. Ritroveremo i frutti di bosco e la mia eterosessualità o qualsiasi cosa sia.”
-            + “Te la immagini Marika[?"] che non sa più come presentarci ai suoi amici?”
+        <f>Laura</f> se ríe y se relaja.
+        “Tienes razón. Lo importante es solo una cosa: las conseguiremos juntos. Conseguiremos las frutas del bosque y mi heterosexualidad o lo que sea.”
+            + “¿Te imaginas a María[?"] que no sabe cómo presentarnos a sus amigos?”
             -
-        “A proposito di Marika: te la senti di andare a quella festa?”
-        Ti guardi allo specchio.
-        I pianti e le tensioni hanno incasinato <f>parrucca</f> e <m>trucco</m>.
-        Ti senti bellә come non è mai successo in tutta la tua vita, ma l'idea di farti vedere dai tuoi amici così, ti spaventa.
-            + [Fai di no con la testa]
+        “Hablando del diablo: ¿Tienes ganas de ir a su fiesta?”
+        Te miras al espejo.
+        Las lágrimas y la tensión dañaron <f>peluca</f> y <f>maquillaje</f>.
+        Te sientes bellә cómo jamás en toda tu vida, pero la idea de que te vean tus amigos te asusta.
+            + [Mueves la cabeza negando]
             -
-        Laura ti sorride.
-        "Ho un piano B: una festa di ragazze lesbiche, un posto tranquillo dove stare, dovrebbero esserci anche un paio di vecchie compagne di scuola."
-        Un po' di paura rimane.
-        Ma senti di esser rimastә troppo a lungo nascostә, hai voglia di uscire, di mostrarti.
-        Le afferri la mano e, facendoti coraggio, vi incamminate assieme lungo la strada. #almost_there
+        <f>Laura</f> te sonríe.
+        "Tengo un Plan B: una fiesta de <f>chicas</f> <f>lesbianas</f>, un sitio tranquilo donde podemos estar, también debería estar un viejo grupo de <f>compañeras</f> de la escuela."
+        Sientes un poco de miedo igualmente.
+        Pero sientes que has pasado mucho tiempo a ocultarte, quieres salir, quieres mostrarte al mundo.
+        Agarras a <f>Laura</f> de la mano, con coraje y valor, empiezan a caminar por la calle. #almost_there
         -> bullet_hell_buono
 
 
@@ -709,223 +708,226 @@ VAR amab_tre = 1
 //STORIA PALLINA
     === intro_afab ===
    ~ gender = 1
-        “Non serve, davvero.”
-        La voce di mamma ti sveglia. Sta parlando con nonna, sembra infastidita.
-        Sei appena nata, ma le tensioni le senti tutte.
-            + [Gridi]
+        “No es necesario, de verdad.”
+        La voz de <f>mamá</f> te despierta. Está hablando con la <f>abuela</f>, parece fastidiada.
+        Acabas de nacer, pero las tensiones las sientes todas.
+            + [Gritas]
             -
-        È l’unica cosa che sai fare se qualcosa ti dà fastidio.
-        “Ha fame!” dice nonna, le mani strette sul volante.  #street
-        “Le do da mangiare a casa sennò ora vomita, tanto manca poco.”
-        Nonna sbuffa, mamma pure.
-            + [Sbadigli].
+        Es la <f>única</f> cosa que sabes hacer cuando algo te da fastidio.
+        “¡Tiene hambre!” dice la <f>abuela</f>, las manos firmes al volante. #street
+        “Le daré de comer cuando lleguemos a casa sino vomitará, falta poco.”
+        La <f>abuela</f> gruñe.
+            + [Bostezas]
             -
-        I tuoi occhi si sforzano di guardare fuori dal finestrino. 
-        Mezzi ciechi riconoscono giusto aloni, figure, contorni che sembrano poter essere qualsiasi cosa.
-        Come te.
-        La macchina si ferma.
-        “Vuoi che?”
-        “No”, mamma interrompe nonna, “abbiamo già tutto. Grazie per il passaggio.”
-        “È il minimo per <f> mia nipote</f>.”
-        Silenzio.
-        La macchina si allontana.
-        Mamma apre casa, c’è odore di chiuso e cibo andato a male.
-        “Benvenuta, <f>Pallina</f>.”
-        Il tono della sua voce è pieno di orgoglio.
-            + [Ti ciucci il dito]
+        Tus ojos se esfuerzan para ver desde la ventana.
+Ven un mundo desenfocado, lleno de luces, contornos y siluetas que podrían ser cualquier cosa.
+        Cómo tú.
+        El carro se detiene.
+        “¿Quieres que…?”
+        “No”, <f>mamá</f> interrumpe a la <f>abuela</f>, “Ya tenemos todo lo que necesitamos, gracias por traernos.”
+        “Es el mínimo por  mi <f>nieta</f>.”
+        Silencio.
+        El carro se aleja.
+        <f>Mamá</f> abre la casa, hay olor de encierro y comida vencida.
+        “Bienvenida, <f>Pallina</f>.”
+        El tono de su voz está lleno de orgullo.
+            + [Te chupas el dedo]
             -
-        Lei sorride e ti mostra il bilocale.
-        “Lo so che è piccolo, ma siamo solo noi, tesoro. Due <f>donne</f> contro il mondo!”, ride.
-        “Ok, una e mezzo per ora. Però qui”, ti mostra un angolo della camera, “c’è il tuo lettino, qui i peluches e poi guarda questa giostrina!” e fa girare un gruppo di animaletti <f>rosa</f> impiccati.
-        C'è una volpe senza coda.
-            + Provi ad afferrarla[], sperando di salvarla.
+
+        Ella sonríe y te muestra el apartamento, es pequeño, de dos habitaciones.
+        “¡Lo sé que es pequeño, pero somos solo nosotras dos, cariño! ¡Dos mujeres contra el mundo!”, ríe.
+        “Ok, una y la mitad de una por ahora. Pero aquí”, te muestra un ángulo del cuarto, “está tu cunita”, “aquí están los peluches, y mira este móvil solo para ti.” Y hacer girar un grupo de animalitos <f>rosados</f> guindados.
+        Hay un zorro sin cola.
+            + Tratas de agarrarlo[], esperando de salvarlo.
             -
-        Mamma sorride e ti allontana, e tu protesti coi pugnetti.
-        “Hai fame?” chiede, e si accascia sul divano.
-        Ti porta al seno.
-        “Sai una cosa? Sarai la più brava della scuola, così mi renderai orgogliosa. E ti prenderò un sacco di <f>vestiti a fiori</f>, perché da piccola li volevo anche io, a tutte piacciono i <f>vestiti a fiori</f>.”
-        Ti cambia posizione.
-        “E poi diventerai una <f>dottoressa</f>, sì, hai le mani da <f>dottoressa</f>. Magari <f>ostetrica</f>, così farai felice tante altre <f>mamme</f>. Anche se io sarò la tua, sempre.”
-        Sospira.
-            + [Il sonno  ti afferra]
+        <f>Mamá</f> sonríe y te aleja, te quejas con los puñitos.
+        “¿Tienes hambre?” te pregunta, se sienta en el mueble.
+        Te da el seno.
+        “¿Sabes una cosa? Serás la mejor en la escuela, así harás que sea orgullosa. Y te comprare un montón de <f>vestidos de flores</f>, porque cuando era <f>pequeña</f> yo también los quería, a todas le gustan los <f>vestidos de flores</f>.”
+        Te cambia de posición.
+        “Y después te volverás una <f>doctora</f>, si, tienes las manos de <f>doctora</f>. Quizás <f>Obstétrica</f>, así harás feliz también a tantas  <f>mamá</f>s. Aunque yo seré siempre la tuya, siempre.”
+        Suspira.
+            + [El sueño te agarra]
             -
-        “E magari quando ti sposerai con un brav’<m>uomo</m> mi farai vivere con voi, così ti aiuterò coi nipotini, e tu potrai continuare a lavorare. E se sarò ancora <f>bella</f>...”
-        Ma stai già dormendo.
-        Nel sogno vedi la strada di prima, il viaggio che hai fatto.
-        Ma non ci sono più colori e forme e tutte le cose possibili.
-        Ci sono solo <m>quadratini azzurri</m>
-        <f>triangoli rosa</f>
-        e mani enormi che ti schiacciano e strappano, cercando di darti una forma. #people
+        “Y quizás cuando te casarás con un  <m>buen</m> <m>hombre</m> mi harás vivir con ustedes, así te ayudare con mis <m>nietos</m>, y tu podrás continuar a trabajar. Y si seré todavía <f>bella</f>...”
+        Pero ya estas durmiendo.
+        En el sueño ves la calle de antes, el viaje que has hecho.
+        Pero no hay más colores, formas ni todas las cosas posibles de antes.
+        Solo hay cuadros <m>azules</m>
+        triángulos <f>rosados</f>
+        Y manos enormes que te aplastan y te tiran, tratando de darte una forma. #people
         -> atto_afab_uno
     
     === atto_afab_uno ===
-    Infanzia. Primavera. Scuola. #title
+    Infancia. Primavera. Escuela. #title
         
-        Coi piedi batti un ritmo immaginario sul pavimento.
-        “<f>Pallina</f>, stai ferma!”
-        Mamma sorride ma è una statua, vuole che tu sia una statua.
-        Una bella statuina col <f>vestito a fiori</f>, le <f>scarpe bianche</f> e i <f>capelli raccolti</f>.
-        Ha passato tutto il viaggio in auto a dirti che dovete fare una buona impressione.
-        Che l'incontro genitori/insegnanti è un momento in cui i genitori vengono giudicati severamente.
-        Che un genitore solo è sempre colpevole, e per questo non dovete fare nessun errore.
-        Pensi che non abbia molto senso, ma ti fidi di lei.
-            + [Guardi fuori]
+        Con los pies creas un ritmo imaginario golpeando el suelo.
+        “¡<f>Pallina</f>, quédate quieta!”
+        <f>Mamá</f> sonríe, pero es una estatua, quiere que tú seas una estatua.
+        Una <f>bella</f> estatua con el <f>vestido</f> de flores, los zapatos blancos y el <f>cabello amarrado</f>.
+        Ha pasado todo el viaje en automóvil diciéndote que deben dar una buena impresión.
+        Que el encuentro <m>padres</m>-profesores es un momento en el cual los <m>padres</m> son juzgados severamente.
+        Que una <f>madre</f> <m>soltera</m> es siempre culpable, y por esto no se pueden cometer errores.
+       Crees que no tiene sentido, pero confías en ella.
+            + [Miras afuera]
             -
-        Ti fidi, ma questo non cancella la noia.
-        Dei ragazzi si rincorrono.
-        Quello sbruffone di Lorenzo ha portato un pallone, stanno facendo le squadre.
-            + “Mamma?”
+        Confías, pero esto no borra el aburrimiento.
+        Los <m>niños</m> corren, siguiéndose unos a otros.
+        Ese bravucón de <m>Lorenzo</m> trajo una <m>pelota</m>, están creando los equipos.
+            + “¿Mamá?”
             -
-        Ti ignora.
-        Dall’altro lato del giardino le tue compagne di classe chiacchierano.
-        Riconosci Laura, Marika, Chloe e una di quarta, Emma.
-            + “Posso andare in bagno?”
+        Te ignora.
+        Del otro lado del patio de recreo tus <f>compañeras</f> de clase conversan.
+        Reconoces <f>Laura</f>, <f>María</f>, <f>Chloe</f> y una del cuarto grado, <f>Emma</f>.
+            + “¿Puedo ir al baño?”
             -
-        “Ci sei stata due secondi fa, tesoro.”
-        Sospira e ti prende una mano.
-        Il profumo di mamma è così forte che ti fa venire il mal di testa.
-        “Se fai la brava poi ti prendo un gelato, ok?”
-        Ti passa un libro di Geronimo Stilton, che sfogli controvoglia. #completion_33
-        “Goool!” qualcuno urla da fuori.
-        Il vocione di suor Addolorata spegne le grida dei tuoi compagni.
-        Loro fanno promesse, rotte nel momento stesso in cui la finestra viene richiusa.
-        La suora si affaccia da una porticina, chiama tua madre.
-        “Stai qui dieci minuti, solo dieci minuti ok? E poi avrai il tuo gelato.”
-            + [Fai sì con la testa]
+        “Fuiste hace dos segundos, cariño.”
+        Suspira y te agarra la mano.
+        El perfume de <f>mamá</f> es tan <m>fuerte</m> que te provoca dolor de cabeza.
+        “¿Si te comportas bien luego te compro un helado, ok?”
+        Te da un libro de Miguel de Cervantes, que ojeas sin muchas ganas. #completion_33
+        “¡Gooool!” Alguien grita.
+        La voz de la <f>hermana</f> <f>Adolorada</f> silencia los gritos de tus <m>compañeros/m>.
+        Ellos prometen estar más tranquilos, promesa que se rompe apenas se cierra la ventana de la Hermana <f>Adolorada</f>.
+        La <f>hermana</f> se asoma desde una puerta <f>pequeña</f>, llama a tu <f>madre</f>.
+        “¿Quédate aquí diez minutos, solo diez minutos ok? Después te daré tu helado.”
+            + [Asientes con la cabeza]
             -
-        Quanto sono lunghi, dieci minuti? 
-        Conti sei respiri. Sette. Decidi che sono abbastanza.
-        Ti alzi.
-            + [Raggiungi i ragazzi]
+        ¿Cuánto duran diez minutos? 
+        Cuentas seis respiros. Siete. Decides que son suficientes.
+        Te levantas.
+
+            + [Vas a dónde los chicos]
             -> gioco
-            + [Vai dalle tue compagne]
+            + [Vas a donde tus compañeras]
             -> compagne
             
         
             = gioco
-                Lorenzo ti guarda infastidito, ma Pallino ti raggiunge sorridente.
-                “Vuoi prendere il mio posto?”
-                Non aspetta una risposta, ti passa il <m>pallone</m> e corre dalle ragazze.
-                Uno della quinta ti batte il cinque.
-                Senti i risolini idioti di Marika e Chloe.
-                “Sei quella dei rigori, vero?”
-                    + Fai sì con la testa[], nascondendo a fatica l’orgoglio.
+                <m>Lorenzo</m> te mira fastidiado, pero <m>lentejuelas</m> se acerca sonriendo.
+                “¿Quieres tomar mi puesto?”
+                No espera una respuesta, te da la <m>pelota</m> y corre donde están las <f>chicas</f>.
+                Uno de quinto grado te da los cinco.
+                Escuchas las risas idiotas de <f>María</f> y <f>Chloe</f>.
+                “Eres aquella de los penaltis, ¿verdad?”
+                    + Aceptas con la cabeza[], escondiendo con dificultad el orgullo.
                     -
-                “Tutta fortuna”, commenta Lorenzo.
-                “Proviamo!” dice quello di quinta.
-                “Stai in squadra con me, ok? Marca Lorenzo, così lo facciamo innervosire.”
-                Sei una scheggia.
-                Le tue gambette hanno accumulato così tanta energia mentre aspettavi sulla sedia, che ora corri come una molla.
-                Ci metti due minuti a segnare.
-                Lorenzo chiama un rigore inesistente.
-                    + "Chiudi quella bocca da rana!"
+                “Toda una fortuna”, comenta <m>Lorenzo</m>.
+                “¡Probemos!” dice el de quinta.
+                “Estas en mi equipo, ¿ok? Marca <m>Lorenzo</m>, así lo molestamos.”
+                Eres muy veloz.
+                Tus piernas han acumulado tanta energía mientras esperabas en la silla, que ahora corres cómo un guepardo.
+                Te toma dos minutos hacer gol.
+                <m>Lorenzo</m> reclama un penalti inexistente.
+                    + "¡Cierra tu boca de rana!"
                     -
-                Un gol ancora, poi un assist al ragazzo di quinta.
-                Ti sembra di volare.
-                Pallino e Laura fanno il tifo per te. #completion_50
-                Sorridi, rubi la palla a Lorenzo che ti sbatte a terra.
-                Il ragazzo di quinta dice qualcosa ma lo ignori.
-                    + [Tiri un pugno a Lorenzo]
+                Otro gol, después asistes al <m>chico</m> de quinto.
+                Sientes que vuelas.
+                <m>lentejuelas</m> y <f>Laura</f> te están apoyando. #completion_50
+                Sonríes, robas la <m>pelota</m> a <m>Lorenzo</m> que te empuja y caes a tierra.
+                El <m>chico</m> de quinto dice algo, pero lo ignoras.
+                    + [Le tiras un puño a Lorenzo] 
+                -
+                Todo es un caos.
+                Los <m>chicos</m> se burlan de <m>Lorenzo</m> porqué se dejó <m>pegar</m> por una <f>chica</f> .
+                Escuchas a <f>Chloe</f> a tus espaldas llamar a la Hermana <f>Adolorada</f>.
+                Ves a <m>Lorenzo</m> que se aguanta las ganas de llorar y el cansancio.
+                Una mano te agarra la espalda, sientes el perfume dulce. 
+                    + [Gruñes]
                     -
-                È il caos.
-                I ragazzini prendono in giro Lorenzo perché si è fatto <m>picchiare da una bambina</m>.
-                Senti Chloe alle tue spalle chiamare suor Addolorata.
-                Guardi Lorenzo che trattiene a fatica le lacrime.
-                Una mano ti afferra la spalla, ti investe un profumo dolcissimo. 
-                    + [Sbuffi]
+                Cómo un globo que se desinfla, dejaste de volar. #completion_70
+                La mano es aquella de <f>Mamá</f>, su voz grita que se rompió el <f>vestido</f>, el <f>vestido</f> bueno y Dios mío ¡No!, Los zapatos están mugrientos.
+                La <f>hermana</f> <f>Adolorada</f> da la culpa al <m>chico</m> de quinto que le grita.
+                <f>María</f> te señala y se ríe.
+                “¡Las <f>niñas</f> no hacen eso!”
+                ¡Que fastidiosa es <f>María</f>!
+                    + [Le sacas la lengua]
                     -
-                Come un palloncino che si sgonfia, hai smesso di volare. #completion_70
-                La mano è quella di mamma, la sua voce urla che il vestito è strappato, il <f>vestito buono</f> e Cristo, no! Le scarpe bianche sono lerce!
-                Suor Addolorata se la prende col ragazzino di quinta, che urla contro di lei.
-                Marika ti indica e ride.
-                “<f>Non è una cosa da bambine</f>!”
-                Quanto è noiosa Marika!
-                    + [Le fai la linguaccia]
-                    -
-                Mamma ti tira una sberla.
-                Ti senti al centro di un palco, e tutti urlano il tuo nome.
-                Vorresti scendere, ma tutti ti chiedono: cosa sei <f>Pallina</f>, cosa sei?
-                Perché ti comporti <m>come un bambino</m>?
-                Perché <f>non ti vesti a dovere</f>?
-                Perché usi le <m>parolacce</m> e <m>picchi</m>?
-                Perché sei <m>brava a calcio</m>?
-                Cosa sei <f>Pallina</f>, cosa sei? #almost_there
+                <f>Mamá</f> te da una cachetada.
+                Sientes que estas en el medio de un escenario y todos gritan tu nombre.
+                Quieres bajar, pero todos te preguntan: ¿Qué eres <f>Pallina</f>?, ¿qué eres?
+                ¿Por qué te comportas cómo un <m>niño</m>?
+                ¿Por qué <f>no te vistes como debes</f>?
+                ¿Por qué dices <m>groserías</m> y <m>golpeas</m>?
+                ¿Por qué eres buena al futbol?
+                ¿Qué eres <f>Pallina</f>?, ¿Qué eres? #almost_there
+
                 ->bullet_hell_uno_afab
                 
             = compagne
-                Non esattamente la tua prima scelta ma quella più sensata: niente pallone uguale niente pasticci uguale niente sgridate di mamma.
-                “Belle scarpe!” commenta Marika.
-                Ti guardi i piedi.
-                Ti stanno strette, le hai messe solo per la comunione di tuo cugino.
-                    + “Di cosa parlate?”
+                No es exactamente lo que quisieras hacer, pero es lo más sensato: nada de pelotas es igual a nada de problemas lo que es igual a nada de gritos de <f>mamá</f>.
+                “¡Qué lindos zapatos!” comenta <f>María</f>.
+                Te miras los pies.
+                Te aprietan, solo las usaste para la comunión de tu <m>primo</m>.
+                    + “¿De qué hablan?”
                     -
-                La risposta è così noiosa che il tuo cervello la ignora.
-                Guardi il pallone correre da una parte all’altra.
-                Lorenzo che fa il gradasso con Pallino.
-                “Perché i maschi sono così idioti?”
-                È Chloe a parlarti.
-                    + “Almeno si divertono.”
+                La respuesta es tan aburrida que la ignoras.
+                Miras el balón ir y venir de un lado al otro.
+                <m>Lorenzo</m> se luce delante de <m>lentejuelas</m>.
+                “¿Por qué los <m>hombres</m> son tan idiotas?”
+                Dice <f>Chloe</f>.
+                    + “Al menos se divierten.”
                     -
-                “Anche noi. Stiamo giocando alle <f>principesse</f>, ce ne manca una.”
-                Ti guarda speranzosa.
-                    + [Ignori il sottotesto]
+                “<f>Nosotras</f> también, estamos jugando a  las <f>princesas</f>, nos falta una.”
+                Te guarda con esperanza.
+                    + [Ignoras la indirecta]
                     -
-                “Vieni?”
-                Non ne hai voglia, ma hai un’idea.
-                    + “Ti va una sfida?["] Se vinci, gioco alle <f>principesse</f> fino a fine della scuola.”
+                “¿Quieres jugar?”
+                No tienes ganas, pero tienes una idea.
+                    + “¿Te gustaría un desafío?["] Si ganas, jugare a  las <f>princesas</f> hasta el final de la escuela.”
                     -
-                Lo sguardo di Chloe è dubbioso.
-                Alle sue spalle sono arrivate le altre. #completion_50
-                    + “Su quell’albero[..."]”, indichi un vecchio olmo dai rami bassi “c’è il registro di suor Addolorata. Se lo prendi prima di me, hai vinto.”
+                <f>Chloe</f> te mira con dudas.
+                Detrás de ella están llegando las demás <f>niñas</f>. #completion_50
+                    + “Sobre aquel árbol[..."]”, indicas un viejo olmo con ramas bajas “Está el registro de la <f>hermana</f> <f>Adolorada</f>. Si lo consigues antes que yo, ganas.”
                     -
-                “Sei stata tu quindi a rubarlo?” Laura è sorpresa.
-                Ti senti orgogliosa.
-                Niente registro, niente prova delle decine di note che hai preso.
-                E di quelle di molti compagni di classe.
-                “Che <m>maschiaccio</m>!” Marika solleva il naso a punta. 
-                “Ma Chloe è una secchiona, poi lo porta sicuro alle suore!”
-                Laura non è convinta.
-                “Non sono secchiona!”
-                    + [Osservi Chloe]
+                “¿Fuiste tú la que lo robó?” <f>Laura</f> se sorprende.
+                Te sientes increíble.
+                Sin registro, ninguna prueba de las notas disciplinarias que te ha dado la <f>hermana</f> <f>Adolorada</f>.
+                Y las de los demás <m>compañeros/m> de clase.
+                “¡Qué <m>machito</m>!” <f>María</f> alza la nariz con disgusto. 
+                “¡Pero <f>Chloe</f> es una nerd, seguro después se lo da a las <f>hermanas</f>!”
+                <f>Laura</f> no se convence.
+                “¡No soy una nerd!”
+                    + [Miras a Chloe]
                     -
-                Si avvicina all’albero, appoggia la mano e guarda verso l’alto.
-                “E se perdo?”
-                    + [Sai cosa vuoi.]“Tu e Marika la smettete di farmi fare la <f>principessa</f> ogni giorno, e mi lasciate fare il <m>cacciatore</m>, o il <m>drago</m>.”
+                Se acerca al árbol, apoya su mano y observa hacia arriba.
+                “¿Y si pierdo?”
+                    + [Sabes lo que quieres] “Tu y <f>María</f> dejan de obligarme a ser la princesa cada día, y me dejan ser el <m>cazador</m>, o el <m>dragón</m>.”
                     -
-                Non ti aspetta, e inizia a salire.
-                Ti tuffi sul ramo più basso.
-                È più veloce di quanto pensassi.
-                Furba, fa in modo di occupare i rami più stretti, così che tu non possa superarla.
-                Ci sono persone che fanno il tifo.
-                I ragazzi urlano il tuo nome.
-                    + [Salti su un ramo instabile]
+                No te espera y empieza a escalar el árbol.
+                Te lanzas sobre la rama más baja.
+                Es más rápida de lo que habías pensado.
+                Astuta, usa los ramos más estrechos y de ese modo no puedes superarla.
+                Otros <m>niños</m> están apoyando.
+                Los <m>niños</m> gritan tu nombre.
+                    + [Saltas sobre un ramo inestable]
                     -
-                Ce la fai, lei però recupera lo svantaggio. 
-                Il suo vestito si strappa e lo ignora.
-                Forse ora Chloe ti sta simpatica.
-                Alle urla dei bambini però ora ci sono quelle degli adulti. #completion_70
-                “Scendete, subito!”
-                Marika tiene la mano di suor Addolorata, e vi indica.
-                Tua madre è livida, ma non puoi fermarti ora, non vuoi perdere.
-                    + “Arrenditi[!"], sono più veloce di te!”
+                Lo logras, pero <f>Chloe</f> se recupera de la desventaja. 
+                Su <f>vestido</f> se rompe, pero lo ignora.
+                Quizás <f>Chloe</f> te está simpática.
+                En conjunto con los gritos de los demás <m>niños</m> se unen los gritos de los adultos. #completion_70
+                “¡Bajen, inmediatamente!”
+                <f>María</f> tiene la mano de <f>hermana</f> <f>Adolorada</f>, y las señala.
+                <f>Mamá</f> está furiosa, pero ahora no es momento de detenerte, no quieres perder.
+                    + “Ríndete[!"], soy mucho más rápida que tú!”
                     -
-                Chloe non ti risponde.
-                Le suore e tua madre sono sotto all’albero.
-                Chloe grida: ha afferrato il registro.
-                    + Ti scappa una parolaccia[]. Marika si scandalizza.
+                <f>Chloe</f> no te responde.
+                Las <f>hermanas</f> y tu <f>mamá</f> están debajo del árbol.
+                <f>Chloe</f> grita: tiene el registro en mano.
+                    + Te escapa una grosería[]. <f>María</f> se escandaliza.
                     -
-                E poi Chloe cade.
-                Un attimo di silenzio e inizia a piangere.
-                Scendi di fretta.
-                Si capisce subito che il braccio è rotto.
-                E tua madre è una furia.
-                Davanti a tutti ti porta via di peso.
-                La sua voce fa eco a quella di Marika.
-                Ti dice che non ha una <f>figlia</f> ma un <m>mostro</m>, un <m>ragazzo</m>, che è una vergogna, che il vestito è un disastro.
-                Te lo dice Marika, lo dicono le suore.
-                Ti chiedono cosa tu sia, <f>Pallina</f>.
-                Non sei una bambina, <f>Pallina</f>. Cosa sei?
-                Cosa sei? #almost_there
+                Y después sin aviso, <f>Chloe</f> cae.
+                Un momento de silencio comienza a llorar.
+                Bajas del árbol a toda velocidad.
+                Se ve que se rompió el brazo.
+                Y tu <f>mamá</f> parece una bestia de cuanto está molesta.
+                Delante de todos te agarra y te lleva con ella.
+                Su voz hace eco con la de <f>María</f>.
+                Te dice que ella no tiene una <f>hija</f> sino un <m>monstruo</m>, un <m>chico</m>, que solo la avergüenzas, que el <f>vestido</f> está hecho un desastre.
+                Te lo dice <f>María</f>, lo dicen las <f>hermanas</f>.
+                Te preguntas que eres, <f>Pallina</f>.
+                No eres una <f>chica</f>, <f>Pallina</f>. ¿Qué eres?
+                ¿Qué eres? #almost_there
                 ->bullet_hell_uno_afab
     
     ===bullet_hell_uno_afab===
@@ -933,125 +935,126 @@ VAR amab_tre = 1
     -> atto_afab_due
     
     === atto_afab_due ===
-    Adolescenza. Inverno. Liceo.  #title
+    Adolescencia. Invierno. Liceo. #title
     
-        Dal piano di sotto solo qualche risata.
-        C’è un silenzio strano: nessuno ha sonno, eppure le parole sembrano finite.
-            + “Ce l’abbiamo fatta!”
+        Desde planta baja cualquier risa.
+        Hay un silencio extraño: nadie tiene sueño, sin embargo, no hay más nada que decir.
+            + “¡Lo logramos!”
             -
-        Seduta sulla cattedra passi la sigaretta a Chloe, con un sorriso teso.
-        Fuori la città dorme, il piazzale è vuoto.
-        Domattina sarà riempito dalle camionette della pula, dai prof, da qualche figlio di papà.
-        Forse un paio di giornalisti annoiati.
-        Ora però il piazzale riposa.
-        “Tanta roba per “<f>tre lesbiche del cazzo</f>!”, vero?”
-        Emma si sforza di sembrare serena, ma sta tremando.
-            + “Sono orgogliosa di te, Bunny.”
+        Sentada sobre la mesa pasas el cigarro a <f>Chloe</f>, con una sonrisa tensa.
+        Afuera la ciudad está dormida, la plaza está vacía.
+        Mañana estará llena de camionetas de la policía, de profesores, cualquier <m>hijo</m> de <m>papá</m>.
+        Quizás cualquier periodista aburrido.
+        Pero por ahora la plaza está vacía.
+        “Tanto problema por “<f>tres lesbianas del coño</f>!”, ¿verdad?”
+        <f>Emma</f> se esfuerza de parecer tranquila, pero está temblando.
+            + “Estoy orgullosa de ti, Bunny.”
             -
-        Ed è vero, perché nonostante ansie e paure Emma-SuperfandiSailorMoon-Bunny non vi ha mai smollate, manco quando mezzo consiglio studentesco vi ha insultate davanti a tutti.
-        Tre <f>lesbiche</f> di merda.
-        Eppure avete avuto l’ok, avete trovato più di trenta studentesse disponibili (che di ragazzi ne son rimasti un paio), e l’occupazione è iniziata.
-        “Pensi possa davvero servire a Marika, tutto questo?”
-        Chloe ti ripassa la sigaretta.
-            + “Almeno saprà di non essere sola.”
+        Y es verdad, porqué, aunque con ansiedad y miedo <f>Emma</f>-<f>SuperfandeSailorMoon</f>-<f>Bunny</f> no las ha abandonado jamás, ni siquiera cuando mitad del consejo estudiantil las ha insultado delante de todos.
+        Tres <f>lesbianas</f> de mierda.
+        Sin embargo, lo lograron, consiguieron más de treinta estudiantes disponibles (que de <m>chicos</m> quedaron solo un par), y la ocupación política de la escuela inició.
+        “¿Crees que pueda funcionar a <f>María</f>, todo esto?”
+        <f>Chloe</f> te regresa el cigarro.
+            + “Al menos sabrá que no está sola.”
             -
-        “Non possiamo fare di più, temo.”
-        Emma guarda fuori dalla finestra.
-        Marika: sospesa dopo essere stata molestata dal preside.
-            + “Domani il Guagliotti mangerà merda!”
+        “No podemos hacer más, lamentablemente.”
+        <f>Emma</f> mira fuera de la ventana.
+        <f>María</f>: suspendida después que el director de la escuela la molestara sexualmente.
+            + “¡Mañana el Guagliotti comerá mierda!”
             -
-        “Chissà se l'eterno rappresentante d'istituto Lorenzo Facciadimerda Guagliotti ammetterà che era il caso di organizzare almeno un’autogestione.”
-        “Naa, dirà qualcosa sulla legalità da rispettare.”
-        Chloe si abbarbica sul tuo braccio.
-            + “Con la sua legalità ci menano[."]. Se la può ficcare nel culo.”
+        “Quien sabe si el eterno <m>presidente</m> del Instituto <m>Lorenzo</m> Carademierda Guagliotti admitirá que quizás se deba organizar una autogestión.”
+        “Nah, dirá cualquier cosa sobre la legalidad que se debe respetar.”
+        <f>Chloe</f> se apoya sobre tu brazo.
+            + “Con su legalidad nos golpean[."]. Se la puede meter en el culo.”
             -
-        Chloe ti fissa sorridendo, orgogliosa e innamorata.
-        Emma legge qualcosa nel suo sguardo.
-        Non vi ha mai chiesto niente, ma sa.
-        “Scendo dalle gemelle, provo a dormire un po'.”
-        La abbracci.
-            + “Prenditi cura delle primine!”
-            + “Ti voglio bene, Bunny!”
-            + “Se non te la senti[...], nessuno ti giudica.”
-            Lei ti sorride, stanca: “Abbiamo iniziato assieme, finiamo assieme”.
+        <f>Chloe</f> te mira sonriendo, orgullosa y enamorada.
+        <f>Emma</f> lee algo en su mirada.
+        No les preguntado nunca nada, pero lo sabe.
+        “Bajo con las <f>gemelas</f>, trato de dormir un poco.”
+        La abrazas.
+            + “¡Cuida a las nuevas!”
+            + “¡Te quiero mucho, <f>Bunny</f>!”
+            + “Si no quieres[...], nadie te juzga.”
+            Ella te sonríe, cansado: “Iniciamos <f>juntas</f>, terminamos <f>juntas</f>”.
             -
-        “Come fai ad essere tanto <f>figa</f>?”  #completion_33
-         Come la porta si chiude, Chloe ti bacia.
-            + “Divoro la rabbia del Guagliotti.”[]
-            Ti dà un altro bacio. “Speravo fosse un po’ merito mio.”
-            + “Rubo la bellezza delle vergini.”[]
-            “Allora sono salva”, ti risponde con malizia.
-            + “Ignoro i miei sentimenti[."], così marciscono, diventano compost e alimentano le mie cellule.”
-            “Idiota”, finge di darti una sberla.
+        “¿Cómo haces para ser tan <f>única</f>?”  #completion_33
+        Cuando la puerta se cierra, <f>Chloe</f> te besa.
+            + “Me alimenta la rabia del Guagliotti.”[]
+            Te besa de nuevo. “Esperaba que fuera merito mío.”
+            + “Robo la belleza de las vírgenes.”[]
+            “Entonces estoy salvada”, te responde con picardía.
+            + “Ignoro mis sentimientos[."], así se marchitan, se vuelven fertilizante y alimentan mis células.”
+            “Idiota”, finge de darte una cachetada.
             -
-        “Cosa dirà tua madre?”
-        Te lo chiede stendendo un piccolo sacco a pelo, così piccolo che ti chiedi come ci starà il tuo corpicione lì dentro.
-            + [Imiti tua madre] 
-        -
-        “Perché io signorina non ti ho mica cresciuta da sola per vederti poi diventare <f>una teppista</f>! Faccio due lavori e uno è per pagare i tuoi danni, acciderbolina!”
-        Ci scherzi sopra, ma vorresti capisse che queste cose le fai anche per lei, perché storie come la sua o quella di Marika non si ripetano più.
-        Ma lei ti vorrebbe solo a studiare e fare volontariato in chiesa. Più avanti un <f>bravo marito</f> ingegnere, <f>due figli</f> e un appartamento sotto al suo.
-        Te la immagini sola, a casa, preoccupata, e ti si spezza il cuore.
-        “Intendevo di noi.” #completion_50
-        La voce di Chloe si è fatta bassa.
+        “¿Qué dirá tu <f>mamá</f>?”
+        Te pregunta mientras abre su saco de dormir, tan pequeño que te preguntas si tu cuerpo entra.
+            + [Imitas tu madre]
+            -
+        “¡Porqué yo <f>señorita</f> no te he educado para ser una delincuente! ¡Tengo dos trabajos y uno es solo para pagar los daños que haces, joder!”
+        Bromeas, pero quisieras que entendiera que las cosas que haces las haces también por ella, para evitar que historias como la tuya o la de <f>María</f> se sigan repitiendo.
+        Pero ella solo quiere que estudies y seas <f>voluntaria</f> en la iglesia. En el futuro quiere que te consigas un <f>marido bueno</f>, ingeniero, tengas <f>dos hijos</f> y un apartamento debajo del suyo.
+        Te imaginas que está en casa, sola, preocupada por ti, se te rompe el corazón.
+        “Me refería a nosotras.” #completion_50
+        La voz de <f>Chloe</f> ahora tiene un tono bajo.
             + “Uh.”
             -
-        Scendi dalla cattedra.
-        “Che risposta è “uh”?”
-            + “Non le ho ancora detto niente.”
+        Bajas del escritorio.
+        “¿Qué respuesta es “uh”?”
+            + “Todavía no le he dicho de nosotras.”
             -
-        “Ma non sarà un problema per lei, no? Ha anche visto le foto dello scorso Pride!”
-            + “È che non sono sicura.”
+        “Pero no creo que sea un problema para ella, ¿no? ¡Tiene una foto del Pride del año pasado!”
+            + “Es que no estoy segura.”
             -
-        “Di noi?”
-            + “Di me.”
+        “¿De nosotras?”
+            + “De mí.”
             -
-        Chloe ti guarda, ferma a metà nel gesto di spogliarsi.
-        La luce mette in evidenza una vecchia cicatrice sul braccio e lo sguardo ferito.
-        Sai che c’è qualcosa, qualcosa che devi capire, ma le parole se ne vanno quando provi ad afferrarla quella cosa e a parlarne.
-            + “Ti amo[.“], ed è tutto quel che so.”
+        <f>Chloe</f> te mira, se detiene mientras se estaba desvistiendo.
+        La luz resalta una <f>vieja</f> cicatriz en el brazo y la mirada de una persona lastimada.
+        Sabes que hay algo, hay algo que tienes que entender, pero las palabras desaparecen cuando tratas de atrapar esa cosa y hablarla.
+            + “Te amo[.“], es lo único que sé.”
             -
-        Chloe si stende in silenzio.
-            + “Ma non ti basta.”
+        <f>Chloe</f> se acuesta en silencio.
+            + “Pero no es suficiente para ti.”
             -
-        Ti sdrai accanto a lei. 
-        Guardi il soffitto lercio: segni di scarpe, ragnatele, gomme da masticare, tracce di unto. Una trave esposta da cui cade polvere.
-        “La scuola è il posto del futuro per i nostri giovani, un tempio di sicurezza” ha sbraitato ieri il preside. Minimo, quella polvere è amianto. #completion_70
-        “È che non capisco.”
-        La voce di Chloe taglia il silenzio della stanza.
-        “Arriva sempre un momento in cui alzi una barriera e mi tieni fuori.”
-            + ["Non voglio dirti cazzate."]“Ti tengo fuori solo da quello che non capisco di me, per non dire cazzate. Ho bisogno di tempo, Chloe.”
+        Te acuestas a su lado. 
+        Miras el techo sucio; marcas de zapatos, telarañas, chicles, restos de grasa, un soporte del que cae polvo.
+        “La escuela es el lugar del futuro para nuestros jóvenes, un templo de seguridad” Ha gritado el director ayer. Mínimo, todo ese polvo es amianto. #completion_70
+        “Es que no entiendo.”
+        La voz de <f>Chloe</f> corta el silencio de la habitación.
+        “Siempre llega un momento en el que alzas un muro y no me dejas entrar.”
+            + ["No quiero decir tonterías."]“Te tengo fuera solo de aquello que no entiendo de mí misma, para no equivocarme y decir estupideces. Necesito tiempo, <f>Chloe</f>.”
             -
-        “E questo è uno scudo contro di me?”
-        Ti tira il <m>binder</m>.
-        Dopo un’intera giornata è una tortura, la schiena è a pezzi ma non vuoi levartelo.
-        Le sue dita si infilano sotto, ti senti morire.
-            + Provi a resistere[]. Il tuo corpo si irrigidisce.
-            “Stai trattenendo il respiro?” Chloe ti guarda perplessa.
-            + [Levi la mano]
+        “¿Y esto es un escudo en mi contra?”
+        Te lanza la <m>faja del pecho</m>.
+        Después de todo un día es una tortura, la espalda está hecha pedazos, pero no te lo quieres quitar.
+        Sus dedos entran por debajo, sientes que te mueres.
+            + [Tratas de resistir] Tu cuerpo se vuelve de piedra.
+            “¿Estas aguantando la respiración?” <f>Chloe</f> te mira impresionada.
+            + [Quitas su mano]
             -
-        Lei si alza, va alla finestra.
-        Detesti quando cerca di farti sentire in colpa, detesti che ci riesca sempre.
-        Ti avvicini a lei.
-        “Ancora questa storia. Non sei un <m>uomo</m>, <f>Pallina</f>. Lo saprei. Mi fanno venire tipo l’orticaria se li tocco. La tua forza è quella di una <f>donna</f>, i tuoi gemiti...”
-        Ti accarezza.
-            + “Non sta a te decidere cosa sono.”
+        Ella se levanta. Va a la ventana.
+        Odias cuando trata de hacerte sentir en culpa, peor aun cuando lo logra.
+        Te acercas a ella.
+        “Todavía con esta historia. No eres  un <m>hombre</m>, <f>Pallina</f>. Lo sabría. Me da alergia si los toco. Tu fuerza es de  una <f>mujer</f>, tus gemidos...”
+        Te acaricia.
+            + “No eres tú quien debe decidir que soy.”
             -
-        Ti esce più dura di quanto vorresti.
-        Dai la colpa alla stanchezza, ma sai anche che non ne puoi più. Che tutto questo ti ferisce.
-        Continua a dirti che ti ama, ma poi sembra sempre volere qualcosa che non sei.
-        “Hai ragione. Ma questa cosa è difficile anche per me.”
-        Il corpo di Chloe torna accanto al tuo, ti abbraccia, ma senti che è lontana anni luce.
-            + [La stringi]
+        Te sale más <m>fuerte</m> de lo que querías.
+        Das la culpa al cansancio, pero sabes que no puedes más. Todo esto te está lastimando.
+        Continua a decirte que te ama, pero después actúa como si quisiera algo que no eres.
+        “Tienes razón. Pero esto es difícil también para mí.”
+        El cuerpo de <f>Chloe</f> regresa a tu lado. Te abraza, pero es como si estuviera años luz de distancia de ti.
+            + [La tienes entres tus brazos]
             -
-        Arriva questa idea, questo pensiero che diventa una certezza.
-        Se finisce la storia con lei, nessuna ti amerà più.
-        C'è una scelta che devi fare, o cose che è il caso che tu impari a riconsiderare.
-        A ignorare.
-        Forse non sono così importanti, no?
-        Quando inizia a russare tu sei ancora lì, gli occhi spalancati e il cervello bloccato su una domanda, una sola domanda.
-            + “Cosa sono?” #almost_there
+        Cómo un rayo, te llega esta idea, pensamiento, pensamiento que es una certeza.
+        Si terminas tu relación con ella, nadie te amará nunca.
+        Tienes que tomar una decisión, o entender que tienes que aprender a reconsiderar ciertas cosas.
+        Aprender a ignorar.
+        ¿Quizás no sea tan importante? ¿No?
+        Cuando <f>Chloe</f> inicia a roncar todavía estás allí, los ojos abiertos como dos ventanas y el cerebro blocado en una pregunta, solo una pregunta que se repite una y otra vez.
+            + “¿Qué soy?” #almost_there
             -
+
     -> bullet_hell_due_afab
     
     === bullet_hell_due_afab ===
@@ -1059,199 +1062,199 @@ VAR amab_tre = 1
     -> atto_afab_tre
     
     === atto_afab_tre ===
-    Età adulta. Autunno. Discoteca. #title
+    Edad adulta. Otoño. Discoteca. #title
     
-        Guardi tua madre e Chloe parlare al bancone del locale.
-        Ancora non ti capaciti di come le cose siano cambiate.
-        Mamma ti fa il gesto di raggiungerla.
-        “Chloe mi diceva che state pensando di andare in Spagna per, insomma...”
-        Guardi tua moglie: questa cosa della <f>maternità</f> l’ha accennata giusto due sere fa.
-        Ha già deciso che avrete un figlio, a quanto pare.
-            + [Resti in silenzio]
-            + “È solo un’idea per ora.”
-            + “È un processo lungo[.“] ma sì, ci stiamo ragionando.”
+        Miras a tu <f>madre</f> y <f>Chloe</f> hablan en el balcón del local.
+        Todavía no internalizas como las cosas han cambiado.
+        <f>Mamá</f> te invita a acompañarla.
+        “<f>Chloe</f> me decía que están pensando de ir a España por, o sea...”
+        Miras a tu <f>esposa</f>: esta cosa de  la <f>maternidad</f> lo ha dicho solo dos noches atrás.
+        Ya decidió que tendrán un <m>hijo</m>. aparentemente.
+            + [Te quedas en silencio]
+            + “Es solo una idea por ahora.”
+            + “Es un proceso largo[.“] pero lo estamos pensando.”
             -
-        “Non vedo l’ora di essere <f>nonna</f>.”
-        Tua madre è raggiante.
-        Si guarda in giro.
-        “Forse è il caso che me ne vada ora, ma sono stata felice di darvi una mano, <f>ragazze</f>.”
-        Ti abbraccia e se ne esce dal locale.
-        “Perché non hai messo il costume che ti avevo preso?”
-        Chloe guarda infastidita il tuo felpone largo.
-            +“Non ho fatto in tempo[.“]. I preparativi e tutto il resto...”
+        “No veo el momento de ser <f>abuela</f>.”
+        Tu <f>mamá</f> está radiante.
+        Se mira alrededor.
+        “Quizás es momento de que me vaya, pero estoy muy feliz de haberlas ayudado, <f>chicas</f>.”
+        Te abraza y se va del local.
+        “¿Por qué no te pusiste el <f>vestido</f> que te compré?”
+        <f>Chloe</f> mira con fastidio tu suéter negro.
+            + “No tuve tiempo[.“]. Los preparativos y todo lo demás...”
             -
-        Ma non ti risponde perché due donne si avvicinano, vestite da Ellen Degeneres e Portia de Rossi.
-        Iniziano a parlare con Chloe di soldi, politica, della figlia dell’assessore, di riqualificazione del quartiere.
-            +“Cosa non va nel quartiere?”[] chiedi senza pensarci.
+        Pero no te responde porqué dos mujeres se acercan, vestidas cómo Ellen Degeneres e Portia de Rossi.
+        Comienzan a hablar con <f>Chloe</f> de dinero, política, de la <f>hija</f> del asesor, de los trabajos para mejorar el barrio.
+            + “¿Cuál es el problema del barrio?”[]. Preguntas sin pensar.
             -
-        Chloe ti dà una gomitata e bisbiglia: “Sii gentile, sono loro a finanziarci”.
-            +Sorridi alle due[.] che ti stanno osservando.
+        <f>Chloe</f> te golpea con el codo y te susurra: “Sé gentil, son ellas las que nos financian”.
+            + Sonríes a las dos[.] que te miran.
             -
-        “Avete fatto davvero un gran lavoro, complimenti”, dice la finta Portia.
-        “Forse il titolo è un po’ prosaico”, commenta la finta Ellen.
-        Chloe difende ridendo il nome della festa, perché ovviamente “Halloween senza uomini” l’ha scelto lei, come il novanta per cento delle cose della serata.
-        “Tutto bene?”, Emma interrompe i tuoi pensieri.
-            + [Fai sì con la testa]
-            + “Detesto questa gente.”
-            + Ti tappi le orecchie[], fingendo di urlare disperata.
+        “Hicieron un <m>buen</m> trabajo, felicitaciones”, dice la falsa Portia.
+        “Quizás el título es un poco impersonal”, comenta la falsa Ellen.
+        <f>Chloe</f> defiende riendo el nombre de la fiesta, porque obviamente “Halloween sin <m>hombres</m>” lo escogió ella, como el noventa por ciento de las cosas de la fiesta.
+        “¿Todo bien?”, <f>Emma</f> interrompe tus pensamientos.
+            + [Aceptas con la cabeza]
+            + “Detesto toda esta gente.”
+            + Te tapas los oídos[], fingiendo de gritar desperada.
             -
-        Emma infila il braccio sotto al tuo.
-        È vestita come se fosse appena uscita dalla doccia, con un gigantesco foulard/asciugamano sui capelli.
-        “Posso parlarti?” 
-            + Lanci un'occhiata a Chloe[], che però è presa a riverire la coppia.
+        <f>Emma</f> mete su brazo debajo del tuyo.
+        Está vestida cómo si fuera apenas salida de la ducha, con un gigantesco foulard/toalla en el cabello.
+        “¿Puedo hablarte?” 
+            + Lanzas una mirada a Chloe[], que está ocupada reverenciando a la pareja.
             -
-        L’improvvisata discoteca è già piena, centinaia di donne che si agitano e ballano e chiacchierano. #completion_33
-        Diverse hanno la spilletta di “<f>Tre lesbiche del cazzo</f>”.
-        Chloe sarà felice di tutte queste nuove tesserate.
-        Noti che Emma non porta la sua.
-        Ti trascina fuori, sul retro del locale.
-        Prende fiato, sta un po’ tremando ma la conosci abbastanza da sapere che non è per colpa del freddo.
-            + “Tutto ok Bunny?”
+        La discoteca improvisada ya está llena, cientos de mujeres que celebran, bailan y hablan. #completion_33
+Algunas tienen un pin de “Tres <f>lesbianas</f> del coño”.
+        <f>Chloe</f> será feliz de todas estas nuevas inscritas.
+        Notas que <f>Emma</f> no lleva la suya.
+        Te lleva afuera del local, en la parte de atrás.
+        Respira profundo, está casi temblando, pero la conoces lo suficiente para saber que no es culpa del frio.
+            + “¿Está todo bien Bunny?”
             -
-        Le passi un braccio attorno al collo.
-        “Lascio l’associazione.”
-        È un colpo freddo, imprevisto.
-        L’avete creata voi tre, è nata dagli anni delle occupazioni e dei cortei, dei Pride, delle manifestazioni non autorizzate contro il politico fascio di turno.
-        “Non è più il progetto in cui credevamo, <f>Pallina</f>. Questa roba è, è altro, è il sogno bagnato di Chloe. Questa è la gente contro cui abbiamo lottato, che ci fanno quelle due stronze qui?”
-            + “Se vogliamo sopravvivere...”
+        Pasas tu brazo por detrás de su cuello.
+        “Dejaré la asociación.”
+        Un golpe frio, imprevisto.
+        Ha sido creada por ustedes tres, nacida en los años de protestas, ocupaciones y desfiles, Los Pride, manifestaciones no autorizadas contra el político <m>fascista</m> de turno.
+        “Ha dejado de ser el proyecto en el que creíamos, <f>Pallina</f>. Esta cosa, es diferente, es el sueño húmedo de <f>Chloe</f>. Esta es la gente contra la que hemos luchado, ¿Qué hacen esas dos idiotas aquí?”
+            + “Si queremos sobrevivir…”
             -
-        “Queste sono le parole di Chloe, porca la cacca. Tu sai che ti voglio bene, vero?”
-            + [Resti in silenzio]
-            + [Fai sì con la testa].
-            + “Anche io, Bunny.”
+        “Estas son las palabras de <f>Chloe</f>, joder, mierda. Sabes que te quiero muchísimo, ¿verdad?”
+            + [Te quedas en silencio]
+            + [Aceptas con la cabeza]
+            + “Yo también, Bunny.”
             -
-        Ti prende le mani.
-        “Non sei più te stessa, <f>Pallina</f>. Praticamente ubbidisci solo a Chloe, non la metti mai in discussione. Dov’è la <f>Pallina</f> che rispondeva “fanculo!” a ogni cosa? Che cercava di salvare il mondo? Quella il cui divano ha ospitato quintali di ragazze cacciate di casa?”
-        C’è un toc freddo da qualche parte nella tua pancia.
-        Dove hai messo un sistema di difesa che ultimamente spara contro tutto, in modo indiscriminato, pur di non guardarsi dentro.
-            + Entri nel locale[], ma Emma ti ferma sulla soglia.
-            + Molli la mano di Emma[], cerchi una sigaretta nelle tasche strette.
-            + “C'è chi ha deciso di crescere, e chi no.”
-            Lo dici con cattiveria, ma lei non molla.
+        Te agarra las manos.
+        “No eres tú misma, <f>Pallina</f>. Prácticamente obedeces solo a <f>Chloe</f>, no la cuestionas nunca. ¿Dónde está  la <f>Pallina</f> que respondía “a la mierda” a todo? ¿Qué trataba de salvar el mundo? ¿Aquella que ha recibido en su mueble millones de <f>chicas</f> botadas de casa?”
+        Hay una presión fría en la boca del estómago.
+        Has creado un sistema de defensa que últimamente dispara contra todo el mundo, en modo indiscriminado, solo para no ver dentro de ti.
+            + Entras en el local[], pero <f>Emma</f> te detiene justo antes de entrar.
+            + Dejas la mano de Emma[], buscas un cigarro en tus bolsillos apretados.
+            + “Existe quien decide crecer y quien no.”
+            Lo dices con malicia, pero ella no suelta.
             -
-        “Tesoro, non stai bene, da molto. Non so cosa stia accadendo, ma sorridi sempre meno, e sono preoccupata. Voglio aiutarti, ma non so come farlo se...”
-        Venite interrotte da delle grida.
-            + Ne approfitti per entrare[] e vedere cosa sta succedendo.
-            Le parole di Emma ti rimangono incollate addosso.
+        “Cariño, no estás bien, desde hace tanto. No sé qué te sucede, sonríes siempre menos, estoy preocupada por ti. Quiero ayudarte, pero no sé cómo hacerlo…”
+        En medio de la conversación las detiene el sonido de gritos….
+            + Aprovechas para entrar[] y ver que está sucediendo.
+            Pero las palabras de <f>Emma</f> se te quedan en la piel.
             -
-        “Non è un uomo.”
-        La voce cade nel silenzio totale, persino la musica è scomparsa. #completion_50
-        “Le regole sono regole e...”, è la voce di Chloe, che trema.
-        Sai che è incazzata. Le due iene sono alle sue spalle, in mano due Martini.
-            + [Ti avvicini]
+        “No es un <m>hombre</m>.”
+        La voz se silencia de golpe, hasta la música desaparece. #completion_50
+        “Las reglas son reglas y…”, es la voz de <f>Chloe</f>, que tiembla.
+        Sabes que está molesta. Las dos hienas están detrás, en mano dos martines.
+            + [Te acercas]
             -
-        “Laura, non importa, andiamo altrove.” 
-        Riconosci di colpo le due persone che stanno discutendo con Chloe.
-        Laura, la tua vecchia compagna di scuola, vi siete perse dopo i primi anni di liceo.
-        E Pallino che, che. Non riesci ad ascoltare i tuoi pensieri, a capire "che" cosa.
-        Sai che in teoria è in costume, vestito da biondina, ma ti rendi conto anche che per Pallino quello non è solo un costume.
-        Quel toc freddo, di nuovo, nello stomaco.
-            + [Vai verso Chloe]
-            -
-        Ma Emma si mette in mezzo.
-        “È questo quello che non deve accadere. Non siamo questa cosa qui.”
-        Senti Laura dire qualcosa col tono di chi è stanco di ripetere la stessa frase ancora una volta.
-        “Non è un ragazzo, è una persona non binaria, vuole solo stare in un posto tranquillo per la prima volta che esce di casa così. Sperava di non venir presә a brutte parole almeno qui, ma a quanto pare.”
-        Laura intercetta il tuo sguardo, ti riconosce.
-        Chloe si rende conto che la tizia sta guardando altrove.
-        Ti vede, e con gli occhi ti supplica di darle soccorso.
-            + [Sorridi a Laura] -> Pacificazione
-            + [Ti appoggi a Chloe] -> Durezza
-            + [Te ne vai a bere] -> al_bancone_emma
+        “<f>Laura</f>, no importa, vámonos a otro lado.” 
+        Reconoces rápidamente las dos personas que están discutiendo con <f>Chloe</f>.
+        <f>Laura</f>, tu <f>vieja</f> <f>compañera</f> de escuela, no la habías visto después de los primeros años de liceo.
+        Y <m>lentejuelas</m> que, que. No puede leerte la mente, para entender “que” cosa.
+        Sabes que en teoría es un disfraz, <f>vestido</f> de rubia, pero te das cuenta que para <m>lentejuelas</m> no es un disfraz.
+        Sientes algo frio, de nuevo, en la barriga.
+        + [Te acercas a Chloe]
+        -
+        Pero <f>Emma</f> se mete en el medio.
+        “Esto es lo que no debe suceder. Nosotros no somos “esa” cosa.”
+        Escuchas <f>Laura</f> decir algo con el tono de quien está cansado de repetir la misma cosa una y otra vez.
+        “No es un <m>chico</m>, es una persona no binaria, quiere estar en un sitio tranquilo por la primera vez que sale de casa cómo se siente de verdad, esperaba que no le atacaran con estas palabras aquí, pero parece que no…”
+        <f>Laura</f> intercepta tu mirada, te reconoce.
+        <f>Chloe</f> se da cuenta que <f>Laura</f> está mirando hacia otro lado.
+        Te observa, y con los ojos te suplica que la ayudes.
+            + [Sonríes a Laura] -> Pacificazione
+            + [Te apoyas a Chloe] -> Durezza
+            + [Te vas a tomar algo] -> al_bancone_emma
 
         
             = Pacificazione
-                Saluti, convenevoli, spieghi che è una serata particolare, che non c’è desiderio di discriminare nessuno, è solo che vi è stato chiesto di, di cosa, non lo sai manco tu alla fine.
-                Più parli più ci sono mormorii, gente che esce dal locale.
-                Pallino sorride a Laura.
-                “Andiamocene tesoro, non importa.”
-                Laura sembra delusa mentre se ne vanno.
-                “Conosci queste persone?” ti chiede Chloe.
-                A quanto pare non le ha riconosciute.
-                Con la coda dell’occhio vedi Emma uscire.
-                    + [La insegui]
+                Saludas, cortésmente, explicas que es un evento particular, que no hay ninguna intención de discriminar a ninguno, que les han pedido solo una cosa, una cosa, que al final ni siquiera tú sabes.
+                Más hablas, más se acentúan los murmullos de la gente que habla, gente que se va del local.
+                <m>lentejuelas</m> sonríe a <f>Laura</f>.
+                “Vámonos cariño, no importa.”
+                <f>Laura</f> parece desilusionada mientras se están yendo.
+                “¿Conoces a estas personas?” te pregunta <f>Chloe</f>.
+                Parece que no las ha reconocido.
+                Con el rabillo del ojo ves a <f>Emma</f> que se está saliendo.
+                    + [La sigues]
                     -> pre_terzo_bullet_hell_afab
         
             
             = Durezza
-                Chloe continua a parlare, la sua rabbia sempre meno nascosta ora che sei al suo fianco.
-                Pallino è davanti a te.
-                Ti rendi conto che è a disagio per la situazione, ma è comunque raggiante.
-                Il modo in cui le sue dita si muovono, come gli occhi esplorano lo spazio.
-                Il sorriso che arriva sulla sua bocca quando si vede nel riflesso della porta.
-                Come scosta i capelli lunghi, lasciando che la mano poi rimanga sul petto scoperto.
-                Guardi il tuo di petto, che cerchi sempre di dimenticare, di ignorare.
-                Non porti più il binder da anni, da quando Chloe ti ha detto: “O quello, o me”.
-                    + “Andatevene.”
+                <f>Chloe</f> continua a hablar, su rabia siempre más evidente ahora que estás a su lado.
+                <m>lentejuelas</m> está delante de ti.
+                Te das cuenta que está incomodo por la situación, pero igualmente radiante.
+                La manera como mueve los dedos, como sus ojos exploran el espacio.
+                La sonrisa que tiene en la boca se ve en el reflejo de la puerta.
+                Cómo mueve su cabello largo, dejando a la mano en reposo en su pecho descubierto.
+                Ves tu pecho, que tratas siempre de olvidar, de ignorar.
+                No usas la <m>faja del pecho</m>, desde cuando <f>Chloe</f> te ha dicho “O eso, o yo”.
+                    + “Váyanse.”
                     -
-                La tua voce è piena di rabbia.
-                    + “Non è posto per voi[."]. Non potete andare dove volete, come volete. È una festa privata con le sue regole, c’è poco da sindacare.”
+                Tu voz está llena de rabia.
+                    + “No es un puesto para ustedes[."]. No pueden ir a donde quieran, cuando quieran. Es una fiesta privada con reglas claras, nada de que quejarse.”
                     -
-                Vedi le iene sorridere soddisfatte, Chloe ti prende la mano.
-                Laura ti gira le spalle e se ne va.
-                Eviti di incrociare lo sguardo di Pallino.
-                Assieme a loro se ne vanno diverse persone, alcune sono attiviste del gruppo.
-                Chloe ti bacia e ringrazia.
-                Emma si avvicina, ti guarda, e in silenzio se ne va.
-                    + [La insegui]
+                Ves las hienas sonreír satisfechas, <f>Chloe</f> te agarra la mano.
+                <f>Laura</f> se gira dándote la espalda y se va.
+                Evitas de cruzar miradas con <m>lentejuelas</m>.
+                Junto a ellos se van algunas personas, algunas de ellas activistas del grupo.
+                <f>Chloe</f> te besa y te agradece.
+                <f>Emma</f> se acerca, te mira, y en silencio se va.
+                    + [La sigues]
                 ->  pre_terzo_bullet_hell_afab
             
             
             = pre_terzo_bullet_hell_afab
-                Ma la perdi subito in mezzo alla calca. #completion_70
-                La strada è piena di persone e voci e odori, ma non Emma.
-                Perché la stai inseguendo?
-                Chloe urla il tuo nome.
-                    + Acceleri il passo[], la lasci alle spalle.
+            La pierdes rápido entre tantas personas. #completion_70
+                La calle está llena de personas y voces, sonidos y colores, pero no está <f>Emma</f>.
+                ¿Por qué la estas siguiendo?
+                <f>Chloe</f> grita tu nombre.
+                    + Aceleras el paso[], la dejas detrás dándole la espalda.
                     -
-                Ripensi alle parole di Emma.
-                Hai tradito la persona che eri? E perché?
-                Correndo il <f>seno</f> salta, ti ricorda che esiste, riempiendoti di disagio.
-                Il tuo <f>corpo</f> ti sembra immenso, esposto.
-                Gli sguardi delle altre persone pronti a giudicarlo, sezionarlo.
-                A decidere attraverso le sue forme, cosa sei.
-                Tutti gli occhi sono quelli di Chloe.
-                    + [Ti appoggi a un muro]
+                Piensas a las palabras de <f>Emma</f>.
+                ¿Has traicionado a la persona que eras? ¿Por qué?
+                Corriendo tus <f>senos</f> saltan, te recuerda que existen, te sientes incomoda.
+                Tu cuerpo te parece enorme, al descubierto.
+                Las miradas de las personas siempre listas para observar tu cuerpo, juzgarlo y seccionarlo.
+                Decidiendo a través de tu forma, que cosa eres.
+                Todos los ojos son aquellos de <f>Chloe</f>.
+                    + [Te apoyas sobre un muro]
                     -
-                Ti manca il fiato e quel senso di disagio, di freddo è lì che si crepa, che ti riempie delle parole e dei giudizi, delle promesse e delle velate minacce.
-                Di Chloe che vuole che tu sia la sua <f>ragazza</f>, la sua <f>donna</f>, la <f>madre</f> della vostra bambina.
-                Ci sono domande che non vuoi ascoltare perché stai pensando a tua mamma, tua mamma che c’ha messo trent’anni ad accettare che sei <f>lesbica</f>, e ora vorresti davvero cambiare tutto, di nuovo?
-                Rischiare di nuovo di perderla?
-                Inizi a piangere, svuotata.
-                Chi devi essere, perché tu possa essere felice? #almost_there
+                Te hace falta el aire, te sientes incomoda, el frio en el estómago se intensifica, te llena de palabras y juicios, de promesas y amenazas sutiles.
+                De <f>Chloe</f> que quiere que tu seas su <f>chica</f>, su <f>mujer</f>, la <f>madre</f> de la <f>hija</f> que quiere tener contigo.
+                Hay preguntas que no quieres escuchar porqué estás pensando a tu <f>mamá</f>, tu <f>mamá</f> que se tomó treinta años en aceptar que eres <f>lesbiana</f>, ¿Y ahora quieres cambiar todo de nuevo?
+                ¿Arriesgando de nuevo de perderla?
+                Comienzas a llorar, hasta vaciarte.
+                ¿Quién debes ser, para que puedas ser feliz? #almost_there
             -> bullet_hell_tre_afab
             
             = al_bancone_emma
-                Butti giù due bicchieri di fila. #completion_70
-                Emma si avvicina.
-                “Non erano nostre compagne di scuola quelle all’ingresso?”
-                    + Chiudi gli occhi[.], concentrandoti sulla musica.
+                Te bebes dos shots seguidos. #completion_70
+                <f>Emma</f> se acerca.
+                “¿No eran nuestras <f>compañeras</f> de escuela aquellas al ingreso?”
+                    + Cierras los ojos[.], concentrándote en la música.
                     -
-                “Non è che se non guardi le cose queste spariscono!”
-                    + [Ordini un altro shot]
+                “¡No es que si no ves las cosas estas desaparecen!”
+                    + [Pides otro shot]
                     -
-                “<f>Pallina</f>!”, Emma ti prende le mani. “Cosa sta accadendo?”
-                Ti senti rompere, senti che sta per cedere qualcosa.
-                La guardi negli occhi, fai per parlare.
-                    + [Ma ordini ancora uno shot]
+                “<f>Pallina</f>!”, <f>Emma</f> te agarra la mano. “¿Qué sucede?”
+                Sientes que te estás rompiendo, sientes que está por ceder algo dentro de ti en cualquier momento.
+                Miras a sus ojos, cómo si fueras a decir algo.
+                    + [Pero ordenas otro shot]
                     -
-                L’alcool arriva tutto in una botta, ti senti stordita e nauseata.
-                Il chiasso all’ingresso sta allontanando le persone, la musica si è fermata, ma tu ti accorgi solo di Emma che ti guarda preoccupata.
-                Ti chiedi se lei possa vederti davvero, vedere cosa sei.
-                Perché te lo sei negata da tanto, e tu ora non hai più risposte.
-                    + “Non so chi sono, Bunny.”
+                El alcohol llega en un solo golpe, te sientes confundida y nauseabunda.
+                El problema al ingreso está alejando a las personas, la música se detuvo, pero tú te das cuenta solo de <f>Emma</f> que te mira con tanta preocupación.
+                Te preguntas si ella pueda verte de verdad, ver que eres.
+                Porqué lo has negado por tanto tiempo y ahora no tienes más respuestas fáciles para darte. 
+                    + “No sé quién soy, <f>Bunny</f>.”
                     -
-                Ti senti cadere. L’alcool altera tutto.
-                La caduta è infinita, rallentata dai commenti di una vita.
-                “Devi <f>vestirti da bambina</f>!”
-                “Questa <m>non è una cosa da ragazza</m>.”
-                “Perché <m>giochi a calcio</m>?”
-                “Sono <f>lesbica</f>, per cui tu sei una <f>ragazza</f>.”
-                “È normale che detesti il tuo <f>seno</f> in una società così sessualizzata.”
-                "Ci sono <f>solo due generi</f>."
-                "Questo è <m>innaturale</m>!"
-                Vomiti, e col vomito si rompe quel pezzo di gelo che avevi nel petto.
-                Le parole vengono a getto, ti feriscono, e tu non hai più la forza di reagire. #almost_there
+                Te sientes caer, el alcohol altera todo.
+                La caída es infinita, alentada por todos los comentarios que has escuchado en tu vida.
+                “Debes <f>vestirte de niña</f>!”
+                “Esta no es una cosa de <f>chicas</f>.”
+                “¿Por qué <m>juegas futbol</m>?”
+                “Soy <f>lesbiana</f>, porque tú eres  una <f>chica</f>.”
+                “Es <m>normal</m> que odies tus <f>senos</f> en una sociedad tan sexualizada.”
+                "Solo hay <m>dos géneros</m>."
+                "Esto es <m>innatural</m>!"
+                Vomitas, con el vómito se rompe ese pedazo de hielo que tenías en el estómago y en el pecho.
+                Inicias a lanzar palabras a propulsión, te lastiman, y no tienes la fuerza para reaccionar. #almost_there
                 -> bullet_hell_tre_afab
          
 
@@ -1260,204 +1263,206 @@ VAR amab_tre = 1
     -> finale_afab
     
     === finale_afab ===
-        “<f>Pallina</f>! Ti prego guardami!”
-        È la voce di Bunny.
-            + [Ti sforzi di aprire gli occhi]
+        “¡<f>Pallina</f>! ¡Te suplico mírame!”
+        Es la voz de <f>Bunny</f>.
+            + [Te esfuerzas por abrir los ojos]
             -
-        Pesano quintali.
-        Sei in ginocchio, e davanti a te c’è Emma.
-        “Cazzo, quanto mi hai fatto preoccupare!”
-        Cerchi qualcosa da dire, e ti rendi conto che c’è un sacco di spazio ora nella tua testa.
-        Spazio per nuove parole.
-        Il gelo nella pancia è sparito.
-            + “Bunny.”
+        Pesan tanto.
+        Estás de rodillas, delante de ti está <f>Emma</f>.
+        “¡Joder, me has hecho preocupar un montón!”
+        Buscas algo que decir, te das cuenta que hay mucho espacio en tu cabeza.
+        Espacio para nuevas palabras.
+        El hielo del estómago desapareció.
+            + “<f>Bunny</f>.”
             -
-        La tua amica ti guarda preoccupata.
-            + “Ho paura.”
+        Tu <f>amiga</f> te mira con preocupación.
+            + “Tengo miedo.”
             -
-        Inizi a piangere, non ricordi da quanto non lo facevi.
-        Infradici la spalla di Emma che ti stringe, che ti rassicura.
-        Che ti dice che andrà tutto bene.
-        Pian piano riprendi fiato, ti lasci andare su di lei.
-        Non avevi mai realizzato quanto la sua amicizia fosse il tuo posto sicuro.
-            + “Bunny, non credo di essere una [ragazza."]<f>ragazza</f>.”
+        Inicias a llorar, no recuerdas desde cuando no lo hacías.
+        Bañas la espalda de <f>Emma</f>, que te abraza con tanta fuerza y te asegura…
+        Te asegura que todo estará bien.
+        Muy lentamente recuperas tu respiración. Te abres a ella.
+        No te habías dado cuenta cuanto tu amistad fuera tu lugar seguro.
+            + “Bunny, no creo de ser una [chica."]<f>chica</f>.”
             -
-        Lei resta in silenzio, toccandoti i capelli.
-            + “E nemmeno un [ragazzo."]<m>ragazzo</m>.<>
-            E quando ho visto prima Pallino, quando ho visto quanto fosse felice in quel modo altro, ho pensato che quello è il mio posto. E mi ha fatto paura.”
+        Ella permanece en silencio, tocándote el cabello.
+            + “Y tampoco un [chico."]<m>chico</m>.<>
+            Y cuando vi a <m>lentejuelas</m> antes, cuando vi cuanto era feliz en ese momento diferente, he pensado que ese es mi lugar. Y me ha dado miedo.”
             -
-        “Qual è la cosa peggiore che potrebbe accaderti, se fosse così?”
-            +“Perderei Chloe.”
+        “¿Qué es lo peor que podría ocurrirte si así fuera?”
+            + “Perderé a Chloe.”
             -
-        “E se continuassi a non cercare una risposta a questa domanda?”
-        Resti in silenzio.
-        Ti rendi conto che l’alternativa è perdere te.
-            +“Avrò bisogno di te, Emma.”
+        “¿Y si dejaras de buscar una respuesta a esta pregunta?”
+        Quedas en silencio.
+        Te das cuenta que la otra opción es perderte.
+            + “Te necesitaré, Emma.”
             -
-        “Non vado da nessuna parte tesoro, ma non chiamarmi ma più Emma o mi metto a gridare.”
-        Indichi il suo megafoulard del costume, mezzo sfatto dalla serata, dalle corse.
-            +“Posso?”
+        “No iré a ninguna parte, pero no me llames más nunca <f>Emma</f> o comienzo a gritar desesperada” 
+        Indicas el megafoulard de su <f>vestido</f>, un poco deshecho por la noche ya pasada, por las carreras.
+            + “¿Puedo?”
             -
-        Te lo passa, le chiedi di chiudere gli occhi.
-        È immenso, lo usi per fasciarti il <m>seno</m> stretto, per farlo sparire.
-        Prendi il cellulare, ignori chiamate e messaggi di Chloe e ti guardi nella fotocamera.
-        È un inizio, ma ami quel che vedi.
-            +“Ci sbronziamo da qualche parte?”
+        Te lo pasa, le pides de cerrar los ojos.
+        Es inmenso, lo usas para cubrir tus <m>senos</m> apretado, para hacer que desaparezca.
+        Agarras el teléfono, ignoras llamadas y mensajes de <f>Chloe</f> y te miras a través de la cámara frontal.
+        Es un inicio, pero amas lo que ves.
+            + “¿Nos emborrachamos en cualquier sitio?”
             -
-        Emma ti sorride, ti passa la sua giacca di pelle.
-        “Se vuoi, ho ancora due bombolette di stelle filanti spray, e so dov’è parcheggiato il SUV delle due ricche stronze.”
-        Le afferri la mano.
-        Non ti sei mai sentitə così vivə. #almost_there
+        <f>Emma</f> te sonríe, te pasa su chaqueta de cuero.
+        “Si quieres, todavía tengo dos latas completas de spray de serpentinas, y se dónde aparcaron el SUV las dos idiotas ricas.”
+        Le tomas su mano.
+        No te has sentido jamás así de vive cómo ahora. #almost_there
         -> bullet_hell_buono
 
 //FINALI INTERMEDI
 
     === sconfitta_amab_uno ===
-        Grida ti fanno tornare in te.
-        Vedi Pallina con in mano dei sassi, sangue sulla fronte di Lorenzo che urla cose.
-        "Va a piangere da mammina, su!"
-        Un bus suona il clacson infastidito, obbligando i ragazzi a levarsi dalla strada.
-        Rimanete solo tu e Pallina.
-            + Provi a dire qualcosa[], ma biascichi a fatica.
+        Gritos te hacen regresar en ti.
+        Ves a <f>Pallina</f> con piedras en las manos, sangre en la frente de <m>Lorenzo</m> que grita cosas.
+        "¡Ve a llorar con tu mamita!"
+        Un autobús fastidiado toca la corneta, obligando a los <m>chicos</m> a moverse de la calle.
+        Quedan solo tu y <f>Pallina</f>.
+            + Tratas de decir algo[], pero balbuceas con mucha fatiga.
             -
-        Pallina cerca il tuo sguardo: "Devi..."
-            + "Picchiarli?"[]
-            Ripensi a quanto ha detto poco fa Omar.
+        <f>Pallina</f> busca tu mirada: "Debes..."
+            + "¿Golpearlos?"
+            Piensas todo lo dicho por <m>Omar</m> recientemente.
             -
-        "Ignorarli."
-        È seria, le mani sui fianchi come la supereroina di un fumetto.
-        "Primo, perché sono degli idioti. Secondo, perché sono degli idioti, e terzo, perché sono degli idioti e che te ne frega di loro?"
-            + "La fai facile, tu a loro piaci."
+        "Ignorarlos."
+        Es seria, sus manos en sus caderas como la <f>superheroína</f> de un comic.
+        "Primero, porque son unos idiotas. Segundo, porque son unos idiotas y tercero, porque son unos idiotas. ¿Qué te importa que digan ellos?"
+            + "Lo pones fácil, tú les gustas a ellos."
             -
-        "Non sempre, solo quando si tratta di giocare."
-        Ti tende la mano, un invito ad alzarti.
-        "Ascolti sempre quello che dicono la maestra o Marika o gli altri bambini, ma non è che sanno tutto loro e tu no."
-            +"Omar dice che devo essere come loro."
+        "No siempre, solo cuando quieren jugar."
+        Te da la mano, te invita a alzarte.
+        "Escuchas siempre lo que dicen la <f>maestra</f> o <f>María</f> o los demás <m>niños</m>, pero no es que ellos sepan más que tú."
+            +"Omar dice que tengo que ser como ellos."
             -
-        "Mica Omar sa tutto. Guardati."
-        Ti fa voltare.
-        Avete la vetrina di un negozio abbandonato davanti a voi.
-        "Tu sei tu, punto. Io sono io. Punto. Loro fanno quel che vogliono, noi facciamo quel che vogliamo."
-        Ti guardi nella vetrina, e inizi a vedere qualcosa, qualcosa che prima non c'era, qualcosa che era stato coperto dalle parole di tuo fratello e dei bambini e delle maestre e di tua madre.
-        Sorridi a Pallina, e lei ti afferra la mano.
-        Vedi lə tua vera te, e lə ami. #almost_there
+        "Ni siquiera <m>Omar</m> lo sabe todo. Mírate.”
+        Hace que te gires.
+        Tienen una vitrina de un negocio abandonado delante de ustedes.
+        "Tú eres tú, punto. Yo soy yo. Punto. Ellos hacen lo que quieren, nosotros hacemos lo que queremos."
+        Te miras en la vitrina, y comienzas a ver algo, algo que antes no estaba, algo que estaba cubierto de las palabras de tu <m>hermano</m>, de los <m>niños</m>, de la <f>maestra</f> y de tu <f>madre</f>.
+        Sonríes a <f>Pallina</f>, y ella te toma de la mano.
+        Ves a ti misme, le verdadere tú, y le amas. #almost_there
         -> bullet_hell_buono
 
 
     === sconfitta_amab_due ===
-        Quando riapri gli occhi, ti circondano le cose di nonna.
-        Sei nel suo letto, voci vengono dal salotto.
-        C'è un bicchiere d'acqua sul comodino, ma quando provi ad afferrarlo cade.
-        Passi arrivano veloci in stanza.
-        Laura ti abbraccia, Omar ti guarda preoccupato.
-        "Cazzo hai fatto <m>fratello</m>?"
-        Li guardi perplesso.
-        "Ad una certa sei svenuto. Ci siamo preoccupati."
-        Laura ti stringe una mano.
-        "Sei davvero una <f>femminuccia</f>, <m>Pal</m>!"
-        Omar ti tira un pugno sulla spalla.
+        Cuando reabres los ojos, te rodean las cosas de la <f>abuela</f>.
+        Estás en su cama, voces vienen de la sala.
+        Hay un vaso de agua en la mesita de noche, pero cuando tratas de cogerlo se te cae.
+        Pasos veloces se acercan al cuarto.
+        <f>Laura</f> te abraza, <m>Omar</m> te mira preocupado.
+        "¿Qué coño hiciste <m>hermano</m>?"
+        Los observas perplejo.
+        "Improvisamente te desmayaste. Nos preocupamos."
+        <f>Laura</f> te aprieta una mano.
+        "Eres de verdad una <f>niñita</f>, <m>Pal</m>!"
+        <m>Omar</m> te un puño en la espalda.
             + "Basta."
             -
-        Dura, la parola arriva in faccia a Omar, e ti va bene così.
-        "Ohi, stavo solo scherzando."
-        La tua mente è lucida, le parole chiare.
-        Ti alzi dal letto.
+        Dura, la palabra llega directo a la <f>cara</f> de <m>Omar</m>, y te parece bien que así sea.
+        "Oye, estaba bromeando."
+        Estás lucido, palabras claras.
+        Te levantas de la cama.
             + "Bas-ta."
             -
-        "<m>Pal</m>, hai battuto la testa?"
-        Fissi Omar negli occhi.
-            + "Ne ho abbastanza Omar[."] dei tuoi <m>frocio</m>, <f>gay</f>, </m>ricchione</m>, <f>femminuccia</f>, <f>lesbiche</f> e via di seguito. Non sei manco originale, e fanno male. Fanno male."
+        "<m>Pal</m>, ¿Te golpeaste la cabeza?"
+        Miras directamente a <m>Omar</m> a los ojos.
+            + "Me cansé Omar[."] de tus <m>maricon</m>, <m>gay</m>, <f>mariquita</f>, <f>niñita</f>, <f>lesbianas</f> y demás. Ni siquiera eres original y lastiman. Lastiman mucho."
             -
-        "Perché sei..."
-            + "Perché non sono te[."], e va bene così. Basta. Non devo somigliarti, non voglio nemmeno, perché dovrei?"
+        "Porque eres..."
+            + "Porque no soy tu[."], y está bien. Basta. No tengo que imitarte, no quiero tampoco, ¿Por qué debería?"
             -
-        Tuo fratello stringe le labbra e i pugni.
-        "È il caso che me ne vada."
-            + "Omar?"
+        Tu <m>hermano</m> aprieta los labios y los puños.
+        "Es momento que me vaya."
+            + "¿Omar?"
             -
-        Tuo fratello si ferma.
-            + "Lasciami essere chi sono[."], se mi vuoi davvero bene."
+        Tu <m>hermano</m> se detiene.
+            + "Déjame ser quien soy[."], si de verdad me quieres."
             -
-        "Se lo facessi allora non ti vorrei bene, perché il mondo ti divorerebbe."
-        Guardi Laura, le sorridi.
-            + "Forse il tuo, di mondo[]. Ma ce ne sono altri dove c'è posto anche per me."
+        "Si lo hiciera seria como no quererte, porque el mundo te devoraría."
+        Miras <f>Laura</f>, le sonríes.
+            + "Quizás tu mundo[]. Pero existen otros mundos donde hay lugar para mí."
             -
-        Omar se ne va.
-        Laura ti abbraccia.
-        Piange.
-        "Ti amo."
-        La baci guardandola negli occhi.
-        C'è il tuo riflesso nelle sue lacrime e finalmente vedi lə tua vera te, e lə ami.
-        Ti ami. #almost_there
+        <m>Omar</m> se va.
+        <f>Laura</f> te abraza.
+        Llora.
+        "Te amo."
+        La besas mirándole a los ojos.
+        Ves tu reflejo en sus lágrimas y finalmente te ves a ti misme y te amas.
+        Te amas. #almost_there
         -> bullet_hell_buono
         
         
         
     === sconfitta_afab_uno ===
-        Sei a casa con mamma, non ha parlato per tutto il viaggio.
-        Ora avete due cioccolate davanti, ma siete entrambe ferme.
-        Non hai idea di cosa stia pensando.
-        Poi prende fiato.
-        "Sei pronta per un discorso da persone adulte?"
-            + Fai subito sì con la testa[], felice che ti abbia rivolto la parola.
+        Estás en casa con <f>mamá</f>, no ha dicho una palabra en todo el viaje.
+        Delante de ustedes hay dos tazas de chocolate caliente, pero nadie se mueve.
+        No tienes idea de que estará pensando.
+        <f>Mamá</f> respira profundo.
+        "¿Estás lista para una discusión entre personas adultas?"
+            + Aceptas con la cabeza[], feliz que te había dirigido la palabra.
             -
-        "Non so come si fa a essere una buona mamma, <f>Pallina</f>." sospira. "Di certo non come nonna Melina."
-        Ti sorride.
-        "Ho fatto un sacco di casini, sai? Sempre di testa mia, e questa cosa la faceva impazzire."
-        Ha gli occhi lucidi.
-        "Ma sono contenta di averle disubbidito. Diversamente, non sarei la persona che sono, e mi piaccio. E non avrei avuto te. Sai che son felice di averti, vero?"
-            + Non sai se e come muoverti[]. Ti sono nuovi questi discorsi.
+        "No sé cómo se logra ser una buena <f>madre</f>, <f>Pallina</f>." Suspira. "Seguramente no come la <f>abuela</f> <f>Melina</f>."
+        Sonríes.
+        "Era bastante rebelde, me metía en un montón de problema, ¿Sabes? Siempre hacia lo que quería, esto la volvía <f>loca</f>."
+        Tienes los ojos lucidos.
+        "Pero estoy feliz de haberla desobedecido. Diversamente, no sería la persona que soy, y me gusta quien soy. Y no te habría a ti en mi vida. Sabes que soy feliz de ser tu <f>mamá</f>, ¿verdad?"
+            + No sabes si moverte y cómo hacerlo[]. Todos estos discursos son nuevos.
             -
-        "Ti propongo un patto: tu mi dirai di cosa hai bisogno, cosa vuoi fare. Io ti dirò di "no" solo se so che sarà pericoloso, e dovrai fidarti di me. In cambio, sopporti le suore fino alla fine dell'anno, e poi cambiamo scuola."
-        Ti stai guardando le mani, perché non sai cosa dire. È la prima volta che ti trattano da persona adulta.
-        E poi ti rendi conto che una cosa la sai.
-            + "Mamma? Vorrei tagliarmi i capelli."
+        "Te propongo un acuerdo: tú me dirás que necesitas, que quieres hacer. Yo te diré "no" solo si sé que será peligroso, y tendrás que confiar en mí. En cambio, soportas a las Hermanas hasta el final del año, después cambiamos de escuela."
+        Te miras las manos, no sabes que decir. Es la primera vez que te tratan de persona adulta.
+        Y te das cuenta que una cosa la sabes.
+            + "¿Mamá? Quisiera cortarme el cabello."
             -
-        "Questa mi sembra una richiesta facile, tesoro", ti scompiglia i lunghi riccioli.
-            +"Li voglio rasati come Lore."
+        "Esta me parece una petición fácil, tesoro", te mueve tus largos rulos con la mano.
+            +"Los quiero cortos cómo Lore."
             -
-        Mamma fa per dire qualcosa, poi si ferma.
-        "Ti va se te li taglio io?"
-            + [Le prendi la mano]
+        <f>Mamá</f> intenta decir algo, pero se detiene.
+        "¿Puedo cortártelos yo?"
+            + [La coges de la mano]
             -
-        Ti abbraccia.
-        Quando si stacca ha gli occhi lucidi.
-        Ti accompagna in bagno, e man mano che le ciocche cadono hai l'impressione che una patina sparisca.
-        Per la prima volta vedi lə tua vera te, e lə ami.  #almost_there
+        Te abraza.
+        Cuando se separa tiene los ojos lucidos.
+        Te acompaña al baño, y poco a poco empiezan a caer <f>los bucles de cabello</f> y tienes la impresión que una capa empieza a caer.
+        Por primera vez tu verdadere ser aparece, y le amas.  #almost_there
     -> bullet_hell_buono
     
     
     
     === sconfitta_afab_due ===
-        Il risveglio è come uscire da un incubo.
-        Fuori c'è il caos: cori, sirene, grida, risate.
-        Al tuo fianco non c'è Chloe ma Emma.
-        Sta leggendo qualcosa, e ti sorride quando ti svegli, un sorriso piccolo e triste.
-        "Chloe se ne è andata stanotte, mi dispiace."
-        Ti fa più male di quanto vorresti.
-            + Ti alzi e ti appoggi a lei[],
-            <> hai bisogno di conforto.
+        El despertar es como salir de una pesadilla.
+        Afuera hay caos: coros, sirenas, gritos y risas.
+        A tu lado está <f>Emma</f>.
+        Está leyendo algo, te sonríe cuando te ve despierta, una sonrisa <f>pequeña</f> y triste.
+        "<f>Chloe</f> se fue anoche, lo lamento."
+        Te lastima más de lo que esperabas.
+            + Te alzas y te apoyas a ella[],
+            <> Necesitas conforto.
             -
-        Lei ti stringe forte, lasciandoti tutto il tempo del mondo.
-        Quando ti stacchi, ti dice che il corteo sotto ti aspetta.
-            + "Bunny, secondo te cosa sono?"
+        Ella te aprieta fuertemente, dejándote todo el tiempo del mundo.
+        Cuando te separas, te dice que el corteo abajo te espera.
+            + "Bunny, ¿Qué crees que soy?"
             -
-        "In che senso?"
-            + "Non mi sento una [ragazza."]<f>ragazza</f>. E nemmeno <m>un ragazzo</m>. O qualcosa nel mezzo. Più una cosa "altra", diversa. Ma ogni volta che ci penso mi manca l'aria, mi sento morire. E per colpa di questa cosa, Chloe se ne andrà."
+        "¿En qué sentido?"
+            + "No me siento como una [chica."]<f>chica</f>. Y tampoco un <m>chico</m>. O cualquier cosa en el medio. Mas que todo “otra” cosa, diferente. Pero cada vez que lo pienso me hace falta el aire y siento de morir. Y por culpa de esto, <f>Chloe</f> se irá."
             -
-        "Chloe...", ma poi Emma cambia idea.
-        Apre il suo specchietto da trucco, vi guardate assieme.
-        "Ho sempre saputo che mi piacevano le ragazze, ma a casa questa cosa non esisteva, sai quanto sono religiosi i miei. Ho capito che c'erano altre ragazze come me solo quando ho conosciuto te e Chloe."
-        Sospira.
-        "I miei potevano continuare a dire che certe cose non esistevano, ma ciò che sento e provo sono dati di fatto. Quando ho accettato questa cosa, mi sono vista davvero."
-        Gira lo specchietto verso di te.
-        "Solo tu puoi sapere chi sei. Fuori possono dire che non esisti, ma è un problema loro. Non è che perché Chloe è lesbica non possa avere pregiudizi, ma quelli sono problemi suoi. Tu sai chi sei, e hai il diritto di dirlo ad alta voce ogni volta che vuoi."
-            + "Come fai ad essere così saggia?"
+        "<f>Chloe</f>...", pero después <f>Emma</f> cambia idea.
+        Abre su espejo de <f>maquillaje</f>, ambas se reflejan.
+        "Siempre he sabido que me gustan las <f>chicas</f>, pero en casa esta cosa no existía, sabes cuanto son religiosos mis <m>padres</m>. Entendí que había otras <f>chicas</f> como yo solo cuando conocí a <f>Chloe</f> y a ti."
+        Suspira.
+        "Mis <m>padres</m> podían continuar diciendo que algunas cosas no existían, Pero lo que yo siento y vivo es un hecho. Cuando acepté esto, me vi realmente como soy."
+        Gira el espejo hacia ti.
+        "Solo tú puedes saber quién eres. Afuera pueden decir que tu no existes, pero es un problema de ellos. No porqué <f>Chloe</f> es <f>lesbiana</f> no puede tener prejuicios, pero son problemas de ella. Tú sabes quién eres, y tienes el derecho de decirlo en voz alta, cada que vez que quieras."
+            + "¿Cómo eres tan sabia?"
             -
-        Sorridi guardandoti nel piccolo specchio.
-        Ti sforzi di ignorare i segni del sonno e i capelli sfatti e pian piano il tuo volto emerge, lə tua vera te, e lə ami.
-        Ti ami.
-        Il petto si rilassa, si riempie di calore.
-        Di gioia.
-        Sei un concentrato di vita. #almost_there
+        Sonríes viéndote en el pequeño espejo.
+        Te esfuerzas por ignorar las señales del sueño y el cabello desordenado y poco a poco tu <f>cara</f> aparece, tu verdadere <f>cara</f>, le tú de verdad, y le amas.
+        Te amas.
+        Tu pecho se relaja, si llena de calor.
+        De felicidad.
+        Eres un núcleo de vida. #almost_there   
+        -> bullet_hell_buono
+
     -> bullet_hell_buono
