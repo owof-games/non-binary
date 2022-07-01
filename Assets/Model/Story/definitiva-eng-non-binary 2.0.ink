@@ -47,14 +47,14 @@ VAR amab_tre = 1
         //check AFAB
         {
         - gender == 1 && atto_afab_tre: -> finale_afab
-        - gender == 1 && atto_afab_due:  -> sconfitta_afab_due 
-        - gender == 1 && atto_afab_uno:  -> sconfitta_afab_uno 
+        - gender == 1 && atto_afab_due: -> sconfitta_afab_due 
+        - gender == 1 && atto_afab_uno: -> sconfitta_afab_uno 
       
         //check AMAB
         - gender == 2 && amab_tre == 2: -> finale_amab_due
         - gender == 2 && amab_tre == 1: -> finale_amab_uno 
-        - gender == 2 && atto_amab_due:  -> sconfitta_amab_due 
-        - gender == 2 && atto_amab_uno:  -> sconfitta_amab_uno 
+        - gender == 2 && atto_amab_due: -> sconfitta_amab_due 
+        - gender == 2 && atto_amab_uno: -> sconfitta_amab_uno 
     }  
 
 //STORIA PALLINO

@@ -46,14 +46,14 @@ VAR amab_tre = 1
         //check AFAB
         {
         - gender == 1 && atto_afab_tre: -> finale_afab
-        - gender == 1 && atto_afab_due:  -> sconfitta_afab_due 
-        - gender == 1 && atto_afab_uno:  -> sconfitta_afab_uno 
+        - gender == 1 && atto_afab_due: -> sconfitta_afab_due 
+        - gender == 1 && atto_afab_uno: -> sconfitta_afab_uno 
       
         //check AMAB
         - gender == 2 && amab_tre == 2: -> finale_amab_due
         - gender == 2 && amab_tre == 1: -> finale_amab_uno 
-        - gender == 2 && atto_amab_due:  -> sconfitta_amab_due 
-        - gender == 2 && atto_amab_uno:  -> sconfitta_amab_uno 
+        - gender == 2 && atto_amab_due: -> sconfitta_amab_due 
+        - gender == 2 && atto_amab_uno: -> sconfitta_amab_uno 
     }  
 
 //STORIA PALLINO
@@ -324,7 +324,7 @@ VAR amab_tre = 1
         Un <f>vestito lungo</f> che <f>nonna</f> ti aveva fatto due anni fa.
         Hai litigato con <f>lei</f> per quel <f>vestito</f>.
         Hai urlato per nascondere la paura, paura di quanto <f>lei</f> avesse visto in te. 
-        Paura del <f>piacere</f> che hai provato all’idea di indossarlo, di restare con <f>lei</f>  lì con quel <f>lungo vestito</f> estivo a cucire e parlare, con la sicurezza che nessuna pallonata ti avrebbe distrutto.
+        Paura del <f>piacere</f> che hai provato all’idea di indossarlo, di restare con <f>lei</f> lì con quel <f>lungo vestito</f> estivo a cucire e parlare, con la sicurezza che nessuna pallonata ti avrebbe distrutto.
         Laura ti guarda con tenerezza.
             + [Condividi quel ricordo]
             -> ricordo
@@ -674,7 +674,7 @@ VAR amab_tre = 1
         “Che c’è qualcosa che ti gira dentro? Da un po’. Mi sono chiesta cosa sarebbe successo se non fosse mai uscita, e ogni risposta non mi piaceva, per nulla.”
         Si siede accanto a te, lasci che ti stringa.
         “So cosa non sono, <f>Laura</f>. Non mi sento un <m>uomo</m>, ma nemmeno una <f>donna</f>. È come se mi venisse chiesto di scegliere solo tra mangiare una mela o una pera, quando la mia bocca è piena del gusto di ogni frutto di bosco.”
-        “Le mele sono noiose!” scherza <f>Laura</f>.
+        “Le mele sono noiose!” scherza Laura.
             + “Non cotte[."] con lo zucchero e la cannella.”
             -
         “Questa metafora sta diventando creepy,” ti bacia, “ma credo di aver capito.”
@@ -715,7 +715,7 @@ VAR amab_tre = 1
             + [Gridi]
             -
         È l’unica cosa che sai fare se qualcosa ti dà fastidio.
-        “Ha fame!” dice <f>nonna</f>, le mani strette sul volante.  #street
+        “Ha fame!” dice <f>nonna</f>, le mani strette sul volante. #street
         “Le do da mangiare a casa sennò ora vomita, tanto manca poco.”
         Nonna sbuffa, mamma pure.
             + [Sbadigli]
@@ -768,12 +768,13 @@ VAR amab_tre = 1
         Ha passato tutto il viaggio in auto a dirti che dovete fare una buona impressione.
         Che l'incontro genitori/insegnanti è un momento in cui i genitori vengono giudicati severamente.
         Che una <f>madre</f> single solo è sempre colpevole, e per questo non dovete fare nessun errore.
-        Pensi che non abbia molto senso, ma ti fidi di <f>lei</f>.
+        Pensi che non abbia molto senso, ma ti fidi.
             + [Guardi fuori]
             -
         Ti fidi, ma questo non cancella la noia.
         Dei <m>ragazzi</m> si rincorrono.
-        Quello sbruffone di <m>Lorenzo</m> ha portato un pallone, stanno facendo le squadre.
+        Quello sbruffone di <m>Lorenzo</m> ha portato un pallone.
+        Stanno facendo le squadre.
             + [“Mamma?”]"<f>Mamma</f>?"
             -
         Ti ignora.
@@ -825,7 +826,7 @@ VAR amab_tre = 1
                 Ti sembra di volare.
                 <m>Pallino</m> e <f>Laura</f> fanno il tifo per te. #completion_50
                 Sorridi, rubi la palla a <m>Lorenzo</m> che ti sbatte a terra.
-                Il <m>ragazzo</m> di quinta dice qualcosa ma lo ignori.
+                Il ragazzo di quinta dice qualcosa ma lo ignori.
                     + [Tiri un pugno a Lorenzo]
                     -
                 È il caos.
@@ -936,7 +937,7 @@ VAR amab_tre = 1
     -> atto_afab_due
     
     === atto_afab_due ===
-    Adolescenza<br/>Inverno<br/>Liceo  #title
+    Adolescenza<br/>Inverno<br/>Liceo #title
     
         Dal piano di sotto solo qualche risata.
         C’è un silenzio strano: nessuno ha sonno, eppure le parole sembrano finite.
@@ -1147,7 +1148,8 @@ VAR amab_tre = 1
         “Non è un <m>uomo</m>.”
         La voce cade nel silenzio totale, persino la musica è scomparsa. #completion_50
         “Le regole sono regole e...”, è la voce di <f>Chloe</f>, che trema.
-        Sai che è incazzata. Le due <f>iene</f> sono alle sue spalle, in mano due Martini.
+        Sai che è incazzata.
+        Le due <f>iene</f> sono alle sue spalle, in mano due Martini.
             + [Ti avvicini]
             -
         “<f>Laura</f>, non importa, andiamo altrove.” 
@@ -1180,7 +1182,7 @@ VAR amab_tre = 1
                 <f>Laura</f> sembra delusa mentre se ne vanno.
                 “Conosci queste persone?” ti chiede <f>Chloe</f>.
                 A quanto pare non <f>le</f> ha riconosciute.
-                Con la coda dell’occhio vedi <f>Emma</f> uscire.
+                Con la coda dell’occhio vedi Emma uscire.
                     + [La insegui]
                     -> pre_terzo_bullet_hell_afab
         
@@ -1331,10 +1333,10 @@ VAR amab_tre = 1
         Vedi <f>Pallina</f> con in mano dei sassi, sangue sulla fronte di <m>Lorenzo</m> che urla cose.
         "Va a piangere da <f>mammina</f>, su!"
         Un bus suona il clacson infastidito, obbligando i <m>ragazzi</m> a levarsi dalla strada.
-        Rimanete solo tu e <f>Pallina</f>.
+        Rimanete solo tu e Pallina.
             + Provi a dire qualcosa[], ma biascichi a fatica.
             -
-        <f>Pallina</f> cerca il tuo sguardo: "Devi..."
+        Pallina cerca il tuo sguardo: "Devi..."
             + "Picchiarli?"[]
             Ripensi a quanto ha detto poco fa <m>Omar</m>.
             -
@@ -1471,7 +1473,8 @@ VAR amab_tre = 1
         Sospira.
         "I miei potevano continuare a dire che certe cose non esistevano, ma ciò che sento e provo sono dati di fatto. Quando ho accettato questa cosa, mi sono vista davvero."
         Gira lo specchietto verso di te.
-        "Solo tu puoi sapere chi sei. Fuori possono dire che non esisti, ma è un problema loro. Non è che perché <f>Chloe</f> è <f>lesbica</f> non ha pregiudizi, ma quelli sono problemi suoi. Tu sai chi sei, e hai il diritto di dirlo ad alta voce ogni volta che vuoi."
+        "Solo tu puoi sapere chi sei. Fuori possono dire che non esisti, ma è un problema loro. Non è che perché <f>Chloe</f> è <f>lesbica</f> non ha pregiudizi, ma quelli sono problemi suoi.
+        Tu sai chi sei, e hai il diritto di dirlo ad alta voce ogni volta che vuoi."
             + "Come fai ad essere così saggia?"
             -
         Ti guardi nel piccolo specchio.
