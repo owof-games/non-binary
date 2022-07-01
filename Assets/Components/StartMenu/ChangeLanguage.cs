@@ -10,6 +10,7 @@ public class ChangeLanguage : MonoBehaviour
     public TextAsset ItalianInkJSONAsset;
 
     public TextAsset EnglishInkJSONAsset;
+    public TextAsset SpanishInkJSONAsset;
 
     public void OnChooseLanguage(int languageNumber)
     {
@@ -23,6 +24,10 @@ public class ChangeLanguage : MonoBehaviour
             case 1:
                 currentValue.Current = LocalizationInfo.Languages.English;
                 StoryManager.InkJSONAsset = EnglishInkJSONAsset;
+                break;
+            case 2:
+                currentValue.Current = LocalizationInfo.Languages.Spanish;
+                StoryManager.InkJSONAsset = SpanishInkJSONAsset;
                 break;
             default:
                 return;

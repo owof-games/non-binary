@@ -7,7 +7,8 @@ public struct LocalizationInfo : IEquatable<LocalizationInfo>
     public enum Languages
     {
         Italian = 1,
-        English = 2
+        English = 2,
+        Spanish = 3
     }
 
     public Languages Current;

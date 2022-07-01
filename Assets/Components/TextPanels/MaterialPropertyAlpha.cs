@@ -12,6 +12,8 @@ public class MaterialPropertyAlpha : MonoBehaviour
     // [SerializeField]
     private Material _Material = null;
 
+    private RawImage _RawImage = null;
+
     [SerializeField]
     private string _ColorPropertyName = "_FaceColor";
 
@@ -24,9 +26,10 @@ public class MaterialPropertyAlpha : MonoBehaviour
         }
         else if (TryGetComponent<RawImage>(out var rawImage))
         {
-            _Material = rawImage.material;
-            _Material = Instantiate(_Material);
-            rawImage.material = _Material;
+            _RawImage = rawImage;
+            // _Material = rawImage.material;
+            // _Material = Instantiate(_Material);
+            // rawImage.material = _Material;
         }
         else if (TryGetComponent<TextMeshProUGUI>(out var tmpro))
         {
@@ -42,7 +45,14 @@ public class MaterialPropertyAlpha : MonoBehaviour
             _Material = Instantiate(material);
             renderer2.SetMaterial(_Material, 0);
         }
-        _LastAlpha = _Material.GetColor(_ColorPropertyName).a;
+        if (_Material != null)
+        {
+            _LastAlpha = _Material.GetColor(_ColorPropertyName).a;
+        }
+        else
+        {
+            _LastAlpha = _RawImage.color.a;
+        }
     }
 
     void Update()
@@ -53,10 +63,19 @@ public class MaterialPropertyAlpha : MonoBehaviour
         }
         if (_Alpha != _LastAlpha)
         {
-            var color = _Material.GetColor(_ColorPropertyName);
-            color.a = _Alpha;
-            _Material.SetColor(_ColorPropertyName, color);
-            _LastAlpha = color.a;
+            if (_Material != null)
+            {
+                var color = _Material.GetColor(_ColorPropertyName);
+                color.a = _Alpha;
+                _Material.SetColor(_ColorPropertyName, color);
+            }
+            else
+            {
+                var color = _RawImage.color;
+                color.a = _Alpha;
+                _RawImage.color = color;
+            }
+            _LastAlpha = _Alpha;
         }
     }
 }

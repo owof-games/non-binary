@@ -7,6 +7,7 @@ public class ButtonTranslatedText : MonoBehaviour
 {
     public StringConstant ItalianText;
     public StringConstant EnglishText;
+    public StringConstant SpanishText;
 
     private TextMeshProUGUI _Text = null;
     public LocalizationInfoVariable LocalizationInfoVariable;
@@ -19,11 +20,12 @@ public class ButtonTranslatedText : MonoBehaviour
 
     private void UpdateText()
     {
-        if (_Text != null && ItalianText && EnglishText)
+        if (_Text != null && ItalianText && EnglishText && SpanishText)
         {
-            _Text.text = LocalizationInfoVariable.Value.Current == LocalizationInfo.Languages.Italian ?
-                ItalianText.Value :
-                EnglishText.Value;
+            _Text.text
+                = LocalizationInfoVariable.Value.Current == LocalizationInfo.Languages.Italian ? ItalianText.Value
+                : LocalizationInfoVariable.Value.Current == LocalizationInfo.Languages.English ? EnglishText.Value
+                : SpanishText.Value;
         }
     }
 

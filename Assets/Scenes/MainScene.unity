@@ -7241,6 +7241,11 @@ PrefabInstance:
       propertyPath: _Alpha
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3244722493553659803, guid: 4d8bcd6e89922f048a36fadad5d3a4c6,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4025869007985684387, guid: 4d8bcd6e89922f048a36fadad5d3a4c6,
         type: 3}
       propertyPath: m_Name
