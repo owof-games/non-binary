@@ -73,15 +73,15 @@ VAR amab_tre = 1
         “¿Crees que quiera aprender la profesión?”
         <m>Papá</m> se gira a la derecha.
         <f>Mamá</f> te observa.
-        “¿él mío o él tuyo?”
-        “El mío! Dios, no quiero un <m>hijo</m> <f>esteticista</f>!”
+        “¿la mía o la tuya?”
+        “La mía! Dios, no quiero un <m>hijo</m> <f>esteticista</f>!”
         Se detiene el auto y se baja.
 
             + [Vomitas]
             -
         No es que puedas hacer mucho más.
         Pasas de los brazos de <f>mamá</f> a los de la <f>abuela</f>, <f>tías</f> y <m>tíos</m> que te rodean.
-        Tu habitación está ya arreglada: una cuna con sabanas <m>azules</m>, <m>azules</m> las cortinas, <m>azules</m> las paredes.
+        Tu habitación está ya arreglada: una cuna con sábanas <m>azules</m>, <m>azules</m> las cortinas, <m>azules</m> las paredes.
         <m>Azul</m> el armario, la alfombra, el pijama que te ponen.
         Rosadas tus mejillas mientras comentan encima de tu <m>pipicito</m>.
         Sobre un estante una serie de peluches: un <m>auto</m>, un <m>bombero</m>, un osito, un <m>bulldog</m>, una <m>pelota</m> de futbol.
@@ -97,7 +97,7 @@ VAR amab_tre = 1
         Todos caminan y hablan, comentan cómo será tu futuro, discuten, ríen, ponen límites. 
         Sus palabras caen en tus ojos.
 
-        Afuera, a lo largo del camino ves menos variedad, formas y colores se mezclan hasta qué no queda más que un paisaje de <m>cuadrados</m> azules y <f>triangulas</f> <f>rosados</f>. #people
+        Afuera, a lo largo del camino ves menos variedad, formas y colores se mezclan hasta qué no queda más que un paisaje de <m>cuadrados</m> azules y <f>triángulos</f> <f>rosados</f>. #people
         Todo te parece igual.
             + [Lloras]
             -
@@ -106,12 +106,12 @@ VAR amab_tre = 1
     ===atto_amab_uno===
         Infancia. Verano. Patio de recreo. #title
     
-        “Porqué eres un <m>macho</m>!”
-        El tono de quién dice algo de obvio.
+        “Porque eres un <m>macho</m>!”
+        El tono de quién dice algo obvio.
             + “¿Entonces?”
             -
-        “Entonces no puede ser <f>Ariel</f> porqué es una <f>prin</f>-<f>ce</f>-<f>sa</f>. A nosotros nos sirve un <m>príncipe</m>, estás aquí exclusivamente por eso!”
-        <f>María</f> tienes los brazos cruzados y te mira cómo si tu fueses la cosa más estúpida del mundo.
+        “Entonces no puede ser <f>Ariel</f> porque es una <f>prin</f>-<f>ce</f>-<f>sa</f>. A nosotros nos sirve un <m>príncipe</m>, estás aquí exclusivamente por eso!”
+        <f>María</f> tiene los brazos cruzados y te mira cómo si tu fueses la cosa más estúpida del mundo.
         Las otras <f>niñas</f> están aburridas.
         <f>Laura</f> sigue bufando, <f>Pallina</f> lanza piedras a los lagartos.
         El sol está cálido y el parque está lleno de voces felices.
@@ -120,12 +120,12 @@ VAR amab_tre = 1
             + [La miras con actitud desafiante]
             -
         “Soy la más grande así que mando yo y digo que tú eres <m>Príncipe</m>.”
-        <f>María</f> si aleja con sus trencitas que bailan.
+        <f>María</f> se aleja con sus trencitas que bailan.
         Inician a hablar y a planificar.
         De vez en cuando te hacen preguntas, pero no quieres responder.
         Revisas tu morral con las nuevas ediciones de Ranma ½ y piensas que estabas más feliz leyendo mientras tomabas el sol.
             + Te sientas[] en los escalones y las ignoras.
-            + Te esfuerza por seguir la conversación[], pero perdiste algo de importante, aparece un <m>dragón</m>, ¿Qué tiene que ver el <m>dragón</m>?
+            + Te esfuerza por seguir la conversación[], pero perdiste algo importante, aparece un <m>dragón</m>, ¿Qué tiene que ver el <m>dragón</m>?
             + “¿No tienen hambre?”[]. <f>Laura</f> te regala su merienda mientras te sonríe. Es siempre amable contigo.
             -
         Al otro lado del parque tu <m>hermano</m> <m>Omar</m> está jugando con <m>otros</m> <m>chicos</m>.
@@ -135,7 +135,7 @@ VAR amab_tre = 1
         “¡Vamos a comenzar!”
             + [Te acercas sin muchas ganas].
             -
-        “Entonces <f>Laura</f> es la <f>hermana</f> <f>pequeña</f>, <f>Pallina</f> es <f>nuestra</f> <f>madre</f>, pero se ha enfermado y necesitamos de poción que está debajo la barriga del <m>dragón</m> y solo un <m>héroe</m> valiente y llamamos…”
+        “Entonces <f>Laura</f> es la <f>hermana</f> <f>pequeña</f>, <f>Pallina</f> es <f>nuestra</f> <f>madre</f>, pero se ha enfermado y necesitamos la poción que está debajo de la barriga del <m>dragón</m> y solo un <m>héroe</m> valiente puede agarrarla y llamamos…”
         “¿Y quién hará el <m>dragón</m>?” <f>Pallina</f> interrumpe <f>María</f>.
         Las trencitas tiemblan por el fastidio de la interrupción.
         “Ese arbusto será el <m>dragón</m>.”
@@ -143,12 +143,12 @@ VAR amab_tre = 1
         Las dos inician a pelear, así que decides que es momento de hacer algo.
             + “¡A la cargaaaaaa!”
             -
-       Corres en contra el <m>dragón</m> que quizás sea la <f>madre</f>, cuando lo notas.
-        Único, rojo fuego fuera y amarillo dentro.
+       Corres en contra del <m>dragón</m> que quizás sea la <f>madre</f>, cuando lo notas.
+        Único, rojo fuego por fuera y amarillo por dentro.
         Bellísimo, gigantesco.
         María te grita algo. #completion_33
             + [La ignoras]
-            + Le dices que venga[], pero <f>ella</f> grita de correr hacia el <m>dragón</m> por qué no quiere que la <f>madre</f> fallezca y se quede <f>huérfana</f>.
+            + Le dices que venga[], pero <f>ella</f> grita de correr hacia el <m>dragón</m> porque no quiere que la <f>madre</f> fallezca y se quede <f>huérfana</f>.
             + Sientes el olor de las flores[], es la mejor cosa del universo incluso mejor que las tortas de la <f>abuela</f>.
             -
         “Alguien ha cortado todas las demás."
@@ -183,7 +183,7 @@ VAR amab_tre = 1
             + ["¡Deténganse!"]
             -
         Estiras las manos, lanzas lo primero que consigues, pruebas a rasguñar y a morder. 
-        Solo cosas de <f>mujer</f> opina tu <m>hermano</m>.  Los <m>hombres</m> tienen que saber <m>dar puños</m>.
+        Son cosas de <f>mujer</f> opina tu <m>hermano</m>.  Los <m>hombres</m> tienen que saber <m>dar puños</m>.
         “¡Mariquita!” te falta el aire.
         <m>Lorenzo</m>, ahora lo reconoces, finge un puño hacia tu nariz, pruebas a devolverle uno de verdad.
         Y <m>Lorenzo</m> inicia a volar.
@@ -207,10 +207,10 @@ VAR amab_tre = 1
             -
         “<m>Pal</m>,¿No puedo pasar toda la vida defendiéndote, lo sabes verdad?” #completion_70
         “¡Tampoco quiero que lo hagas!”
-        “Pero...” <m>Omar</m> se pierde viendo el vacío, aplasta el envoltorio del dulce.
+        “Pero...” <m>Omar</m> se pierde viendo al vacío, aplasta el envoltorio del dulce.
         “¿Por qué crees que se fijan en ti, <m>Pal</m>?”
         ¿Qué respuesta se espera de ti?
-            + “¡Porqué son estúpidos!”
+            + “¡Porque son estúpidos!”
             + “¿Por qué no juego con ellos?”
             + [Te quedas en silencio]
             -
@@ -222,11 +222,11 @@ VAR amab_tre = 1
             + “No quiero que te preocupes por mí.”
             -
         <m>Omar</m> te mira a los ojos, con mucha seriedad.
-        “Tienes que aprender cómo se vive en el mundo, <m>hermanito</m>. Juego con tus <m>compañeros/m>, <m>golpéalos/m> cuando te ofenden y aléjate de las <f>niñas</f>. De igual forma verás que dentro algunos años ya no van a querer jugar contigo.”
+        “Tienes que aprender cómo se vive en el mundo, <m>hermanito</m>. Juega con tus <m>compañeros/m>, <m>golpéalos/m> cuando te ofenden y aléjate de las <f>niñas</f>. De igual forma verás que dentro de algunos años ya no van a querer jugar contigo.”
         Te sonríe.
             + “¿Por qué?”
             -
-        “Porqué harán <f>cosas</f> de <f>chicas</f>, y los <m>chicos</m> <m>cosas</m> de <m>chicos</m>. Así es la vida.”
+        “Porque harán <f>cosas</f> de <f>chicas</f>, y los <m>chicos</m> <m>cosas</m> de <m>chicos</m>. Así es la vida.”
         Quizás la vida es estúpida.
             + “¿Tú siempre serás mi amigo?”
             -
@@ -270,7 +270,7 @@ VAR amab_tre = 1
         “¿Estás bien cariño?”
             + Dices “Si” con la cabeza[] y colocas la revista en la mesa.
             + Lanzas la revista a Omar[], evita y te dice “perdedor”.
-            + “Me ha enseñado a cocer[.“] Sin que <f>mamá</f> lo supiera, desde que tenía diez años. Pasaba aquí las horas a <f>leer y diseñar</f> las decoraciones que después <f>ella</f> hacía en <f>blusas</f>. Cuando hacia frio nos sentábamos delante la TV a ver documentarios de dinosaurios e hilábamos kilómetros de lana.”
+            + “Me ha enseñado a cocer[.“] Sin que <f>mamá</f> lo supiera, desde que tenía diez años. Pasaba aquí las horas a <f>leer y diseñar</f> las decoraciones que después <f>ella</f> hacía en <f>blusas</f>. Cuando hacia frio nos sentábamos delante de la TV a ver documentarios de dinosaurios e hilábamos kilómetros de lana.”
             -
        “No está muerta”. <m>Omar</m> agarra las revistas y las mete en la caja.
         “La abandonaron en una casa de reposo, es la misma cosa.”
@@ -280,7 +280,7 @@ VAR amab_tre = 1
             -
 
         “¿Por qué no aceptaron <f>nuestra</f> propuesta?” <f>Laura</f> pone sus manos en la cintura y observa a <m>Omar</m>.
-        No se llevan muy bien. Cuando empezaron su relación <m>Omar</m> era feliz (“¡Entonces no eres un <f>maricon</f>!”), pero <f>Laura</f> está convencida que <m>él</m> sea una influencia pésima para ti.
+        No se llevan muy bien. Cuando empezaron su relación <m>Omar</m> era feliz (“¡Entonces no es un <f>maricón</f>!”), pero <f>Laura</f> está convencida que <m>él</m> sea una influencia pésima para ti.
         “¿Dos <f>chicas</f> de quince años que están detrás de una <f>vieja</f> confundida?”
         Laura quería decir algo, pero la interrumpes.
             + “¡Es tu abuela, joder!”
@@ -289,16 +289,16 @@ VAR amab_tre = 1
                 “El dinero sirve para pagar la casa de reposo, idiota.”
             -
 
-        Continúan a hacer cajas sin decir una palabra, solo se escuchan el sonido de los objetos.
+        Continúan haciendo cajas sin decir una palabra, solo se escuchan el sonido de los objetos.
         <m>Omar</m> apila las cosas con rabia, cierra las cajas, baja las escaleras pisando con fuerza, regresa, repite.
         Laura te pasa las cosas, cuando vuestras miradas se cruzan te sonríe, de vez en cuando te besa en la mejilla. #completion_33
-            + [La abuela adora Laura]
+            + [La abuela adora a Laura]
 
             -
         La <f>abuela</f> siempre ha pensado que si una regla es <f>errónea</f> es tu deber romperla.
-        Después de la muerte del <m>abuelo</m> no uso jamás el negro por el luto, era feliz que ese <m>hombre</m> violento había muerto y no quería fingir el contrario.
-        Cuando inicio a <m>cazar</m>, algunos <m>hombres</m> se burlaron de <f>ella</f>, algún <m>hombre</m> trato de acercase a <f>ella</f>.
-        “Todos fingen de ser <m>duros</m>, pero si les disparas cerca de los pies todos huyen asustados.”
+        Después de la muerte del <m>abuelo</m> no uso jamás el negro por el luto, era feliz que ese <m>hombre</m> violento había muerto y no quería fingir lo contrario.
+        Cuando inició a <m>cazar</m>, algunos <m>hombres</m> se burlaron de <f>ella</f>, algún <m>hombre</m> trato de acercase a <f>ella</f>.
+        “Todos fingen ser <m>duros</m>, pero si les disparas cerca de los pies todos huyen asustados.”
         Y <f>Laura</f> se parece a <f>ella</f>. #completion_50
         “¿Qué piensas?”
             + “Se necesita valor[..."] para romper las reglas.”
@@ -343,7 +343,7 @@ VAR amab_tre = 1
             “<m>Omar</m>, ¿Por qué tienes que ser <m>tosco</m> cómo la mierda?”
             “Solo digo lo que pienso.”
             Tu <m>hermano</m> se te acerca.
-            “¿Sabéis por qué mama no quiere que estes con la <f>abuela</f>? Porqué ha pasado todo el tiempo junto a ti apoyando tus cosas  <f>raritas</f> .”
+            “¿Sabéis por qué mama no quiere que estés con la <f>abuela</f>? Porque ha pasado todo el tiempo junto a ti apoyando tus cosas  <f>raritas</f> .”
             Omar tiene los puños cerrados y apretados.
                 + “¡No son cosas raritas!”
                 -
@@ -388,7 +388,7 @@ VAR amab_tre = 1
     
         
         = scatolone
-            <m>Omar</m> si presenta en la entrada de casa con tres cervezas, una oferta de paz.
+            <m>Omar</m> se presenta en la entrada de casa con tres cervezas, una oferta de paz.
             “¿Ya te quitaste la mala <f>cara</f>?” Le pregunta <f>Laura</f>, destapando la botella.
             “No tengo mala <f>cara</f>, me molesta que mi <m>hermano</m> me trate cómo un <m>monstruo</m>. Quiero mucho a la <f>abuela</f>, de verdad.”
             Se gira de espaldas, tiene un tono de voz más titubante.
@@ -400,7 +400,7 @@ VAR amab_tre = 1
             -
             Lo dices con el corazón, deseas que <m>él</m> lo entienda de verdad.
             <m>Omar</m> juega con la tapa de la cerveza entre sus dedos. #completion_70
-            “En algún momento de la <f>nuestra</f> vida, alguien decidió que tenía que ser <m>fuerte</m> e <m>práctico</m>, quizás porqué tu <m>hermanito</m>...” te observa con ojos llenos de sentimiento.
+            “En algún momento de <f>nuestra</f> vida, alguien decidió que tenía que ser <m>fuerte</m> y <m>práctico</m>, quizás porque tu <m>hermanito</m>...” te observa con ojos llenos de sentimiento.
             Está casi temblando.
             “Siempre has estado en tu proprio mundo, todo tuyo. Te quejas de <f>mamá</f>, pero lo único que hace es preocuparse por ti.”
                 + “No necesito su preocupación."
@@ -410,7 +410,7 @@ VAR amab_tre = 1
             “Sé que soy un <m>tosco</m> y <m>grosero</m> y no soy bueno con las palabras como ustedes dos. Pero la <f>abuela</f> es importante para mí y quiero que sea feliz. También eres importante para mí, quiero que tu seas feliz, <m>lentejuelas</m>. Pero no sé cómo hacerlo.”
                 + [Te sientes culpable.] Los ojos bañados de <m>Omar</m> te llenan de culpa.
                 -> colpa
-                + “No quiero que tu seas perfecto[“], solo quiero tú me permitas ser yo mismo."
+                + “No quiero que tu seas perfecto[“], solo quiero que tú me permitas ser yo mismo."
                 -> myself
                 + [Omar te necesita]
                     Las palabras y las explicaciones están demás, abrazas a <m>Omar</m>
@@ -423,7 +423,7 @@ VAR amab_tre = 1
                 <f>Laura</f> trata de defenderte, pero tu <m>hermano</m> la ignora.
                 “Es lo que quiero, pero también quiero entender que significa dejarlo en paz, ¿no?"
                 <m>Omar</m> se te acerca.
-                "¿Qué eres <m>lentejuelas</m>? Porque yo no lo entiendo. Estás con <f>Laura</f> y pienso es un <m>hombre</m>, pero te gustan las cosas de <m>maricon</m> y todas las veces que la <f>abuela</f> te ha <f>vestido</f> con camisas y <f>blusas</f> con  <f>lentejuelas</f> y brillantina  que ni siquiera <f>mamá</f> habría usado… ¿Qué eres <m>lentejuelas</m>?, dímelo por favor, así puedo ayudarte.”
+                "¿Qué eres <m>lentejuelas</m>? Porque yo no lo entiendo. Estás con <f>Laura</f> y pienso es un <m>hombre</m>, pero te gustan las cosas de <m>maricón</m> y todas las veces que la <f>abuela</f> te ha <f>vestido</f> con camisas y <f>blusas</f> con  <f>lentejuelas</f> y brillantina  que ni siquiera <f>mamá</f> habría usado… ¿Qué eres <m>lentejuelas</m>?, dímelo por favor, así puedo ayudarte.”
                 Y tú quieres responder, de verdad, conseguir una solución, una respuesta, pero ni siquiera tú lo sabes, ¿Qué eres, <m>lentejuelas</m>?
                 ¿Qué eres <m>lentejuelas</m>? #almost_there
 
@@ -439,11 +439,11 @@ VAR amab_tre = 1
                 “Di tu verdad, la que sea, dila.”
                     + “¿Sobre qué?”
                     -
-                <f>Laura</f> subes los hombros, con un sentido de duda, pero con los ojos firmes y espera una respuesta.
+                <f>Laura</f> sube los hombros, con un sentido de duda, pero con los ojos firmes y espera una respuesta.
                 La <f>única</f> cosa que haces es alejarte.
                 Vas a la habitación de la <f>abuela</f>.
-                La ventana está apoyada, sus vestidos sobra la mesita al lado de cigarros y medicinas
-                Ves una foto de tuya, de la <f>abuela</f> y de <m>Omar</m> tantos años atrás, cuando todo era simple, cuando nadie te pedía respuestas a preguntas que no entiendes.
+                La ventana está apoyada, sus vestidos sobre la mesita al lado de cigarros y medicinas
+                Ves una foto tuya, de la <f>abuela</f> y de <m>Omar</m> tantos años atrás, cuando todo era simple, cuando nadie te pedía respuestas a preguntas que no entiendes.
                 Pero no puedes regresar al pasado, porque los ojos de <f>Laura</f> te observan y te preguntan todavía.
                 ¿Qué eres <m>lentejuelas</m>? ¿Que eres? #almost_there
                 -> Bullet_hell_amab_due
@@ -472,7 +472,7 @@ VAR amab_tre = 1
         “Prométeme que, por una vez, solo una vez me dirás que si sin hacer tantas preguntas”
             + ["¿Habrá perros labradores?"] “Solo si hay perros labradores en esa habitación”.
             “¡Hay algo mejor que los labradores!” responde. “¡Imposible, nada es mejor que los labradores!”
-            + [Le recuerdas el matrimonio] “La última vez que acepté sin hacer preguntas terminamos esposados y todavía no se si fue una buena idea”. 
+            + [Le recuerdas el matrimonio] “La última vez que acepté sin hacer preguntas terminamos casados y todavía no se si fue una buena idea”. 
             <f>Laura</f> te da un puñito en la cabeza.
             + Sientes el olor de una trampa[]. <f>Ella</f> reconoce tu expresión.
             “¿Cuándo he hecho cualquier cosa que pudiera meterte en problemas?”. Haces una lista suficientemente detallada que describe chocolate, leones marinos, un disfraz de Elon Musk y una guillotina. Ah, también aquella vez en el cementerio con la tabla Ouija. <f>Ella</f> te observa con los brazos cruzados, fingiendo seriedad.
@@ -482,10 +482,10 @@ VAR amab_tre = 1
             + “¿Dónde está el cadáver de RuPaul?”
             -
         Te mira, ojos llenos de afecto.
-        "De vez en cuando pienso al <m>niño</m> tímido e inseguro que conocí veinte años atrás y me sorprende ver en quien te convertiste”.
+        "De vez en cuando pienso en el <m>niño</m> tímido e inseguro que conocí veinte años atrás y me sorprende ver en quien te convertiste”.
         No sabes que responder, aunque es verdad: a cierto punto, inesperadamente, la edad adulta te regaló una seguridad en ti mismo que no habías jamás imaginado de poder tener.
                 <f>Laura</f> cambia discurso. #completion_33
-        “¿Te recuerdas el año pasado <f>María</f> dijo que somos los únicos a hacer disfraces de parejas?”
+        “¿Te recuerdas el año pasado <f>María</f> dijo que somos los únicos que no hacen disfraces de parejas?”
             + “¿Es un problema?”
             + “Es difícil olvidarlo[!"], lo gritó a los cuatro vientos desde el balcón.”
             + “¿Me recuerdas por qué es tu amiga?”
@@ -499,23 +499,23 @@ VAR amab_tre = 1
             + “¿Mis padres?"
             -
         <f>Laura</f> toma los pantalones de jean.
-        “¡<f>Britney</f> y <m>Justin</m> nel 2001! Vale, ¿Qué podría ser más incómodo del falso Jean y Timberlake?”
+        “¡<f>Britney</f> y <m>Justin</m> del 2001! Vale, ¿Qué podría ser más incómodo que el falso Jean y Timberlake?”
         Agarra los pedazos de tela con estampado denim.
         “Conseguí dos disfraces, pero no me gustaban mucho y así que los desarmé para hacerlos mejor, pero… Ohm… Yo creo videojuegos, no soy una <f>costurera</f>. ¡Así que pensé que podrías ayudarnos tú, y en cambio yo te <f>maquillo</f>!”
             + “¡No he cocido nada desde que tenía trece años!”
             “Estoy segurísima que es como andar en bicicleta, no se olvida.”
             + “¿Maquillaje?”
-            + “¿Podemos ir vestidos normalmente?”
+            + “¿Podemos ir vestidos normales?”
             <f>Laura</f> te ignora.
             -
         “Y, sorpresa de las sorpresas... ¡Yo seré <m>Justin</m> y tu <f>Britney</f>!”
         Estas por decir algo, pero…
         Pero algo se mueve en tu barriga, un calor crece mientras observas la tela de jeans, <f>peluca</f>, <f>maquillaje</f>. #completion_50
-        Te sientas en silencio delante la máquina de coser, beh: como volver a la bicicleta.
+        Te sientas en silencio delante de la máquina de coser, beh: como volver a la bicicleta.
             + Inicias a coser[] los pedazos de tela.
             -
         Es un salto a los recuerdos, pasando de una cosa a la otra.
-        Citar la estrella desaparecida de turno hace que empiecen hablar de lo que estaban haciendo ese año, una canción trae con sé una amistad rota, una noche borrachos al mar.
+        Citar la estrella desaparecida de turno hace que empiecen hablar de lo que estaban haciendo ese año, una canción trae consigo una amistad rota, una noche borrachos al mar.
         “¿No se hablan todavía?”
         Habla de <m>Omar</m>, pero eso ya lo sabes.
         No se hablan desde hace dos años, pero de vez en cuando Laura te lo pregunta de nuevo.
@@ -542,9 +542,9 @@ VAR amab_tre = 1
         Te miras al espejo, y te gusta muchísimo como te ves.
         Tienes miedo, te hace falta el aire, sin embargo, estás seguro que lo que estás viendo eres tú verdaderamente.
         Es como si alguien te hubiera quitado una venda de los ojos.
-        Cómo si hasta ahora el cuerpo que ves en el espejo fuera de otra persona, una persona que continuabas a borrar y a reprimir, una persona que no querías recordar nunca.
+        Cómo si hasta ahora el cuerpo que ves en el espejo fuera de otra persona, una persona que continuabas borrando y reprimiendo, una persona que no querías recordar nunca.
         Pero eres tú, tú de verdad.
-        Admiras tus enormes ojos debajo el delineador de ojos, el modo cómo tu boca explota de rojo entre los pelos de la barba.
+        Admiras tus enormes ojos debajo del delineador de ojos, el modo cómo tu boca explota de rojo entre los pelos de la barba.
         Cómo los <m>músculos</m> y los doblajes del <f>vestido</f> se resaltan entre ellos.
         + [...]
         -
@@ -562,7 +562,7 @@ VAR amab_tre = 1
         = Sinceramente
         ~  amab_tre = 2
         
-            Pero no te vienen, es como estuvieras vacío, te falta una pieza.
+            Pero no te vienen, es como si estuvieras vacío, te falta una pieza.
             Sonríes, balbuceas que todo es hermoso, pero no te lo esperabas.
             Te hace falta el aliento.
             Te entrevés de nuevo al espejo y sonríes.
@@ -650,7 +650,7 @@ VAR amab_tre = 1
             -
         "Tengo un plan B: una fiesta de  <f>chicas</f> <f>lesbianas</f>, un lugar tranquilo donde estar, deberían estar algunas viejas <f>compañeras</f> de la escuela"
         La manera cómo te mira te hace sentir invencible.
-        Caminan juntos la calle, los dedos entrelazados.
+        Caminan juntos por la calle, los dedos entrelazados.
         Estás llene de vida #almost_there
         -> bullet_hell_buono
     
@@ -659,11 +659,11 @@ VAR amab_tre = 1
         “¡Oye, cariño!”
             + [Apoyas la frente con la de Laura]
             -
-        “¿Cosa sucedió en esta cabecita?”
+        “¿Que cosa sucedió en esta cabecita?”
         Respiras.
             + “¿Ya lo sabías?”
             -
-        “Me di cuenta que desde hace tiempo algo te pasaba por la mente. Me pregunté que habría sucedido si no hubiera salido nunca ese algo, y ninguna de las respuestas me gustaba, para nada.”
+        “Me di cuenta de que desde hace tiempo algo te pasaba por la mente. Me pregunté que habría sucedido si no hubiera salido nunca ese algo, y ninguna de las respuestas me gustaba, para nada.”
         Se sienta al lado tuyo, dejas que te apriete.
         “Sé lo que no soy, <f>Laura</f>. No me siento <m>hombre</m>, pero tampoco <f>mujer</f>. Es como si me preguntaran de escoger entre la manzana y la pera, pero en realidad en mi boca solo quiero frutos del bosque.”
         “¡Las manzanas son aburridas!” bromea Laura.
@@ -675,7 +675,7 @@ VAR amab_tre = 1
         Se voltea de golpe.
         “¿Pero no es verdad, ¿verdad? Oh Madre mía, ¿Qué tengo que decir ahora? ¿Entonces ahora no soy <m>hetero</m>?”
         Tomas sus manos.
-            + ["Tenemos tiempo."] “Creo que tenemos todos el tiempo del mundo para conseguir estas respuestas, no tenemos que hacerlo esta noche, ¿no?”
+            + ["Tenemos tiempo."] “Creo que tenemos todo el tiempo del mundo para conseguir estas respuestas, no tenemos que hacerlo esta noche, ¿no?”
             -
         <f>Laura</f> se ríe y se relaja.
         “Tienes razón. Lo importante es solo una cosa: las conseguiremos juntos. Conseguiremos las frutas del bosque y mi heterosexualidad o lo que sea.”
@@ -683,14 +683,14 @@ VAR amab_tre = 1
             -
         “Hablando del diablo: ¿Tienes ganas de ir a su fiesta?”
         Te miras al espejo.
-        Las lágrimas y la tensión dañaron <f>peluca</f> y <f>maquillaje</f>.
+        Las lágrimas y la tensión dañaron la <f>peluca</f> y el <f>maquillaje</f>.
         Te sientes bellә cómo jamás en toda tu vida, pero la idea de que te vean tus amigos te asusta.
             + [Mueves la cabeza negando]
             -
         <f>Laura</f> te sonríe.
         "Tengo un Plan B: una fiesta de <f>chicas</f> <f>lesbianas</f>, un sitio tranquilo donde podemos estar, también debería estar un viejo grupo de <f>compañeras</f> de la escuela."
         Sientes un poco de miedo igualmente.
-        Pero sientes que has pasado mucho tiempo a ocultarte, quieres salir, quieres mostrarte al mundo.
+        Pero sientes que has pasado mucho tiempo ocultándote, quieres salir, quieres mostrarte al mundo.
         Agarras a <f>Laura</f> de la mano, con coraje y valor, empiezan a caminar por la calle. #almost_there
         -> bullet_hell_buono
 
@@ -819,7 +819,7 @@ Ven un mundo desenfocado, lleno de luces, contornos y siluetas que podrían ser 
                     + [Le tiras un puño a Lorenzo] 
                 -
                 Todo es un caos.
-                Los <m>chicos</m> se burlan de <m>Lorenzo</m> porqué se dejó <m>pegar</m> por una <f>chica</f> .
+                Los <m>chicos</m> se burlan de <m>Lorenzo</m> porque se dejó <m>pegar</m> por una <f>chica</f> .
                 Escuchas a <f>Chloe</f> a tus espaldas llamar a la Hermana <f>Adolorada</f>.
                 Ves a <m>Lorenzo</m> que se aguanta las ganas de llorar y el cansancio.
                 Una mano te agarra la espalda, sientes el perfume dulce. 
@@ -939,7 +939,7 @@ Ven un mundo desenfocado, lleno de luces, contornos y siluetas que podrían ser 
         Emma se esfuerza de parecer tranquila, pero está temblando.
             + “Estoy orgullosa de ti, Bunny.”
             -
-        Y es verdad, porqué, aunque con ansiedad y miedo <f>Emma</f>-<f>SuperfandeSailorMoon</f>-<f>Bunny</f> no las ha abandonado jamás, ni siquiera cuando mitad del consejo estudiantil las ha insultado delante de todos.
+        Y es verdad, porque, aunque con ansiedad y miedo <f>Emma</f>-<f>SuperfandeSailorMoon</f>-<f>Bunny</f> no las ha abandonado jamás, ni siquiera cuando mitad del consejo estudiantil las ha insultado delante de todos.
         Tres <f>lesbianas</f> de mierda.
         Sin embargo, lo lograron, consiguieron más de treinta estudiantes disponibles (que de <m>chicos</m> quedaron solo un par), y la ocupación política de la escuela inició.
         “¿Crees que pueda funcionar a <f>María</f>, todo esto?”
@@ -1072,7 +1072,7 @@ Ven un mundo desenfocado, lleno de luces, contornos y siluetas que podrían ser 
         Chloe mira con fastidio tu suéter negro.
             + “No tuve tiempo[.“]. Los preparativos y todo lo demás...”
             -
-        Pero no te responde porqué dos mujeres se acercan, vestidas cómo Ellen Degeneres e Portia de Rossi.
+        Pero no te responde porque dos mujeres se acercan, vestidas cómo Ellen Degeneres e Portia de Rossi.
         Comienzan a hablar con Chloe de dinero, política, de la hija del asesor, de los trabajos para mejorar el barrio.
             + “¿Cuál es el problema del barrio?”[]. Preguntas sin pensar.
             -
@@ -1209,7 +1209,7 @@ Algunas tienen un pin de “Tres <f>lesbianas del coño</f>”.
                     -
                 Te hace falta el aire, te sientes incomoda, el frio en el estómago se intensifica, te llena de palabras y juicios, de promesas y amenazas sutiles.
                 De <f>Chloe</f> que quiere que tu seas su <f>chica</f>, su <f>mujer</f>, la <f>madre</f> de la <f>hija</f> que quiere tener contigo.
-                Hay preguntas que no quieres escuchar porqué estás pensando a tu <f>mamá</f>, tu <f>mamá</f> que se tomó treinta años en aceptar que eres <f>lesbiana</f>, ¿Y ahora quieres cambiar todo de nuevo?
+                Hay preguntas que no quieres escuchar porque estás pensando a tu <f>mamá</f>, tu <f>mamá</f> que se tomó treinta años en aceptar que eres <f>lesbiana</f>, ¿Y ahora quieres cambiar todo de nuevo?
                 ¿Arriesgando de nuevo de perderla?
                 Comienzas a llorar, hasta vaciarte.
                 ¿Quién debes ser, para que puedas ser feliz? #almost_there
@@ -1232,7 +1232,7 @@ Algunas tienen un pin de “Tres <f>lesbianas del coño</f>”.
                 El alcohol llega en un solo golpe, te sientes confundida y nauseabunda.
                 El problema al ingreso está alejando a las personas, la música se detuvo, pero tú te das cuenta solo de <f>Emma</f> que te mira con tanta preocupación.
                 Te preguntas si <f>ella</f> pueda verte de verdad, ver que eres.
-                Porqué lo has negado por tanto tiempo y ahora no tienes más respuestas fáciles para darte. 
+                Porque lo has negado por tanto tiempo y ahora no tienes más respuestas fáciles para darte. 
                     + “No sé quién soy, <f>Bunny</f>.”
                     -
                 Te sientes caer, el alcohol altera todo.
@@ -1360,7 +1360,7 @@ Algunas tienen un pin de “Tres <f>lesbianas del coño</f>”.
             -
         "<m>Pal</m>, ¿Te golpeaste la cabeza?"
         Miras directamente a Omar a los ojos.
-            + "Me cansé Omar[."] de tus <m>maricon</m>, <m>gay</m>, <f>mariquita</f>, <f>niñita</f>, <f>lesbianas</f> y demás. Ni siquiera eres original y lastiman. Lastiman mucho."
+            + "Me cansé Omar[."] de tus <m>maricón</m>, <m>gay</m>, <f>mariquita</f>, <f>niñita</f>, <f>lesbianas</f> y demás. Ni siquiera eres original y lastiman. Lastiman mucho."
             -
         "Porque eres..."
             + "Porque no soy tu[."], y está bien. Basta. No tengo que imitarte, no quiero tampoco, ¿Por qué debería?"
@@ -1445,7 +1445,7 @@ Algunas tienen un pin de “Tres <f>lesbianas del coño</f>”.
         Suspira.
         "Mis <m>padres</m> podían continuar diciendo que algunas cosas no existían, Pero lo que yo siento y vivo es un hecho. Cuando acepté esto, me vi realmente como soy."
         Gira el espejo hacia ti.
-        "Solo tú puedes saber quién eres. Afuera pueden decir que tu no existes, pero es un problema de ellos. No porqué <f>Chloe</f> es <f>lesbiana</f> no puede tener prejuicios, pero son problemas de <f>ella</f>. Tú sabes quién eres, y tienes el derecho de decirlo en voz alta, cada que vez que quieras."
+        "Solo tú puedes saber quién eres. Afuera pueden decir que tu no existes, pero es un problema de ellos. No porque <f>Chloe</f> es <f>lesbiana</f> no puede tener prejuicios, pero son problemas de <f>ella</f>. Tú sabes quién eres, y tienes el derecho de decirlo en voz alta, cada que vez que quieras."
             + "¿Cómo eres tan sabia?"
             -
         Sonríes viéndote en el pequeño espejo.
