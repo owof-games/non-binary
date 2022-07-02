@@ -17,11 +17,11 @@ public class ChangeLanguage : MonoBehaviour
         var currentValue = LocalizationInfoVariable.Value;
         switch (languageNumber)
         {
-            case 0:
+            case 1:
                 currentValue.Current = LocalizationInfo.Languages.Italian;
                 StoryManager.InkJSONAsset = ItalianInkJSONAsset;
                 break;
-            case 1:
+            case 0:
                 currentValue.Current = LocalizationInfo.Languages.English;
                 StoryManager.InkJSONAsset = EnglishInkJSONAsset;
                 break;
