@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -976,6 +976,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
         type: 3}
+      propertyPath: Choices.Array.data[0].SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: ac3a9f7f618a3bd48b6a3fba045963b3,
+        type: 2}
+    - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
+        type: 3}
       propertyPath: Choices.Array.data[1].EnglishText
       value: 
       objectReference: {fileID: 11400000, guid: 3aafdf2c8e19bcf41ae7ee39958ac37d,
@@ -985,6 +991,12 @@ PrefabInstance:
       propertyPath: Choices.Array.data[1].ItalianText
       value: 
       objectReference: {fileID: 11400000, guid: b289652c5511090459ec17aa0cea7239,
+        type: 2}
+    - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
+        type: 3}
+      propertyPath: Choices.Array.data[1].SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f5a1e5722200d14aaea8700c149110b,
         type: 2}
     - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
         type: 3}
@@ -1286,7 +1298,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 123.1
+  m_fontSize: 90.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1455,7 +1467,7 @@ PrefabInstance:
     - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
         type: 3}
       propertyPath: Choices.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
         type: 3}
@@ -1471,6 +1483,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
         type: 3}
+      propertyPath: Choices.Array.data[0].SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a0cce163edc1d4479cf72b1e36daa18,
+        type: 2}
+    - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
+        type: 3}
       propertyPath: Choices.Array.data[1].EnglishText
       value: 
       objectReference: {fileID: 11400000, guid: a49aa2d02a62464409ae2f229ac3f44e,
@@ -1480,6 +1498,30 @@ PrefabInstance:
       propertyPath: Choices.Array.data[1].ItalianText
       value: 
       objectReference: {fileID: 11400000, guid: a49aa2d02a62464409ae2f229ac3f44e,
+        type: 2}
+    - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
+        type: 3}
+      propertyPath: Choices.Array.data[1].SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: a49aa2d02a62464409ae2f229ac3f44e,
+        type: 2}
+    - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
+        type: 3}
+      propertyPath: Choices.Array.data[2].EnglishText
+      value: 
+      objectReference: {fileID: 11400000, guid: 69997fbcfede9a64c8a8c1c824e272cf,
+        type: 2}
+    - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
+        type: 3}
+      propertyPath: Choices.Array.data[2].ItalianText
+      value: 
+      objectReference: {fileID: 11400000, guid: 69997fbcfede9a64c8a8c1c824e272cf,
+        type: 2}
+    - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
+        type: 3}
+      propertyPath: Choices.Array.data[2].SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: 69997fbcfede9a64c8a8c1c824e272cf,
         type: 2}
     - target: {fileID: 6449302816578175817, guid: c277a689ece137b47b92a4404ee37d0b,
         type: 3}
@@ -1661,6 +1703,7 @@ MonoBehaviour:
   StoryManager: {fileID: 11400000, guid: 8844d402104d0714481e665d6e107e66, type: 2}
   ItalianInkJSONAsset: {fileID: 4900000, guid: dd8e8fd22574f6c448fb77b3bde56bf7, type: 3}
   EnglishInkJSONAsset: {fileID: 4900000, guid: 05c1a0d8db96303489559aa87858023a, type: 3}
+  SpanishInkJSONAsset: {fileID: 4900000, guid: 87518d827e10a8b4eb740a9cbf56ae4a, type: 3}
 --- !u!95 &60310915262760239
 Animator:
   serializedVersion: 4
@@ -2117,6 +2160,12 @@ PrefabInstance:
       propertyPath: ItalianText
       value: 
       objectReference: {fileID: 11400000, guid: 9107a5c90b6716947bb5f1a9d19818c7,
+        type: 2}
+    - target: {fileID: 9014227149741439154, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
+        type: 3}
+      propertyPath: SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: 3d46a1606b42f0c44bfb12a8eacf21d7,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5, type: 3}

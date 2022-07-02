@@ -60,7 +60,7 @@ VAR amab_tre = 1
     === intro_amab ===
     ~ gender = 2
     ~ amab_tre = 0
-        <f>Mamá</f> en el coche, te acuna de camino a casa. #street
+        Mamá en el coche, te acuna de camino a casa. #street
         “Acaba de nacer mi <m>hijo</m> y ya tiene una <f>cara</f> de astuto!”
         <m>Papá</m> está muy emocionado.
         La risa de <f>mamá</f> te despierta.

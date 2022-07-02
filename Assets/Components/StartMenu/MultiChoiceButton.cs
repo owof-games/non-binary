@@ -13,6 +13,7 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
     {
         public StringConstant ItalianText;
         public StringConstant EnglishText;
+        public StringConstant SpanishText;
     }
 
     public StringEvent ChoiceEvent;
@@ -68,6 +69,7 @@ public class MultiChoiceButton : MonoBehaviour, ISelectHandler, IDeselectHandler
         // set the new text and update
         _ButtonTranslatedText.ItalianText = Choices[_CurrentChoice].ItalianText;
         _ButtonTranslatedText.EnglishText = Choices[_CurrentChoice].EnglishText;
+        _ButtonTranslatedText.SpanishText = Choices[_CurrentChoice].SpanishText;
         _ButtonTranslatedText.OnTextUpdated();
 
         // raise the change event
