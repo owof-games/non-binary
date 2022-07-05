@@ -93,7 +93,7 @@ VAR amab_tre = 1
         <f>Mamá</f> exclama: “¡Tiene solo doce años!”
         Todos caminan y hablan, comentan cómo será tu futuro, discuten, ríen, ponen límites. 
         Sus palabras caen en tus ojos.
-        Afuera, a lo largo del camino ves menos variedad, formas y colores se mezclan hasta qué no queda más que un paisaje de <m>cuadrados</m> azules y <f>triángulos</f> <f>rosados</f>. #people
+        Afuera, a lo largo del camino ves menos variedad, formas y colores se mezclan hasta qué no queda más que un paisaje de <m>cuadrados</m> <m>azules</m> y <f>triángulos</f> <f>rosados</f>. #people
         Todo te parece igual.
             + [Lloras]
             -
@@ -129,7 +129,7 @@ VAR amab_tre = 1
         "¡<m>Pal</m>-<m>lin</m>-<m>oooooooooooooo</m>!"
         <f>María</f> con voz chillona te llama.
         “¡Vamos a comenzar!”
-            + [Te acercas sin muchas ganas].
+            + [Te acercas sin muchas ganas]
             -
         “Entonces <f>Laura</f> es la <f>hermana</f> <f>pequeña</f>, <f>Pallina</f> es <f>nuestra</f> <f>madre</f>, pero se ha enfermado y necesitamos la poción que está debajo de la barriga del <m>dragón</m> y solo un <m>héroe</m> valiente puede agarrarla y llamamos…”
         “¿Y quién hará el <m>dragón</m>?” <f>Pallina</f> interrumpe <f>María</f>.
@@ -218,7 +218,7 @@ VAR amab_tre = 1
             + “No quiero que te preocupes por mí.”
             -
         <m>Omar</m> te mira a los ojos, con mucha seriedad.
-        “Tienes que aprender cómo se vive en el mundo, <m>hermanito</m>. Juega con tus <m>compañeros/m>, <m>golpéalos/m> cuando te ofenden y aléjate de las <f>niñas</f>. De igual forma verás que dentro de algunos años ya no van a querer jugar contigo.”
+        “Tienes que aprender cómo se vive en el mundo, <m>hermanito</m>. Juega con tus <m>compañeros</m>, <m>golpéalos</m> cuando te ofenden y aléjate de las <f>niñas</f>. De igual forma verás que dentro de algunos años ya no van a querer jugar contigo.”
         Te sonríe.
             + “¿Por qué?”
             -
@@ -228,7 +228,7 @@ VAR amab_tre = 1
             -
         “Siempre, <m>Pal</m>.”
         Te frota con sus nudillos la cabeza.
-        “Pero ahora tengo que ir con mi <m>novia/m>. Otra cosa que un día entenderás.”
+        “Pero ahora tengo que ir con mi <m>novia</m>. Otra cosa que un día entenderás.”
         Observas cómo se aleja.
         Agarras tu bolso e inicias el camino a casa.
         La luz tenue, las golondrinas pasean por el cielo.
@@ -280,7 +280,7 @@ VAR amab_tre = 1
         “¿Dos <f>chicas</f> de quince años que están detrás de una <f>vieja</f> confundida?”
         Laura quería decir algo, pero la interrumpes.
             + “¡Es tu abuela, joder!”
-            + “Al menos hubiese sido feliz”
+            + “Al menos hubiese sido feliz.”
             + “Así mamá puede vender la casa[."] y hacer dinero.”
                 “El dinero sirve para pagar la casa de reposo, idiota.”
             -
@@ -300,7 +300,7 @@ VAR amab_tre = 1
             + “Se necesita valor[..."] para romper las reglas.”
             Quisiera ser como <f>ella</f>.”
             + “Se parecen tanto, ustedes dos.[”]
-            Sus redes eran de lana y las tuyas de bit, pero ustedes se parecen tanto.” <f>Laura</f> ríe: "¡Woah, no sabía que eras un <m>poeta/m>!"
+            Sus redes eran de lana y las tuyas de bit, pero ustedes se parecen tanto.” <f>Laura</f> ríe: "¡Woah, no sabía que eras un <m>poeta</m>!"
             + “Mamá jamás la ha entendido[“], para <f>ella</f> lo importante es lo que dicen los demás y basta.”
             -
 
@@ -598,7 +598,7 @@ VAR amab_tre = 1
             “¿Eres un <m>hombre</m>, <m>Pal</m>?”
             Te miras las manos.
             La tensión de las últimas horas es demasiada, la voz de <f>Laura</f> desaparece, cubierta de todos los comentarios que has sentido en tu vida.
-            <m>Omar</m> te pregunta si eres maricón, los <m>compañeros/m> de la escuela que te llaman <f>niñita</f>.
+            <m>Omar</m> te pregunta si eres maricón, los <m>compañeros</m> de la escuela que te llaman <f>niñita</f>.
             El profesor de deporte que te decía que eres <f>muy delicado</f>, aquella profesora de literatura que exaltaba tu <f>sensibilidad femenina</f>.
             Aquel tipo del autobús que te pregunta "¿por qué tienes <f>las uñas tan limpias</f>?"
             Tu colega que te dice que eres <m>rudo como un albañil</m> pero con la <f>cara</f> de una <f>muñeca</f>.
@@ -774,7 +774,7 @@ Ven un mundo desenfocado, lleno de luces, contornos y siluetas que podrían ser 
         “¿Si te comportas bien luego te compro un helado, ok?”
         Te da un libro de Miguel de Cervantes, que ojeas sin muchas ganas. #completion_33
         “¡Gooool!” Alguien grita.
-        La voz de la <f>hermana</f> <f>Adolorada</f> silencia los gritos de tus <m>compañeros/m>.
+        La voz de la <f>hermana</f> <f>Adolorada</f> silencia los gritos de tus <m>compañeros</m>.
         Ellos prometen estar más tranquilos, promesa que se rompe apenas se cierra la ventana de la Hermana <f>Adolorada</f>.
         La <f>hermana</f> se asoma desde una puerta <f>pequeña</f>, llama a tu <f>madre</f>.
         “¿Quédate aquí diez minutos, solo diez minutos ok? Después te daré tu helado.”
@@ -868,7 +868,7 @@ Ven un mundo desenfocado, lleno de luces, contornos y siluetas que podrían ser 
                 “¿Fuiste tú la que lo robó?” <f>Laura</f> se sorprende.
                 Te sientes increíble.
                 Sin registro, ninguna prueba de las notas disciplinarias que te ha dado la <f>hermana</f> <f>Adolorada</f>.
-                Y las de los demás <m>compañeros/m> de clase.
+                Y las de los demás <m>compañeros</m> de clase.
                 “¡Qué <m>machito</m>!” <f>María</f> alza la nariz con disgusto. 
                 “¡Pero <f>Chloe</f> es una nerd, seguro después se lo da a las <f>hermanas</f>!”
                 <f>Laura</f> no se convence.
