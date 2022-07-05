@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fe6f8275613408d9adc4435b52bf4f, type: 3}
+  m_Name: ThanksES
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value: "<b>Este paquete es gracias a:</b><br/>Marta Palvarini, Rimini Lazzaroni
+    y Ugo Rao por la disponibilidad, el cambio de ideas, y la ayuda en ampliar nuestra
+    visi\xF3n de la realidad no binaria.<br/><br/>Un agradecimiento especial a Mario
+    A. Di Bernardo, que adem\xE1s de habernos ayudad\u025C como beta tester y dado
+    su colaboraci\xF3n y reflexiones, ha organizado y coordinado el grupo Bolo\xF1\xE9s
+    de la Global Game Jam y nos ha dado la oportunidad de vivir esta gran experiencia.<br/>Gracias
+    por entrar en nuestras vidas.<br/><br/>Y gracias a ti, jugador\u0259: esperamos
+    que el tiempo junto a nosotros haya sido de valor. Si deseas compartir con nosotros
+    tu experiencia o tus opiniones, te esperamos en nuestras redes sociales con los
+    brazos abiertos. <br/><br/>Paws up<br/>owof "

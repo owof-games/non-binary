@@ -239,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItalianText: {fileID: 11400000, guid: f315e041943bedf46b1c05c796e6515d, type: 2}
   EnglishText: {fileID: 11400000, guid: 4f9b36094af7df948882d4a79d4e2647, type: 2}
+  SpanishText: {fileID: 11400000, guid: f5cc917b150f71641a3680a17c8a9b12, type: 2}
 --- !u!114 &5897016763877548849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItalianText: {fileID: 11400000, guid: 571ea5dc257eb654bbd333bfbf8699e9, type: 2}
   EnglishText: {fileID: 11400000, guid: 78b4f1419353e4345ba7ea30a451bedf, type: 2}
+  SpanishText: {fileID: 11400000, guid: ebc61fe3e5682d34fb01171f1a7a033a, type: 2}
 --- !u!114 &3826233560529034819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,6 +957,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 242de66d1a299fa4298554eea641753e,
         type: 2}
+    - target: {fileID: 9014227149741439154, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
+        type: 3}
+      propertyPath: SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: d1b8d8f08cd211c49add76cef9b95426,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5, type: 3}
 --- !u!224 &5439879261268281030 stripped
@@ -1160,7 +1168,7 @@ PrefabInstance:
     - target: {fileID: 6358490653816185325, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
         type: 3}
       propertyPath: m_fontSize
-      value: 29.6
+      value: 29.25
       objectReference: {fileID: 0}
     - target: {fileID: 9014227149741439154, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
         type: 3}
@@ -1173,6 +1181,12 @@ PrefabInstance:
       propertyPath: ItalianText
       value: 
       objectReference: {fileID: 11400000, guid: 2720c86289d4aa54e99dba206a1547d6,
+        type: 2}
+    - target: {fileID: 9014227149741439154, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
+        type: 3}
+      propertyPath: SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a0c2bcb32d598c4dad55c80b757fba0,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5, type: 3}
@@ -1344,7 +1358,7 @@ PrefabInstance:
     - target: {fileID: 6358490653816185325, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
         type: 3}
       propertyPath: m_fontSize
-      value: 29.6
+      value: 29.25
       objectReference: {fileID: 0}
     - target: {fileID: 9014227149741439154, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
         type: 3}
@@ -1357,6 +1371,12 @@ PrefabInstance:
       propertyPath: ItalianText
       value: 
       objectReference: {fileID: 11400000, guid: 2d4b5a4f2bdc44f4cac1ce6a726a7bd5,
+        type: 2}
+    - target: {fileID: 9014227149741439154, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
+        type: 3}
+      propertyPath: SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: de230b3363be4b24bbe4ee012d1deb98,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5, type: 3}
@@ -1572,6 +1592,12 @@ PrefabInstance:
       propertyPath: ItalianText
       value: 
       objectReference: {fileID: 11400000, guid: beeebdfab321b1c4e9f2b46d34f44d87,
+        type: 2}
+    - target: {fileID: 9014227149741439154, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5,
+        type: 3}
+      propertyPath: SpanishText
+      value: 
+      objectReference: {fileID: 11400000, guid: 25e466818024668478e1aee47109a02a,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7210b622d7b87a4dbb0c7a5ec0af5b5, type: 3}

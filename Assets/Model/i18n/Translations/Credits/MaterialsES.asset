@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44fe6f8275613408d9adc4435b52bf4f, type: 3}
-  m_Name: MaterialsIT
+  m_Name: MaterialsES
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
-  _value: "<b>Materiali e strumenti</b><br/>Musiche: ASCARI<br/>Font: OpenDyslexic<br/>Linguaggio
-    per la gestione del testo: Ink di Inkle<br/>Ambiente di programmazione: Unity<br/><br/><b>Beta
+  _value: "<b>Materiales e Instrumentos</b><br/>M\xFAsica: ASCARI<br/>Fuente: OpenDyslexic<br/>Lenguaje
+    de gesti\xF3n del texto: Ink di Inkle<br/>Ambiente de programaci\xF3n: Unity<br/><br/><b>Beta
     tester</b><br/>Andrea Nannerini, Marta Ciaccasassi, Aurelio Castro, Cristiano
-    Brignola, Rimini Lazzaroni, Alex Fern\xE1ndez.<br/><br/><b>Traduttric\u025C</b><br/>mickey
-    (inglese), Alex Fern\xE1ndez e Kai (spagnolo)"
+    Brignola, Rimini Lazzaroni, Alex Fern\xE1ndez.<br/><br/><b>Traductores</b><br/>mickey
+    (ingles), Alex Fern\xE1ndez y Kai (espa\xF1ol) "

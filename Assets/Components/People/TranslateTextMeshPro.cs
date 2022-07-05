@@ -6,6 +6,7 @@ public class TranslateTextMeshPro : MonoBehaviour
 {
     public StringConstant ItalianText;
     public StringConstant EnglishText;
+    public StringConstant SpanishText;
 
     private TextMeshProUGUI _Text = null;
 
@@ -38,6 +39,7 @@ public class TranslateTextMeshPro : MonoBehaviour
         {
             LocalizationInfo.Languages.Italian => ItalianText.Value,
             LocalizationInfo.Languages.English => EnglishText.Value,
+            LocalizationInfo.Languages.Spanish => SpanishText.Value,
             _ => ""
         });
     }

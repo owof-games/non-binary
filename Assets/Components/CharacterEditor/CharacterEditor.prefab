@@ -96,7 +96,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 25.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItalianText: {fileID: 11400000, guid: 269adbfcecdd38b44afc0e6e86d04c5d, type: 2}
   EnglishText: {fileID: 11400000, guid: 7d0e6b1bd6ee3ea4fbbc67b71a2a70f8, type: 2}
+  SpanishText: {fileID: 11400000, guid: 9ce68f9097ccaa14eb2fb5a668a39220, type: 2}
 --- !u!114 &1379533754349454506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +448,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 34.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -503,6 +504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItalianText: {fileID: 11400000, guid: 5ccc7f0b85309d549be5994bf26ab6f2, type: 2}
   EnglishText: {fileID: 11400000, guid: a93646ccaacded24088adac0f2524f87, type: 2}
+  SpanishText: {fileID: 11400000, guid: d385a5646caa65143be01f4434c462d1, type: 2}
 --- !u!114 &7814575746604243285
 MonoBehaviour:
   m_ObjectHideFlags: 0
